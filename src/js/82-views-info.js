@@ -1,0 +1,337 @@
+/* ============================================================
+   82-views-info — สรุปไวยากรณ์ / ข้อมูลการสอบ / ตั้งค่า
+   ============================================================ */
+'use strict';
+
+const h = App.h;
+const U = App.UI;
+
+/* ---------- สรุปไวยากรณ์ ---------- */
+
+App.Views.cheatsheet = function (root) {
+  root.appendChild(U.topbar('สรุปไวยากรณ์', 'เปิดดูเร็ว ใช้ทวนก่อนสอบ',
+    h('button.btn.icon.ghost', { onclick: () => window.print(), title: 'พิมพ์' }, '🖨')));
+  const wrap = h('div', h('div.empty', 'กำลังโหลด…'));
+  root.appendChild(wrap);
+
+  App.Data.staticDoc('cheatsheet').then((doc) => {
+    App.clear(wrap);
+    if (!doc || !doc.sections) {
+      wrap.appendChild(U.emptyState('⏳', 'สรุปไวยากรณ์กำลังจัดทำ'));
+      return;
+    }
+    // สารบัญ
+    const toc = h('div.card.tight',
+      h('div.tiny.b.faint', { style: { marginBottom: '8px' } }, 'สารบัญ'),
+      h('div.row.wrap', doc.sections.map((s, i) =>
+        h('button.btn.sm', { onclick: () => { const t = App.$('#cs-' + i); if (t) t.scrollIntoView({ behavior: 'smooth' }); } }, s.title))));
+    wrap.appendChild(toc);
+
+    doc.sections.forEach((s, i) => {
+      const card = h('div.card', { id: 'cs-' + i });
+      card.appendChild(h('h2', s.title));
+      (s.blocks || []).forEach((b) => card.appendChild(App.Views.blockEl(b)));
+      wrap.appendChild(card);
+    });
+  });
+};
+
+/* บล็อกเนื้อหาที่ใช้ร่วมกับบทเรียน */
+App.Views.blockEl = function (b) {
+  switch (b.type) {
+    case 'text': return h('p.lb-text', { html: App.mdBold(b.th || b.text || '') });
+    case 'example': {
+      const el = h('div.lb-ex',
+        h('div.en', b.en), b.th ? h('div.th', b.th) : null,
+        b.note ? h('div.nt', { html: App.mdBold(b.note) }) : null);
+      const btn = h('button.btn.sm.ghost', { onclick: () => App.TTS.say(b.en, 'US'), style: { float: 'right', marginLeft: '8px' } }, '🔊');
+      el.insertBefore(btn, el.firstChild);
+      return el;
+    }
+    case 'table': {
+      const w = h('div.tbl-wrap');
+      const t = h('table.lb-tbl');
+      if (b.head) {
+        const tr = h('tr');
+        b.head.forEach((x) => tr.appendChild(h('th', x)));
+        t.appendChild(h('thead', tr));
+      }
+      const tb = h('tbody');
+      (b.rows || []).forEach((r) => {
+        const tr = h('tr');
+        r.forEach((c) => tr.appendChild(h('td', { html: App.mdBold(String(c)) })));
+        tb.appendChild(tr);
+      });
+      t.appendChild(tb);
+      w.appendChild(t);
+      return w;
+    }
+    case 'tip': return h('div.lb-tip', h('span', '💡'), h('div', { html: App.mdBold(b.th || '') }));
+    case 'warn': return h('div.lb-warn', h('span', '⚠️'), h('div', { html: App.mdBold(b.th || '') }));
+    default: return h('p.lb-text', { html: App.mdBold(b.th || b.text || '') });
+  }
+};
+
+/* ---------- ข้อมูลการสอบจริง ---------- */
+
+App.Views.examinfo = function (root) {
+  root.appendChild(U.topbar('ข้อมูลการสอบจริง', 'TOEIC Listening & Reading ในประเทศไทย'));
+  const wrap = h('div', h('div.empty', 'กำลังโหลด…'));
+  root.appendChild(wrap);
+
+  App.Data.staticDoc('examinfo').then((doc) => {
+    App.clear(wrap);
+
+    // ส่วนที่แอปรู้แน่นอน (โครงสร้างข้อสอบ) แสดงเสมอ
+    wrap.appendChild(h('div.card',
+      h('h2', 'โครงสร้างข้อสอบ'),
+      App.Views.blockEl({
+        type: 'table',
+        head: ['ส่วน', 'จำนวนข้อ', 'เวลา'],
+        rows: [
+          ['Part 1 · รูปภาพ', '6', 'รวมฝั่งฟัง 45 นาที'],
+          ['Part 2 · ถาม-ตอบ', '25', ''],
+          ['Part 3 · บทสนทนา', '39', ''],
+          ['Part 4 · บทพูด', '30', ''],
+          ['Part 5 · เติมคำในประโยค', '30', 'รวมฝั่งอ่าน 75 นาที'],
+          ['Part 6 · เติมคำในบทความ', '16', ''],
+          ['Part 7 · อ่านจับใจความ', '54', ''],
+          ['**รวม**', '**200**', '**2 ชั่วโมง**'],
+        ],
+      }),
+      h('div.small.muted', 'คะแนนฝั่งละ 5–495 รวม 10–990 · ตอบผิดไม่ติดลบ จึงต้องฝนให้ครบทุกข้อเสมอ')));
+
+    wrap.appendChild(h('div.card',
+      h('h2', 'คะแนนแต่ละช่วงหมายถึงอะไร'),
+      App.Views.blockEl({
+        type: 'table',
+        head: ['ช่วงคะแนน', 'ความหมาย'],
+        rows: [
+          ['905–990', 'ใช้งานได้ใกล้เคียงเจ้าของภาษา'],
+          ['785–900', 'สื่อสารในงานได้คล่อง — บริษัทส่วนใหญ่พอใจระดับนี้'],
+          ['**605–780**', '**สื่อสารในงานได้ระดับพื้นฐาน — เป้า 750 อยู่ในช่วงนี้**'],
+          ['405–600', 'สื่อสารเรื่องง่ายๆ ได้บ้าง'],
+          ['255–400', 'เริ่มต้น เข้าใจประโยคสั้นๆ'],
+          ['10–250', 'ยังต้องสร้างพื้นฐาน'],
+        ],
+      })));
+
+    if (!doc || !doc.sections) {
+      wrap.appendChild(h('div.card', { style: { borderColor: 'var(--warn)' } },
+        h('div.b', '⏳ ข้อมูลศูนย์สอบกำลังจัดทำ'),
+        h('div.small.muted', { style: { marginTop: '6px' } },
+          'ค่าสอบ วันสอบ และวิธีสมัครเปลี่ยนแปลงได้ตลอด จึงต้องตรวจสอบกับศูนย์สอบโดยตรง ' +
+          'ค้นหา "TOEIC ศูนย์สอบ ประเทศไทย" หรือดูที่ ets.org')));
+      return;
+    }
+
+    if (doc.disclaimer) {
+      wrap.appendChild(h('div.card', { style: { borderColor: 'var(--warn)', background: 'var(--warn-sf)' } },
+        h('div.small', '⚠️ ' + doc.disclaimer),
+        doc.updatedAt ? h('div.tiny.faint', { style: { marginTop: '4px' } }, 'ข้อมูลรวบรวมเมื่อ ' + doc.updatedAt) : null));
+    }
+
+    doc.sections.forEach((s) => {
+      const card = h('div.card');
+      card.appendChild(h('h2', s.title));
+      (s.blocks || []).forEach((b) => card.appendChild(App.Views.blockEl(b)));
+      wrap.appendChild(card);
+    });
+
+    if (doc.links && doc.links.length) {
+      wrap.appendChild(h('div.card',
+        h('h2', 'ลิงก์ที่เกี่ยวข้อง'),
+        h('div', doc.links.map((l) =>
+          h('div', { style: { padding: '5px 0' } },
+            h('a', { href: l.url, target: '_blank', rel: 'noopener noreferrer' }, l.label + ' ↗'))))));
+    }
+  });
+};
+
+/* ---------- ตั้งค่า ---------- */
+
+App.Views.settings = function (root) {
+  const st = App.Store.state();
+  const s = st.settings;
+
+  root.appendChild(U.topbar('ตั้งค่า', ''));
+
+  /* --- หน้าตา --- */
+  root.appendChild(h('div.card',
+    h('h2', 'หน้าตา'),
+    h('label.field',
+      h('span', 'ธีม'),
+      h('div.seg',
+        segBtn('มืด', s.theme === 'dark', () => setTheme('dark')),
+        segBtn('สว่าง', s.theme === 'light', () => setTheme('light')),
+        segBtn('ตามเครื่อง', s.theme === 'auto', () => setTheme('auto')))),
+    h('label.field',
+      h('span', `ขนาดตัวอักษร — ${Math.round(s.fontScale * 100)}%`),
+      h('input', {
+        type: 'range', min: '0.85', max: '1.45', step: '0.05', value: String(s.fontScale),
+        oninput: (e) => { s.fontScale = Number(e.target.value); App.applyTheme(); App.Store.save(); App.rerender(); },
+      }))));
+
+  /* --- เสียง --- */
+  const voiceCard = h('div.card', h('h2', 'เสียงอ่าน (Listening)'));
+  root.appendChild(voiceCard);
+
+  voiceCard.appendChild(h('label.field',
+    h('span', `ความเร็วเสียง — ${s.ttsRate}x`),
+    h('input', {
+      type: 'range', min: '0.7', max: '1.3', step: '0.05', value: String(s.ttsRate),
+      oninput: (e) => { s.ttsRate = Number(e.target.value); App.Store.save(); e.target.previousSibling.textContent = `ความเร็วเสียง — ${s.ttsRate}x`; },
+    })));
+
+  voiceCard.appendChild(h('label.field',
+    h('span', 'สำเนียง'),
+    h('div.seg',
+      segBtn('สลับ 4 สำเนียง (เหมือนของจริง)', s.accentMode === 'mixed', () => { s.accentMode = 'mixed'; App.Store.save(); App.rerender(); }),
+      segBtn('อเมริกันอย่างเดียว', s.accentMode === 'us', () => { s.accentMode = 'us'; App.Store.save(); App.rerender(); }))));
+
+  const testRow = h('div.row.wrap');
+  voiceCard.appendChild(h('div.small.faint', { style: { marginBottom: '6px' } }, 'ลองฟังแต่ละสำเนียง'));
+  voiceCard.appendChild(testRow);
+  ['US', 'UK', 'CA', 'AU'].forEach((a) => {
+    testRow.appendChild(h('button.btn.sm', {
+      onclick: () => App.TTS.say('The quarterly sales report is due on Friday afternoon.', a),
+    }, `🔊 ${App.TTS.ACCENT_TH[a]}`));
+  });
+
+  const vlist = h('div.small.faint.mt', 'กำลังตรวจเสียงในเครื่อง…');
+  voiceCard.appendChild(vlist);
+  setTimeout(() => {
+    const av = App.TTS.availableAccents();
+    const missing = Object.keys(av).filter((k) => !av[k].ok);
+    App.clear(vlist);
+    if (!App.TTS.supported()) {
+      vlist.appendChild(h('span', { style: { color: 'var(--bad)' } }, '⚠️ เบราว์เซอร์นี้ไม่รองรับเสียงอ่าน — ใช้ Chrome หรือ Safari รุ่นใหม่'));
+    } else if (missing.length) {
+      vlist.appendChild(h('span', `เครื่องนี้ไม่มีเสียงสำเนียง ${missing.map((k) => App.TTS.ACCENT_TH[k]).join(', ')} — ระบบจะใช้สำเนียงที่ใกล้เคียงที่สุดแทน`));
+    } else {
+      vlist.appendChild(h('span', { style: { color: 'var(--ok)' } }, '✓ เครื่องนี้มีเสียงครบทั้ง 4 สำเนียง'));
+    }
+    const all = App.TTS.listVoices();
+    if (all.length) {
+      const sel = h('select', {
+        onchange: (e) => {
+          const v = e.target.value;
+          if (v) { s.voiceMap.US = v; App.Store.save(); App.TTS.say('This is the voice you selected.', 'US'); }
+        },
+      }, h('option', { value: '' }, 'เลือกเสียงหลักเอง (ไม่บังคับ)'),
+        all.map((v) => h('option', { value: v.voiceURI, selected: s.voiceMap.US === v.voiceURI }, `${v.name} (${v.lang})`)));
+      voiceCard.appendChild(h('label.field', { style: { marginTop: '10px' } }, h('span', 'เสียงที่ใช้'), sel));
+    }
+  }, 700);
+
+  /* --- การเรียน --- */
+  root.appendChild(h('div.card',
+    h('h2', 'การเรียน'),
+    sw('ปุ่มช่วยเหลือในโหมดฝึก', 'ปุ่มดูคำแปลและตัดตัวเลือกผิด (โหมดสอบจะปิดเสมอ)', s.helpBtn, (v) => { s.helpBtn = v; App.Store.save(); }),
+    h('label.field', { style: { marginTop: '10px' } },
+      h('span', 'วันเริ่มต้นแผน 30 วัน'),
+      h('input', {
+        type: 'date', value: st.plan.startDate,
+        onchange: (e) => {
+          if (!e.target.value) return;
+          st.plan.startDate = e.target.value;
+          App.Store.save(true);
+          App.toast('ปรับวันเริ่มต้นแล้ว', 'ok');
+          App.rerender();
+        },
+      })),
+    h('label.field',
+      h('span', 'วันสอบจริง (ถ้าจองแล้ว)'),
+      h('input', {
+        type: 'date', value: st.plan.examDate || '',
+        onchange: (e) => { st.plan.examDate = e.target.value || null; App.Store.save(true); App.rerender(); },
+      })),
+    st.plan.examDate
+      ? h('div.small', { style: { color: 'var(--brand)' } },
+          `เหลืออีก ${Math.max(0, App.daysBetween(App.today(), st.plan.examDate))} วันถึงวันสอบ`)
+      : null));
+
+  /* --- แจ้งเตือน --- */
+  const nCard = h('div.card', h('h2', 'แจ้งเตือนรายวัน'));
+  root.appendChild(nCard);
+  nCard.appendChild(sw('เปิดแจ้งเตือน', 'เตือนให้เข้ามาเรียนทุกวัน', s.reminderOn, (v) => {
+    s.reminderOn = v;
+    App.Store.save();
+    if (v) App.Notify.enable();
+  }));
+  nCard.appendChild(h('label.field', { style: { marginTop: '10px' } },
+    h('span', 'เวลาแจ้งเตือน'),
+    h('input', {
+      type: 'time', value: s.reminderTime,
+      onchange: (e) => { s.reminderTime = e.target.value || '20:00'; App.Store.save(true); App.Notify.enable(); App.toast('ตั้งเวลาแล้ว', 'ok'); },
+    })));
+  const nStat = h('div.small.faint');
+  nCard.appendChild(nStat);
+  nStat.textContent = App.Notify.statusText();
+  nCard.appendChild(h('button.btn.sm.mt', { onclick: () => App.Notify.test() }, 'ทดสอบแจ้งเตือน'));
+
+  /* --- ข้อมูล --- */
+  root.appendChild(h('div.card',
+    h('h2', 'ข้อมูลของคุณ'),
+    h('div.small.muted', { style: { marginBottom: '10px' } },
+      'ข้อมูลทั้งหมดเก็บอยู่ในเบราว์เซอร์เครื่องนี้เท่านั้น ไม่มีการส่งออกไปที่ไหน ' +
+      'ถ้าล้างข้อมูลเบราว์เซอร์หรือเปลี่ยนเครื่อง ข้อมูลจะหาย — ควรกดสำรองไว้เป็นระยะ'),
+    h('div.grid2',
+      h('button.btn', { onclick: backup }, '💾 สำรองข้อมูล'),
+      h('button.btn', { onclick: restore }, '📥 กู้คืนข้อมูล')),
+    h('div.small.faint.mt',
+      `เริ่มใช้เมื่อ ${App.thaiDate(App.ymd(st.createdAt))} · ทำข้อสอบแล้ว ${App.Store.totalAnswered(st)} ข้อ · ` +
+      `ขนาดข้อมูล ~${Math.round(App.Store.exportJSON().length / 1024)} KB`),
+    h('button.btn.danger.block.mt', { onclick: resetAsk }, '🗑 ล้างข้อมูลทั้งหมด')));
+
+  root.appendChild(h('div.card',
+    h('h2', 'เกี่ยวกับ'),
+    h('div.small.muted',
+      'TOEIC 750 in 30 Days · ข้อสอบทั้งหมดในแอปนี้เขียนขึ้นใหม่โดยเลียนแบบรูปแบบและระดับความยากของข้อสอบจริง ' +
+      'ไม่ได้คัดลอกจากข้อสอบของ ETS · TOEIC เป็นเครื่องหมายการค้าของ ETS ซึ่งไม่มีส่วนเกี่ยวข้องกับแอปนี้'),
+    h('div.tiny.faint.mt', 'เวอร์ชันข้อมูล ' + st.v)));
+
+  function segBtn(label, on, fn) {
+    return h('button' + (on ? '.on' : ''), { onclick: fn, class: on ? 'on' : '' }, label);
+  }
+  function sw(label, sub, val, fn) {
+    const inp = h('input', { type: 'checkbox', onchange: (e) => fn(e.target.checked) });
+    inp.checked = !!val;
+    return h('div.switch', h('div.lbl', label, sub ? h('small', sub) : null), inp);
+  }
+  function setTheme(t) {
+    s.theme = t;
+    App.applyTheme();
+    App.Store.save();
+    App.rerender();
+  }
+  function backup() {
+    const name = `toeic750-backup-${App.today()}.json`;
+    App.Store.download(name, App.Store.exportJSON());
+    App.toast('ดาวน์โหลดไฟล์สำรองแล้ว', 'ok');
+  }
+  function restore() {
+    const inp = h('input', { type: 'file', accept: '.json,application/json' });
+    inp.addEventListener('change', () => {
+      const f = inp.files[0];
+      if (!f) return;
+      const r = new FileReader();
+      r.onload = () => {
+        try {
+          App.Store.importJSON(String(r.result));
+          App.toast('กู้คืนข้อมูลสำเร็จ', 'ok');
+          setTimeout(() => location.reload(), 700);
+        } catch (e) {
+          App.toast('ไฟล์ไม่ถูกต้อง: ' + e.message, 'bad');
+        }
+      };
+      r.readAsText(f);
+    });
+    inp.click();
+  }
+  function resetAsk() {
+    App.confirmBox('ล้างข้อมูลทั้งหมด',
+      'สถิติ ความคืบหน้า คำศัพท์ที่จำได้ และสมุดข้อผิดจะหายทั้งหมด กู้คืนไม่ได้ แนะนำให้กดสำรองข้อมูลก่อน',
+      () => { App.Store.resetAll(); location.reload(); }, 'ล้างทั้งหมด');
+  }
+};
