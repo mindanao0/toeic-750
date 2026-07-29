@@ -30,7 +30,13 @@ function h(tag, props, ...kids) {
       if (v == null || v === false) continue;
       if (k === 'html') el.innerHTML = v;
       else if (k === 'text') el.textContent = v;
-      else if (k === 'style' && typeof v === 'object') Object.assign(el.style, v);
+      else if (k === 'style' && typeof v === 'object') {
+        // Object.assign ตั้งค่า CSS custom property (--x) ไม่ได้ ต้องใช้ setProperty
+        for (const sk in v) {
+          if (sk.startsWith('--')) el.style.setProperty(sk, v[sk]);
+          else el.style[sk] = v[sk];
+        }
+      }
       else if (k.startsWith('on') && typeof v === 'function') el.addEventListener(k.slice(2), v);
       else if (k === 'class') el.className += ' ' + v;
       else if (v === true) el.setAttribute(k, '');

@@ -242,7 +242,90 @@ async function main() {
     check('บทเรียนแสดงเนื้อหาครบ', lo.hasBlocks >= 5, lessonOK);
   }
 
-  // 13. ไม่มี error ค้างอยู่
+  // 13. ภาพ Part 1 ต้องมีขนาดจริง (บั๊กเก่า: inline SVG สูง 0 บน Safari)
+  const p1 = await evalJS(`App.Data.selectDrill({part:1,n:2}).then(u=>{
+    if(!u.length) return JSON.stringify({skip:true});
+    App.Quiz.start({units:u,mode:'practice',title:'p1',backTo:'#/',onExit:()=>{},onFinish:()=>{}});
+    return new Promise(r=>setTimeout(()=>{
+      const box=document.querySelector('.scene-box');
+      const svg=document.querySelector('.scene-box > svg');
+      const bb=box?box.getBoundingClientRect():null;
+      const sb=svg?svg.getBoundingClientRect():null;
+      r(JSON.stringify({
+        box: bb?{w:Math.round(bb.width),h:Math.round(bb.height)}:null,
+        svg: sb?{w:Math.round(sb.width),h:Math.round(sb.height)}:null,
+        w:svg?svg.getAttribute('width'):null, hh:svg?svg.getAttribute('height'):null,
+        par:svg?svg.getAttribute('preserveAspectRatio'):null,
+        pad: box?box.style.getPropertyValue('--ar-pad'):null,
+        ar: box?box.style.aspectRatio:null}));
+    },700));
+  })`);
+  const p1o = JSON.parse(p1);
+  if (!p1o.skip) {
+    check('ภาพ Part 1 มีความสูงจริง (ไม่ใช่ 0)', p1o.box && p1o.box.h > 100 && p1o.svg && p1o.svg.h > 100, p1);
+    check('ภาพ Part 1 อัตราส่วนถูก 4:3', p1o.box && Math.abs(p1o.box.h / p1o.box.w - 0.75) < 0.05, JSON.stringify(p1o.box));
+    check('svg ถูกบังคับ width/height/preserveAspectRatio',
+      p1o.w === '100%' && p1o.hh === '100%' && /xMidYMid/.test(p1o.par || ''), `w=${p1o.w} h=${p1o.hh} par=${p1o.par}`);
+    check('มี --ar-pad สำรองสำหรับเบราว์เซอร์เก่า', /%$/.test(p1o.pad || ''), 'pad=' + p1o.pad);
+  }
+
+  // 14. เสียงต้องไม่อ่านตัวอักษร "(A)" ออกเสียง และต้องมี choice index ให้ไฮไลต์
+  const tts = await evalJS(`App.Data.selectDrill({part:1,n:1}).then(async u1=>{
+    const u2=await App.Data.selectDrill({part:2,n:1});
+    const l1=u1.length?App.TTS.part1Lines(u1[0].raw):[];
+    const l2=u2.length?App.TTS.part2Lines(u2[0].raw):[];
+    return JSON.stringify({
+      l1:l1.map(x=>({t:x.text.slice(0,28),c:x.choice})),
+      l2:l2.map(x=>({t:x.text.slice(0,28),c:x.choice,sp:x.sp})),
+      norm:[App.TTS.normalizeText('(A) He is typing'),
+            App.TTS.normalizeText('Mr. Lee will arrive at 3 p.m.'),
+            App.TTS.normalizeText('Send it to R&D  #3')],
+    });})`);
+  const tt = JSON.parse(tts);
+  const allLines = (tt.l1 || []).concat(tt.l2 || []);
+  check('ไม่มี "(A)" ในข้อความที่ส่งให้เสียงอ่าน',
+    allLines.length > 0 && !allLines.some((x) => /^\s*\(?[A-D]\)/.test(x.t)),
+    JSON.stringify(allLines.slice(0, 3)));
+  check('ทุกตัวเลือกมี choice index ให้ไฮไลต์',
+    (tt.l1 || []).every((x) => x.c != null) && (tt.l2 || []).filter((x) => x.sp === 'W').every((x) => x.c != null),
+    JSON.stringify(tt.l2));
+  check('ปรับข้อความก่อนอ่าน (ตัดตัวอักษร/ขยายคำย่อ)',
+    tt.norm[0] === 'He is typing.' && /Mister/.test(tt.norm[1]) && /P M/.test(tt.norm[1]) && /and/.test(tt.norm[2]) && /number 3/.test(tt.norm[2]),
+    JSON.stringify(tt.norm));
+
+  // 15. เลือกเสียงตามคุณภาพ ไม่ใช่ตามลำดับที่เจอ
+  const vq = await evalJS(`(()=>{
+    const fake=[{name:'eSpeak English',lang:'en-US',voiceURI:'a',localService:true},
+                {name:'Google US English',lang:'en-US',voiceURI:'b',localService:false},
+                {name:'Microsoft Aria Online (Natural)',lang:'en-US',voiceURI:'c',localService:false},
+                {name:'Microsoft Guy Online (Natural)',lang:'en-US',voiceURI:'d',localService:false}];
+    const sc=fake.map(v=>({n:v.name,s:App.TTS.voiceScore(v),g:App.TTS.genderOf(v)}));
+    return JSON.stringify(sc);})()`);
+  const vqo = JSON.parse(vq);
+  const espeak = vqo.find((x) => /espeak/i.test(x.n));
+  const natural = vqo.filter((x) => /Natural/.test(x.n));
+  check('ให้คะแนนเสียง eSpeak ต่ำสุด', espeak.s < Math.min(...vqo.filter((x) => x !== espeak).map((x) => x.s)), vq);
+  check('แยกเพศผู้พูดจากชื่อเสียงได้', natural.some((x) => x.g === 'W') && natural.some((x) => x.g === 'M'), vq);
+
+  // 16. ไฮไลต์ตัวเลือกตอนเสียงอ่านถึง
+  const hl = await evalJS(`App.Data.selectDrill({part:2,n:1}).then(u=>{
+    if(!u.length) return JSON.stringify({skip:true});
+    App.Quiz.start({units:u,mode:'practice',title:'p2',backTo:'#/',onExit:()=>{},onFinish:()=>{}});
+    return new Promise(r=>setTimeout(()=>{
+      const btns=[...document.querySelectorAll('.choices .choice')];
+      btns.forEach((b,k)=>b.classList.toggle('speaking',k===1));
+      const on=btns.filter(b=>b.classList.contains('speaking')).length;
+      const cs=btns[1]?getComputedStyle(btns[1]):null;
+      r(JSON.stringify({n:btns.length,on,shadow:cs?cs.boxShadow!=='none':false,
+        hidden:btns[0]?/ฟังจากเสียง/.test(btns[0].innerText):false}));
+    },600));})`);
+  const hlo = JSON.parse(hl);
+  if (!hlo.skip) {
+    check('Part 2 ซ่อนข้อความตัวเลือกไว้ (ต้องฟังเอง)', hlo.hidden, hl);
+    check('ไฮไลต์ตัวเลือกที่กำลังอ่านได้', hlo.on === 1 && hlo.shadow, hl);
+  }
+
+  // 17. ไม่มี error ค้างอยู่
   check('ไม่มี JS error ตลอดการทดสอบ', errors.length === 0, errors.slice(0, 2).join(' | ').slice(0, 200));
 
   ws.close(); proc.kill();

@@ -189,40 +189,87 @@ App.Views.settings = function (root) {
       segBtn('สลับ 4 สำเนียง (เหมือนของจริง)', s.accentMode === 'mixed', () => { s.accentMode = 'mixed'; App.Store.save(); App.rerender(); }),
       segBtn('อเมริกันอย่างเดียว', s.accentMode === 'us', () => { s.accentMode = 'us'; App.Store.save(); App.rerender(); }))));
 
-  const testRow = h('div.row.wrap');
-  voiceCard.appendChild(h('div.small.faint', { style: { marginBottom: '6px' } }, 'ลองฟังแต่ละสำเนียง'));
-  voiceCard.appendChild(testRow);
-  ['US', 'UK', 'CA', 'AU'].forEach((a) => {
-    testRow.appendChild(h('button.btn.sm', {
-      onclick: () => App.TTS.say('The quarterly sales report is due on Friday afternoon.', a),
-    }, `🔊 ${App.TTS.ACCENT_TH[a]}`));
-  });
+  const SAMPLE = 'The quarterly sales report is due on Friday afternoon.';
+  const diag = h('div', h('div.small.faint', 'กำลังตรวจเสียงในเครื่อง…'));
+  voiceCard.appendChild(diag);
 
-  const vlist = h('div.small.faint.mt', 'กำลังตรวจเสียงในเครื่อง…');
-  voiceCard.appendChild(vlist);
-  setTimeout(() => {
-    const av = App.TTS.availableAccents();
-    const missing = Object.keys(av).filter((k) => !av[k].ok);
-    App.clear(vlist);
+  const drawDiag = () => {
+    App.clear(diag);
     if (!App.TTS.supported()) {
-      vlist.appendChild(h('span', { style: { color: 'var(--bad)' } }, '⚠️ เบราว์เซอร์นี้ไม่รองรับเสียงอ่าน — ใช้ Chrome หรือ Safari รุ่นใหม่'));
-    } else if (missing.length) {
-      vlist.appendChild(h('span', `เครื่องนี้ไม่มีเสียงสำเนียง ${missing.map((k) => App.TTS.ACCENT_TH[k]).join(', ')} — ระบบจะใช้สำเนียงที่ใกล้เคียงที่สุดแทน`));
+      diag.appendChild(h('div.lb-warn', h('span', '⚠️'),
+        h('div', 'เบราว์เซอร์นี้ไม่รองรับเสียงอ่าน — ใช้ Chrome, Edge หรือ Safari รุ่นใหม่')));
+      return;
+    }
+
+    const q = App.TTS.quality();
+    if (q.level === 'poor' || q.level === 'none') {
+      diag.appendChild(h('div.lb-warn', h('span', q.level === 'none' ? '⏳' : '🤖'), h('div', q.msg)));
+    } else if (q.level === 'ok') {
+      diag.appendChild(h('div.small.faint', 'ℹ️ ' + q.msg));
     } else {
-      vlist.appendChild(h('span', { style: { color: 'var(--ok)' } }, '✓ เครื่องนี้มีเสียงครบทั้ง 4 สำเนียง'));
+      diag.appendChild(h('div.small', { style: { color: 'var(--ok)' } }, '✓ ' + q.msg));
     }
+
+    const av = App.TTS.availableAccents();
     const all = App.TTS.listVoices();
-    if (all.length) {
+
+    diag.appendChild(h('div.small.faint', { style: { margin: '12px 0 6px' } },
+      'แต่ละสำเนียง — กดลำโพงเพื่อฟัง เปลี่ยนเสียงได้ถ้าไม่ถูกใจ'));
+
+    ['US', 'UK', 'CA', 'AU'].forEach((a) => {
+      const info = av[a];
+      const pinned = s.voiceMap[a] || '';
+      const auto = App.TTS.voiceFor(a);
+
       const sel = h('select', {
+        style: { flex: '1', minWidth: '0' },
         onchange: (e) => {
-          const v = e.target.value;
-          if (v) { s.voiceMap.US = v; App.Store.save(); App.TTS.say('This is the voice you selected.', 'US'); }
+          if (e.target.value) s.voiceMap[a] = e.target.value;
+          else delete s.voiceMap[a];
+          App.Store.save(true);
+          App.TTS.say(SAMPLE, a);
         },
-      }, h('option', { value: '' }, 'เลือกเสียงหลักเอง (ไม่บังคับ)'),
-        all.map((v) => h('option', { value: v.voiceURI, selected: s.voiceMap.US === v.voiceURI }, `${v.name} (${v.lang})`)));
-      voiceCard.appendChild(h('label.field', { style: { marginTop: '10px' } }, h('span', 'เสียงที่ใช้'), sel));
-    }
-  }, 700);
+      },
+        h('option', { value: '' }, `อัตโนมัติ${auto ? ' — ' + auto.name : ''}`),
+        all
+          .slice()
+          .sort((x, y) => App.TTS.voiceScore(y) - App.TTS.voiceScore(x))
+          .map((v) => h('option', { value: v.voiceURI, selected: pinned === v.voiceURI },
+            `${v.name} (${v.lang})${App.TTS.voiceScore(v) <= -100 ? ' ⚠️ หุ่นยนต์' : App.TTS.voiceScore(v) >= 60 ? ' ⭐' : ''}`)));
+
+      const badge = info.quality === 'good' ? h('span.pill.ok', 'ดี')
+        : info.quality === 'poor' ? h('span.pill.bad', 'หุ่นยนต์')
+        : info.ok ? h('span.pill', 'ใช้ได้')
+        : h('span.pill.warn', 'ไม่มี → ใช้เสียงใกล้เคียง');
+
+      diag.appendChild(h('div', { style: { marginBottom: '10px' } },
+        h('div.row', { style: { marginBottom: '4px' } },
+          h('span.small.b', { style: { flex: '0 0 78px' } }, App.TTS.ACCENT_TH[a]),
+          badge),
+        h('div.row',
+          h('button.btn.sm', { onclick: () => App.TTS.say(SAMPLE, a) }, '🔊'),
+          sel)));
+    });
+
+    diag.appendChild(h('div.tiny.faint',
+      'เสียงที่ขึ้น ⭐ คือเสียงคุณภาพสูง · เสียงที่ขึ้น ⚠️ เป็นเสียงสังเคราะห์พื้นฐานที่ฟังเป็นหุ่นยนต์ ' +
+      'ถ้าในลิสต์ไม่มีเสียงดีเลย ให้ลองเปิดแอปบนมือถือ เสียงในมือถือดีกว่าคอมมาก'));
+
+    diag.appendChild(h('button.btn.sm.block.mt', {
+      onclick: () => {
+        App.TTS.speakSeq([
+          { text: 'Where did you put the sales report?', accent: 'US', sp: 'M', gap: 800 },
+          { text: 'On your desk, next to the printer.', accent: 'AU', sp: 'W', gap: 600 },
+          { text: 'Yes, I finished it yesterday.', accent: 'AU', sp: 'W', gap: 600 },
+          { text: 'It was very informative.', accent: 'AU', sp: 'W' },
+        ]);
+      },
+    }, '🎧 ลองฟังแบบข้อสอบ Part 2 จริง (คำถาม + 3 ตัวเลือก)'));
+  };
+
+  drawDiag();
+  setTimeout(drawDiag, 900);
+  setTimeout(drawDiag, 2200);
 
   /* --- การเรียน --- */
   root.appendChild(h('div.card',

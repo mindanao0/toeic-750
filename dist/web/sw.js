@@ -1,6 +1,6 @@
 /* service worker — แคชไว้ใช้ออฟไลน์ */
-const CACHE = 'toeic750-vms62o2cl';
-const ASSETS = ["./","./index.html","./manifest.webmanifest","./icon-192.png","./icon-512.png","./data/drills/p5e-01.json","./data/drills/p5e-02.json","./data/tests/placement.json","./data/lessons/L01.json","./data/lessons/L02.json","./data/lessons/L03.json","./data/lessons/L04.json","./data/lessons/L05.json","./data/lessons/L06.json","./data/lessons/L07.json","./data/vocab/vocab-01.json","./data/vocab/vocab-02.json","./data/static/plan30.json"];
+const CACHE = 'toeic750-vms6oi8x9';
+const ASSETS = ["./","./index.html","./manifest.webmanifest","./icon-192.png","./icon-512.png","./data/drills/p1e-01.json","./data/drills/p2e-01.json","./data/drills/p2m-01.json","./data/drills/p5e-01.json","./data/drills/p5e-02.json","./data/drills/p5e-03.json","./data/drills/p5m-01.json","./data/drills/p5m-02.json","./data/tests/placement.json","./data/lessons/L01.json","./data/lessons/L02.json","./data/lessons/L03.json","./data/lessons/L04.json","./data/lessons/L05.json","./data/lessons/L06.json","./data/lessons/L07.json","./data/vocab/vocab-01.json","./data/vocab/vocab-02.json","./data/static/cheatsheet.json","./data/static/examinfo.json","./data/static/plan30.json"];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(ASSETS)).then(() => self.skipWaiting()));

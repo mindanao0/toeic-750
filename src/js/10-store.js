@@ -12,7 +12,7 @@ const DEFAULT_STATE = () => ({
   settings: {
     theme: 'dark',          // dark | light | auto
     fontScale: 1,           // 0.9 – 1.4
-    ttsRate: 0.95,          // 0.7 – 1.3
+    ttsRate: 1,             // 0.7 – 1.3 (ค่าเริ่มต้น = ความเร็วเท่าข้อสอบจริง)
     accentMode: 'mixed',    // mixed | us
     voiceMap: {},           // 'US' -> voiceURI
     reminderOn: true,

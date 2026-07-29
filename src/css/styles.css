@@ -352,6 +352,17 @@ body {
 .choice .c-tx { flex: 1; min-width: 0; }
 .choice .c-th { display: block; font-size: .8rem; color: var(--tx-faint); margin-top: 3px; }
 
+/* ตัวเลือกที่เสียงกำลังอ่านถึง */
+.choice.speaking {
+  border-color: var(--brand);
+  background: var(--brand-sf);
+  box-shadow: 0 0 0 3px rgba(79, 156, 249, .28);
+}
+.choice.speaking .k { background: var(--brand); border-color: var(--brand); color: #fff; }
+.choice.speaking .c-tx .faint::after {
+  content: ' 🔊';
+}
+
 .choice.sel      { border-color: var(--brand); background: var(--brand-sf); }
 .choice.sel .k   { background: var(--brand); border-color: var(--brand); color: #fff; }
 .choice.right    { border-color: var(--ok); background: var(--ok-sf); }
@@ -450,8 +461,38 @@ body {
 .passage .mark { color: var(--brand); font-weight: 800; }
 .passage .th-tr { color: var(--tx-faint); font-size: .88rem; border-top: 1px dashed var(--line); margin-top: 10px; padding-top: 9px; }
 
-.scene { text-align: center; margin-bottom: 12px; }
-.scene svg { max-width: 100%; height: auto; border-radius: var(--r-s); background: #fff; border: 1px solid var(--line); }
+/* กล่องภาพ Part 1 — กำหนดอัตราส่วนที่กล่อง ไม่พึ่ง height:auto ของ svg
+   (inline SVG ที่มีแต่ viewBox จะสูง 0 บน Safari/iOS) */
+.scene { margin-bottom: 12px; }
+.scene-box {
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--r-s);
+  overflow: hidden;
+}
+.scene-box > svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* สำรองสำหรับเบราว์เซอร์เก่าที่ยังไม่รู้จัก aspect-ratio */
+@supports not (aspect-ratio: 4 / 3) {
+  .scene-box {
+    position: relative;
+    height: 0;
+    padding-bottom: var(--ar-pad, 75%);
+  }
+  .scene-box > svg { position: absolute; top: 0; left: 0; }
+}
+.scene-fail {
+  padding: 30px 10px;
+  color: var(--bad);
+  font-size: .9rem;
+  text-align: center;
+}
 
 /* ---------- audio ---------- */
 

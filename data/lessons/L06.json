@@ -159,11 +159,11 @@
       "tier": "easy",
       "topic": "preposition-time",
       "topicTh": "คำบุพบทบอกเวลา",
-      "stem": "The quarterly sales meeting will begin _____ 9:30 A.M. in the main conference room.",
+      "stem": "The quarterly sales meeting will begin _____ 9:30 A.M.",
       "choices": ["at", "in", "on", "to"],
       "answer": 0,
       "th": {
-        "stem": "การประชุมฝ่ายขายประจำไตรมาสจะเริ่ม_____9:30 น. ที่ห้องประชุมใหญ่",
+        "stem": "การประชุมฝ่ายขายประจำไตรมาสจะเริ่ม_____9:30 น.",
         "choices": ["ที่ (ใช้กับเวลานาฬิกา)", "ใน (ใช้กับช่วงเวลากว้าง)", "ในวัน (ใช้กับชื่อวันหรือวันที่)", "ไปยัง (บอกทิศทาง)"]
       },
       "explain": {
@@ -186,18 +186,18 @@
       "tier": "easy",
       "topic": "preposition-time",
       "topicTh": "คำบุพบทบอกเวลา",
-      "stem": "All employees must submit their expense reports _____ the last day of each month.",
+      "stem": "Employees must submit expense reports _____ the last day of each month.",
       "choices": ["at", "on", "in", "of"],
       "answer": 1,
       "th": {
-        "stem": "พนักงานทุกคนต้องส่งรายงานค่าใช้จ่าย_____วันสุดท้ายของทุกเดือน",
+        "stem": "พนักงานต้องส่งรายงานค่าใช้จ่าย_____วันสุดท้ายของทุกเดือน",
         "choices": ["ที่ (ใช้กับเวลานาฬิกา)", "ในวัน (ใช้กับวันและวันที่)", "ใน (ใช้กับเดือนหรือปี)", "ของ (แสดงความเป็นเจ้าของ)"]
       },
       "explain": {
         "why": "หลังช่องว่างคือ the last day ซึ่งเป็นคำว่าวันแบบเจาะจงหนึ่งวัน ภาษาอังกฤษใช้ on กับวันเสมอ ไม่ว่าจะเป็น on Monday, on May 5 หรือ on the last day ก็ใช้ on เหมือนกันหมด",
         "wrong": {
           "0": "at ใช้กับเวลานาฬิกาหรือจุดเวลาแคบมาก เช่น at 5 P.M., at noon แต่คำว่า day เป็นทั้งวัน ไม่ใช่จุดเวลา",
-          "2": "in ใช้กับก้อนเวลาใหญ่กว่าวัน เช่น เดือน ปี ฤดู ถ้าประโยคเขียนว่า in the last month ถึงจะได้ แต่ในที่นี้เป็น day",
+          "2": "in ใช้กับก้อนเวลาใหญ่กว่าวัน คือเดือน ปี หรือฤดู เช่น in May, in 2026 ถ้าประโยคเขียนว่า in the last month of the year ถึงจะใช้ in ได้ แต่ในที่นี้คำหลังช่องว่างคือ day ซึ่งเป็นวัน จึงต้องใช้ on",
           "3": "of แปลว่าของ ใช้แสดงความเป็นเจ้าของ อย่างคำว่า of each month ในประโยคนี้ ไม่ได้ทำหน้าที่บอกเวลาว่าเหตุการณ์เกิดวันไหน"
         },
         "point": "คำว่า day, Monday, weekend, holiday, birthday ทุกคำที่เป็นวัน ใช้ on",
@@ -214,11 +214,11 @@
       "tier": "easy",
       "topic": "preposition-time",
       "topicTh": "คำบุพบทบอกเวลา",
-      "stem": "The company's new distribution center will open _____ March, about six months from now.",
+      "stem": "The new distribution center will open _____ March of next year.",
       "choices": ["on", "at", "in", "for"],
       "answer": 2,
       "th": {
-        "stem": "ศูนย์กระจายสินค้าแห่งใหม่ของบริษัทจะเปิด_____เดือนมีนาคม ประมาณอีกหกเดือนนับจากนี้",
+        "stem": "ศูนย์กระจายสินค้าแห่งใหม่จะเปิด_____เดือนมีนาคมของปีหน้า",
         "choices": ["ในวัน (ใช้กับชื่อวัน)", "ที่ (ใช้กับเวลานาฬิกา)", "ใน (ใช้กับเดือนและปี)", "เป็นเวลา (ตามด้วยความยาวของเวลา)"]
       },
       "explain": {
@@ -241,11 +241,11 @@
       "tier": "easy",
       "topic": "preposition-place",
       "topicTh": "คำบุพบทบอกสถานที่",
-      "stem": "Please wait _____ the reception desk until a staff member calls your name.",
+      "stem": "Please wait _____ the reception desk until we call your name.",
       "choices": ["in", "on", "into", "at"],
       "answer": 3,
       "th": {
-        "stem": "กรุณารอ_____เคาน์เตอร์ประชาสัมพันธ์ จนกว่าเจ้าหน้าที่จะเรียกชื่อคุณ",
+        "stem": "กรุณารอ_____เคาน์เตอร์ประชาสัมพันธ์ จนกว่าเราจะเรียกชื่อคุณ",
         "choices": ["ใน (อยู่ข้างในพื้นที่ปิด)", "บน (แตะอยู่บนพื้นผิว)", "เข้าไปข้างใน (บอกการเคลื่อนที่)", "ที่ (จุดนัดพบจุดเดียว)"]
       },
       "explain": {

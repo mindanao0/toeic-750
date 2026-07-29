@@ -107,8 +107,9 @@ function renderPractice(root) {
     const ab = U.audioBox(lines, {
       scriptLines: script,
       autoplay: isFirstOfUnit && !s.audioPlayedFor[u.id],
-      hint: u.part <= 2 ? 'กดฟัง — ตัวเลือกทั้งหมดอยู่ในเสียง' : 'กดฟังบทสนทนา',
+      hint: u.part <= 2 ? 'ตัวเลือกที่กำลังอ่านจะสว่างขึ้นให้เห็น' : 'กดฟังบทสนทนา',
       allowScript: s.cfg.allowScript !== false,
+      onChoice: highlightChoice,
     });
     s.audioPlayedFor[u.id] = true;
     card.appendChild(ab.el);
@@ -287,6 +288,7 @@ function renderExam(root) {
       allowScript: false,
       playsLeft: 1,
       hint: played ? 'ข้อสอบจริงเปิดเสียงครั้งเดียว' : 'กำลังเล่น — ข้อสอบจริงเปิดครั้งเดียว',
+      onChoice: highlightChoice,
     });
     s.audioPlayedFor[u.id] = true;
     card.appendChild(ab.el);
@@ -452,6 +454,12 @@ function addNote(qid) {
 }
 
 /* ---------- ตัวช่วย ---------- */
+
+/** ทำให้ตัวเลือกที่กำลังถูกอ่านออกเสียงสว่างขึ้น (แทนการอ่าน "(A)" ออกเสียง) */
+function highlightChoice(i) {
+  const btns = App.$$('.choices .choice');
+  btns.forEach((b, k) => b.classList.toggle('speaking', i != null && k === i));
+}
 
 function audioLinesFor(u, q) {
   if (u.part === 1) return App.TTS.part1Lines(u.raw);

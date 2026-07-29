@@ -44,6 +44,7 @@ function audioBox(lines, opt) {
     playing = p;
     btn.textContent = p ? '■' : '▶';
     btn.classList.toggle('playing', p);
+    if (!p && opt.onChoice) opt.onChoice(null);
   };
 
   const play = () => {
@@ -59,10 +60,12 @@ function audioBox(lines, opt) {
     plays++;
     setPlaying(true);
     App.TTS.speakSeq(lines, {
-      onLine: (i) => {
+      onLine: (i, ln) => {
         const el = scriptWrap.querySelectorAll('.ln')[i];
         App.$$('.ln', scriptWrap).forEach((x) => (x.style.background = ''));
         if (el) el.style.background = 'var(--brand-sf)';
+        // ไฮไลต์ตัวเลือกที่กำลังอ่าน (แทนการอ่านตัวอักษร A-D ออกเสียง)
+        if (opt.onChoice) opt.onChoice(ln && ln.choice != null ? ln.choice : null);
       },
     }).then(() => {
       setPlaying(false);
@@ -140,11 +143,38 @@ function stemHTML(text) {
   return esc(text).replace(/_{3,}/g, '<span class="blank">_____</span>');
 }
 
+/**
+ * กล่องภาพของ Part 1
+ * inline SVG ที่มีแต่ viewBox จะสูงเป็น 0 บน Safari/iOS ถ้าใช้ height:auto
+ * จึงต้องกำหนดอัตราส่วนที่กล่องครอบ และบังคับให้ svg เต็มกล่อง
+ */
 function sceneEl(raw) {
   if (!raw.svg) return null;
-  const wrap = h('div.scene');
-  wrap.innerHTML = sanitizeSVG(raw.svg);
-  return wrap;
+  const clean = sanitizeSVG(raw.svg);
+
+  const vb = /viewBox\s*=\s*["']\s*(-?[\d.]+)[,\s]+(-?[\d.]+)[,\s]+([\d.]+)[,\s]+([\d.]+)/i.exec(clean);
+  const vw = vb ? parseFloat(vb[3]) : 400;
+  const vh = vb ? parseFloat(vb[4]) : 300;
+  const ratio = vh > 0 && vw > 0 ? vh / vw : 0.75;
+
+  const box = h('div.scene-box', {
+    style: { aspectRatio: `${vw} / ${vh}`, '--ar-pad': (ratio * 100).toFixed(3) + '%' },
+  });
+  box.innerHTML = clean;
+
+  const svg = box.querySelector('svg');
+  if (svg) {
+    svg.setAttribute('width', '100%');
+    svg.setAttribute('height', '100%');
+    if (!svg.getAttribute('preserveAspectRatio')) svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+    svg.removeAttribute('style');
+  } else {
+    // กันกรณี SVG เสียจนเบราว์เซอร์ parse ไม่ได้
+    box.textContent = '';
+    box.appendChild(h('div.scene-fail', '⚠️ แสดงภาพไม่ได้'));
+  }
+
+  return h('div.scene', box);
 }
 
 /** ตัดสิ่งที่ไม่ปลอดภัย/ไม่อนุญาตออกจาก SVG ที่มาจากคลังเนื้อหา */
@@ -261,6 +291,10 @@ function explainEl(q, chosen, unit) {
   );
 
   const body = h('div.exp-body');
+
+  if (unit && unit.raw && unit.raw.part === 1 && unit.raw.sceneTh) {
+    body.appendChild(sec('🖼', 'ในภาพคืออะไร', unit.raw.sceneTh));
+  }
 
   if (q.th && q.th.q) {
     body.appendChild(sec('📄', 'คำแปลโจทย์', q.th.q));
