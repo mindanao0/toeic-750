@@ -196,40 +196,79 @@ function makeIcon(size) {
 
 /* ---------- ประกอบ HTML ---------- */
 
-function buildHTML({ css, js, manifest, dataScript, manifestLink }) {
+function buildHTML({ css, js, manifest, dataScript, manifestLink, build }) {
   let html = read(path.join(SRC, 'index.html'));
   html = html.replace('<!--MANIFEST-->', manifestLink || '');
   html = html.replace('/*<!--CSS-->*/', () => css);
   html = html.replace(
     '/*<!--DATA-->*/',
-    () => `window.__MANIFEST__=${JSON.stringify(manifest)};` + (dataScript || ''),
+    () =>
+      `window.__BUILD__=${JSON.stringify(build)};window.__MANIFEST__=${JSON.stringify(manifest)};` +
+      (dataScript || ''),
   );
   html = html.replace('/*<!--JS-->*/', () => js);
   return html;
 }
 
+/** เลขเวอร์ชันจากวันเวลา build — ใช้โชว์ในหน้าตั้งค่าและตั้งชื่อแคช */
+function buildStamp() {
+  const d = new Date();
+  const p = (n) => String(n).padStart(2, '0');
+  return `${d.getFullYear()}${p(d.getMonth() + 1)}${p(d.getDate())}.${p(d.getHours())}${p(d.getMinutes())}`;
+}
+
 /* ---------- service worker ---------- */
 
 function swSource(version, assets) {
-  return `/* service worker — แคชไว้ใช้ออฟไลน์ */
+  return `/* service worker — ใช้ออฟไลน์ได้ แต่ต้องได้ของใหม่ทันทีเมื่อ deploy */
 const CACHE = 'toeic750-v${version}';
 const ASSETS = ${JSON.stringify(assets, null, 0)};
 
+/* แคชแบบทีละไฟล์ ถ้าไฟล์ใดพลาดก็ไม่ล้มทั้งการติดตั้ง */
 self.addEventListener('install', (e) => {
-  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(ASSETS)).then(() => self.skipWaiting()));
+  e.waitUntil(
+    caches.open(CACHE)
+      .then((c) => Promise.all(ASSETS.map((u) => c.add(new Request(u, { cache: 'reload' })).catch(() => null))))
+      .then(() => self.skipWaiting()),
+  );
 });
 
 self.addEventListener('activate', (e) => {
   e.waitUntil(
-    caches.keys().then((ks) => Promise.all(ks.filter((k) => k !== CACHE).map((k) => caches.delete(k))))
+    caches.keys()
+      .then((ks) => Promise.all(ks.filter((k) => k !== CACHE).map((k) => caches.delete(k))))
       .then(() => self.clients.claim()),
   );
+});
+
+self.addEventListener('message', (e) => {
+  if (e.data === 'skipWaiting') self.skipWaiting();
 });
 
 self.addEventListener('fetch', (e) => {
   if (e.request.method !== 'GET') return;
   const url = new URL(e.request.url);
   if (url.origin !== location.origin) return;
+
+  const isPage = e.request.mode === 'navigate' || /\\/(index\\.html)?$/.test(url.pathname);
+
+  // หน้าเว็บ: เอาของใหม่ก่อนเสมอ (ไม่งั้นผู้ใช้ติดเวอร์ชันเก่าจน SW ตัวใหม่ทำงาน)
+  if (isPage) {
+    e.respondWith(
+      fetch(e.request)
+        .then((res) => {
+          if (res && res.ok) {
+            const copy = res.clone();
+            caches.open(CACHE).then((c) => c.put(e.request, copy));
+          }
+          return res;
+        })
+        .catch(() => caches.match(e.request).then((hit) => hit || caches.match('./index.html'))),
+    );
+    return;
+  }
+
+  // ไฟล์ข้อมูล/ไอคอน: ใช้ของในแคชก่อนเพื่อความเร็ว แล้วอัปเดตเบื้องหลัง
   e.respondWith(
     caches.match(e.request).then((hit) => {
       const net = fetch(e.request)
@@ -241,6 +280,7 @@ self.addEventListener('fetch', (e) => {
           return res;
         })
         .catch(() => hit);
+      if (hit) net.catch(() => {});
       return hit || net;
     }),
   );
@@ -267,6 +307,8 @@ function main() {
   const css = collectCSS();
   const js = collectJS();
   const { manifest, blobs, stats } = collectData();
+  const build = buildStamp();
+  console.log(`  เวอร์ชัน: ${build}`);
 
   console.log(`  เนื้อหา: ${stats.files} ไฟล์ · ${stats.items.toLocaleString()} ข้อ/รายการ · ${(stats.bytes / 1048576).toFixed(2)} MB`);
   for (const k of KINDS) console.log(`    ${k.padEnd(8)} ${manifest[k].length} ไฟล์`);
@@ -281,6 +323,7 @@ function main() {
     css,
     js,
     manifest,
+    build,
     dataScript: '',
     manifestLink: '<link rel="manifest" href="manifest.webmanifest">\n<link rel="apple-touch-icon" href="icon-192.png">',
   });
@@ -320,8 +363,7 @@ function main() {
   const swAssets = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png'].concat(
     KINDS.flatMap((k) => manifest[k].map((n) => `./data/${k}/${n}.json`)),
   );
-  const version = Date.now().toString(36);
-  fs.writeFileSync(path.join(webDir, 'sw.js'), swSource(version, swAssets));
+  fs.writeFileSync(path.join(webDir, 'sw.js'), swSource(build, swAssets));
 
   const webSize = dirSize(webDir);
   console.log(`\n  ✓ dist/web/          ${(webSize / 1048576).toFixed(2)} MB  (GitHub Pages / ติดตั้งเป็นแอปได้)`);
@@ -330,7 +372,7 @@ function main() {
   const singleDir = path.join(DIST, 'single');
   mkdirp(singleDir);
   const dataScript = 'window.__DATA__=' + JSON.stringify(blobs) + ';';
-  const singleHtml = buildHTML({ css, js, manifest, dataScript, manifestLink: '' });
+  const singleHtml = buildHTML({ css, js, manifest, build, dataScript, manifestLink: '' });
   fs.writeFileSync(path.join(singleDir, 'index.html'), singleHtml);
 
   const singleSize = Buffer.byteLength(singleHtml);

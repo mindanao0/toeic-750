@@ -8,7 +8,7 @@ const path = require('path');
 const os = require('os');
 
 const DIR = path.join(__dirname, '..', 'dist', 'web');
-const PORT = Number(process.env.PORT || 8080);
+const PORT = Number(process.env.PORT || process.argv[2] || 8080);
 
 const MIME = {
   '.html': 'text/html; charset=utf-8',

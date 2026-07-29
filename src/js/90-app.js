@@ -114,6 +114,64 @@ function applyTheme() {
   if (meta) meta.setAttribute('content', t === 'light' ? '#f4f6fa' : '#0e1117');
 }
 
+/* ---------- service worker + การอัปเดตเวอร์ชัน ---------- */
+
+const BUILD = window.__BUILD__ || 'dev';
+
+function registerSW() {
+  if (!('serviceWorker' in navigator) || !location.protocol.startsWith('http')) return;
+  const base = location.pathname.slice(0, location.pathname.lastIndexOf('/') + 1);
+
+  navigator.serviceWorker
+    .register(base + 'sw.js')
+    .then((reg) => {
+      // ถ้ามีตัวใหม่รออยู่ตั้งแต่แรก แจ้งเลย
+      if (reg.waiting && navigator.serviceWorker.controller) offerUpdate(reg);
+
+      reg.addEventListener('updatefound', () => {
+        const nw = reg.installing;
+        if (!nw) return;
+        nw.addEventListener('statechange', () => {
+          if (nw.state === 'installed' && navigator.serviceWorker.controller) offerUpdate(reg);
+        });
+      });
+
+      // เช็คเวอร์ชันใหม่ทุกครั้งที่กลับมาที่แอป
+      document.addEventListener('visibilitychange', () => {
+        if (!document.hidden) reg.update().catch(() => {});
+      });
+      setTimeout(() => reg.update().catch(() => {}), 4000);
+    })
+    .catch(() => {});
+
+  let reloaded = false;
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (reloaded) return;
+    reloaded = true;
+    location.reload();
+  });
+}
+
+let updateOffered = false;
+function offerUpdate(reg) {
+  if (updateOffered) return;
+  updateOffered = true;
+  const bar = App.h(
+    'div.toast.ok',
+    { style: { cursor: 'pointer', bottom: 'calc(var(--nav-h) + 58px)' } },
+    '🎉 มีเวอร์ชันใหม่ — กดที่นี่เพื่ออัปเดต',
+  );
+  bar.addEventListener('click', () => {
+    bar.textContent = 'กำลังอัปเดต…';
+    if (reg.waiting) reg.waiting.postMessage('skipWaiting');
+    setTimeout(() => location.reload(), 900);
+  });
+  document.body.appendChild(bar);
+  setTimeout(() => {
+    if (bar.parentNode) bar.style.opacity = '.85';
+  }, 6000);
+}
+
 /* ---------- เริ่มต้น ---------- */
 
 function boot() {
@@ -131,11 +189,7 @@ function boot() {
     });
   }
 
-  // service worker (เฉพาะเวอร์ชันที่ deploy เป็นเว็บ)
-  if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
-    const base = location.pathname.slice(0, location.pathname.lastIndexOf('/') + 1);
-    navigator.serviceWorker.register(base + 'sw.js').catch(() => {});
-  }
+  registerSW();
 
   render();
   App.Notify.schedule();
@@ -149,7 +203,7 @@ function boot() {
   }
 }
 
-Object.assign(App, { go, render, rerender, applyTheme, boot });
+Object.assign(App, { go, render, rerender, applyTheme, boot, BUILD });
 
 if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
 else boot();

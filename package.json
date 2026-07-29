@@ -5,7 +5,8 @@
   "description": "TOEIC 750 in 30 Days — Thai-language practice app (offline PWA, no dependencies)",
   "scripts": {
     "build": "node build.js",
-    "validate": "node tools/validate.js",
+    "validate": "node tools/validate.js && node tools/audit.js",
+    "audit": "node tools/audit.js",
     "serve": "node tools/serve.js",
     "deploy": "bash scripts/deploy.sh"
   },

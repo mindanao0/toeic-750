@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # ============================================================
-# deploy.sh — build แล้ว push ขึ้น GitHub Pages
+# deploy.sh — ตรวจ → build → ทดสอบ → push ขึ้น GitHub Pages
 # ใช้: bash scripts/deploy.sh ["ข้อความ commit"]
+#      SKIP_TESTS=1 bash scripts/deploy.sh "..."   # ข้ามการทดสอบเบราว์เซอร์
 # ============================================================
 set -euo pipefail
 
@@ -9,23 +10,37 @@ cd "$(dirname "$0")/.."
 
 REPO="toeic-750"
 MSG="${1:-update content}"
+PORT="${PORT:-8081}"
+SERVE_PID=""
 
-echo "▶ ตรวจเนื้อหา"
+cleanup() {
+  if [ -n "$SERVE_PID" ] && kill -0 "$SERVE_PID" 2>/dev/null; then
+    kill "$SERVE_PID" 2>/dev/null || true
+  fi
+}
+trap cleanup EXIT
+
+echo "▶ ตรวจโครงสร้างเนื้อหา"
 node tools/validate.js
+
+echo
+echo "▶ ตรวจคุณภาพเฉลย"
+node tools/audit.js
 
 echo
 echo "▶ build"
 node build.js
 
-echo
-echo "▶ ทดสอบหน้าจอ"
-if command -v node >/dev/null; then
-  (node tools/serve.js >/dev/null 2>&1 & echo $! > /tmp/toeic-serve.pid) || true
-  sleep 2
-  node tools/smoke.js || { kill "$(cat /tmp/toeic-serve.pid)" 2>/dev/null || true; exit 1; }
-  node tools/flow.js  || { kill "$(cat /tmp/toeic-serve.pid)" 2>/dev/null || true; exit 1; }
-  kill "$(cat /tmp/toeic-serve.pid)" 2>/dev/null || true
-  rm -f /tmp/toeic-serve.pid
+if [ "${SKIP_TESTS:-0}" != "1" ]; then
+  echo
+  echo "▶ ทดสอบบนเบราว์เซอร์"
+  PORT="$PORT" node tools/serve.js > /dev/null 2>&1 &
+  SERVE_PID=$!
+  sleep 3
+  node tools/smoke.js "http://localhost:$PORT/"
+  node tools/flow.js  "http://localhost:$PORT/"
+  cleanup
+  SERVE_PID=""
 fi
 
 echo
@@ -74,4 +89,4 @@ gh api -X PUT  "repos/$OWNER/$REPO/pages" -f "source[branch]=gh-pages" -f "sourc
 echo
 echo "✅ เสร็จ"
 echo "   เว็บ: https://$OWNER.github.io/$REPO/"
-echo "   (ครั้งแรกอาจใช้เวลา 1-3 นาทีกว่าจะเปิดได้)"
+echo "   (ผู้ใช้ที่ติดตั้งเป็นแอปไว้จะเห็นแถบ 'มีเวอร์ชันใหม่' ให้กดอัปเดต)"

@@ -336,7 +336,19 @@ App.Views.settings = function (root) {
     h('div.small.muted',
       'TOEIC 750 in 30 Days · ข้อสอบทั้งหมดในแอปนี้เขียนขึ้นใหม่โดยเลียนแบบรูปแบบและระดับความยากของข้อสอบจริง ' +
       'ไม่ได้คัดลอกจากข้อสอบของ ETS · TOEIC เป็นเครื่องหมายการค้าของ ETS ซึ่งไม่มีส่วนเกี่ยวข้องกับแอปนี้'),
-    h('div.tiny.faint.mt', 'เวอร์ชันข้อมูล ' + st.v)));
+    h('div.tiny.faint.mt', `เวอร์ชันแอป ${App.BUILD || 'dev'} · เวอร์ชันข้อมูล ${st.v}`),
+    h('button.btn.sm.block.mt', {
+      onclick: () => {
+        if (!('serviceWorker' in navigator)) return App.toast('เวอร์ชันนี้ไม่ได้ติดตั้งเป็นแอป', 'bad');
+        navigator.serviceWorker.getRegistration().then((r) => {
+          if (!r) return App.toast('ยังไม่ได้ติดตั้งเป็นแอป', 'bad');
+          App.toast('กำลังตรวจเวอร์ชันใหม่…');
+          r.update().then(() => setTimeout(() => {
+            if (!r.waiting && !r.installing) App.toast('ใช้เวอร์ชันล่าสุดอยู่แล้ว', 'ok');
+          }, 2500));
+        });
+      },
+    }, '🔄 ตรวจหาเวอร์ชันใหม่')));
 
   function segBtn(label, on, fn) {
     return h('button' + (on ? '.on' : ''), { onclick: fn, class: on ? 'on' : '' }, label);
