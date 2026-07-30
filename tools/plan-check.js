@@ -50,11 +50,14 @@ const have = (t) => {
       const p = bank[t.part];
       if (!p) return `ไม่มีข้อ ${'Part ' + t.part}`;
       if (t.tier && !p[t.tier]) return `ไม่มีข้อ Part ${t.part} ระดับ ${t.tier}`;
+      const poolTotal = t.tier ? p[t.tier].total : Object.values(p).reduce((a, x) => a + x.total, 0);
       if (t.topic) {
         const pool = t.tier ? p[t.tier] : Object.values(p).reduce((a, x) => { for (const k in x.topics) a[k] = (a[k] || 0) + x.topics[k]; return a; }, {});
         const topics = t.tier ? pool.topics : pool;
         if (!topics[t.topic]) return `ไม่มีข้อหัวข้อ "${t.topic}" (Part ${t.part}${t.tier ? '/' + t.tier : ''})`;
-        if (topics[t.topic] < t.n) return `หัวข้อ "${t.topic}" มีแค่ ${topics[t.topic]} ข้อ (แผนขอ ${t.n})`;
+        // selectDrill เติมจากหัวข้ออื่นใน part/tier เดียวกันจนครบโดส จึงติดเฉพาะตอนคลังรวมไม่พอ
+        if (poolTotal < t.n) return `Part ${t.part}${t.tier ? '/' + t.tier : ''} มีรวม ${poolTotal} ข้อ (แผนขอ ${t.n})`;
+        if (topics[t.topic] < Math.ceil(t.n / 2)) return `หัวข้อ "${t.topic}" มีแค่ ${topics[t.topic]} ข้อ จาก ${t.n} ที่แผนขอ (ที่เหลือเติมจากหัวข้ออื่น)`;
       } else if (t.tier && p[t.tier].total < t.n) {
         return `Part ${t.part}/${t.tier} มีแค่ ${p[t.tier].total} ข้อ (แผนขอ ${t.n})`;
       }
