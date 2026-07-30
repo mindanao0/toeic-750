@@ -347,7 +347,38 @@ async function main() {
     check('ข้อของหัวข้อที่ขอมาก่อนเสมอ', tu.onTopicFirst, topup);
   }
 
-  // 18. ไม่มี error ค้างอยู่
+  // 18. โหมดสอบ: กดตอบต้องไม่ตัดเสียงที่กำลังเล่น (ข้อสอบจริงเปิดเสียงครั้งเดียว)
+  const examAudio = await evalJS(`App.Data.loadTest('placement').then(t=>{
+    const u=t.units.filter(x=>x.part===3||x.part===4)[0] || t.units.filter(x=>x.part<=4)[0];
+    if(!u) return JSON.stringify({skip:true});
+    window.__stops=0;
+    const realStop=App.TTS.stop;
+    App.TTS.stop=function(){window.__stops++;return realStop.apply(this,arguments);};
+    App.Quiz.start({units:[u],mode:'exam',title:'ex',timeLimitMs:600000,backTo:'#/',
+      onExit:()=>{},onFinish:()=>{}});
+    return new Promise(r=>setTimeout(()=>{
+      const before=window.__stops;
+      const c=document.querySelectorAll('.choices .choice')[1];
+      if(c) c.click();
+      setTimeout(()=>{
+        const after=window.__stops;
+        const sel=document.querySelectorAll('.choices .choice.sel').length;
+        const palette=[...document.querySelectorAll('.timerbar button')].map(b=>b.innerText).join('');
+        App.TTS.stop=realStop;
+        r(JSON.stringify({before,after,sel,palette,
+          stillHasAudio:!!document.querySelector('.audiobox')}));
+      },350);
+    },900));
+  })`);
+  const ea = JSON.parse(examAudio);
+  if (!ea.skip) {
+    check('โหมดสอบ: กดตอบแล้วเสียงไม่ถูกตัด', ea.after === ea.before,
+      `TTS.stop ถูกเรียก ${ea.after - ea.before} ครั้งตอนกดตอบ`);
+    check('โหมดสอบ: ตัวเลือกที่กดถูกทำเครื่องหมายไว้', ea.sel === 1, examAudio);
+    check('โหมดสอบ: ตัวนับข้อที่ตอบแล้วอัปเดตทันที', /1\//.test(ea.palette), 'palette=' + ea.palette);
+  }
+
+  // 19. ไม่มี error ค้างอยู่
   check('ไม่มี JS error ตลอดการทดสอบ', errors.length === 0, errors.slice(0, 2).join(' | ').slice(0, 200));
 
   ws.close(); proc.kill();

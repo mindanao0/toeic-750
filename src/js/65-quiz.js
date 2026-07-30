@@ -297,6 +297,13 @@ function renderExam(root) {
   const pg = U.passageEl(u.raw, { showThai: false });
   if (pg) card.appendChild(pg);
 
+  // หมายเหตุ: โหมดสอบต้อง **ไม่** เรียก rerender ตอนเลือกคำตอบ
+  // เพราะ render() จะสั่งหยุดเสียง — ข้อสอบจริงเปิดเสียงครั้งเดียว ถ้าตัดกลางคันคือเสียทั้งชุด
+  const paletteBtn = bar.querySelector('button');
+  const refreshPalette = () => {
+    paletteBtn.textContent = `📋 ${answeredCount()}/${s.flat.length}`;
+  };
+
   u.qs.forEach((q, i) => {
     const wrap = h('div', { style: { marginBottom: '20px' } });
     let label;
@@ -309,23 +316,25 @@ function renderExam(root) {
     if (u.part === 5) wrap.appendChild(h('div.qstem', { html: U.stemHTML(q.q) }));
     else wrap.appendChild(h('div.qstem', { style: { fontSize: '1rem' } }, `${i + 1}. ${label}`));
 
-    wrap.appendChild(
-      U.choicesEl(q, {
-        hideText: u.part === 1 || u.part === 2,
-        chosen: s.answers[q.qid],
-        onPick: (ci) => {
-          s.answers[q.qid] = ci;
-          s.times[q.qid] = Date.now() - s.qStartTs;
-          App.rerender();
-        },
-      }),
-    );
-    wrap.appendChild(
-      h('div.row', { style: { marginTop: '6px' } },
-        h('button.btn.sm.ghost', {
-          onclick: () => { s.flags[q.qid] = !s.flags[q.qid]; App.rerender(); },
-        }, s.flags[q.qid] ? '🚩 ทำเครื่องหมายไว้' : '🏳️ ทำเครื่องหมายกลับมาดู')),
-    );
+    const chEl = U.choicesEl(q, {
+      hideText: u.part === 1 || u.part === 2,
+      chosen: s.answers[q.qid],
+      onPick: (ci) => {
+        s.answers[q.qid] = ci;
+        s.times[q.qid] = Date.now() - s.qStartTs;
+        App.$$('.choice', chEl).forEach((b, k) => b.classList.toggle('sel', k === ci));
+        refreshPalette();
+      },
+    });
+    wrap.appendChild(chEl);
+
+    const flagBtn = h('button.btn.sm.ghost', {
+      onclick: () => {
+        s.flags[q.qid] = !s.flags[q.qid];
+        flagBtn.textContent = s.flags[q.qid] ? '🚩 ทำเครื่องหมายไว้' : '🏳️ ทำเครื่องหมายกลับมาดู';
+      },
+    }, s.flags[q.qid] ? '🚩 ทำเครื่องหมายไว้' : '🏳️ ทำเครื่องหมายกลับมาดู');
+    wrap.appendChild(h('div.row', { style: { marginTop: '6px' } }, flagBtn));
     card.appendChild(wrap);
   });
 

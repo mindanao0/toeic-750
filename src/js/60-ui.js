@@ -79,6 +79,8 @@ function audioBox(lines, opt) {
   };
 
   btn.addEventListener('click', play);
+  // ถ้ากล่องนี้ถูกสร้างขึ้นระหว่างที่เสียงชุดเดิมยังเล่นอยู่ ให้ปุ่มแสดงสถานะให้ตรง
+  if (App.TTS.isSpeaking && App.TTS.isSpeaking()) setPlaying(true);
 
   const tools = h('div.row', { style: { justifyContent: 'center', marginTop: '10px', flexWrap: 'wrap' } });
 

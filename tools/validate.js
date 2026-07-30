@@ -77,8 +77,24 @@ function checkFile(file, kind, obj) {
   }
   let q = 0;
   const answerDist = {};
-  for (const it of items) q += checkItem(file, it, answerDist);
+  const byPart = {};
+  for (const it of items) {
+    const n = checkItem(file, it, answerDist);
+    q += n;
+    byPart[it.part] = (byPart[it.part] || 0) + n;
+  }
   checkDistribution(file, answerDist, q);
+
+  // ชุดสอบเต็มต้องมีสัดส่วนตรงข้อสอบจริง
+  if (/^tests\/test\d+\.json$/.test(file)) {
+    const TARGET = { 1: 6, 2: 25, 3: 39, 4: 30, 5: 30, 6: 16, 7: 54 };
+    for (const p of Object.keys(TARGET)) {
+      const got = byPart[p] || 0;
+      if (got !== TARGET[p]) err(file, `Part ${p} มี ${got} ข้อ แต่ข้อสอบจริงมี ${TARGET[p]} ข้อ`);
+    }
+    if (q !== 200) err(file, `ชุดสอบเต็มต้องมี 200 ข้อ แต่มี ${q} ข้อ`);
+  }
+
   return { q, label: 'ข้อ' };
 }
 

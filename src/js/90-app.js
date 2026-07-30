@@ -61,7 +61,9 @@ function render() {
     document.removeEventListener('keydown', App._quizKeyHandler);
     App._quizKeyHandler = null;
   }
-  App.TTS.stop();
+  // หยุดเสียงเฉพาะตอนเปลี่ยนหน้าจริง — ถ้าวาดใหม่ในหน้าเดิม (เช่นกดปุ่มช่วยเหลือ)
+  // แล้วไปตัดเสียงทิ้ง ผู้เรียนจะเสียโอกาสฟังไปทั้งชุด
+  if (currentPath !== p) App.TTS.stop();
 
   if (!found) {
     root.appendChild(App.UI.emptyState('🧭', 'ไม่พบหน้านี้', App.h('button.btn.primary', { onclick: () => go('#/') }, 'กลับหน้าแรก')));

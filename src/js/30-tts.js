@@ -34,6 +34,12 @@ function supported() {
   return typeof window !== 'undefined' && 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
 }
 
+/** กำลังอ่านอยู่หรือไม่ (ใช้ให้ปุ่มเล่น/หยุดแสดงสถานะถูกหลังวาดหน้าใหม่) */
+function isSpeaking() {
+  if (!supported()) return false;
+  try { return synth().speaking || synth().pending; } catch (e) { return false; }
+}
+
 /* ---------- โหลดรายการเสียง ---------- */
 
 function loadVoices() {
@@ -333,7 +339,7 @@ function part2Lines(item) {
 
 Object.assign(App, {
   TTS: {
-    init, supported, say, speakSeq, stop, listVoices, voiceFor, availableAccents, quality,
+    init, supported, isSpeaking, say, speakSeq, stop, listVoices, voiceFor, availableAccents, quality,
     linesOf, part1Lines, part2Lines, normalizeText, voiceScore, genderOf,
     ACCENT_TH, LANG_OF,
     set onState(fn) { onStateChange = fn; },
