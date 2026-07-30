@@ -194,6 +194,7 @@ function boot() {
   registerSW();
 
   render();
+  App.Sync.boot();
   App.Notify.schedule();
   App.Notify.inAppNudge();
 

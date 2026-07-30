@@ -317,6 +317,9 @@ App.Views.settings = function (root) {
   nStat.textContent = App.Notify.statusText();
   nCard.appendChild(h('button.btn.sm.mt', { onclick: () => App.Notify.test() }, 'ทดสอบแจ้งเตือน'));
 
+  /* --- ซิงก์ข้ามเครื่อง --- */
+  root.appendChild(syncCard());
+
   /* --- ข้อมูล --- */
   root.appendChild(h('div.card',
     h('h2', 'ข้อมูลของคุณ'),
@@ -349,6 +352,105 @@ App.Views.settings = function (root) {
         });
       },
     }, '🔄 ตรวจหาเวอร์ชันใหม่')));
+
+  /* ---------- การ์ดซิงก์ข้ามเครื่อง ---------- */
+  function syncCard() {
+    const card = h('div.card');
+    const draw = () => {
+      App.clear(card);
+      const st2 = App.Sync.status();
+      card.appendChild(h('h2', 'ซิงก์ข้ามเครื่อง'));
+
+      if (!st2.available) {
+        card.appendChild(h('div.lb-warn', h('span', '🔒'),
+          h('div', 'หน้านี้เปิดจากลิงก์ Artifact ซึ่งถูกบล็อกไม่ให้ต่ออินเทอร์เน็ตออกไปไหน ' +
+            'ซิงก์จึงใช้ที่นี่ไม่ได้ — ให้เปิดจากลิงก์ GitHub Pages แทน แล้วใช้ลิงก์นั้นเป็นหลักทุกเครื่อง')));
+        card.appendChild(h('div.small.muted', { style: { marginTop: '8px' } },
+          'ระหว่างนี้ยังใช้ปุ่มสำรอง/กู้คืนข้อมูลด้านล่างย้ายข้อมูลด้วยมือได้'));
+        return;
+      }
+
+      if (!st2.connected) {
+        card.appendChild(h('div.small.muted', { style: { marginBottom: '12px' } },
+          'เก็บความคืบหน้าไว้ใน gist ส่วนตัวของบัญชี GitHub ของคุณเอง เปิดเครื่องไหนก็ต่อกัน ' +
+          'ไม่มีค่าใช้จ่าย และไม่มีใครเห็นข้อมูลนอกจากคุณ'));
+
+        card.appendChild(h('div.card.flat.tight.small',
+          h('div.b', { style: { marginBottom: '6px' } }, 'วิธีเอาโทเคน (ทำครั้งเดียว)'),
+          h('div', { style: { lineHeight: '1.9' } },
+            '1. เปิด ', h('a', { href: 'https://github.com/settings/tokens/new?scopes=gist&description=TOEIC750%20sync', target: '_blank', rel: 'noopener noreferrer' }, 'หน้าสร้างโทเคนของ GitHub ↗'), h('br'),
+            '2. ช่อง Expiration เลือก 90 days (หรือมากกว่า)', h('br'),
+            '3. ติ๊กเฉพาะช่อง ', h('b', 'gist'), ' ช่องเดียว ห้ามติ๊กอย่างอื่น', h('br'),
+            '4. กด Generate token แล้วคัดลอกรหัสที่ขึ้นต้นด้วย ghp_', h('br'),
+            '5. เอามาวางในช่องข้างล่างนี้')));
+
+        const inp = h('input', { type: 'text', placeholder: 'ghp_xxxxxxxxxxxx', autocomplete: 'off', spellcheck: 'false' });
+        const btn = h('button.btn.primary.block.mt', 'เชื่อมต่อ');
+        btn.addEventListener('click', () => {
+          const v = inp.value.trim();
+          if (!v) return App.toast('ยังไม่ได้ใส่โทเคน', 'bad');
+          btn.disabled = true;
+          btn.textContent = 'กำลังเชื่อมต่อ…';
+          App.Sync.connect(v)
+            .then((r) => {
+              App.toast(`เชื่อมกับบัญชี ${r.login} แล้ว`, 'ok');
+              return App.Sync.syncNow();
+            })
+            .then(draw)
+            .catch((e) => {
+              btn.disabled = false;
+              btn.textContent = 'เชื่อมต่อ';
+              App.toast('เชื่อมไม่สำเร็จ: ' + e.message, 'bad');
+            });
+        });
+        card.appendChild(h('label.field', { style: { marginTop: '12px' } }, h('span', 'โทเคน GitHub (สิทธิ์ gist เท่านั้น)'), inp));
+        card.appendChild(btn);
+        card.appendChild(h('div.tiny.faint.mt',
+          '⚠️ โทเคนถูกเก็บไว้ในเบราว์เซอร์เครื่องนี้เท่านั้น ไม่ถูกส่งขึ้น gist และไม่ติดไปกับไฟล์สำรอง ' +
+          'ถ้าเครื่องหาย ให้เข้า GitHub แล้วกด Revoke โทเคนตัวนี้ทิ้ง'));
+        return;
+      }
+
+      const when = st2.lastAt ? new Date(st2.lastAt) : null;
+      const pad = (n) => String(n).padStart(2, '0');
+      card.appendChild(h('div.row',
+        h('span.pill.ok', '✓ เชื่อมต่อแล้ว'),
+        h('span.grow'),
+        h('span.tiny.faint', when ? `ล่าสุด ${pad(when.getHours())}:${pad(when.getMinutes())} น.` : 'ยังไม่เคยซิงก์')));
+
+      if (st2.lastErr) {
+        card.appendChild(h('div.lb-warn', { style: { marginTop: '10px' } }, h('span', '⚠️'), h('div', st2.lastErr)));
+      }
+
+      card.appendChild(h('div.small.muted', { style: { margin: '10px 0' } },
+        'ระบบจะดึงของเครื่องอื่นมารวมให้ตอนเปิดแอป และส่งขึ้นให้เองหลังหยุดใช้งานสักครู่ ' +
+        'ข้อมูลรวมกันแบบไม่ทับของเดิม — ประวัติการทำข้อสอบรวมกัน คำศัพท์เอาอันที่ทวนล่าสุด'));
+
+      const sBtn = h('button.btn.grow', st2.busy ? 'กำลังซิงก์…' : '🔄 ซิงก์เดี๋ยวนี้');
+      sBtn.disabled = st2.busy;
+      sBtn.addEventListener('click', () => {
+        sBtn.disabled = true;
+        sBtn.textContent = 'กำลังซิงก์…';
+        App.Sync.syncNow().then(draw).catch(draw);
+      });
+
+      card.appendChild(h('div.row',
+        sBtn,
+        h('button.btn.danger', {
+          onclick: () => App.confirmBox('ปิดซิงก์',
+            'ข้อมูลในเครื่องนี้จะยังอยู่ครบ และข้อมูลใน gist ก็ยังอยู่ แค่หยุดส่งขึ้น-ดึงลง ต้องการปิดไหม',
+            () => { App.Sync.disconnect(true); draw(); }, 'ปิดซิงก์'),
+        }, 'ปิด')));
+
+      card.appendChild(h('div.tiny.faint.mt',
+        `เก็บที่ gist ${st2.gistId.slice(0, 8)}… (ส่วนตัว) · ` +
+        'เปิดแอปเครื่องใหม่แล้วใส่โทเคนเดิม ข้อมูลจะตามไปเอง'));
+    };
+
+    draw();
+    App.Sync.onChange(() => { if (card.isConnected) draw(); });
+    return card;
+  }
 
   function segBtn(label, on, fn) {
     return h('button' + (on ? '.on' : ''), { onclick: fn, class: on ? 'on' : '' }, label);

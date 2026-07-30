@@ -378,7 +378,99 @@ async function main() {
     check('โหมดสอบ: ตัวนับข้อที่ตอบแล้วอัปเดตทันที', /1\//.test(ea.palette), 'palette=' + ea.palette);
   }
 
-  // 19. ไม่มี error ค้างอยู่
+  // 19. การรวมข้อมูลข้ามเครื่อง — จุดที่พลาดแล้วข้อมูลหาย
+  const sync = await evalJS(`(()=>{
+    const T=Date.now();
+    const day=(n)=>App.addDays(App.today(),n);
+    const A={  // เครื่อง A
+      settings:{theme:'dark',fontScale:1.2,ttsRate:0.9,voiceMap:{US:'a-voice'}},
+      plan:{startDate:day(-5),examDate:null},
+      progress:{xp:300,streak:2,bestStreak:4,lastStudyDate:day(-1),
+        studyDates:[day(-4),day(-1)],lessonsDone:{L01:1000,L02:2000},
+        doneTasks:{'1:lesson:L01:':500},badges:[{id:'first-step',ts:900}]},
+      attempts:[{id:'a1',ts:T-5000,date:day(-1),mode:'drill',n:2,correct:1,items:[{qid:'q1',ok:true},{qid:'q2',ok:false}]},
+                {id:'a2',ts:T-4000,date:day(-1),mode:'drill',n:1,correct:1,items:[{qid:'q3',ok:true}]}],
+      exams:[{ts:T-9000,testId:'test1',scaled:{L:300,R:300,total:600}}],
+      srs:{w1:{iv:5,last:T-1000},w2:{iv:2,last:T-9000}},
+      mistakes:{q2:{n:1,lastTs:T-5000,resolved:false}},
+      seen:{q1:3,q2:1},
+      notes:{q2:'จำ tense ไม่ได้'},
+      placement:{ts:T-99000,scaled:{L:200,R:200,total:400}},
+      sync:{on:true,token:'SECRET_TOKEN',gistId:'g1',device:'A'},
+    };
+    const B={  // เครื่อง B
+      settings:{theme:'light',fontScale:1,ttsRate:1.2,voiceMap:{US:'b-voice'}},
+      plan:{startDate:day(-7),examDate:day(20)},
+      progress:{xp:250,streak:1,bestStreak:2,lastStudyDate:day(0),
+        studyDates:[day(-3),day(-2),day(0)],lessonsDone:{L01:800,L03:3000},
+        doneTasks:{'2:vocab::':600},badges:[{id:'streak-3',ts:1500}]},
+      attempts:[{id:'a2',ts:T-4000,date:day(-1),mode:'drill',n:1,correct:1,items:[]},
+                {id:'a3',ts:T-3000,date:day(0),mode:'drill',n:2,correct:2,items:[{qid:'q4',ok:true},{qid:'q5',ok:true}]}],
+      exams:[{ts:T-9000,testId:'test1',scaled:{L:300,R:300,total:600}},
+             {ts:T-2000,testId:'test2',scaled:{L:350,R:350,total:700}}],
+      srs:{w1:{iv:9,last:T-500},w3:{iv:1,last:T-100}},
+      mistakes:{q2:{n:2,lastTs:T-8000,resolved:true,resolvedTs:T-1000},q9:{n:1,lastTs:T-100,resolved:false}},
+      seen:{q1:1,q4:2},
+      notes:{q2:'ลืม since'},
+      placement:{ts:T-50000,scaled:{L:250,R:250,total:500}},
+    };
+    const m=App.Sync.mergeStates(A,B);
+    const packed=App.Sync.pack(A);
+    return JSON.stringify({
+      attemptIds:m.attempts.map(x=>x.id).sort(),
+      a2HasItems:(m.attempts.find(x=>x.id==='a2').items||[]).length,
+      exams:m.exams.length,
+      xp:m.progress.xp,
+      dates:m.progress.studyDates.length,
+      streak:m.progress.streak,
+      best:m.progress.bestStreak,
+      lessons:Object.keys(m.progress.lessonsDone).sort(),
+      lessonL01Ts:m.progress.lessonsDone.L01,
+      tasks:Object.keys(m.progress.doneTasks).length,
+      badges:m.progress.badges.map(b=>b.id).sort(),
+      srsW1:m.srs.w1.iv, srsKeys:Object.keys(m.srs).sort(),
+      q2resolved:m.mistakes.q2.resolved, q2n:m.mistakes.q2.n, mistakeKeys:Object.keys(m.mistakes).sort(),
+      seenQ1:m.seen.q1, seenQ4:m.seen.q4,
+      noteQ2:m.notes.q2,
+      placementTs:m.placement.ts===A.placement.ts?'A':'B',
+      startDate:m.plan.startDate===day(-7)?'earliest':'wrong',
+      examDate:m.plan.examDate===day(20)?'kept':'lost',
+      theme:m.settings.theme, font:m.settings.fontScale, voice:m.settings.voiceMap.US,
+      packHasToken:JSON.stringify(packed).includes('SECRET_TOKEN'),
+      exportHasToken:App.Store.exportJSON().includes('SECRET_TOKEN'),
+    });
+  })()`);
+  const sy = JSON.parse(sync);
+  check('รวมประวัติทำข้อสอบครบทุกครั้ง ไม่ทับกัน',
+    sy.attemptIds.join(',') === 'a1,a2,a3', 'ได้ ' + sy.attemptIds.join(','));
+  check('ครั้งที่มีรายละเอียดชนะครั้งที่ถูกตัดรายละเอียด', sy.a2HasItems === 1, 'items=' + sy.a2HasItems);
+  check('ผลสอบไม่ซ้ำและไม่หาย', sy.exams === 2, 'exams=' + sy.exams);
+  check('XP ไม่ลดลง', sy.xp === 300, 'xp=' + sy.xp);
+  check('วันที่เรียนรวมกันครบ', sy.dates === 5, 'dates=' + sy.dates);
+  // A มี day(-4),day(-1) · B มี day(-3),day(-2),day(0) → รวมแล้วต่อกัน 5 วันถึงวันนี้
+  check('คิด streak ใหม่จากวันที่รวมแล้ว (ได้ streak จริงคืนมา)', sy.streak === 5, 'streak=' + sy.streak);
+  check('สถิติ streak สูงสุดไม่ลดลง', sy.best === 5, 'best=' + sy.best);
+  check('บทเรียนที่เรียนจบรวมกันครบ', sy.lessons.join(',') === 'L01,L02,L03', sy.lessons.join(','));
+  check('บทที่เรียนทั้งสองเครื่องเก็บเวลาที่เร็วกว่า', sy.lessonL01Ts === 800, 'ts=' + sy.lessonL01Ts);
+  check('ภารกิจที่ทำแล้วรวมกัน', sy.tasks === 2, 'tasks=' + sy.tasks);
+  check('เหรียญตรารวมกันไม่ซ้ำ', sy.badges.join(',') === 'first-step,streak-3', sy.badges.join(','));
+  check('คำศัพท์เอาการ์ดที่ทวนล่าสุด', sy.srsW1 === 9 && sy.srsKeys.join(',') === 'w1,w2,w3', sync.slice(0, 120));
+  check('ข้อที่ผิดเอาสถานะล่าสุด (แก้ได้แล้วไม่กลับมาค้าง)',
+    sy.q2resolved === true && sy.q2n === 2 && sy.mistakeKeys.join(',') === 'q2,q9', `resolved=${sy.q2resolved} n=${sy.q2n}`);
+  check('จำนวนครั้งที่เจอข้อเอาค่ามากกว่า', sy.seenQ1 === 3 && sy.seenQ4 === 2, `q1=${sy.seenQ1} q4=${sy.seenQ4}`);
+  check('โน้ตสองเครื่องไม่ทับกัน', /ลืม since/.test(sy.noteQ2) && /จำ tense/.test(sy.noteQ2), sy.noteQ2);
+  check('ผลจัดระดับเอาครั้งล่าสุด', sy.placementTs === 'B', sy.placementTs);
+  check('วันเริ่มแผนเอาวันที่เร็วที่สุด', sy.startDate === 'earliest', sy.startDate);
+  check('วันสอบที่ตั้งไว้อีกเครื่องไม่หาย', sy.examDate === 'kept', sy.examDate);
+  check('การตั้งค่าเป็นของเฉพาะเครื่อง ไม่ถูกทับ',
+    sy.theme === 'dark' && sy.font === 1.2 && sy.voice === 'a-voice', JSON.stringify([sy.theme, sy.font, sy.voice]));
+  check('โทเคนไม่ถูกส่งขึ้น gist', sy.packHasToken === false);
+  check('โทเคนไม่ติดไปกับไฟล์สำรอง', sy.exportHasToken === false);
+
+  const syncEnv = await evalJS(`JSON.stringify(App.Sync.status())`);
+  check('ตรวจได้ว่าหน้านี้ซิงก์ได้หรือไม่', JSON.parse(syncEnv).available === true, syncEnv);
+
+  // 20. ไม่มี error ค้างอยู่
   check('ไม่มี JS error ตลอดการทดสอบ', errors.length === 0, errors.slice(0, 2).join(' | ').slice(0, 200));
 
   ws.close(); proc.kill();

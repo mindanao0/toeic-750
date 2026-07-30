@@ -41,6 +41,14 @@ const DEFAULT_STATE = () => ({
   mistakes: {},             // qid -> {n, lastTs, part, tier, topic, resolved}
   seen: {},                 // qid -> จำนวนครั้งที่เคยเจอ
   notes: {},                // qid -> โน้ตส่วนตัว
+  sync: {                   // ซิงก์ข้ามเครื่องผ่าน GitHub Gist
+    on: false,
+    token: '',              // เก็บเฉพาะในเครื่องนี้ ไม่ถูกส่งขึ้น gist และไม่ติดไปกับไฟล์สำรอง
+    gistId: '',
+    lastAt: 0,
+    lastErr: '',
+    device: '',
+  },
 });
 
 let S = null;
@@ -89,9 +97,19 @@ function save(now) {
       App.toast('บันทึกไม่สำเร็จ — พื้นที่เก็บข้อมูลเต็ม', 'bad');
       console.error(e);
     }
+    if (App.Sync && App.Sync.schedulePush) App.Sync.schedulePush();
   };
   if (now) doIt();
   else saveTimer = setTimeout(doIt, 350);
+}
+
+/** แทนที่สถานะทั้งก้อน (ใช้ตอนรวมข้อมูลจากเครื่องอื่น) */
+function replaceState(next) {
+  S = next;
+  const d = DEFAULT_STATE();
+  for (const k in d) if (!(k in S)) S[k] = d[k];
+  save(true);
+  return S;
 }
 
 const state = () => S;
@@ -288,7 +306,10 @@ function markTaskDone(day, t) {
 /* ---------- นำเข้า / ส่งออก ---------- */
 
 function exportJSON() {
-  return JSON.stringify(S, null, 1);
+  // ไม่ใส่โทเคนซิงก์ลงไฟล์สำรอง เพราะไฟล์อาจถูกส่งต่อ
+  const copy = JSON.parse(JSON.stringify(S));
+  if (copy.sync) copy.sync = { ...copy.sync, token: '', on: false };
+  return JSON.stringify(copy, null, 1);
 }
 
 function download(filename, text, mime) {
@@ -308,9 +329,11 @@ function importJSON(text) {
   if (!obj || typeof obj !== 'object' || !obj.progress || !obj.settings) {
     throw new Error('ไฟล์ไม่ใช่ข้อมูลสำรองของแอปนี้');
   }
+  const keepSync = S && S.sync ? S.sync : null;
   S = migrate(obj);
   const d = DEFAULT_STATE();
   for (const k in d) if (!(k in S)) S[k] = d[k];
+  if (keepSync && keepSync.token) S.sync = keepSync; // อย่าให้ไฟล์สำรองมาลบการตั้งค่าซิงก์ของเครื่องนี้
   save(true);
   return S;
 }
@@ -323,7 +346,7 @@ function resetAll() {
 
 Object.assign(App, {
   Store: {
-    load, save, state, resetAll,
+    load, save, state, resetAll, replaceState,
     planDay, calendarDay, daysLeft,
     markStudiedToday, addXP, XP,
     addAttempt, taskKey, isTaskDone, markTaskDone,
