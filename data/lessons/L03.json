@@ -39,10 +39,10 @@
       "type": "table",
       "head": ["หางคำ", "อ่านว่า", "ตัวอย่าง", "แปล"],
       "rows": [
-        ["-tion / -sion", "เชิ่น", "information, decision, production, permission", "ข้อมูล, การตัดสินใจ, การผลิต, การอนุญาต"],
+        ["-tion / -sion", "เชิ่น (แต่ decision อ่าน ดิ-ซิ้-เฌิ่น)", "information, decision, production, permission", "ข้อมูล, การตัดสินใจ, การผลิต, การอนุญาต"],
         ["-ment", "เมิ่นท์", "management, payment, agreement, department", "การจัดการ, การชำระเงิน, ข้อตกลง, แผนก"],
         ["-ness", "เนิส", "business, kindness, weakness, awareness", "ธุรกิจ, ความใจดี, จุดอ่อน, ความตระหนัก"],
-        ["-ity / -ty", "อิ-ที", "quality, ability, security, safety", "คุณภาพ, ความสามารถ, ความปลอดภัย, ความปลอดภัย"],
+        ["-ity / -ty", "อิ-ที", "quality, ability, security, safety", "คุณภาพ, ความสามารถ, การรักษาความปลอดภัย, ความปลอดภัย"],
         ["-ance / -ence", "เอิ่นซ์", "attendance, performance, difference, experience", "การเข้าร่วม, ผลงาน, ความแตกต่าง, ประสบการณ์"],
         ["-er / -or", "เออร์", "manager, worker, director, editor", "ผู้จัดการ, คนงาน, ผู้อำนวยการ, บรรณาธิการ"],
         ["-ist", "อิสท์", "specialist, receptionist, economist", "ผู้เชี่ยวชาญ, พนักงานต้อนรับ, นักเศรษฐศาสตร์"],
@@ -100,7 +100,7 @@
     },
     {
       "type": "warn",
-      "th": "ระวังกับดักใหญ่ ไม่ใช่ทุกคำที่ลงท้าย -ly จะเป็นคำวิเศษณ์ มีกลุ่มคำที่ลงท้าย -ly แต่เป็นคำคุณศัพท์ ได้แก่ friendly (เป็นมิตร) costly (แพง) likely (มีแนวโน้ม) lovely (น่ารัก) timely (ทันเวลา) daily (รายวัน) weekly (รายสัปดาห์) monthly (รายเดือน) early (แต่เช้า) และคำกลุ่มนี้ต้องวางหน้าคำนามหรือหลัง be-verb เหมือนคำคุณศัพท์ทุกประการ เช่น a friendly staff member ถูก แต่ He works friendly ผิด ข้อสอบชอบเอา friendly มาเป็นตัวลวงในข้อที่ต้องการคำวิเศษณ์"
+      "th": "ระวังกับดักใหญ่ ไม่ใช่ทุกคำที่ลงท้าย -ly จะเป็นคำวิเศษณ์ มีกลุ่มคำที่ลงท้าย -ly แต่เป็นคำคุณศัพท์เท่านั้น ได้แก่ friendly (เป็นมิตร) costly (แพง) likely (มีแนวโน้ม) lovely (น่ารัก) timely (ทันเวลา) ห้าคำนี้ต้องวางหน้าคำนามหรือหลัง be-verb เหมือนคำคุณศัพท์ทุกประการ เช่น a friendly staff member ถูก แต่ He works friendly ผิด ส่วน daily (รายวัน) weekly (รายสัปดาห์) monthly (รายเดือน) early (แต่เช้า) สี่คำนี้เป็นได้ทั้งคำคุณศัพท์และคำวิเศษณ์ เช่น a daily report เป็นคำคุณศัพท์ขยายคำนาม แต่ The report arrives daily เป็นคำวิเศษณ์ขยายกริยา ให้ดูตำแหน่งเป็นหลัก ข้อสอบชอบเอา friendly มาเป็นตัวลวงในข้อที่ต้องการคำวิเศษณ์"
     },
     {
       "type": "text",
@@ -152,8 +152,8 @@
         ["หลังคำบุพบท (in, of, for, on, with)", "คำนาม", "for _____ = for approval", "เพื่อขออนุมัติ"],
         ["หน้าคำนาม", "คำคุณศัพท์", "a _____ plan = a successful plan", "แผนที่ประสบความสำเร็จ"],
         ["หลัง be-verb แล้วบรรยายประธาน", "คำคุณศัพท์", "She is _____ = She is creative", "เธอมีความคิดสร้างสรรค์"],
-        ["หลัง very / extremely / highly / quite", "คำคุณศัพท์", "extremely _____ = extremely helpful", "ช่วยได้มากๆ"],
-        ["หลังกริยาแท้ (บอกว่าทำอย่างไร)", "คำวิเศษณ์", "works _____ = works efficiently", "ทำงานอย่างมีประสิทธิภาพ"],
+        ["หลัง very / extremely / highly / quite แล้วไม่มีกริยาแสดงการกระทำให้ขยาย", "คำคุณศัพท์", "is extremely _____ = is extremely helpful", "ช่วยได้มากๆ"],
+        ["หลังกริยาแท้ที่ไม่มีกรรมตามมา (บอกว่าทำอย่างไร)", "คำวิเศษณ์", "works _____ = works efficiently", "ทำงานอย่างมีประสิทธิภาพ"],
         ["หน้าคำคุณศัพท์", "คำวิเศษณ์", "_____ successful = highly successful", "ประสบความสำเร็จอย่างสูง"],
         ["ต้นประโยค แล้วมีลูกน้ำคั่น", "คำวิเศษณ์", "_____, the plan failed = Unfortunately, ...", "น่าเสียดายที่แผนล้มเหลว"],
         ["หลังประธาน แต่ประโยคยังไม่มีกริยา", "คำกริยา", "The board _____ the plan = approved", "คณะกรรมการอนุมัติแผน"],
@@ -166,9 +166,9 @@
     },
     {
       "type": "example",
-      "en": "The manager reviewed the contract _____. (choices: care / careful / carefully / carefulness)",
-      "th": "ผู้จัดการตรวจสัญญาอย่าง_____ (ตัวเลือก: care / careful / carefully / carefulness)",
-      "note": "ซ้ายของช่องว่างคือ the contract ซึ่งเป็นกรรมของกริยา reviewed แล้ว ประโยคสมบูรณ์อยู่แล้ว ช่องว่างจึงเป็นคำที่มาเสริมว่าตรวจอย่างไร ตอบ carefully เพราะหาง -ly คือคำวิเศษณ์"
+      "en": "The team completed the project _____. (choices: success / succeed / successful / successfully)",
+      "th": "ทีมงานทำโครงการเสร็จอย่าง_____ (ตัวเลือก: success / succeed / successful / successfully)",
+      "note": "ซ้ายของช่องว่างคือ the project ซึ่งเป็นกรรมของกริยา completed อยู่แล้ว ประโยคจึงสมบูรณ์ครบ ประธาน กริยา กรรม ช่องว่างเป็นแค่คำที่มาเสริมว่าทำเสร็จอย่างไร ตอบ successfully ที่แปลว่าอย่างสำเร็จลุล่วง เพราะหาง -ly คือคำวิเศษณ์"
     },
     {
       "type": "example",
@@ -210,7 +210,7 @@
       "tier": "easy",
       "topic": "word-form",
       "topicTh": "รูปคำ ต้องเติมคำนาม",
-      "stem": "The committee gave its final _____ on the budget yesterday.",
+      "stem": "The committee gave its final _____ for the budget yesterday.",
       "choices": ["approval", "approve", "approved", "approvingly"],
       "answer": 0,
       "th": {
@@ -332,7 +332,7 @@
         "why": "ช่องว่างอยู่หลัง was ซึ่งเป็น be-verb และมี highly ที่เป็นคำวิเศษณ์คั่นอยู่ ตำแหน่งนี้ต้องการคำที่บรรยายว่าประธานเป็นอย่างไร ซึ่งคือคำคุณศัพท์ ตอบ beneficial ที่ลงท้าย -al",
         "wrong": {
           "1": "benefit เป็นคำนาม ถ้าใส่จะกลายเป็น was highly benefit ซึ่งผิด เพราะ highly ขยายคำนามไม่ได้",
-          "2": "benefits เป็นคำนามพหูพจน์ ผิดชนิดเช่นเดียวกับข้อ 1 และยังขัดกับ was ที่เป็นเอกพจน์",
+          "2": "benefits เป็นคำนามพหูพจน์ ผิดชนิดเช่นเดียวกับข้อ 1 เพราะ highly เอาไปขยายคำนามไม่ได้ ตำแหน่งนี้ต้องเป็นคำคุณศัพท์",
           "3": "beneficially เป็นคำวิเศษณ์ (หาง -ly) หลัง be-verb ที่บรรยายประธานต้องใช้คำคุณศัพท์ ไม่ใช่คำวิเศษณ์"
         },
         "point": "หลัง be-verb ที่ตามด้วยคำวิเศษณ์อย่าง highly, very, extremely, quite ให้เติมคำคุณศัพท์เสมอ เพราะคำวิเศษณ์สองตัวซ้อนกันแบบนี้ไม่มีในภาษาอังกฤษ",
@@ -436,7 +436,7 @@
       "choices": ["Fortunately", "Fortunate", "Fortune", "Fortunes"],
       "answer": 0,
       "th": {
-        "stem": "_____สินค้ามาถึงเร็วกว่ากำหนดหนึ่งวัน",
+        "stem": "_____สินค้าที่ส่งมาถึงเร็วกว่าที่คาดไว้หนึ่งวัน",
         "choices": ["โชคดีที่ (คำวิเศษณ์)", "โชคดี (คำคุณศัพท์)", "โชคลาภ (คำนามเอกพจน์)", "โชคลาภ (คำนามพหูพจน์)"]
       },
       "explain": {
@@ -535,7 +535,7 @@
       },
       "vocab": [
         { "w": "inspect", "ipa": "/ɪnˈspekt/", "th": "อิน-**สเป็คท์**", "mean": "ตรวจสอบ ตรวจตรา", "pos": "v." },
-        { "w": "factory", "ipa": "/ˈfæktri/", "th": "**แฟค**-เทอ-รี", "mean": "โรงงาน", "pos": "n." }
+        { "w": "factory", "ipa": "/ˈfæktəri/", "th": "**แฟค**-เทอ-รี", "mean": "โรงงาน", "pos": "n." }
       ]
     }
   ]
