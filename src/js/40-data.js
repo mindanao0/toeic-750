@@ -143,42 +143,54 @@ function loadLessonQuizUnits() {
 
 /**
  * เลือกข้อสำหรับฝึก
+ *
+ * ถ้าระบุ topic แล้วข้อในหัวข้อนั้นไม่พอตามจำนวนที่ขอ จะเติมจากหัวข้ออื่น
+ * ใน Part/ระดับเดียวกันจนครบ — ดีกว่าให้ผู้เรียนได้ทำน้อยกว่าที่แผนตั้งไว้
+ * (และการสลับหัวข้อยังช่วยความจำระยะยาวมากกว่าการฝึกหัวข้อเดียวรวด)
+ *
  * @param {{part?:number|number[], tier?:string, topic?:string, n?:number,
- *          preferUnseen?:boolean, seed?:number}} opt
+ *          preferUnseen?:boolean, seed?:number, strictTopic?:boolean}} opt
  */
 function selectDrill(opt) {
   opt = opt || {};
   return loadDrills().then((all) => {
     const parts = opt.part == null ? null : Array.isArray(opt.part) ? opt.part : [opt.part];
-    let pool = all.filter((u) => {
+    const inScope = (u) => {
       if (parts && !parts.includes(u.part)) return false;
       if (opt.tier && u.tier !== opt.tier) return false;
-      if (opt.topic && u.topic !== opt.topic) return false;
       return true;
-    });
-    if (!pool.length) return [];
+    };
+
+    const scoped = all.filter(inScope);
+    if (!scoped.length) return [];
+
+    const primary = opt.topic ? scoped.filter((u) => u.topic === opt.topic) : scoped;
+    const backup = opt.topic && !opt.strictTopic ? scoped.filter((u) => u.topic !== opt.topic) : [];
+    if (!primary.length && !backup.length) return [];
 
     const st = App.Store.state();
-    const rnd = App.mulberry32(opt.seed != null ? opt.seed : (Date.now() & 0xffffff));
+    const rnd = App.mulberry32(opt.seed != null ? opt.seed : Date.now() & 0xffffff);
 
-    if (opt.preferUnseen !== false) {
+    // ข้อที่ยังไม่เคยเจอมาก่อน แล้วค่อยวนกลับไปข้อที่เจอมาน้อยที่สุด
+    const order = (list) => {
+      if (opt.preferUnseen === false) return App.shuffle(list, rnd);
       const seenCount = (u) => App.sum(u.qs.map((q) => st.seen[q.qid] || 0));
-      const fresh = App.shuffle(pool.filter((u) => seenCount(u) === 0), rnd);
-      const rest = App.shuffle(pool.filter((u) => seenCount(u) > 0), rnd).sort(
-        (a, b) => seenCount(a) - seenCount(b),
-      );
-      pool = fresh.concat(rest);
-    } else {
-      pool = App.shuffle(pool, rnd);
-    }
+      const fresh = App.shuffle(list.filter((u) => seenCount(u) === 0), rnd);
+      const rest = App.shuffle(list.filter((u) => seenCount(u) > 0), rnd)
+        .sort((a, b) => seenCount(a) - seenCount(b));
+      return fresh.concat(rest);
+    };
 
     const want = opt.n || 20;
     const out = [];
     let cnt = 0;
-    for (const u of pool) {
+    for (const list of [order(primary), order(backup)]) {
+      for (const u of list) {
+        if (cnt >= want) break;
+        out.push(u);
+        cnt += u.n;
+      }
       if (cnt >= want) break;
-      out.push(u);
-      cnt += u.n;
     }
     return out;
   });

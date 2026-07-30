@@ -325,7 +325,29 @@ async function main() {
     check('ไฮไลต์ตัวเลือกที่กำลังอ่านได้', hlo.on === 1 && hlo.shadow, hl);
   }
 
-  // 17. ไม่มี error ค้างอยู่
+  // 17. หัวข้อที่มีข้อไม่พอ ต้องเติมจากหัวข้ออื่นใน Part/ระดับเดียวกันจนครบโดส
+  const topup = await evalJS(`(async()=>{
+    const ts=await App.Data.drillTopics();
+    const small=ts.filter(t=>t.n>=5 && t.n<=12)[0];
+    if(!small) return JSON.stringify({skip:true});
+    const part=small.parts[0], tier=small.tiers[0];
+    const want=small.n+8;
+    const got=await App.Data.selectDrill({part,tier,topic:small.topic,n:want});
+    const strict=await App.Data.selectDrill({part,tier,topic:small.topic,n:want,strictTopic:true});
+    const count=(u)=>u.reduce((a,x)=>a+x.n,0);
+    return JSON.stringify({topic:small.topic,have:small.n,want,
+      got:count(got), strict:count(strict),
+      onTopicFirst: got.slice(0,Math.min(3,got.length)).every(u=>u.topic===small.topic)});
+  })()`);
+  const tu = JSON.parse(topup);
+  if (!tu.skip) {
+    check('หัวข้อที่ข้อไม่พอ เติมจากหัวข้ออื่นจนครบโดส', tu.got >= tu.want - 4 && tu.got > tu.have,
+      `หัวข้อ ${tu.topic} มี ${tu.have} ข้อ ขอ ${tu.want} ได้ ${tu.got}`);
+    check('strictTopic บังคับให้ได้เฉพาะหัวข้อนั้นได้', tu.strict <= tu.have, `strict=${tu.strict} have=${tu.have}`);
+    check('ข้อของหัวข้อที่ขอมาก่อนเสมอ', tu.onTopicFirst, topup);
+  }
+
+  // 18. ไม่มี error ค้างอยู่
   check('ไม่มี JS error ตลอดการทดสอบ', errors.length === 0, errors.slice(0, 2).join(' | ').slice(0, 200));
 
   ws.close(); proc.kill();

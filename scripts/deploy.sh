@@ -28,6 +28,10 @@ echo "▶ ตรวจคุณภาพเฉลย"
 node tools/audit.js
 
 echo
+echo "▶ ตรวจความพร้อมของแผน 30 วัน"
+node tools/plan-check.js | tail -20
+
+echo
 echo "▶ build"
 node build.js
 
@@ -39,6 +43,7 @@ if [ "${SKIP_TESTS:-0}" != "1" ]; then
   sleep 3
   node tools/smoke.js "http://localhost:$PORT/"
   node tools/flow.js  "http://localhost:$PORT/"
+  node tools/parts.js
   cleanup
   SERVE_PID=""
 fi

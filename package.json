@@ -7,6 +7,7 @@
     "build": "node build.js",
     "validate": "node tools/validate.js && node tools/audit.js",
     "audit": "node tools/audit.js",
+    "plan-check": "node tools/plan-check.js",
     "serve": "node tools/serve.js",
     "deploy": "bash scripts/deploy.sh"
   },
