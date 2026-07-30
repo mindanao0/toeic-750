@@ -335,16 +335,20 @@ async function main() {
     const got=await App.Data.selectDrill({part,tier,topic:small.topic,n:want});
     const strict=await App.Data.selectDrill({part,tier,topic:small.topic,n:want,strictTopic:true});
     const count=(u)=>u.reduce((a,x)=>a+x.n,0);
+    // ข้อของหัวข้อที่ขอต้องมาก่อนตัวเติมทั้งหมด (ห้ามมีตัวเติมแทรกก่อนข้อในหัวข้อ)
+    const flags=got.map(u=>u.topic===small.topic);
+    const firstOff=flags.indexOf(false);
+    const orderOk = firstOff<0 || !flags.slice(firstOff).includes(true);
     return JSON.stringify({topic:small.topic,have:small.n,want,
       got:count(got), strict:count(strict),
-      onTopicFirst: got.slice(0,Math.min(3,got.length)).every(u=>u.topic===small.topic)});
+      onTopicUnits:flags.filter(Boolean).length, orderOk, firstIsOnTopic:flags[0]===true});
   })()`);
   const tu = JSON.parse(topup);
   if (!tu.skip) {
     check('หัวข้อที่ข้อไม่พอ เติมจากหัวข้ออื่นจนครบโดส', tu.got >= tu.want - 4 && tu.got > tu.have,
       `หัวข้อ ${tu.topic} มี ${tu.have} ข้อ ขอ ${tu.want} ได้ ${tu.got}`);
     check('strictTopic บังคับให้ได้เฉพาะหัวข้อนั้นได้', tu.strict <= tu.have, `strict=${tu.strict} have=${tu.have}`);
-    check('ข้อของหัวข้อที่ขอมาก่อนเสมอ', tu.onTopicFirst, topup);
+    check('ข้อของหัวข้อที่ขอมาก่อนตัวเติมเสมอ', tu.orderOk && tu.firstIsOnTopic, topup);
   }
 
   // 18. โหมดสอบ: กดตอบต้องไม่ตัดเสียงที่กำลังเล่น (ข้อสอบจริงเปิดเสียงครั้งเดียว)
