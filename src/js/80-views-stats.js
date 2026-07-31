@@ -124,7 +124,7 @@ App.Views.stats = function (root) {
       App.Store.BADGES.map((b) => {
         const on = have.has(b.id);
         return h('div', {
-          title: b.name + ' — ' + b.desc,
+          title: b.name + ' — ' + App.Store.badgeDesc(b),
           style: { textAlign: 'center', opacity: on ? '1' : '.28', filter: on ? '' : 'grayscale(1)' },
         },
           h('div', { style: { fontSize: '1.8rem' } }, b.icon),

@@ -776,7 +776,7 @@ label.field > span { display: block; font-size: .82rem; color: var(--tx-dim); fo
   <a href="#/stats" data-r="/stats"><span class="ic">📊</span>สถิติ</a>
 </nav>
 
-<script>window.__BUILD__="20260731.2305";window.__MANIFEST__={"drills":["p1e-01","p2e-01","p2m-01","p3e-01","p3m-01","p3m-02","p4m-01","p4r-01","p5e-01","p5e-02","p5e-03","p5m-01","p5m-02","p6m-01","p6m-02","p7e-01","p7m-01"],"tests":["placement","test1"],"lessons":["L01","L02","L03","L04","L05","L06","L07","L08","L09","L10","L11","L12","L13","L15","L16","L17","L19","L20","L23"],"vocab":["vocab-01","vocab-02","vocab-03","vocab-04"],"static":["cheatsheet","examinfo","plan30"]};</script>
+<script>window.__BUILD__="20260731.2331";window.__MANIFEST__={"drills":["p1e-01","p2e-01","p2m-01","p2r-01","p3e-01","p3m-01","p3m-02","p4m-01","p4r-01","p5e-01","p5e-02","p5e-03","p5m-01","p5m-02","p6m-01","p6m-02","p7e-01","p7m-01"],"tests":["placement","test1","test2"],"lessons":["L01","L02","L03","L04","L05","L06","L07","L08","L09","L10","L11","L12","L13","L15","L16","L17","L19","L20","L23"],"vocab":["vocab-01","vocab-02","vocab-03","vocab-04"],"static":["cheatsheet","examinfo","plan30"]};</script>
 <script>
 /* ===== 00-core.js ===== */
 ;(function(){
@@ -1202,6 +1202,13 @@ function addXP(n, ev) {
 
 /* ---------- เหรียญตรา ---------- */
 
+/**
+ * จำนวนเนื้อหาที่มีจริง — ตั้งค่าตอนเปิดแอปหลังโหลดแผนและคลังคำศัพท์
+ * เกณฑ์เหรียญตราต้องอิงตัวเลขนี้ ไม่ใช่ตัวเลขตายตัว
+ * (เดิมฮาร์ดโค้ด 30 บท / 600 คำ ทำให้เหรียญบางอันได้ไม่ได้เลย)
+ */
+const CONTENT = { lessons: 19, vocab: 600 };
+
 const BADGES = [
   { id: 'first-step',  icon: '👟', name: 'ก้าวแรก',        desc: 'ทำข้อสอบข้อแรกสำเร็จ',            test: (s) => s.attempts.length >= 1 },
   { id: 'streak-3',    icon: '🔥', name: 'ติดกัน 3 วัน',    desc: 'เรียนติดต่อกัน 3 วัน',            test: (s) => s.progress.bestStreak >= 3 },
@@ -1212,10 +1219,10 @@ const BADGES = [
   { id: 'q-500',       icon: '🎯', name: '500 ข้อ',        desc: 'ทำข้อสอบครบ 500 ข้อ',            test: (s) => totalAnswered(s) >= 500 },
   { id: 'q-1000',      icon: '🏆', name: '1,000 ข้อ',      desc: 'ทำข้อสอบครบ 1,000 ข้อ',          test: (s) => totalAnswered(s) >= 1000 },
   { id: 'lesson-7',    icon: '📖', name: 'จบสัปดาห์แรก',    desc: 'เรียนครบบทที่ 1–7',              test: (s) => Object.keys(s.progress.lessonsDone).length >= 7 },
-  { id: 'lesson-all',  icon: '🎓', name: 'จบทุกบท',         desc: 'เรียนครบทั้ง 30 บท',             test: (s) => Object.keys(s.progress.lessonsDone).length >= 30 },
+  { id: 'lesson-all',  icon: '🎓', name: 'จบทุกบท',         desc: () => `เรียนครบทั้ง ${CONTENT.lessons} บท`,   test: (s) => Object.keys(s.progress.lessonsDone).length >= CONTENT.lessons },
   { id: 'vocab-100',   icon: '🗂️', name: 'ศัพท์ 100 คำ',    desc: 'จำศัพท์ได้ 100 คำ',              test: (s) => matureWords(s) >= 100 },
   { id: 'vocab-300',   icon: '📚', name: 'ศัพท์ 300 คำ',    desc: 'จำศัพท์ได้ 300 คำ',              test: (s) => matureWords(s) >= 300 },
-  { id: 'vocab-600',   icon: '🧠', name: 'ศัพท์ครบ 600 คำ',  desc: 'จำศัพท์ได้ครบ 600 คำ',           test: (s) => matureWords(s) >= 600 },
+  { id: 'vocab-600',   icon: '🧠', name: 'ศัพท์ครบคลัง',     desc: () => `จำศัพท์ได้ครบทั้ง ${CONTENT.vocab} คำ`, test: (s) => CONTENT.vocab > 0 && matureWords(s) >= CONTENT.vocab },
   { id: 'exam-1',      icon: '📝', name: 'สอบเสมือนครั้งแรก', desc: 'ทำข้อสอบเต็มชุดจบ 1 ครั้ง',      test: (s) => s.exams.length >= 1 },
   { id: 'exam-3',      icon: '⏱️', name: 'ซ้อมสนามจริง',     desc: 'ทำข้อสอบเต็มชุดจบ 3 ครั้ง',      test: (s) => s.exams.length >= 3 },
   { id: 'score-500',   icon: '📈', name: 'ผ่าน 500',        desc: 'คะแนนประเมินแตะ 500',            test: (s) => bestScore(s) >= 500 },
@@ -1255,6 +1262,14 @@ function checkBadges() {
   return won;
 }
 
+const badgeDesc = (b) => (typeof b.desc === 'function' ? b.desc() : b.desc);
+
+/** อัปเดตจำนวนเนื้อหาที่มีจริง แล้วเช็คเหรียญตราใหม่ */
+function setContent(next) {
+  Object.assign(CONTENT, next);
+  checkBadges();
+}
+
 function showBadgeWin(list) {
   const body = App.h(
     'div.center',
@@ -1264,7 +1279,7 @@ function showBadgeWin(list) {
         { style: { margin: '14px 0' } },
         App.h('div', { style: { fontSize: '3rem', lineHeight: '1.2' } }, b.icon),
         App.h('div.b', { style: { fontSize: '1.1rem' } }, b.name),
-        App.h('div.small.muted', b.desc),
+        App.h('div.small.muted', badgeDesc(b)),
       ),
     ),
   );
@@ -1384,7 +1399,7 @@ Object.assign(App, {
     planDay, calendarDay, daysLeft,
     markStudiedToday, addXP, XP,
     addAttempt, taskKey, isTaskDone, markTaskDone,
-    checkBadges, BADGES, totalAnswered, matureWords, bestScore,
+    checkBadges, BADGES, badgeDesc, CONTENT, setContent, totalAnswered, matureWords, bestScore,
     exportJSON, importJSON, download,
     STORE_KEY,
   },
@@ -2247,6 +2262,13 @@ function plan() {
   });
 }
 
+/** รหัสบทเรียนที่แผน 30 วันอ้างถึงจริง (ไม่ใช่ทุกไฟล์ในโฟลเดอร์) */
+function planLessonIds() {
+  return plan().then((p) =>
+    App.uniq((p.days || []).flatMap((d) => (d.tasks || []).filter((t) => t.type === 'lesson').map((t) => t.id))),
+  );
+}
+
 /* ---------- ค้นหาข้อจาก qid (ใช้กับสมุดข้อผิด) ---------- */
 
 function ensureAll(onProgress) {
@@ -2294,7 +2316,7 @@ Object.assign(App, {
     MANIFEST, filesOf, loadFile, loadKind,
     loadDrills, selectDrill, drillTopics, drillCounts,
     loadTest, testList,
-    lessons, lesson, loadLessonQuizUnits,
+    lessons, lesson, loadLessonQuizUnits, planLessonIds,
     vocab, staticDoc, plan,
     ensureAll, findQ, findUnit, toUnit, inventory,
     GROUP_PARTS,
@@ -4122,10 +4144,13 @@ App.Views.learn = function (root) {
     const byId = {};
     lessons.forEach((l) => (byId[l.id] = l));
 
-    const doneN = Object.keys(st.progress.lessonsDone).length;
+    const planIds = App.uniq((plan.days || []).flatMap((d) => (d.tasks || []).filter((t) => t.type === 'lesson').map((t) => t.id)));
+    const total = planIds.length || byId.length || 1;
+    const doneN = planIds.filter((id) => st.progress.lessonsDone[id]).length;
+    const pctDone = Math.round((doneN / total) * 100);
     wrap.appendChild(h('div.card.tight',
-      h('div.row', h('span.grow.small', `เรียนแล้ว ${doneN} จาก 30 บท`), h('span.pill', `${Math.round((doneN / 30) * 100)}%`)),
-      h('div.bar.thin', { style: { marginTop: '8px' } }, h('i', { style: { width: (doneN / 30) * 100 + '%' } }))));
+      h('div.row', h('span.grow.small', `เรียนแล้ว ${doneN} จาก ${total} บท`), h('span.pill', `${pctDone}%`)),
+      h('div.bar.thin', { style: { marginTop: '8px' } }, h('i', { style: { width: pctDone + '%' } }))));
 
     let curWeek = 0;
     (plan.days || []).forEach((d) => {
@@ -5379,7 +5404,7 @@ App.Views.stats = function (root) {
       App.Store.BADGES.map((b) => {
         const on = have.has(b.id);
         return h('div', {
-          title: b.name + ' — ' + b.desc,
+          title: b.name + ' — ' + App.Store.badgeDesc(b),
           style: { textAlign: 'center', opacity: on ? '1' : '.28', filter: on ? '' : 'grayscale(1)' },
         },
           h('div', { style: { fontSize: '1.8rem' } }, b.icon),
@@ -6214,6 +6239,12 @@ function boot() {
   registerSW();
 
   render();
+
+  // เกณฑ์เหรียญตราต้องอิงจำนวนเนื้อหาที่มีจริง
+  Promise.all([App.Data.planLessonIds(), App.Data.vocab()])
+    .then(([ids, v]) => App.Store.setContent({ lessons: ids.length || 19, vocab: v.length || 0 }))
+    .catch(() => {});
+
   App.Sync.boot();
   App.Notify.schedule();
   App.Notify.inAppNudge();

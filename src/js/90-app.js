@@ -194,6 +194,12 @@ function boot() {
   registerSW();
 
   render();
+
+  // เกณฑ์เหรียญตราต้องอิงจำนวนเนื้อหาที่มีจริง
+  Promise.all([App.Data.planLessonIds(), App.Data.vocab()])
+    .then(([ids, v]) => App.Store.setContent({ lessons: ids.length || 19, vocab: v.length || 0 }))
+    .catch(() => {});
+
   App.Sync.boot();
   App.Notify.schedule();
   App.Notify.inAppNudge();

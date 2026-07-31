@@ -513,7 +513,32 @@ async function main() {
   })`);
   check('หน้าฝึกทำแสดงปุ่มเลือกระดับ/หัวข้อ', JSON.parse(drillUI).topicBtns >= 10, drillUI);
 
-  // 23. ไม่มี error ค้างอยู่
+  // 23. เกณฑ์เหรียญตราและแถบความคืบหน้าต้องอิงเนื้อหาที่มีจริง (เดิมฮาร์ดโค้ด 30 บท / 600 คำ = ได้ไม่ได้เลย)
+  const goals = await evalJS(`(async()=>{
+    const ids=await App.Data.planLessonIds();
+    const v=await App.Data.vocab();
+    const s=App.Store.state();
+    ids.forEach(id=>s.progress.lessonsDone[id]=Date.now());
+    v.forEach(w=>s.srs[w.id]={ef:2.5,iv:10,due:App.today(),reps:5,lapses:0,last:Date.now()});
+    App.Store.setContent({lessons:ids.length, vocab:v.length});
+    const have=new Set(s.progress.badges.map(x=>x.id));
+    const bg=document.querySelector('.modal-bg'); if(bg) bg.remove();
+    location.hash='/learn';
+    await new Promise(r=>setTimeout(r,1100));
+    return JSON.stringify({
+      planLessons:ids.length, vocab:v.length,
+      lessonAll:have.has('lesson-all'), vocabAll:have.has('vocab-600'),
+      learnText:(document.querySelector('.card.tight')||{}).innerText||'',
+    });
+  })()`);
+  const g = JSON.parse(goals);
+  check('เหรียญ "จบทุกบท" ได้จริงเมื่อเรียนครบตามแผน', g.lessonAll === true, `บทตามแผน ${g.planLessons}`);
+  check('เหรียญ "ศัพท์ครบคลัง" ได้จริงเมื่อจำครบ', g.vocabAll === true, `คลัง ${g.vocab} คำ`);
+  check('แถบความคืบหน้าบทเรียนเต็ม 100% ได้',
+    g.learnText.includes(`${g.planLessons} จาก ${g.planLessons} บท`) && g.learnText.includes('100%'),
+    g.learnText.replace(/\n/g, ' ').slice(0, 80));
+
+  // 24. ไม่มี error ค้างอยู่
   check('ไม่มี JS error ตลอดการทดสอบ', errors.length === 0, errors.slice(0, 2).join(' | ').slice(0, 200));
 
   ws.close(); proc.kill();

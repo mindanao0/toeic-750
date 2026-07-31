@@ -168,6 +168,13 @@ function addXP(n, ev) {
 
 /* ---------- เหรียญตรา ---------- */
 
+/**
+ * จำนวนเนื้อหาที่มีจริง — ตั้งค่าตอนเปิดแอปหลังโหลดแผนและคลังคำศัพท์
+ * เกณฑ์เหรียญตราต้องอิงตัวเลขนี้ ไม่ใช่ตัวเลขตายตัว
+ * (เดิมฮาร์ดโค้ด 30 บท / 600 คำ ทำให้เหรียญบางอันได้ไม่ได้เลย)
+ */
+const CONTENT = { lessons: 19, vocab: 600 };
+
 const BADGES = [
   { id: 'first-step',  icon: '👟', name: 'ก้าวแรก',        desc: 'ทำข้อสอบข้อแรกสำเร็จ',            test: (s) => s.attempts.length >= 1 },
   { id: 'streak-3',    icon: '🔥', name: 'ติดกัน 3 วัน',    desc: 'เรียนติดต่อกัน 3 วัน',            test: (s) => s.progress.bestStreak >= 3 },
@@ -178,10 +185,10 @@ const BADGES = [
   { id: 'q-500',       icon: '🎯', name: '500 ข้อ',        desc: 'ทำข้อสอบครบ 500 ข้อ',            test: (s) => totalAnswered(s) >= 500 },
   { id: 'q-1000',      icon: '🏆', name: '1,000 ข้อ',      desc: 'ทำข้อสอบครบ 1,000 ข้อ',          test: (s) => totalAnswered(s) >= 1000 },
   { id: 'lesson-7',    icon: '📖', name: 'จบสัปดาห์แรก',    desc: 'เรียนครบบทที่ 1–7',              test: (s) => Object.keys(s.progress.lessonsDone).length >= 7 },
-  { id: 'lesson-all',  icon: '🎓', name: 'จบทุกบท',         desc: 'เรียนครบทั้ง 30 บท',             test: (s) => Object.keys(s.progress.lessonsDone).length >= 30 },
+  { id: 'lesson-all',  icon: '🎓', name: 'จบทุกบท',         desc: () => `เรียนครบทั้ง ${CONTENT.lessons} บท`,   test: (s) => Object.keys(s.progress.lessonsDone).length >= CONTENT.lessons },
   { id: 'vocab-100',   icon: '🗂️', name: 'ศัพท์ 100 คำ',    desc: 'จำศัพท์ได้ 100 คำ',              test: (s) => matureWords(s) >= 100 },
   { id: 'vocab-300',   icon: '📚', name: 'ศัพท์ 300 คำ',    desc: 'จำศัพท์ได้ 300 คำ',              test: (s) => matureWords(s) >= 300 },
-  { id: 'vocab-600',   icon: '🧠', name: 'ศัพท์ครบ 600 คำ',  desc: 'จำศัพท์ได้ครบ 600 คำ',           test: (s) => matureWords(s) >= 600 },
+  { id: 'vocab-600',   icon: '🧠', name: 'ศัพท์ครบคลัง',     desc: () => `จำศัพท์ได้ครบทั้ง ${CONTENT.vocab} คำ`, test: (s) => CONTENT.vocab > 0 && matureWords(s) >= CONTENT.vocab },
   { id: 'exam-1',      icon: '📝', name: 'สอบเสมือนครั้งแรก', desc: 'ทำข้อสอบเต็มชุดจบ 1 ครั้ง',      test: (s) => s.exams.length >= 1 },
   { id: 'exam-3',      icon: '⏱️', name: 'ซ้อมสนามจริง',     desc: 'ทำข้อสอบเต็มชุดจบ 3 ครั้ง',      test: (s) => s.exams.length >= 3 },
   { id: 'score-500',   icon: '📈', name: 'ผ่าน 500',        desc: 'คะแนนประเมินแตะ 500',            test: (s) => bestScore(s) >= 500 },
@@ -221,6 +228,14 @@ function checkBadges() {
   return won;
 }
 
+const badgeDesc = (b) => (typeof b.desc === 'function' ? b.desc() : b.desc);
+
+/** อัปเดตจำนวนเนื้อหาที่มีจริง แล้วเช็คเหรียญตราใหม่ */
+function setContent(next) {
+  Object.assign(CONTENT, next);
+  checkBadges();
+}
+
 function showBadgeWin(list) {
   const body = App.h(
     'div.center',
@@ -230,7 +245,7 @@ function showBadgeWin(list) {
         { style: { margin: '14px 0' } },
         App.h('div', { style: { fontSize: '3rem', lineHeight: '1.2' } }, b.icon),
         App.h('div.b', { style: { fontSize: '1.1rem' } }, b.name),
-        App.h('div.small.muted', b.desc),
+        App.h('div.small.muted', badgeDesc(b)),
       ),
     ),
   );
@@ -350,7 +365,7 @@ Object.assign(App, {
     planDay, calendarDay, daysLeft,
     markStudiedToday, addXP, XP,
     addAttempt, taskKey, isTaskDone, markTaskDone,
-    checkBadges, BADGES, totalAnswered, matureWords, bestScore,
+    checkBadges, BADGES, badgeDesc, CONTENT, setContent, totalAnswered, matureWords, bestScore,
     exportJSON, importJSON, download,
     STORE_KEY,
   },

@@ -283,6 +283,13 @@ function plan() {
   });
 }
 
+/** รหัสบทเรียนที่แผน 30 วันอ้างถึงจริง (ไม่ใช่ทุกไฟล์ในโฟลเดอร์) */
+function planLessonIds() {
+  return plan().then((p) =>
+    App.uniq((p.days || []).flatMap((d) => (d.tasks || []).filter((t) => t.type === 'lesson').map((t) => t.id))),
+  );
+}
+
 /* ---------- ค้นหาข้อจาก qid (ใช้กับสมุดข้อผิด) ---------- */
 
 function ensureAll(onProgress) {
@@ -330,7 +337,7 @@ Object.assign(App, {
     MANIFEST, filesOf, loadFile, loadKind,
     loadDrills, selectDrill, drillTopics, drillCounts,
     loadTest, testList,
-    lessons, lesson, loadLessonQuizUnits,
+    lessons, lesson, loadLessonQuizUnits, planLessonIds,
     vocab, staticDoc, plan,
     ensureAll, findQ, findUnit, toUnit, inventory,
     GROUP_PARTS,

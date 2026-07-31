@@ -23,10 +23,13 @@ App.Views.learn = function (root) {
     const byId = {};
     lessons.forEach((l) => (byId[l.id] = l));
 
-    const doneN = Object.keys(st.progress.lessonsDone).length;
+    const planIds = App.uniq((plan.days || []).flatMap((d) => (d.tasks || []).filter((t) => t.type === 'lesson').map((t) => t.id)));
+    const total = planIds.length || byId.length || 1;
+    const doneN = planIds.filter((id) => st.progress.lessonsDone[id]).length;
+    const pctDone = Math.round((doneN / total) * 100);
     wrap.appendChild(h('div.card.tight',
-      h('div.row', h('span.grow.small', `เรียนแล้ว ${doneN} จาก 30 บท`), h('span.pill', `${Math.round((doneN / 30) * 100)}%`)),
-      h('div.bar.thin', { style: { marginTop: '8px' } }, h('i', { style: { width: (doneN / 30) * 100 + '%' } }))));
+      h('div.row', h('span.grow.small', `เรียนแล้ว ${doneN} จาก ${total} บท`), h('span.pill', `${pctDone}%`)),
+      h('div.bar.thin', { style: { marginTop: '8px' } }, h('i', { style: { width: pctDone + '%' } }))));
 
     let curWeek = 0;
     (plan.days || []).forEach((d) => {
