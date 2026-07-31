@@ -1,0 +1,2019 @@
+{
+  "meta": {
+    "batch": "p4r-01",
+    "part": 4,
+    "tier": "real",
+    "count": 45
+  },
+  "items": [
+    {
+      "id": "p4r-01-001",
+      "part": 4,
+      "tier": "real",
+      "topic": "conference-announcement",
+      "setting": "งานประชุมวิชาชีพ — เจ้าหน้าที่จัดงานประกาศรายละเอียดห้องย่อยช่วงบ่ายก่อนพักกลางวัน",
+      "audio": {
+        "lines": [
+          {
+            "sp": "W",
+            "accent": "US",
+            "text": "Before we break for lunch, a few notes about this afternoon's breakout sessions. All four rooms are on the second floor, not the third floor printed in your programs — that correction went out by email last night. Session A, on export documentation, starts at one fifteen in Room 204, and Session B, on digital invoicing, runs at the same time in Room 206. Both repeat at three o'clock, so you don't have to choose between them. The workshop on customs software in Room 210 is the only one that requires a laptop, and seating is capped at thirty. If you didn't sign up online, find Marcus at the registration desk before noon — he's holding six open seats. Lunch is in the courtyard, and the buffet closes at twelve forty-five."
+          }
+        ]
+      },
+      "th": {
+        "lines": [
+          "ก่อนที่เราจะพักกลางวัน ขอแจ้งรายละเอียดเรื่องห้องย่อยช่วงบ่ายสักเล็กน้อยค่ะ ห้องทั้งสี่ห้องอยู่ชั้นสอง ไม่ใช่ชั้นสามอย่างที่พิมพ์ไว้ในสูจิบัตรของท่าน เราส่งอีเมลแจ้งแก้ไขไปแล้วเมื่อคืนนี้ ห้องย่อย A เรื่องเอกสารส่งออก เริ่มบ่ายโมงสิบห้าที่ห้อง 204 ส่วนห้องย่อย B เรื่องใบแจ้งหนี้ดิจิทัล จัดเวลาเดียวกันที่ห้อง 206 ทั้งสองห้องจะจัดซ้ำอีกรอบตอนบ่ายสามโมง ท่านจึงไม่ต้องเลือกอย่างใดอย่างหนึ่ง ส่วนเวิร์กช็อปเรื่องซอฟต์แวร์ศุลกากรที่ห้อง 210 เป็นห้องเดียวที่ต้องนำแล็ปท็อปมาด้วย และจำกัดที่นั่งไว้ที่สามสิบที่ ถ้าท่านยังไม่ได้ลงทะเบียนออนไลน์ ให้ไปหาคุณมาร์คัสที่โต๊ะลงทะเบียนก่อนเที่ยง เขากันที่นั่งว่างไว้อยู่หกที่ อาหารกลางวันจัดที่ลานกลางแจ้ง และบุฟเฟต์ปิดเวลาสิบสองนาฬิกาสี่สิบห้านาที"
+        ]
+      },
+      "questions": [
+        {
+          "q": "What correction does the speaker mention?",
+          "choices": [
+            "The starting time of one session",
+            "The name of a presenter",
+            "The floor where the rooms are located",
+            "The price of a workshop"
+          ],
+          "answer": 2,
+          "th": {
+            "q": "ผู้พูดแจ้งการแก้ไขเรื่องอะไร",
+            "choices": [
+              "เวลาเริ่มของห้องย่อยห้องหนึ่ง",
+              "ชื่อของวิทยากร",
+              "ชั้นที่ห้องต่าง ๆ ตั้งอยู่",
+              "ราคาค่าเข้าเวิร์กช็อป"
+            ]
+          },
+          "explain": {
+            "why": "ประโยคที่สองบอกตรง ๆ ว่า All four rooms are on the second floor, not the third floor printed in your programs แปลว่า ห้องทั้งสี่ห้องอยู่ชั้นสอง ไม่ใช่ชั้นสามอย่างที่พิมพ์ไว้ในสูจิบัตร คำว่า not ... printed (ไม่ใช่อย่างที่พิมพ์ไว้) คือสัญญาณของการแก้ข้อมูลเดิม สิ่งที่แก้จึงคือ The floor where the rooms are located หรือชั้นที่ห้องตั้งอยู่",
+            "wrong": {
+              "0": "เวลาเริ่มถูกพูดถึงจริงคือ one fifteen (บ่ายโมงสิบห้า) และ three o'clock (บ่ายสาม) แต่ไม่มีตรงไหนบอกว่าเวลาเปลี่ยน เป็นตัวลวงแบบหยิบตัวเลขที่ได้ยินมาใส่เฉย ๆ",
+              "1": "ตลอดบทพูดไม่มีการเอ่ยชื่อวิทยากรเลย มีแต่ชื่อคุณมาร์คัสซึ่งเป็นเจ้าหน้าที่ที่โต๊ะลงทะเบียน คนละหน้าที่กัน",
+              "3": "ไม่มีการพูดถึงราคาหรือค่าใช้จ่ายใด ๆ เลยในบทพูดนี้ ตัวเลขที่ได้ยินเป็นเลขห้องกับจำนวนที่นั่งทั้งหมด"
+            },
+            "point": "คำถามแนว correction (การแก้ข้อมูล) ให้ฟังคำว่า not ... , actually , instead of , has been changed to พวกนี้คือจุดที่ผู้พูดกำลังแก้ของเดิม",
+            "trick": "ประกาศในงานประชุมมักแก้ข้อมูลตั้งแต่ต้นเรื่อง ให้ตั้งใจฟังสองสามประโยคแรกเป็นพิเศษ เพราะคำถามข้อแรกมักเฉลยอยู่ตรงนั้น"
+          }
+        },
+        {
+          "q": "Look at the room list. Session A – Room 204 / Session B – Room 206 / Workshop – Room 210 / Panel – Room 212. Which room requires listeners to bring a laptop?",
+          "choices": [
+            "Room 204",
+            "Room 206",
+            "Room 210",
+            "Room 212"
+          ],
+          "answer": 2,
+          "th": {
+            "q": "ดูรายการห้องต่อไปนี้: ห้องย่อย A – ห้อง 204 / ห้องย่อย B – ห้อง 206 / เวิร์กช็อป – ห้อง 210 / เวทีเสวนา – ห้อง 212 ห้องใดที่ผู้ฟังต้องนำแล็ปท็อปไปด้วย",
+            "choices": [
+              "ห้อง 204",
+              "ห้อง 206",
+              "ห้อง 210",
+              "ห้อง 212"
+            ]
+          },
+          "explain": {
+            "why": "ข้อนี้ต้องเอาเสียงมาชนกับตาราง ในเสียงบอกว่า The workshop on customs software in Room 210 is the only one that requires a laptop แปลว่า เวิร์กช็อปเรื่องซอฟต์แวร์ศุลกากรที่ห้อง 210 เป็นห้องเดียวที่ต้องใช้แล็ปท็อป คำว่า the only one that requires (ห้องเดียวที่ต้องใช้) ปิดประตูตัวเลือกอื่นหมด คำตอบจึงเป็น Room 210",
+            "wrong": {
+              "0": "ห้อง 204 คือห้องย่อย A เรื่องเอกสารส่งออก ผู้พูดไม่ได้บอกว่าต้องเอาแล็ปท็อปมา",
+              "1": "ห้อง 206 คือห้องย่อย B เรื่องใบแจ้งหนี้ดิจิทัล คำว่า digital (ดิจิทัล) ทำให้รู้สึกว่าน่าจะต้องใช้คอมพิวเตอร์ แต่เสียงไม่ได้พูดแบบนั้น นี่คือกับดักที่ให้เราเดาเอาเองแทนที่จะฟัง",
+              "3": "ห้อง 212 มีอยู่ในตารางเท่านั้น ในเสียงไม่ได้เอ่ยถึงเวทีเสวนาเลย จึงตัดทิ้งได้ทันที"
+            },
+            "point": "ข้อที่มีตารางประกอบ คำตอบมักไม่ถูกพูดตรง ๆ ในเสียง แต่ผู้พูดจะบอก เงื่อนไข แล้วเราต้องไปหาว่าเงื่อนไขนั้นตรงกับแถวไหนในตาราง",
+            "trick": "อ่านตารางให้จบก่อนเสียงจะเริ่ม แล้วขีดเส้นใต้คำที่ต่างกันในแต่ละแถว พอเสียงพูดถึงคำนั้นเมื่อไรให้จับทันที"
+          }
+        },
+        {
+          "q": "Why does the speaker mention Marcus?",
+          "choices": [
+            "He will lead a session on export documentation",
+            "He can still add people to a full workshop",
+            "He is serving lunch in the courtyard",
+            "He printed the programs incorrectly"
+          ],
+          "answer": 1,
+          "th": {
+            "q": "ทำไมผู้พูดถึงเอ่ยถึงคุณมาร์คัส",
+            "choices": [
+              "เขาจะเป็นผู้บรรยายห้องเรื่องเอกสารส่งออก",
+              "เขายังเพิ่มคนเข้าเวิร์กช็อปที่เต็มแล้วได้",
+              "เขากำลังเสิร์ฟอาหารกลางวันที่ลานกลางแจ้ง",
+              "เขาพิมพ์สูจิบัตรผิด"
+            ]
+          },
+          "explain": {
+            "why": "ต้องฟังสองประโยคติดกัน ประโยคก่อนบอกว่าเวิร์กช็อปห้อง 210 จำกัดที่นั่งไว้สามสิบที่ แล้วต่อด้วย If you didn't sign up online, find Marcus at the registration desk ... he's holding six open seats แปลว่า ถ้ายังไม่ได้ลงทะเบียนออนไลน์ ให้ไปหาคุณมาร์คัส เขากันที่นั่งว่างไว้หกที่ แปลว่าเขายังพาคนเข้าห้องที่เต็มแล้วได้อีกหกคน จึงตรงกับตัวเลือกนี้",
+            "wrong": {
+              "0": "ไม่มีตรงไหนบอกว่าคุณมาร์คัสเป็นผู้บรรยาย เขาอยู่ที่ registration desk (โต๊ะลงทะเบียน) ซึ่งเป็นงานต้อนรับ ไม่ใช่งานสอน",
+              "2": "อาหารกลางวันที่ลานกลางแจ้งมีจริง แต่ผู้พูดไม่ได้ผูกคุณมาร์คัสกับเรื่องอาหารเลย เป็นตัวลวงแบบเอาสองข้อมูลจริงมามัดรวมกันผิดคู่",
+              "3": "สูจิบัตรพิมพ์ชั้นผิดจริง แต่ผู้พูดไม่ได้บอกว่าใครเป็นคนพิมพ์ การโยนความผิดให้คุณมาร์คัสเป็นการเดาเกินจากที่ได้ยิน"
+            },
+            "point": "คำถาม Why does the speaker mention …? (ทำไมถึงเอ่ยถึง…) เป็นคำถามอนุมาน ต้องฟังประโยคก่อนหน้าและประโยคถัดไปประกอบเสมอ ห้ามตัดสินจากประโยคที่มีชื่อนั้นอย่างเดียว",
+            "trick": "เจอชื่อคนในบทพูด ให้จำไว้ว่าชื่อนั้นถูกพูดถึง ตอนไหน แล้วย้อนดูว่ากำลังคุยเรื่องอะไรอยู่ เพราะคำถามมักถามหน้าที่ของชื่อนั้นในเรื่อง"
+          }
+        }
+      ],
+      "vocab": [
+        {
+          "w": "breakout session",
+          "ipa": "/ˈbreɪkaʊt ˈseʃən/",
+          "th": "**เบรก**-เอาท์ **เซส**-ชัน",
+          "mean": "ห้องย่อยในงานประชุม (แยกผู้เข้าร่วมออกเป็นกลุ่มเล็กตามหัวข้อ)",
+          "pos": "n."
+        },
+        {
+          "w": "customs",
+          "ipa": "/ˈkʌstəmz/",
+          "th": "**คัส**-เทิมส์",
+          "mean": "ศุลกากร (หน่วยงานตรวจสินค้าเข้าออกประเทศ)",
+          "pos": "n."
+        },
+        {
+          "w": "courtyard",
+          "ipa": "/ˈkɔːrtjɑːrd/",
+          "th": "**คอร์ท**-ยาร์ด",
+          "mean": "ลานโล่งกลางอาคาร",
+          "pos": "n."
+        }
+      ]
+    },
+    {
+      "id": "p4r-01-002",
+      "part": 4,
+      "tier": "real",
+      "topic": "voicemail-recruiter",
+      "setting": "ข้อความเสียงฝากไว้ — เจ้าหน้าที่บริษัทจัดหางานโทรแจ้งผู้สมัครเรื่องนัดสัมภาษณ์",
+      "audio": {
+        "lines": [
+          {
+            "sp": "M",
+            "accent": "UK",
+            "text": "Hello, this message is for Priya Raman. It's Colin Baxter from Wexford Staffing, calling about the account coordinator role at Halloran Design. Good news — they'd like to meet you Thursday the fourteenth at ten thirty. It's a panel interview, so expect three interviewers and about fifty minutes. Two things before then. They've asked for two references, and I only have one on file, so please email me a second contact by Tuesday. Also, their office moved in March; it's on Kimball Street now, not the Broadway address still listed on their website. Parking there is metered, so give yourself an extra fifteen minutes. Ring me back today if Thursday doesn't work — I can move it to Friday morning, but nothing after that."
+          }
+        ]
+      },
+      "th": {
+        "lines": [
+          "สวัสดีครับ ข้อความนี้ฝากถึงคุณพรียา รามาน ผมโคลิน แบ็กซ์เตอร์ จากบริษัทจัดหางานเว็กซ์ฟอร์ด โทรมาเรื่องตำแหน่งผู้ประสานงานลูกค้าที่บริษัทฮัลโลรานดีไซน์ครับ ข่าวดีครับ ทางเขาอยากพบคุณวันพฤหัสบดีที่สิบสี่ เวลาสิบโมงครึ่ง เป็นการสัมภาษณ์แบบคณะกรรมการ ฉะนั้นจะมีผู้สัมภาษณ์สามคนและใช้เวลาประมาณห้าสิบนาที มีสองเรื่องที่ต้องจัดการก่อนถึงวันนั้นครับ เขาขอบุคคลอ้างอิงสองคน แต่ผมมีในแฟ้มแค่คนเดียว รบกวนอีเมลชื่อผู้ติดต่อคนที่สองมาให้ผมภายในวันอังคารนะครับ อีกเรื่องคือออฟฟิศเขาย้ายตั้งแต่เดือนมีนาคม ตอนนี้อยู่ถนนคิมบอลล์ ไม่ใช่ที่อยู่ถนนบรอดเวย์ที่ยังขึ้นอยู่ในเว็บไซต์ ที่จอดรถแถวนั้นเป็นแบบหยอดเหรียญ เผื่อเวลาไว้อีกสักสิบห้านาทีนะครับ ถ้าวันพฤหัสไม่สะดวก โทรกลับมาหาผมวันนี้เลย ผมเลื่อนให้เป็นเช้าวันศุกร์ได้ แต่ช้ากว่านั้นไม่ได้แล้วครับ"
+        ]
+      },
+      "questions": [
+        {
+          "q": "Who most likely is the speaker?",
+          "choices": [
+            "An employee of a staffing agency",
+            "A manager at Halloran Design",
+            "An attendant at a parking garage",
+            "A university career adviser"
+          ],
+          "answer": 0,
+          "th": {
+            "q": "ผู้พูดน่าจะเป็นใครมากที่สุด",
+            "choices": [
+              "พนักงานของบริษัทจัดหางาน",
+              "ผู้จัดการที่บริษัทฮัลโลรานดีไซน์",
+              "พนักงานดูแลลานจอดรถ",
+              "อาจารย์แนะแนวอาชีพของมหาวิทยาลัย"
+            ]
+          },
+          "explain": {
+            "why": "ผู้พูดแนะนำตัวว่า It's Colin Baxter from Wexford Staffing แล้วพูดถึงตำแหน่งงาน at Halloran Design คำว่า staffing (การจัดหาคนเข้าทำงาน) บอกชัดว่าเขาอยู่คนละบริษัทกับที่ผู้ฟังจะไปสัมภาษณ์ และเขาใช้คำว่า they'd like to meet you (ทางเขาอยากพบคุณ) ซึ่งคำว่า they หมายถึงบริษัทอีกแห่ง แปลว่าเขาเป็นคนกลาง คือ An employee of a staffing agency",
+            "wrong": {
+              "1": "ชื่อ Halloran Design โผล่ในบทพูดจริง แต่ผู้พูดเรียกบริษัทนั้นว่า they และ their office ตลอด ถ้าเขาทำงานที่นั่นจะต้องใช้คำว่า we และ our แทน จุดนี้คือกุญแจตัดตัวเลือกนี้ทิ้ง",
+              "2": "เรื่องที่จอดรถแบบหยอดเหรียญเป็นแค่คำเตือนเรื่องเผื่อเวลา ไม่ได้แปลว่าผู้พูดทำงานที่ลานจอดรถ",
+              "3": "ไม่มีการพูดถึงมหาวิทยาลัยหรือการเรียนเลยแม้แต่คำเดียว เป็นตัวเลือกที่ใส่มาเพราะฟังดูเกี่ยวกับการหางานเท่านั้น"
+            },
+            "point": "คำถาม Who most likely is the speaker? ให้ฟังสองอย่างคือ ชื่อองค์กรที่เขาแนะนำตัว กับ คำสรรพนาม (คำแทนคน) ว่าเขาใช้ we หรือ they กับบริษัทที่พูดถึง",
+            "trick": "ในข้อความเสียง ผู้พูดเกือบทุกคนบอกชื่อกับที่ทำงานในสองประโยคแรก ห้ามใจลอยช่วงต้นเด็ดขาด"
+          }
+        },
+        {
+          "q": "What does the speaker ask the listener to send?",
+          "choices": [
+            "An updated copy of her CV",
+            "A permit for the visitor parking lot",
+            "A signed copy of the job contract",
+            "Contact details for another reference"
+          ],
+          "answer": 3,
+          "th": {
+            "q": "ผู้พูดขอให้ผู้ฟังส่งอะไรมาให้",
+            "choices": [
+              "ประวัติย่อของเธอฉบับปรับปรุงใหม่",
+              "บัตรอนุญาตจอดรถสำหรับผู้มาติดต่อ",
+              "สัญญาจ้างงานที่เซ็นเรียบร้อยแล้ว",
+              "ข้อมูลติดต่อของบุคคลอ้างอิงอีกคน"
+            ]
+          },
+          "explain": {
+            "why": "ประโยคสำคัญคือ They've asked for two references, and I only have one on file, so please email me a second contact by Tuesday แปลว่า เขาขอบุคคลอ้างอิงสองคน แต่ผมมีแค่คนเดียว รบกวนอีเมลชื่อผู้ติดต่อคนที่สองมาภายในวันอังคาร คำว่า reference ในบริบทสมัครงานคือคนที่รับรองเราได้ คำตอบจึงเป็นข้อมูลติดต่อของบุคคลอ้างอิงอีกคนหนึ่ง",
+            "wrong": {
+              "0": "ผู้พูดไม่ได้ขอประวัติย่อเลย เขาบอกว่ามีข้อมูลในแฟ้มอยู่แล้ว (on file) ตัวเลือกนี้เป็นสิ่งที่เราคุ้นเคยกับการสมัครงาน จึงหลอกคนที่เดาโดยไม่ฟัง",
+              "1": "ที่จอดรถถูกพูดถึงในแง่ให้เผื่อเวลาเพราะเป็นแบบหยอดเหรียญ ไม่มีใครพูดถึงบัตรอนุญาตจอดรถ",
+              "2": "ยังอยู่แค่ขั้นนัดสัมภาษณ์ ยังไม่ได้งาน จึงไม่มีเรื่องสัญญา เป็นตัวลวงที่ข้ามขั้นตอนไปไกลเกินจริง"
+            },
+            "point": "คำว่า please email me / please send me / could you forward เป็นสัญญาณว่ากำลังจะบอกสิ่งที่ต้องส่ง ให้จับคำที่ตามหลังทันที",
+            "trick": "ข้อความเสียงมักมีคำว่า Two things หรือ First … Second … ถ้าได้ยิน ให้เตรียมจดสองเรื่องนั้น เพราะคำถามข้อ 2 กับ 3 มักมาจากตรงนี้"
+          }
+        },
+        {
+          "q": "What does the speaker say about the interview location?",
+          "choices": [
+            "It is difficult to reach by train",
+            "It is not the address shown on a website",
+            "It offers free parking for visitors",
+            "It will be closed on Friday morning"
+          ],
+          "answer": 1,
+          "th": {
+            "q": "ผู้พูดบอกอะไรเกี่ยวกับสถานที่สัมภาษณ์",
+            "choices": [
+              "เดินทางไปด้วยรถไฟลำบาก",
+              "ไม่ใช่ที่อยู่ที่แสดงอยู่บนเว็บไซต์",
+              "มีที่จอดรถฟรีสำหรับผู้มาติดต่อ",
+              "จะปิดในเช้าวันศุกร์"
+            ]
+          },
+          "explain": {
+            "why": "ผู้พูดบอกว่า their office moved in March; it's on Kimball Street now, not the Broadway address still listed on their website แปลว่า ออฟฟิศย้ายตั้งแต่มีนาคม ตอนนี้อยู่ถนนคิมบอลล์ ไม่ใช่ที่อยู่ถนนบรอดเวย์ที่ยังขึ้นอยู่บนเว็บไซต์ นี่คือการเตือนว่าที่อยู่บนเว็บเป็นข้อมูลเก่า ตรงกับตัวเลือกนี้พอดี",
+            "wrong": {
+              "0": "ไม่มีการพูดถึงรถไฟหรือการเดินทางสาธารณะเลย มีแต่เรื่องที่จอดรถ",
+              "2": "ตรงข้ามเลยครับ ผู้พูดบอกว่า Parking there is metered ซึ่ง metered (แบบหยอดเหรียญหรือเสียเงินตามเวลา) แปลว่าต้องจ่ายเงิน ไม่ใช่ฟรี ตัวลวงแบบกลับความหมาย",
+              "3": "เช้าวันศุกร์ถูกพูดถึงในฐานะเวลาสำรองที่เลื่อนไปได้ แสดงว่าวันนั้นเปิดทำการ ไม่ใช่ปิด เป็นการเอาข้อมูลจริงมาตอบผิดคำถาม"
+            },
+            "point": "เจอคำว่า not … , instead of … , rather than … ในบทพูด ให้รู้เลยว่าผู้พูดกำลังเทียบของถูกกับของผิด และข้อสอบชอบถามตรงนี้",
+            "trick": "ตัวเลือกที่กลับความหมายจากที่ได้ยิน เช่น เสียเงิน กลายเป็น ฟรี เป็นกับดักยอดฮิต ให้ฟังคำคุณศัพท์ตัวเล็ก ๆ อย่าง metered ให้ดี"
+          }
+        }
+      ],
+      "vocab": [
+        {
+          "w": "staffing agency",
+          "ipa": "/ˈstɑːfɪŋ ˈeɪdʒənsi/",
+          "th": "**สตาฟ**-ฟิง **เอ**-เจิน-ซี",
+          "mean": "บริษัทจัดหาคนเข้าทำงานให้บริษัทอื่น",
+          "pos": "n."
+        },
+        {
+          "w": "reference",
+          "ipa": "/ˈrefrəns/",
+          "th": "**เรฟ**-เฟรินซ์",
+          "mean": "บุคคลอ้างอิง (คนที่ผู้สมัครงานให้ชื่อไว้เพื่อรับรองความสามารถ)",
+          "pos": "n."
+        },
+        {
+          "w": "metered",
+          "ipa": "/ˈmiːtərd/",
+          "th": "**มี**-เทิร์ด",
+          "mean": "คิดค่าบริการตามเวลาที่ใช้ (เช่น ที่จอดรถแบบหยอดเหรียญ)",
+          "pos": "adj."
+        }
+      ]
+    },
+    {
+      "id": "p4r-01-003",
+      "part": 4,
+      "tier": "real",
+      "topic": "store-announcement",
+      "setting": "ประกาศในห้างสรรพสินค้า — แจ้งรายการลดราคา สิทธิสมาชิก และเวลาปิดบริการ",
+      "audio": {
+        "lines": [
+          {
+            "sp": "W",
+            "accent": "CA",
+            "text": "Attention, Fairmount Plaza shoppers. Our fall clearance runs through Sunday on the third and fourth floors, with an extra twenty percent off outerwear that has already been marked down. That extra discount is applied at the register, so you will not see it on the tag. Members of Fairmount Rewards get early access to the winter collection this Saturday, from eight to ten in the morning, before we open to the public. Not a member yet? Sign up at any register today and we will waive the twelve-dollar annual fee. Please also note that the parking garage elevators are being serviced this week, so use the escalators near the north entrance. And our fourth-floor café closes at seven, one hour before the store itself. Thank you for shopping with us."
+          }
+        ]
+      },
+      "th": {
+        "lines": [
+          "เรียนลูกค้าแฟร์เมาต์พลาซ่าทุกท่านค่ะ รายการล้างสต๊อกฤดูใบไม้ร่วงของเรามีถึงวันอาทิตย์ที่ชั้นสามและชั้นสี่ พร้อมลดเพิ่มอีกยี่สิบเปอร์เซ็นต์สำหรับเสื้อคลุมกันหนาวที่ติดป้ายลดราคาไว้อยู่แล้ว ส่วนลดเพิ่มนี้จะคิดให้ตอนจ่ายเงินที่แคชเชียร์ ท่านจึงจะไม่เห็นมันบนป้ายราคา สมาชิกแฟร์เมาต์รีวอร์ดสามารถเข้าชมคอลเลกชันฤดูหนาวได้ก่อนใครในวันเสาร์นี้ ตั้งแต่แปดโมงถึงสิบโมงเช้า ก่อนที่เราจะเปิดให้บุคคลทั่วไป ยังไม่ได้เป็นสมาชิกใช่ไหมคะ สมัครที่เคาน์เตอร์ชำระเงินจุดไหนก็ได้วันนี้ แล้วเราจะยกเว้นค่าธรรมเนียมรายปีสิบสองดอลลาร์ให้ อีกเรื่องหนึ่ง ลิฟต์ในอาคารจอดรถกำลังซ่อมบำรุงตลอดสัปดาห์นี้ ขอให้ท่านใช้บันไดเลื่อนใกล้ทางเข้าด้านทิศเหนือแทน และคาเฟ่ชั้นสี่ปิดเวลาหนึ่งทุ่ม ซึ่งเร็วกว่าเวลาปิดห้างหนึ่งชั่วโมง ขอบคุณที่มาใช้บริการค่ะ"
+        ]
+      },
+      "questions": [
+        {
+          "q": "What does the speaker say about the extra discount on outerwear?",
+          "choices": [
+            "It is available only to members",
+            "It ends on Saturday morning",
+            "It is printed on the price tag",
+            "It is applied when customers pay"
+          ],
+          "answer": 3,
+          "th": {
+            "q": "ผู้พูดบอกอะไรเกี่ยวกับส่วนลดเพิ่มของเสื้อคลุมกันหนาว",
+            "choices": [
+              "ใช้ได้เฉพาะสมาชิกเท่านั้น",
+              "หมดเขตเช้าวันเสาร์",
+              "พิมพ์อยู่บนป้ายราคา",
+              "จะถูกคิดให้ตอนลูกค้าจ่ายเงิน"
+            ]
+          },
+          "explain": {
+            "why": "ผู้พูดบอกว่า That extra discount is applied at the register, so you will not see it on the tag แปลว่า ส่วนลดเพิ่มนี้จะคิดให้ตอนจ่ายเงินที่แคชเชียร์ ท่านจึงจะไม่เห็นมันบนป้ายราคา คำว่า register ในร้านค้าคือจุดชำระเงิน ดังนั้นคำตอบคือส่วนลดถูกคิดตอนลูกค้าจ่ายเงิน",
+            "wrong": {
+              "0": "สิทธิที่จำกัดเฉพาะสมาชิกคือการเข้าชมคอลเลกชันฤดูหนาวก่อนใครในวันเสาร์ ไม่ใช่ส่วนลดยี่สิบเปอร์เซ็นต์ เป็นตัวลวงแบบสลับเจ้าของสิทธิ",
+              "1": "วันเสาร์เช้าคือช่วงเวลาที่สมาชิกเข้าก่อน ส่วนรายการล้างสต๊อกมีถึงวันอาทิตย์ ตัวเลือกนี้จับวันผิดคู่",
+              "2": "กลับความหมายจากที่ได้ยินเลยครับ เพราะประโยคเดียวกันบอกชัดว่า you will not see it on the tag คือจะไม่เห็นบนป้ายราคา"
+            },
+            "point": "ประกาศในห้างมักมีเงื่อนไขซ่อนอยู่ท้ายประโยค คำว่า so … (ดังนั้น…) มักตามด้วยผลที่ข้อสอบเอาไปถาม",
+            "trick": "ได้ยิน not หรือ won't ในประโยคเมื่อไร ให้จำไว้ทันที เพราะจะมีตัวลวงหนึ่งตัวที่พูดกลับด้านให้เราเผลอเลือก"
+          }
+        },
+        {
+          "q": "What is one benefit of the Fairmount Rewards program?",
+          "choices": [
+            "Members may shop before the store opens to everyone",
+            "Members park in the garage at no charge",
+            "Members receive a twelve-dollar coupon each year",
+            "Members get free drinks at the fourth-floor café"
+          ],
+          "answer": 0,
+          "th": {
+            "q": "สิทธิประโยชน์อย่างหนึ่งของโปรแกรมแฟร์เมาต์รีวอร์ดคืออะไร",
+            "choices": [
+              "สมาชิกได้ซื้อของก่อนที่ห้างจะเปิดให้คนทั่วไป",
+              "สมาชิกจอดรถในอาคารจอดรถได้ฟรี",
+              "สมาชิกได้รับคูปองสิบสองดอลลาร์ทุกปี",
+              "สมาชิกได้เครื่องดื่มฟรีที่คาเฟ่ชั้นสี่"
+            ]
+          },
+          "explain": {
+            "why": "ประโยคที่ตอบคือ Members of Fairmount Rewards get early access to the winter collection this Saturday, from eight to ten in the morning, before we open to the public แปลว่า สมาชิกได้เข้าชมคอลเลกชันฤดูหนาวก่อนใครในวันเสาร์ตั้งแต่แปดโมงถึงสิบโมง ก่อนที่ห้างจะเปิดให้บุคคลทั่วไป คำว่า early access (เข้าได้ก่อน) กับ before we open to the public ตรงกับตัวเลือกนี้เป๊ะ",
+            "wrong": {
+              "1": "อาคารจอดรถถูกพูดถึงจริง แต่พูดเรื่องลิฟต์กำลังซ่อม ไม่มีคำว่าจอดฟรีสักคำ เป็นการหยิบคำที่ได้ยินมาแปะกับสิทธิที่ไม่มีอยู่",
+              "2": "ตัวเลข twelve-dollar มีจริง แต่มันคือค่าธรรมเนียมสมาชิกรายปีที่ห้าง ยกเว้นให้ ไม่ใช่คูปองที่แจกให้ ถูกครึ่งเดียวคือตัวเลขถูก แต่หน้าที่ของเงินก้อนนั้นผิด",
+              "3": "คาเฟ่ชั้นสี่ถูกพูดถึงเรื่องเวลาปิดเท่านั้น ไม่มีเรื่องเครื่องดื่มฟรีเลย"
+            },
+            "point": "คำที่บอกสิทธิพิเศษของสมาชิกในข้อสอบจริงคือ early access , exclusive , members only , priority ให้จับคำพวกนี้",
+            "trick": "ตัวเลขที่ได้ยิน เช่น twelve-dollar มักถูกเอาไปทำตัวลวงโดยเปลี่ยนว่ามันคือเงินอะไร ให้ฟังต่อว่าเงินก้อนนั้น จ่าย หรือ ได้รับ"
+          }
+        },
+        {
+          "q": "Look at the closing times. Café on the fourth floor – 7:00 P.M. / Main store – one hour after the café / Parking garage – 9:00 P.M. When does the main store close?",
+          "choices": [
+            "At 6:00 P.M.",
+            "At 7:00 P.M.",
+            "At 8:00 P.M.",
+            "At 9:00 P.M."
+          ],
+          "answer": 2,
+          "th": {
+            "q": "ดูตารางเวลาปิดต่อไปนี้: คาเฟ่ชั้นสี่ – 19:00 น. / ห้างหลัก – หลังคาเฟ่หนึ่งชั่วโมง / อาคารจอดรถ – 21:00 น. ห้างหลักปิดเวลาใด",
+            "choices": [
+              "18:00 น.",
+              "19:00 น.",
+              "20:00 น.",
+              "21:00 น."
+            ]
+          },
+          "explain": {
+            "why": "เสียงบอกว่า our fourth-floor café closes at seven, one hour before the store itself แปลว่า คาเฟ่ชั้นสี่ปิดหนึ่งทุ่ม ซึ่งเร็วกว่าห้างหนึ่งชั่วโมง ตารางบอกว่าห้างปิดหลังคาเฟ่หนึ่งชั่วโมง เอามาบวกกันคือ 19:00 บวก 1 ชั่วโมง เท่ากับ 20:00 น. หรือ At 8:00 P.M.",
+            "wrong": {
+              "0": "18:00 น. คือการเอาไปลบหนึ่งชั่วโมงแทนที่จะบวก ผิดทิศเพราะ before (ก่อน) ในประโยคหมายถึงคาเฟ่ปิดก่อนห้าง ไม่ใช่ห้างปิดก่อนคาเฟ่",
+              "1": "19:00 น. คือเวลาปิดของคาเฟ่ ไม่ใช่ของห้าง เป็นตัวลวงที่ยกตัวเลขจากเสียงมาตรง ๆ โดยไม่คิดต่อ",
+              "3": "21:00 น. คือเวลาปิดของอาคารจอดรถตามตาราง ซึ่งเป็นข้อมูลจริงแต่ตอบคนละคำถาม"
+            },
+            "point": "ข้อที่มีตารางประกอบมักต้อง คิดต่ออีกหนึ่งขั้น เช่น บวกลบเวลา อย่าหยุดที่ตัวเลขที่ได้ยินตรง ๆ",
+            "trick": "คำว่า before (ก่อน) และ after (หลัง) เป็นตัวชี้ทิศทางเวลา ให้วาดเส้นเวลาสั้น ๆ ในหัวทันทีที่ได้ยิน จะไม่บวกลบผิดด้าน"
+          }
+        }
+      ],
+      "vocab": [
+        {
+          "w": "clearance",
+          "ipa": "/ˈklɪərəns/",
+          "th": "**เคลีย**-เริ่นซ์",
+          "mean": "การล้างสต๊อก (ลดราคาเพื่อระบายสินค้าเก่า)",
+          "pos": "n."
+        },
+        {
+          "w": "waive",
+          "ipa": "/weɪv/",
+          "th": "**เวฟ**",
+          "mean": "ยกเว้นให้ ไม่เก็บ (ค่าธรรมเนียมหรือเงื่อนไข)",
+          "pos": "v."
+        },
+        {
+          "w": "outerwear",
+          "ipa": "/ˈaʊtərwer/",
+          "th": "**เอา**-เทอร์-แวร์",
+          "mean": "เสื้อผ้าที่ใส่คลุมข้างนอก เช่น เสื้อโค้ต เสื้อแจ็กเก็ต",
+          "pos": "n."
+        }
+      ]
+    },
+    {
+      "id": "p4r-01-004",
+      "part": 4,
+      "tier": "real",
+      "topic": "training-session",
+      "setting": "การอบรมพนักงาน — เจ้าหน้าที่ฝ่ายไอทีเปิดการอบรมระบบเบิกค่าใช้จ่ายตัวใหม่",
+      "audio": {
+        "lines": [
+          {
+            "sp": "W",
+            "accent": "AU",
+            "text": "Morning, everyone, and thanks for coming in early. I'm Dana Okafor from the IT department, and for the next ninety minutes I'll walk you through Ledgerline, the expense system that replaces our paper claim forms on October first. I know some of you sat through the demonstration back in June. This is not that session. The vendor rebuilt the approval screen after our feedback, so please don't rely on the notes you took then. Everything you need is in the blue folder on your chair, including a temporary password. Change it before you leave today, because the temporary ones expire in forty-eight hours. We'll upload a receipt together at the end — I'd rather you make your mistakes here than on a real claim next month. Questions as we go, please."
+          }
+        ]
+      },
+      "th": {
+        "lines": [
+          "สวัสดีตอนเช้าค่ะทุกคน ขอบคุณที่มากันแต่เช้า ดิฉันดาน่า โอคาฟอร์ จากฝ่ายไอที ในเก้าสิบนาทีจากนี้ดิฉันจะพาทุกคนดูระบบเลดเจอร์ไลน์ ซึ่งเป็นระบบเบิกค่าใช้จ่ายที่จะมาแทนใบเบิกกระดาษของเราตั้งแต่วันที่หนึ่งตุลาคม ดิฉันทราบว่าบางท่านเคยนั่งฟังการสาธิตเมื่อเดือนมิถุนายนมาแล้ว แต่รอบนี้ไม่ใช่รอบนั้นนะคะ ผู้ขายระบบได้รื้อหน้าจออนุมัติทำใหม่หลังจากเราส่งความเห็นไป ฉะนั้นอย่าใช้โน้ตที่จดไว้ตอนนั้นเป็นหลักค่ะ ทุกอย่างที่ท่านต้องใช้อยู่ในแฟ้มสีน้ำเงินบนเก้าอี้ รวมถึงรหัสผ่านชั่วคราวด้วย เปลี่ยนรหัสก่อนกลับวันนี้เลยนะคะ เพราะรหัสชั่วคราวจะหมดอายุใน 48 ชั่วโมง ช่วงท้ายเราจะลองอัปโหลดใบเสร็จไปพร้อมกัน ดิฉันอยากให้ทุกคนทำผิดตรงนี้ มากกว่าไปทำผิดกับใบเบิกจริงเดือนหน้า มีคำถามถามได้ตลอดเลยนะคะ"
+        ]
+      },
+      "questions": [
+        {
+          "q": "What is the purpose of the talk?",
+          "choices": [
+            "To collect paper claim forms from staff",
+            "To teach employees how to use a new system",
+            "To demonstrate a product to a customer",
+            "To announce a change in the payment schedule"
+          ],
+          "answer": 1,
+          "th": {
+            "q": "บทพูดนี้มีจุดประสงค์อะไร",
+            "choices": [
+              "เพื่อเก็บใบเบิกกระดาษจากพนักงาน",
+              "เพื่อสอนพนักงานใช้ระบบใหม่",
+              "เพื่อสาธิตสินค้าให้ลูกค้าดู",
+              "เพื่อประกาศเปลี่ยนกำหนดการจ่ายเงิน"
+            ]
+          },
+          "explain": {
+            "why": "ประโยคที่สองบอกจุดประสงค์ครบเลยครับ I'll walk you through Ledgerline, the expense system that replaces our paper claim forms แปลว่า ดิฉันจะพาทุกคนดูระบบเลดเจอร์ไลน์ ระบบเบิกค่าใช้จ่ายที่มาแทนใบเบิกกระดาษ สำนวน walk someone through (พาเดินดูทีละขั้น) คือการสอนวิธีใช้ บวกกับผู้ฟังเป็นพนักงานในบริษัทเดียวกัน คำตอบจึงเป็นการสอนพนักงานใช้ระบบใหม่",
+            "wrong": {
+              "0": "ใบเบิกกระดาษถูกพูดถึงในฐานะของเก่าที่กำลังจะถูกแทนที่ ไม่ใช่สิ่งที่กำลังเก็บรวบรวม เป็นตัวลวงที่หยิบคำจริงมาใช้ผิดหน้าที่",
+              "2": "คำว่า demonstration (การสาธิต) โผล่ในบทพูดจริง แต่หมายถึงงานสาธิตเมื่อมิถุนายนที่ผ่านไปแล้ว และผู้ฟังคือเพื่อนร่วมงาน ไม่ใช่ลูกค้า",
+              "3": "ระบบนี้เป็นระบบเบิกค่าใช้จ่าย ไม่ใช่การจ่ายเงินเดือน และไม่มีการพูดถึงกำหนดจ่ายเงินเลย"
+            },
+            "point": "คำถามถามจุดประสงค์ ให้ฟัง 1-2 ประโยคแรกหลังผู้พูดแนะนำตัว เพราะคนพูดมักบอกทันทีว่ามาทำอะไร",
+            "trick": "สำนวน walk you through , go over , take you through แปลว่ากำลังจะสอนหรืออธิบายทีละขั้น เจอเมื่อไรให้เดาได้เลยว่าเป็นการอบรม"
+          }
+        },
+        {
+          "q": "Why does the speaker say, \"This is not that session\"?",
+          "choices": [
+            "To tell some listeners they are in the wrong room",
+            "To explain that the session will end early",
+            "To warn that older notes are now out of date",
+            "To apologize for starting late"
+          ],
+          "answer": 2,
+          "th": {
+            "q": "ทำไมผู้พูดถึงพูดว่า This is not that session",
+            "choices": [
+              "เพื่อบอกผู้ฟังบางคนว่ามาผิดห้อง",
+              "เพื่ออธิบายว่าการอบรมจะเลิกเร็ว",
+              "เพื่อเตือนว่าโน้ตเก่าใช้ไม่ได้แล้ว",
+              "เพื่อขอโทษที่เริ่มช้า"
+            ]
+          },
+          "explain": {
+            "why": "คำถามแนวนี้ต้องฟังประโยคถัดไปเสมอ ผู้พูดบอกว่า The vendor rebuilt the approval screen after our feedback, so please don't rely on the notes you took then แปลว่า ผู้ขายระบบรื้อหน้าจออนุมัติทำใหม่ ฉะนั้นอย่าใช้โน้ตที่จดไว้ตอนนั้น ประโยค This is not that session จึงถูกพูดเพื่อเตือนว่าข้อมูลเก่าจากเดือนมิถุนายนใช้ไม่ได้แล้ว",
+            "wrong": {
+              "0": "ไม่มีใครมาผิดห้อง ผู้พูดกำลังเทียบ การอบรมสองครั้งที่คนละเนื้อหา ไม่ใช่เทียบสถานที่",
+              "1": "ผู้พูดบอกไว้ตั้งแต่ต้นว่าใช้เวลาเก้าสิบนาที และไม่มีตรงไหนบอกว่าจะเลิกเร็ว",
+              "3": "ผู้พูดกลับขอบคุณที่ทุกคนมาแต่เช้า แสดงว่าเริ่มตรงเวลา ไม่ได้ขอโทษเรื่องสาย"
+            },
+            "point": "คำถามแบบ Why does the speaker say …? ห้ามแปลประโยคนั้นตรงตัว ต้องหาว่า ประโยครอบ ๆ กำลังจะสื่ออะไร",
+            "trick": "ประโยคสั้นห้วน ๆ ที่ถูกยกมาถามมักตามด้วยคำว่า so หรือ because ในประโยคถัดไป นั่นคือคำเฉลย"
+          }
+        },
+        {
+          "q": "What are the listeners asked to do before they leave today?",
+          "choices": [
+            "Change a temporary password",
+            "Submit an expense claim",
+            "Return the blue folder",
+            "Contact the software vendor"
+          ],
+          "answer": 0,
+          "th": {
+            "q": "ผู้ฟังถูกขอให้ทำอะไรก่อนกลับในวันนี้",
+            "choices": [
+              "เปลี่ยนรหัสผ่านชั่วคราว",
+              "ส่งใบเบิกค่าใช้จ่าย",
+              "คืนแฟ้มสีน้ำเงิน",
+              "ติดต่อผู้ขายซอฟต์แวร์"
+            ]
+          },
+          "explain": {
+            "why": "ผู้พูดสั่งตรง ๆ ว่า Change it before you leave today, because the temporary ones expire in forty-eight hours แปลว่า เปลี่ยนรหัสก่อนกลับวันนี้ เพราะรหัสชั่วคราวหมดอายุใน 48 ชั่วโมง คำว่า it ในประโยคนี้หมายถึง temporary password ที่พูดถึงในประโยคก่อนหน้า คำตอบจึงเป็นเปลี่ยนรหัสผ่านชั่วคราว",
+            "wrong": {
+              "1": "ใบเบิกจริงเป็นเรื่องของ next month (เดือนหน้า) วันนี้แค่ซ้อมอัปโหลดใบเสร็จด้วยกันเท่านั้น คนละเวลากัน",
+              "2": "แฟ้มสีน้ำเงินคือของที่แจกให้ผู้ฟังเก็บไว้ใช้ ไม่มีคำสั่งให้คืน",
+              "3": "ผู้ขายซอฟต์แวร์ถูกพูดถึงในฐานะคนที่แก้หน้าจอให้ ไม่ใช่คนที่ผู้ฟังต้องติดต่อ"
+            },
+            "point": "คำสั่งในบทพูดมักขึ้นต้นด้วยกริยาตรง ๆ เช่น Change … , Bring … , Sign … แล้วตามด้วยกรอบเวลา ให้จับคู่กริยากับเวลาเสมอ",
+            "trick": "คำถามที่มีกรอบเวลา เช่น before they leave today ให้ตัดทุกตัวเลือกที่เป็นเรื่องเดือนหน้าหรือสัปดาห์หน้าทิ้งก่อนเลย"
+          }
+        }
+      ],
+      "vocab": [
+        {
+          "w": "expense",
+          "ipa": "/ɪkˈspens/",
+          "th": "อิค-**สเปนส์**",
+          "mean": "ค่าใช้จ่าย (โดยเฉพาะที่พนักงานสำรองจ่ายแล้วเบิกคืน)",
+          "pos": "n."
+        },
+        {
+          "w": "vendor",
+          "ipa": "/ˈvendər/",
+          "th": "**เวน**-เดอร์",
+          "mean": "ผู้ขายหรือบริษัทที่ขายสินค้าและบริการให้องค์กร",
+          "pos": "n."
+        },
+        {
+          "w": "expire",
+          "ipa": "/ɪkˈspaɪər/",
+          "th": "อิค-**สไปร์**",
+          "mean": "หมดอายุ ใช้ไม่ได้อีกต่อไป",
+          "pos": "v."
+        }
+      ]
+    },
+    {
+      "id": "p4r-01-005",
+      "part": 4,
+      "tier": "real",
+      "topic": "shift-briefing",
+      "setting": "คลังสินค้า — หัวหน้ากะชี้แจงพนักงานก่อนเริ่มงานเรื่องขั้นตอนใหม่และเป้าหมายวันนี้",
+      "audio": {
+        "lines": [
+          {
+            "sp": "M",
+            "accent": "US",
+            "text": "All right, gather round — quick briefing before the shift starts. Two changes today. First, the scanner at loading dock three is down, so route everything for the Denver run through dock four instead. Maintenance says the replacement part lands Thursday. Second, and this one is permanent: any pallet over sixty kilos now needs two signatures on the tag, not one. That came out of the safety review, and inspectors will be checking tags on Friday. We've got nine hundred cartons to move before three o'clock, which is about a hundred more than yesterday, so I've pulled Ravi and Tomas over from receiving to help. Break is still at ten fifteen. And if a scanner freezes, do not restart it yourself — call extension four-two-one-zero and wait."
+          }
+        ]
+      },
+      "th": {
+        "lines": [
+          "เอาละ มารวมกันตรงนี้หน่อย ขอชี้แจงสั้น ๆ ก่อนเริ่มกะ วันนี้มีสองเรื่องที่เปลี่ยน เรื่องแรก เครื่องสแกนที่ท่าขนถ่ายหมายเลขสามเสีย ฉะนั้นของทุกชิ้นที่จะไปสายเดนเวอร์ให้ผ่านท่าหมายเลขสี่แทน ฝ่ายซ่อมบำรุงบอกว่าอะไหล่จะมาถึงวันพฤหัสบดี เรื่องที่สอง และเรื่องนี้เปลี่ยนถาวร พาเลตที่หนักเกินหกสิบกิโลกรัมต้องมีลายเซ็นสองชื่อบนป้ายแล้ว ไม่ใช่ชื่อเดียวเหมือนเดิม กฎนี้มาจากการตรวจสอบความปลอดภัย และวันศุกร์จะมีผู้ตรวจมาดูป้ายด้วย วันนี้เรามีลังต้องขนเก้าร้อยลังให้เสร็จก่อนบ่ายสาม ซึ่งมากกว่าเมื่อวานประมาณร้อยลัง ผมเลยดึงราวีกับโทมัสจากฝ่ายรับของมาช่วย เวลาพักยังเป็นสิบโมงสิบห้าเหมือนเดิม แล้วถ้าเครื่องสแกนค้าง อย่ารีสตาร์ทเอง ให้โทรเบอร์ภายในสี่-สอง-หนึ่ง-ศูนย์ แล้วรอ"
+        ]
+      },
+      "questions": [
+        {
+          "q": "Why are workers told to use dock four?",
+          "choices": [
+            "It is closer to the Denver trucks",
+            "It has just been cleaned",
+            "More workers have been assigned there",
+            "Equipment at another dock is not working"
+          ],
+          "answer": 3,
+          "th": {
+            "q": "ทำไมพนักงานถึงถูกสั่งให้ใช้ท่าขนถ่ายหมายเลขสี่",
+            "choices": [
+              "อยู่ใกล้รถบรรทุกสายเดนเวอร์กว่า",
+              "เพิ่งทำความสะอาดเสร็จ",
+              "มีการจัดคนไปประจำที่นั่นมากกว่า",
+              "อุปกรณ์ที่อีกท่าหนึ่งใช้งานไม่ได้"
+            ]
+          },
+          "explain": {
+            "why": "ประโยคเดียวมีทั้งเหตุและผลครับ the scanner at loading dock three is down, so route everything for the Denver run through dock four instead แปลว่า เครื่องสแกนที่ท่าสามเสีย ดังนั้นให้ส่งของสายเดนเวอร์ผ่านท่าสี่แทน คำว่า down ในบริบทเครื่องจักรแปลว่า ใช้งานไม่ได้ ตรงกับตัวเลือกที่บอกว่าอุปกรณ์ที่อีกท่าหนึ่งเสีย",
+            "wrong": {
+              "0": "ระยะทางหรือความใกล้ไกลไม่ถูกพูดถึงเลย เราได้ยินคำว่า Denver จริงจึงรู้สึกคุ้น แต่เหตุผลไม่ตรง",
+              "1": "ไม่มีการพูดถึงการทำความสะอาดในบทพูดนี้เลยแม้แต่คำเดียว",
+              "2": "ราวีกับโทมัสถูกดึงมาช่วยจริง แต่มาช่วยเพราะปริมาณงานเพิ่ม ไม่ได้ระบุว่าไปประจำท่าสี่ เป็นการเอาข้อมูลจริงมาผูกเหตุผลผิดเรื่อง"
+            },
+            "point": "คำว่า down , out of order , not working หมายถึงเครื่องเสีย ส่วนคำว่า so และ instead คือจุดเชื่อมเหตุกับผลที่ข้อสอบชอบถาม",
+            "trick": "ในบทประกาศงานคลังสินค้า ให้จับคู่ ปัญหา กับ ทางแก้ เสมอ เพราะคำถามข้อแรกมักถามว่าทำไมต้องเปลี่ยนวิธีทำงาน"
+          }
+        },
+        {
+          "q": "What change will apply from now on?",
+          "choices": [
+            "Breaks will start at ten fifteen",
+            "Heavy pallets will need two signatures",
+            "All shipments will go through dock four",
+            "Workers will restart the scanners themselves"
+          ],
+          "answer": 1,
+          "th": {
+            "q": "การเปลี่ยนแปลงใดที่จะใช้ตั้งแต่นี้เป็นต้นไป",
+            "choices": [
+              "เวลาพักจะเริ่มสิบโมงสิบห้า",
+              "พาเลตที่หนักต้องมีลายเซ็นสองชื่อ",
+              "สินค้าทุกชิ้นจะผ่านท่าหมายเลขสี่",
+              "พนักงานจะรีสตาร์ทเครื่องสแกนเอง"
+            ]
+          },
+          "explain": {
+            "why": "ผู้พูดบอกเองว่า Second, and this one is permanent: any pallet over sixty kilos now needs two signatures on the tag, not one แปลว่า เรื่องที่สอง และเรื่องนี้ถาวร พาเลตที่หนักเกินหกสิบกิโลต้องมีลายเซ็นสองชื่อ ไม่ใช่ชื่อเดียว คำว่า permanent (ถาวร) คือคำที่เฉลยข้อนี้โดยตรง",
+            "wrong": {
+              "0": "ผู้พูดบอกว่า Break is still at ten fifteen คำว่า still (ยังคง…เหมือนเดิม) แปลว่าไม่ได้เปลี่ยน จึงไม่ใช่การเปลี่ยนแปลง",
+              "2": "การใช้ท่าสี่เป็นการแก้ปัญหาชั่วคราวเฉพาะของสายเดนเวอร์ และเฉพาะจนกว่าอะไหล่จะมาวันพฤหัส ไม่ใช่ทุกชิ้นและไม่ถาวร ตัวลวงแบบถูกครึ่งเดียว",
+              "3": "ตรงกันข้ามเลยครับ ผู้พูดสั่งว่า do not restart it yourself คือห้ามรีสตาร์ทเอง ให้โทรแจ้งแทน"
+            },
+            "point": "คำที่บอกว่าเปลี่ยนถาวรคือ permanent , from now on , going forward ส่วนคำที่บอกว่าเหมือนเดิมคือ still , as usual , unchanged",
+            "trick": "เมื่อผู้พูดเรียงว่า First … Second … ให้แยกสองเรื่องออกจากกันในหัว เพราะข้อสอบชอบเอาเรื่องแรกกับเรื่องที่สองมาสลับกันเป็นตัวลวง"
+          }
+        },
+        {
+          "q": "What does the speaker suggest about today's workload?",
+          "choices": [
+            "It is larger than the day before",
+            "It will be finished ahead of schedule",
+            "It was reduced after a safety review",
+            "It requires fewer workers than usual"
+          ],
+          "answer": 0,
+          "th": {
+            "q": "ผู้พูดบอกเป็นนัยว่าปริมาณงานวันนี้เป็นอย่างไร",
+            "choices": [
+              "มากกว่าเมื่อวาน",
+              "จะเสร็จก่อนกำหนด",
+              "ถูกลดลงหลังการตรวจสอบความปลอดภัย",
+              "ใช้คนน้อยกว่าปกติ"
+            ]
+          },
+          "explain": {
+            "why": "ผู้พูดบอกว่า We've got nine hundred cartons to move before three o'clock, which is about a hundred more than yesterday แปลว่า วันนี้ต้องขนเก้าร้อยลังก่อนบ่ายสาม ซึ่งมากกว่าเมื่อวานประมาณร้อยลัง คำว่า more than yesterday บอกชัดว่างานหนักกว่าวันก่อน แล้วเขายังต้องดึงคนมาช่วยเพิ่มอีก ยิ่งยืนยันว่างานเยอะขึ้น",
+            "wrong": {
+              "1": "บ่ายสามคือ เส้นตาย ไม่ใช่การคาดว่าจะเสร็จเร็ว และผู้พูดฟังดูกดดันเรื่องเวลามากกว่า",
+              "2": "การตรวจสอบความปลอดภัยมีจริง แต่ผลของมันคือกฎลายเซ็นสองชื่อ ไม่ใช่การลดปริมาณงาน เป็นการเอาสองเรื่องจริงมาเชื่อมกันผิด",
+              "3": "ตรงข้ามครับ เขาดึงราวีกับโทมัสมาช่วยเพิ่ม แปลว่าใช้คนมากกว่าปกติ"
+            },
+            "point": "คำถามที่ใช้คำว่า suggest หรือ imply คือคำถามอนุมาน คำตอบจะไม่ถูกพูดตรง ๆ แต่รวมจากหลักฐานสองสามจุด",
+            "trick": "หลักฐานที่ใช้อนุมานเรื่องปริมาณงานคือตัวเลขเทียบกัน เช่น a hundred more than yesterday และการเพิ่มคน ให้จับสองอย่างนี้คู่กัน"
+          }
+        }
+      ],
+      "vocab": [
+        {
+          "w": "pallet",
+          "ipa": "/ˈpælət/",
+          "th": "**แพล**-เลิท",
+          "mean": "แท่นไม้รองสินค้าสำหรับยกด้วยรถโฟล์กลิฟต์",
+          "pos": "n."
+        },
+        {
+          "w": "loading dock",
+          "ipa": "/ˈloʊdɪŋ dɑːk/",
+          "th": "**โหลด**-ดิง **ดอก**",
+          "mean": "ท่าขนถ่ายสินค้าขึ้นลงรถบรรทุก",
+          "pos": "n."
+        },
+        {
+          "w": "inspector",
+          "ipa": "/ɪnˈspektər/",
+          "th": "อิน-**สเปค**-เทอร์",
+          "mean": "ผู้ตรวจสอบ (คนที่มาตรวจว่าทำตามกฎหรือไม่)",
+          "pos": "n."
+        }
+      ]
+    },
+    {
+      "id": "p4r-01-006",
+      "part": 4,
+      "tier": "real",
+      "topic": "facility-tour",
+      "setting": "ทัวร์แนะนำสถานที่ — พนักงานพาพนักงานใหม่เดินชมศูนย์กระจายสินค้าก่อนเข้าห้องเอกสาร",
+      "audio": {
+        "lines": [
+          {
+            "sp": "W",
+            "accent": "UK",
+            "text": "Welcome to the Grimsby distribution centre. I'm Nadia, and for the next forty minutes I'll take you round the building before your induction paperwork with Human Resources at eleven. Keep your visitor badge visible at all times, and step behind the yellow line whenever you hear a horn — that means a forklift is reversing. We'll start in receiving, where about four hundred lorries arrive each week, and then move to the sorting hall, which handles roughly eighty thousand parcels a night. Photographs are fine in receiving, but not in the sorting hall; the conveyor layout is confidential. It's very loud in there, so I'll hand out earplugs at the door. One last thing — the canteen queue gets long after twelve, so eat early if you can. Right, follow me through those double doors."
+          }
+        ]
+      },
+      "th": {
+        "lines": [
+          "ยินดีต้อนรับสู่ศูนย์กระจายสินค้ากริมสบีค่ะ ดิฉันชื่อนาเดีย ในสี่สิบนาทีจากนี้ดิฉันจะพาทุกคนเดินชมอาคาร ก่อนที่ทุกคนจะไปทำเอกสารปฐมนิเทศกับฝ่ายบุคคลตอนสิบเอ็ดโมง กรุณาติดบัตรผู้มาเยือนให้เห็นตลอดเวลา และถอยไปยืนหลังเส้นสีเหลืองทุกครั้งที่ได้ยินเสียงแตร เพราะนั่นแปลว่ารถโฟล์กลิฟต์กำลังถอยหลัง เราจะเริ่มที่แผนกรับสินค้า ซึ่งมีรถบรรทุกเข้ามาราวสี่ร้อยคันต่อสัปดาห์ แล้วค่อยไปที่ห้องคัดแยก ซึ่งจัดการพัสดุราวแปดหมื่นชิ้นต่อคืน ถ่ายรูปในแผนกรับสินค้าได้ แต่ในห้องคัดแยกถ่ายไม่ได้นะคะ เพราะผังสายพานลำเลียงเป็นความลับของบริษัท ในนั้นเสียงดังมาก ดิฉันจะแจกที่อุดหูให้ตรงประตูทางเข้า อีกเรื่องสุดท้าย คิวโรงอาหารจะยาวมากหลังเที่ยง ถ้าเป็นไปได้ให้ไปกินแต่เนิ่น ๆ นะคะ เอาละ ตามดิฉันมาทางประตูคู่ตรงนั้นเลยค่ะ"
+        ]
+      },
+      "questions": [
+        {
+          "q": "Who most likely are the listeners?",
+          "choices": [
+            "Delivery drivers",
+            "Safety inspectors",
+            "Newly hired employees",
+            "Customers collecting parcels"
+          ],
+          "answer": 2,
+          "th": {
+            "q": "ผู้ฟังน่าจะเป็นใครมากที่สุด",
+            "choices": [
+              "พนักงานขับรถส่งของ",
+              "เจ้าหน้าที่ตรวจความปลอดภัย",
+              "พนักงานที่เพิ่งเข้าทำงานใหม่",
+              "ลูกค้าที่มารับพัสดุ"
+            ]
+          },
+          "explain": {
+            "why": "หลักฐานอยู่ในประโยคที่สองครับ before your induction paperwork with Human Resources at eleven แปลว่า ก่อนที่ทุกคนจะไปทำเอกสารปฐมนิเทศกับฝ่ายบุคคลตอนสิบเอ็ดโมง คำว่า induction (การปฐมนิเทศพนักงานใหม่) บวกกับ Human Resources (ฝ่ายบุคคล) ใช้กับคนที่กำลังจะเริ่มงานเท่านั้น จึงตอบว่าเป็นพนักงานใหม่",
+            "wrong": {
+              "0": "รถบรรทุกสี่ร้อยคันต่อสัปดาห์ถูกพูดถึงจริง แต่เป็นข้อมูลของสถานที่ที่ไกด์เล่าให้ฟัง ไม่ได้แปลว่าคนฟังคือคนขับรถ",
+              "1": "ไกด์เป็นฝ่ายเตือนเรื่องความปลอดภัยให้ผู้ฟัง ถ้าผู้ฟังเป็นผู้ตรวจความปลอดภัยเสียเอง คงไม่ต้องมีใครมาสอนให้ยืนหลังเส้นเหลือง",
+              "3": "ลูกค้ามารับพัสดุจะไม่ต้องเดินชมโรงงานสี่สิบนาทีและไม่ต้องทำเอกสารกับฝ่ายบุคคล"
+            },
+            "point": "คำถาม Who are the listeners? ให้ฟังคำที่บอกความสัมพันธ์ เช่น induction , orientation , your first shift , welcome to the team",
+            "trick": "อย่าเลือกตัวเลือกเพียงเพราะคำนั้นโผล่ในเสียง ให้ถามตัวเองว่า คนแบบนี้จะมาฟังเรื่องนี้ไหม"
+          }
+        },
+        {
+          "q": "What are the listeners not allowed to do in the sorting hall?",
+          "choices": [
+            "Take photographs",
+            "Wear earplugs",
+            "Stand behind the yellow line",
+            "Display a visitor badge"
+          ],
+          "answer": 0,
+          "th": {
+            "q": "ผู้ฟังทำอะไรไม่ได้ในห้องคัดแยก",
+            "choices": [
+              "ถ่ายรูป",
+              "ใส่ที่อุดหู",
+              "ยืนหลังเส้นสีเหลือง",
+              "ติดบัตรผู้มาเยือน"
+            ]
+          },
+          "explain": {
+            "why": "ประโยคสำคัญคือ Photographs are fine in receiving, but not in the sorting hall; the conveyor layout is confidential แปลว่า ถ่ายรูปในแผนกรับสินค้าได้ แต่ในห้องคัดแยกไม่ได้ เพราะผังสายพานเป็นความลับ คำว่า but not in … คือจุดที่บอกข้อห้าม จึงตอบว่าห้ามถ่ายรูป",
+            "wrong": {
+              "1": "ที่อุดหูคือสิ่งที่ไกด์จะ แจกให้ ตรงประตูห้องคัดแยก เพราะข้างในเสียงดัง เป็นสิ่งที่ต้องใส่ ไม่ใช่สิ่งที่ห้าม",
+              "2": "การยืนหลังเส้นสีเหลืองคือกฎความปลอดภัยที่ ต้องทำ เมื่อได้ยินเสียงแตร ตัวลวงนี้เอาคำสั่งมากลับเป็นข้อห้าม",
+              "3": "บัตรผู้มาเยือนต้องติดให้เห็นตลอดเวลา ก็เป็นสิ่งที่ต้องทำเช่นกัน"
+            },
+            "point": "ในบททัวร์โรงงาน ให้แยกสองกองในหัวคือ สิ่งที่ต้องทำ กับ สิ่งที่ห้ามทำ เพราะข้อสอบมักถามฝั่งใดฝั่งหนึ่งแล้วใส่อีกฝั่งมาเป็นตัวลวง",
+            "trick": "คำที่บอกข้อห้ามคือ not allowed , prohibited , please refrain from , but not … ส่วนคำที่บอกคำสั่งคือ keep , make sure , be sure to"
+          }
+        },
+        {
+          "q": "What will the listeners most likely do next?",
+          "choices": [
+            "Complete their paperwork",
+            "Eat in the canteen",
+            "Collect earplugs at a door",
+            "Walk to the receiving area"
+          ],
+          "answer": 3,
+          "th": {
+            "q": "ผู้ฟังน่าจะทำอะไรต่อไปมากที่สุด",
+            "choices": [
+              "ทำเอกสารให้เสร็จ",
+              "กินข้าวที่โรงอาหาร",
+              "ไปรับที่อุดหูที่ประตู",
+              "เดินไปที่แผนกรับสินค้า"
+            ]
+          },
+          "explain": {
+            "why": "ต้องรวมสองประโยค ประโยคกลางบอกว่า We'll start in receiving แปลว่าเราจะเริ่มที่แผนกรับสินค้า แล้วประโยคสุดท้ายคือ Right, follow me through those double doors แปลว่า เอาละ ตามดิฉันมาทางประตูคู่ตรงนั้น เมื่อทัวร์กำลังจะเริ่มและจุดแรกคือแผนกรับสินค้า สิ่งที่จะเกิดต่อไปคือเดินไปที่แผนกรับสินค้า",
+            "wrong": {
+              "0": "เอกสารปฐมนิเทศเป็นกิจกรรมตอนสิบเอ็ดโมง คือ หลังจาก ทัวร์สี่สิบนาทีจบแล้ว ไม่ใช่สิ่งที่ทำต่อทันที",
+              "1": "โรงอาหารถูกพูดถึงในฐานะคำแนะนำเรื่องหลังเที่ยง ซึ่งยังอีกนาน",
+              "2": "ที่อุดหูจะแจกตรงประตูห้องคัดแยก ซึ่งเป็นจุดที่สองของทัวร์ ไม่ใช่จุดแรก ตัวลวงนี้ถูกเรื่องแต่ผิดลำดับ"
+            },
+            "point": "คำถาม What will … do next? ให้ดูสองอย่างคือ ลำดับที่ผู้พูดวางไว้ และ ประโยคสุดท้ายของบทพูด",
+            "trick": "ประโยคปิดท้ายที่ขึ้นต้นด้วย Right , Now , OK แล้วตามด้วยคำสั่ง เช่น follow me มักเป็นเฉลยของคำถามข้อสุดท้ายเสมอ"
+          }
+        }
+      ],
+      "vocab": [
+        {
+          "w": "forklift",
+          "ipa": "/ˈfɔːrklɪft/",
+          "th": "**ฟอร์ค**-ลิฟท์",
+          "mean": "รถยกของในคลังสินค้า",
+          "pos": "n."
+        },
+        {
+          "w": "conveyor",
+          "ipa": "/kənˈveɪər/",
+          "th": "เคิน-**เว**-เออร์",
+          "mean": "สายพานลำเลียงสินค้า",
+          "pos": "n."
+        },
+        {
+          "w": "confidential",
+          "ipa": "/ˌkɑːnfɪˈdenʃəl/",
+          "th": "คอน-ฟิ-**เดน**-เชิล",
+          "mean": "เป็นความลับ ห้ามเปิดเผยต่อคนนอก",
+          "pos": "adj."
+        }
+      ]
+    },
+    {
+      "id": "p4r-01-007",
+      "part": 4,
+      "tier": "real",
+      "topic": "radio-advertisement",
+      "setting": "โฆษณาทางวิทยุ — บริษัทจัดเลี้ยงเสนอแพ็กเกจอาหารสำหรับงานบริษัท",
+      "audio": {
+        "lines": [
+          {
+            "sp": "M",
+            "accent": "CA",
+            "text": "Planning a company event and dreading the food? Meet Copperleaf Catering. For eleven years we've handled everything from twelve-person board lunches to conferences of five hundred. Choose from three packages: the Classic box lunch at fourteen dollars a head, the Harvest buffet at twenty-two, or the Signature plated dinner at thirty-eight. Vegetarian and gluten-free options are included at no extra charge. Book by the fifteenth of this month and delivery anywhere in the city is free; after the fifteenth there's a flat forty-dollar delivery fee. And here's the thing our clients mention most: we arrive ninety minutes before service, not fifteen. Call five-five-five, zero-one-four-eight, or visit our website to see photographs of past events. Copperleaf Catering — because the meeting is what people should remember."
+          }
+        ]
+      },
+      "th": {
+        "lines": [
+          "กำลังวางแผนจัดงานบริษัทแล้วหนักใจเรื่องอาหารอยู่ใช่ไหมครับ ขอแนะนำคอปเปอร์ลีฟเคเทอริง ตลอดสิบเอ็ดปีที่ผ่านมาเราดูแลงานมาแล้วทุกแบบ ตั้งแต่มื้อกลางวันของคณะกรรมการสิบสองคน ไปจนถึงงานประชุมห้าร้อยคน เลือกได้จากสามแพ็กเกจ ได้แก่ ข้าวกล่องคลาสสิกหัวละสิบสี่ดอลลาร์ บุฟเฟต์ฮาร์เวสต์หัวละยี่สิบสอง หรือมื้อค่ำจัดจานซิกเนเจอร์หัวละสามสิบแปด เมนูมังสวิรัติและเมนูปลอดกลูเตนรวมอยู่ในราคาแล้ว ไม่คิดเพิ่ม จองภายในวันที่สิบห้าของเดือนนี้ ส่งฟรีทั่วเมือง หลังวันที่สิบห้าจะมีค่าจัดส่งเหมาสี่สิบดอลลาร์ และนี่คือสิ่งที่ลูกค้าพูดถึงมากที่สุด เราไปถึงหน้างานก่อนเวลาเสิร์ฟเก้าสิบนาที ไม่ใช่สิบห้านาที โทรห้า-ห้า-ห้า ศูนย์-หนึ่ง-สี่-แปด หรือเข้าเว็บไซต์ของเราเพื่อดูภาพงานที่ผ่านมา คอปเปอร์ลีฟเคเทอริง เพราะสิ่งที่คนควรจดจำคือตัวงานประชุม ไม่ใช่เรื่องอาหาร"
+        ]
+      },
+      "questions": [
+        {
+          "q": "Look at the budgets. Event 1 – $15 per person / Event 2 – $22 per person / Event 3 – $30 per person / Event 4 – $40 per person. Which event has a budget that exactly matches the price of the Harvest buffet?",
+          "choices": [
+            "Event 1",
+            "Event 2",
+            "Event 3",
+            "Event 4"
+          ],
+          "answer": 1,
+          "th": {
+            "q": "ดูตารางงบประมาณต่อไปนี้: งานที่ 1 – 15 ดอลลาร์ต่อคน / งานที่ 2 – 22 ดอลลาร์ต่อคน / งานที่ 3 – 30 ดอลลาร์ต่อคน / งานที่ 4 – 40 ดอลลาร์ต่อคน งานใดมีงบตรงกับราคาบุฟเฟต์ฮาร์เวสต์พอดี",
+            "choices": [
+              "งานที่ 1",
+              "งานที่ 2",
+              "งานที่ 3",
+              "งานที่ 4"
+            ]
+          },
+          "explain": {
+            "why": "ในเสียงบอกราคาสามแพ็กเกจเรียงกันคือ the Classic box lunch at fourteen dollars a head, the Harvest buffet at twenty-two, or the Signature plated dinner at thirty-eight ตัวที่โจทย์ถามคือ Harvest buffet ราคายี่สิบสองดอลลาร์ต่อคน เมื่อเทียบกับตารางแล้วตรงกับงานที่ 2 ซึ่งมีงบ 22 ดอลลาร์ต่อคนพอดี",
+            "wrong": {
+              "0": "งบ 15 ดอลลาร์ใกล้เคียงกับข้าวกล่องคลาสสิกที่ 14 ดอลลาร์ ไม่ใช่บุฟเฟต์ฮาร์เวสต์ เป็นตัวลวงที่จับคู่ผิดแพ็กเกจ",
+              "2": "งบ 30 ดอลลาร์ไม่ตรงกับราคาแพ็กเกจใดเลย ตัวเลข 38 ของมื้อค่ำซิกเนเจอร์ยังสูงกว่านั้น",
+              "3": "เลข 40 ในเสียงมีจริง แต่เป็นค่าจัดส่งเหมาหลังวันที่สิบห้า ไม่ใช่ราคาอาหารต่อคน เป็นการเอาตัวเลขจริงมาตอบผิดคำถาม"
+            },
+            "point": "โฆษณาแบบมีหลายแพ็กเกจ ให้จดชื่อแพ็กเกจคู่กับราคาไว้ทันทีที่ได้ยิน เพราะเสียงจะพูดเรียงกันรวดเดียวและไม่ย้อนซ้ำ",
+            "trick": "ระวังตัวเลขที่ไม่ใช่ราคาต่อหัว เช่น ค่าจัดส่ง จำนวนปี หรือจำนวนคน ข้อสอบชอบเอามาปนให้เราหยิบผิด"
+          }
+        },
+        {
+          "q": "What does the company offer to customers who order before the fifteenth?",
+          "choices": [
+            "A free vegetarian menu",
+            "A forty-dollar discount",
+            "An extra ninety minutes of service",
+            "Free delivery within the city"
+          ],
+          "answer": 3,
+          "th": {
+            "q": "บริษัทเสนออะไรให้ลูกค้าที่สั่งก่อนวันที่สิบห้า",
+            "choices": [
+              "เมนูมังสวิรัติฟรี",
+              "ส่วนลดสี่สิบดอลลาร์",
+              "เวลาบริการเพิ่มอีกเก้าสิบนาที",
+              "ส่งฟรีภายในเมือง"
+            ]
+          },
+          "explain": {
+            "why": "ประโยคเงื่อนไขคือ Book by the fifteenth of this month and delivery anywhere in the city is free แปลว่า จองภายในวันที่สิบห้าของเดือนนี้ แล้วส่งฟรีทั่วเมือง คำว่า by the fifteenth (ภายในวันที่สิบห้า) คือเงื่อนไข ส่วน delivery … is free คือสิ่งที่ได้ คำตอบจึงเป็นส่งฟรีภายในเมือง",
+            "wrong": {
+              "0": "เมนูมังสวิรัติไม่คิดเงินเพิ่มก็จริง แต่เป็นสิทธิของทุกคนตลอดเวลา ไม่ได้ผูกกับการจองก่อนวันที่สิบห้า ตัวลวงแบบถูกครึ่งเดียว",
+              "1": "ตัวเลขสี่สิบดอลลาร์คือค่าจัดส่งที่ต้องจ่ายเมื่อจอง หลัง วันที่สิบห้า ไม่ใช่ส่วนลด ความหมายกลับด้านกันเลย",
+              "2": "เก้าสิบนาทีคือเวลาที่ทีมงานมาถึงก่อนเวลาเสิร์ฟตามปกติของบริษัท ไม่ใช่ของแถมพิเศษสำหรับคนจองเร็ว"
+            },
+            "point": "โฆษณามักมีสูตรว่า ทำสิ่งนี้ภายในเวลานี้ แล้วจะได้สิ่งนั้น ให้ฟังคำว่า book by , order before , sign up today ตามด้วยของแถม",
+            "trick": "ตัวเลขเดียวกันมักถูกใช้ทั้งฝั่งได้และฝั่งเสีย เช่น สี่สิบดอลลาร์เป็นค่าส่งไม่ใช่ส่วนลด ให้ฟังคำรอบ ๆ ตัวเลขว่า free หรือ fee"
+          }
+        },
+        {
+          "q": "Why does the speaker mention arriving ninety minutes before service?",
+          "choices": [
+            "To explain why a fee is charged",
+            "To show that the staff set up without rushing",
+            "To describe how long a meal lasts",
+            "To warn customers about heavy traffic"
+          ],
+          "answer": 1,
+          "th": {
+            "q": "ทำไมผู้พูดถึงบอกว่ามาถึงก่อนเวลาเสิร์ฟเก้าสิบนาที",
+            "choices": [
+              "เพื่ออธิบายว่าทำไมถึงเก็บค่าธรรมเนียม",
+              "เพื่อแสดงว่าทีมงานเตรียมงานได้โดยไม่ต้องรีบ",
+              "เพื่อบอกว่ามื้ออาหารกินเวลานานแค่ไหน",
+              "เพื่อเตือนลูกค้าเรื่องรถติด"
+            ]
+          },
+          "explain": {
+            "why": "ผู้พูดเกริ่นก่อนว่า here's the thing our clients mention most แปลว่า นี่คือสิ่งที่ลูกค้าพูดถึงมากที่สุด แล้วตามด้วย we arrive ninety minutes before service, not fifteen คือมาถึงก่อนเก้าสิบนาที ไม่ใช่สิบห้านาที การเทียบ 90 กับ 15 แบบนี้คือการอวดว่าตัวเองเผื่อเวลาเยอะกว่าคนอื่นมาก จึงตั้งโต๊ะเตรียมงานได้อย่างไม่ต้องรีบ",
+            "wrong": {
+              "0": "ค่าธรรมเนียมที่พูดถึงคือค่าจัดส่งสี่สิบดอลลาร์ ซึ่งขึ้นกับวันที่จอง ไม่เกี่ยวกับเวลาที่ทีมงานมาถึงเลย",
+              "2": "เก้าสิบนาทีคือเวลา ก่อน เริ่มเสิร์ฟ ไม่ใช่ความยาวของมื้ออาหาร เป็นการตีความตัวเลขผิดหน้าที่",
+              "3": "ไม่มีการพูดถึงการจราจรหรือความล่าช้าใด ๆ ในโฆษณานี้"
+            },
+            "point": "ในโฆษณา ประโยคที่ขึ้นต้นว่า here's the thing , what sets us apart , our clients tell us คือประโยคขายจุดเด่น ข้อสอบชอบถามว่าเอ่ยขึ้นมาทำไม",
+            "trick": "เมื่อผู้พูดเทียบตัวเลขสองตัวแบบ A not B ให้เข้าใจว่าเขากำลังบอกว่าตัวเองดีกว่ามาตรฐานทั่วไป ไม่ได้แค่รายงานตัวเลขเฉย ๆ"
+          }
+        }
+      ],
+      "vocab": [
+        {
+          "w": "catering",
+          "ipa": "/ˈkeɪtərɪŋ/",
+          "th": "**เค**-เทอ-ริง",
+          "mean": "บริการจัดเลี้ยงอาหารนอกสถานที่",
+          "pos": "n."
+        },
+        {
+          "w": "a head",
+          "ipa": "/ə ˈhed/",
+          "th": "อะ **เฮด**",
+          "mean": "ต่อหนึ่งคน (ใช้บอกราคาต่อหัว)",
+          "pos": "adv."
+        },
+        {
+          "w": "flat fee",
+          "ipa": "/ˌflæt ˈfiː/",
+          "th": "แฟลท **ฟี**",
+          "mean": "ค่าธรรมเนียมเหมาจ่ายราคาเดียว ไม่คิดตามปริมาณ",
+          "pos": "n."
+        }
+      ]
+    },
+    {
+      "id": "p4r-01-008",
+      "part": 4,
+      "tier": "real",
+      "topic": "sales-meeting",
+      "setting": "การประชุมทีมขาย — ผู้จัดการภูมิภาคสรุปผลไตรมาสและสั่งงานต่อ",
+      "audio": {
+        "lines": [
+          {
+            "sp": "M",
+            "accent": "AU",
+            "text": "Let's look at the quarter before we talk about next steps. Overall we're up six percent, which sounds fine until you break it out by region. The North did the heavy lifting — up nineteen percent, and most of that is the Halstrom contract. Central came in flat, exactly where it was last quarter. The South actually fell four percent, and that's three quarters of decline in a row. Now, before anyone blames the team down there, remember we moved two of their reps north in April to cover the Halstrom launch. So we created part of that gap ourselves. What I want from each of you by Friday is a one-page note: your three largest accounts, and what would have to happen for each of them to grow. Not a forecast — a list of conditions."
+          }
+        ]
+      },
+      "th": {
+        "lines": [
+          "มาดูผลไตรมาสนี้กันก่อนที่เราจะคุยเรื่องก้าวต่อไปนะครับ ภาพรวมเราโตขึ้นหกเปอร์เซ็นต์ ซึ่งฟังดูดีจนกว่าจะแยกดูรายภูมิภาค ภาคเหนือคือคนที่แบกงานไว้ทั้งหมด โตขึ้นสิบเก้าเปอร์เซ็นต์ และส่วนใหญ่มาจากสัญญาฮัลสตรอม ภาคกลางออกมาเท่าเดิม เท่ากับไตรมาสที่แล้วเป๊ะ ส่วนภาคใต้ตกลงสี่เปอร์เซ็นต์ และนั่นคือการติดลบสามไตรมาสติดต่อกัน ทีนี้ ก่อนที่ใครจะไปโทษทีมทางใต้ อย่าลืมว่าเราย้ายพนักงานขายของเขาสองคนขึ้นเหนือเมื่อเดือนเมษายนเพื่อไปช่วยงานเปิดตัวฮัลสตรอม ฉะนั้นช่องว่างส่วนหนึ่งเราเป็นคนสร้างขึ้นมาเอง สิ่งที่ผมอยากได้จากทุกคนภายในวันศุกร์คือบันทึกหนึ่งหน้า ระบุลูกค้ารายใหญ่ที่สุดสามรายของคุณ และเงื่อนไขว่าต้องเกิดอะไรขึ้นลูกค้าแต่ละรายถึงจะโตได้ ไม่ใช่การพยากรณ์ยอดนะครับ แต่เป็นรายการเงื่อนไข"
+        ]
+      },
+      "questions": [
+        {
+          "q": "Look at the regional results. North – up 19% / Central – ? / South – down 4%. What happened in the Central region?",
+          "choices": [
+            "It grew by nineteen percent",
+            "It did not change",
+            "It fell by four percent",
+            "It grew by six percent"
+          ],
+          "answer": 1,
+          "th": {
+            "q": "ดูตารางผลรายภูมิภาคต่อไปนี้: ภาคเหนือ – โต 19% / ภาคกลาง – ? / ภาคใต้ – ลด 4% ภาคกลางเกิดอะไรขึ้น",
+            "choices": [
+              "โตขึ้นสิบเก้าเปอร์เซ็นต์",
+              "ไม่เปลี่ยนแปลง",
+              "ลดลงสี่เปอร์เซ็นต์",
+              "โตขึ้นหกเปอร์เซ็นต์"
+            ]
+          },
+          "explain": {
+            "why": "เสียงบอกว่า Central came in flat, exactly where it was last quarter คำว่า flat ในบริบทตัวเลขธุรกิจแปลว่า เท่าเดิม ไม่ขึ้นไม่ลง และผู้พูดยังย้ำว่า exactly where it was last quarter คือเท่ากับไตรมาสที่แล้วพอดี คำตอบจึงเป็น ไม่เปลี่ยนแปลง",
+            "wrong": {
+              "0": "สิบเก้าเปอร์เซ็นต์เป็นตัวเลขของภาคเหนือ ซึ่งตารางแสดงไว้อยู่แล้ว เป็นการหยิบตัวเลขผิดแถว",
+              "2": "ลดสี่เปอร์เซ็นต์เป็นตัวเลขของภาคใต้ ตารางก็แสดงไว้แล้วเช่นกัน",
+              "3": "หกเปอร์เซ็นต์คือภาพรวมของทั้งบริษัท ไม่ใช่ของภาคกลาง เป็นตัวลวงที่เอาตัวเลขระดับรวมมาตอบระดับย่อย"
+            },
+            "point": "คำศัพท์ตัวเลขที่ต้องรู้ให้ขึ้นใจคือ up (ขึ้น) down (ลง) flat (เท่าเดิม) และ decline (ลดลง)",
+            "trick": "ข้อที่มีตารางแบบมีช่องว่าง ให้โฟกัสเฉพาะแถวที่ว่าง ตัวเลขที่ตารางบอกไว้แล้วมักถูกเอามาทำเป็นตัวลวงทั้งหมด"
+          }
+        },
+        {
+          "q": "Why does the speaker mention a change made in April?",
+          "choices": [
+            "To suggest the company caused part of the decline",
+            "To praise the team that won a contract",
+            "To announce that new staff will be hired",
+            "To explain why a launch was delayed"
+          ],
+          "answer": 0,
+          "th": {
+            "q": "ทำไมผู้พูดถึงเอ่ยถึงการเปลี่ยนแปลงเมื่อเดือนเมษายน",
+            "choices": [
+              "เพื่อชี้ว่าบริษัทเองมีส่วนทำให้ยอดตก",
+              "เพื่อชมทีมที่ได้สัญญามา",
+              "เพื่อประกาศว่าจะรับพนักงานใหม่",
+              "เพื่ออธิบายว่าทำไมการเปิดตัวถึงล่าช้า"
+            ]
+          },
+          "explain": {
+            "why": "ผู้พูดพูดว่า before anyone blames the team down there, remember we moved two of their reps north in April แปลว่า ก่อนจะโทษทีมภาคใต้ อย่าลืมว่าเราย้ายพนักงานขายของเขาสองคนขึ้นเหนือเมื่อเมษายน แล้วสรุปด้วยประโยคชี้ขาดว่า So we created part of that gap ourselves คือช่องว่างส่วนหนึ่งเราสร้างขึ้นเอง จึงเป็นการชี้ว่าบริษัทเองมีส่วนทำให้ยอดภาคใต้ตก",
+            "wrong": {
+              "1": "สัญญาฮัลสตรอมถูกพูดถึงจริง แต่ผู้พูดใช้มันเป็นเหตุผลว่าทำไมต้องย้ายคน ไม่ได้พูดในน้ำเสียงชื่นชมใคร",
+              "2": "การย้ายคนสองคนคือการโยกคนที่มีอยู่แล้ว ไม่ใช่การรับคนใหม่ และไม่มีคำว่า hire เลย",
+              "3": "งานเปิดตัวไม่ได้ล่าช้า ตรงกันข้ามคือบริษัทส่งคนไปช่วยให้เปิดตัวได้สำเร็จ"
+            },
+            "point": "คำว่า before anyone blames … , to be fair , in fairness เป็นสัญญาณว่าผู้พูดกำลังจะแก้ต่างให้ใครบางคน",
+            "trick": "ประโยคที่ขึ้นต้นด้วย So … มักเป็นบทสรุปของผู้พูดเอง ถ้าจับประโยคนี้ได้ คำถามแนวอนุมานจะตอบได้ทันที"
+          }
+        },
+        {
+          "q": "What does the speaker ask the listeners to prepare?",
+          "choices": [
+            "A sales forecast for the coming quarter",
+            "A list of customers who have complained",
+            "A short note on what top accounts need to grow",
+            "A budget request for additional staff"
+          ],
+          "answer": 2,
+          "th": {
+            "q": "ผู้พูดขอให้ผู้ฟังเตรียมอะไร",
+            "choices": [
+              "การพยากรณ์ยอดขายของไตรมาสหน้า",
+              "รายชื่อลูกค้าที่ร้องเรียน",
+              "บันทึกสั้น ๆ ว่าลูกค้ารายใหญ่ต้องการอะไรถึงจะโต",
+              "คำขออนุมัติงบสำหรับจ้างคนเพิ่ม"
+            ]
+          },
+          "explain": {
+            "why": "ผู้พูดสั่งงานชัดเจนว่า What I want from each of you by Friday is a one-page note: your three largest accounts, and what would have to happen for each of them to grow แปลว่า สิ่งที่ผมอยากได้ภายในวันศุกร์คือบันทึกหนึ่งหน้า ระบุลูกค้ารายใหญ่สามรายและเงื่อนไขว่าต้องเกิดอะไรขึ้นถึงจะโต ตรงกับตัวเลือกนี้พอดี",
+            "wrong": {
+              "0": "ผู้พูดปฏิเสธไว้ตรง ๆ ในประโยคสุดท้ายว่า Not a forecast — a list of conditions คือไม่ใช่การพยากรณ์ แต่เป็นรายการเงื่อนไข ตัวลวงนี้คือสิ่งที่เขา ไม่ ต้องการ",
+              "1": "ไม่มีการพูดถึงคำร้องเรียนของลูกค้าเลยตลอดบทพูด",
+              "3": "การย้ายพนักงานขายสองคนถูกพูดถึงในฐานะเหตุการณ์ที่ผ่านไปแล้ว ไม่ได้มีการขอคนเพิ่มหรือขอเงินเพิ่ม"
+            },
+            "point": "ประโยคสั่งงานในที่ประชุมมักขึ้นต้นว่า What I want from you is … หรือ I need everyone to … ให้จดสิ่งที่ตามมาและกำหนดส่ง",
+            "trick": "ระวังประโยคที่ผู้พูด ปฏิเสธ ทิ้งท้าย เช่น Not a forecast เพราะข้อสอบจะเอาสิ่งที่ถูกปฏิเสธมาเป็นตัวลวงเสมอ"
+          }
+        }
+      ],
+      "vocab": [
+        {
+          "w": "flat",
+          "ipa": "/flæt/",
+          "th": "**แฟลท**",
+          "mean": "เท่าเดิม ไม่เพิ่มไม่ลด (ใช้กับตัวเลขยอดขาย)",
+          "pos": "adj."
+        },
+        {
+          "w": "account",
+          "ipa": "/əˈkaʊnt/",
+          "th": "อะ-**เคานท์**",
+          "mean": "ลูกค้ารายหนึ่งที่บริษัทดูแลอยู่",
+          "pos": "n."
+        },
+        {
+          "w": "forecast",
+          "ipa": "/ˈfɔːrkæst/",
+          "th": "**ฟอร์**-แคสท์",
+          "mean": "การคาดการณ์ตัวเลขล่วงหน้า",
+          "pos": "n."
+        }
+      ]
+    },
+    {
+      "id": "p4r-01-009",
+      "part": 4,
+      "tier": "real",
+      "topic": "voicemail-service",
+      "setting": "ข้อความเสียงฝากไว้ — ช่างจากศูนย์ซ่อมรถโทรแจ้งลูกค้าเรื่องผลตรวจสภาพและกำหนดเวลา",
+      "audio": {
+        "lines": [
+          {
+            "sp": "M",
+            "accent": "US",
+            "text": "Hi, this is Gerald at Ridgeway Auto Service, calling for Ms. Alvarez about the company van, plate seven-four-two. We finished the inspection this morning. The brake work you approved is done, but we found something else: the rear tires are worn past the legal limit, and I can't sign the safety certificate with them in that condition. A pair is three hundred and twenty dollars fitted, and I have them in stock. Here's the thing — if you approve by two o'clock today, the van is ready at five. If you call after two, it sits until Monday, because we close at noon on Saturday and my tire technician is off. Call me back at five-five-five, zero-one-nine-two, extension eleven. I'm here until six."
+          }
+        ]
+      },
+      "th": {
+        "lines": [
+          "สวัสดีครับ ผมเจอรัลด์จากศูนย์บริการรถยนต์ริดจ์เวย์ โทรมาหาคุณอัลวาเรซเรื่องรถตู้ของบริษัท ทะเบียนเจ็ด-สี่-สอง เราตรวจสภาพเสร็จแล้วเมื่อเช้านี้ครับ งานเบรกที่คุณอนุมัติไว้ทำเสร็จเรียบร้อย แต่เราเจออีกเรื่องหนึ่ง คือยางคู่หลังสึกเกินเกณฑ์ที่กฎหมายกำหนดแล้ว ผมจึงเซ็นใบรับรองความปลอดภัยให้ไม่ได้ถ้ายางยังเป็นแบบนี้ ยางหนึ่งคู่พร้อมติดตั้งราคาสามร้อยยี่สิบดอลลาร์ และผมมีของอยู่ในสต๊อกครับ ประเด็นคืออย่างนี้ ถ้าคุณอนุมัติภายในบ่ายสองวันนี้ รถจะเสร็จตอนห้าโมงเย็น แต่ถ้าโทรมาหลังบ่ายสอง รถจะต้องค้างไว้ถึงวันจันทร์ เพราะวันเสาร์เราปิดตอนเที่ยงและช่างยางของผมหยุด โทรกลับมาที่ห้า-ห้า-ห้า ศูนย์-หนึ่ง-เก้า-สอง ต่อสิบเอ็ดนะครับ ผมอยู่ถึงหกโมงเย็น"
+        ]
+      },
+      "questions": [
+        {
+          "q": "Who most likely is the speaker?",
+          "choices": [
+            "An insurance agent",
+            "A delivery driver",
+            "A salesperson at a tire shop",
+            "A worker at a vehicle repair shop"
+          ],
+          "answer": 3,
+          "th": {
+            "q": "ผู้พูดน่าจะเป็นใครมากที่สุด",
+            "choices": [
+              "ตัวแทนประกันภัย",
+              "พนักงานขับรถส่งของ",
+              "พนักงานขายที่ร้านยางรถยนต์",
+              "พนักงานของศูนย์ซ่อมรถ"
+            ]
+          },
+          "explain": {
+            "why": "ผู้พูดแนะนำตัวว่า this is Gerald at Ridgeway Auto Service คำว่า Auto Service คือศูนย์บริการรถยนต์ และงานที่เขาเล่าคือ We finished the inspection (ตรวจสภาพเสร็จแล้ว) กับ The brake work … is done (งานเบรกเสร็จแล้ว) รวมถึงเขาเป็นคนเซ็นใบรับรองความปลอดภัย ทั้งหมดนี้คืองานของศูนย์ซ่อมรถ",
+            "wrong": {
+              "0": "ใบรับรองความปลอดภัยฟังดูคล้ายเรื่องประกัน แต่คนที่เซ็นคือช่างที่ตรวจสภาพรถ ไม่ใช่ตัวแทนประกัน และไม่มีคำว่า insurance หรือ policy เลย",
+              "1": "รถตู้ของบริษัทถูกพูดถึงในฐานะรถที่เอามาซ่อม ผู้พูดไม่ได้เป็นคนขับ",
+              "2": "เขาขายยางให้จริงและบอกว่ามีของในสต๊อก แต่นั่นเป็นแค่ส่วนหนึ่งของงานซ่อม เขายังทำเบรกและตรวจสภาพด้วย ตัวลวงนี้ถูกครึ่งเดียวคือจับได้แค่คำว่า tires"
+            },
+            "point": "อาชีพของผู้พูดดูได้จากสองอย่างคือ ชื่อสถานที่ที่เขาบอก และ ชุดของงานที่เขาทำ ไม่ใช่จากคำเดียวที่ได้ยินชัดที่สุด",
+            "trick": "ถ้าตัวเลือกหนึ่งอธิบายได้แค่ส่วนเดียวของบทพูด แต่อีกตัวอธิบายได้ทั้งบท ให้เลือกตัวที่อธิบายได้ทั้งบทเสมอ"
+          }
+        },
+        {
+          "q": "Why is the speaker unable to complete the safety certificate?",
+          "choices": [
+            "The brake work has not been approved",
+            "A part has not arrived",
+            "Some tires are too worn",
+            "The customer has not paid the bill"
+          ],
+          "answer": 2,
+          "th": {
+            "q": "ทำไมผู้พูดถึงออกใบรับรองความปลอดภัยให้ไม่ได้",
+            "choices": [
+              "งานเบรกยังไม่ได้รับอนุมัติ",
+              "อะไหล่ยังมาไม่ถึง",
+              "ยางบางเส้นสึกเกินไป",
+              "ลูกค้ายังไม่ได้ชำระเงิน"
+            ]
+          },
+          "explain": {
+            "why": "ประโยคเดียวมีทั้งเหตุและผลครับ the rear tires are worn past the legal limit, and I can't sign the safety certificate with them in that condition แปลว่า ยางคู่หลังสึกเกินเกณฑ์ที่กฎหมายกำหนด ผมจึงเซ็นใบรับรองความปลอดภัยไม่ได้ถ้ายางยังเป็นแบบนี้ คำว่า worn past the legal limit คือสึกเกินขีดที่กฎหมายยอมให้",
+            "wrong": {
+              "0": "งานเบรกได้รับอนุมัติแล้วและทำเสร็จแล้ว ผู้พูดบอกไว้ชัดว่า The brake work you approved is done ตัวลวงนี้กลับสถานะของงานที่เสร็จแล้วให้เป็นยังไม่เสร็จ",
+              "1": "ตรงข้ามกับที่ได้ยินครับ ผู้พูดบอกว่า I have them in stock คือมียางอยู่ในสต๊อกพร้อมติดตั้ง ไม่ต้องรออะไหล่",
+              "3": "ไม่มีการพูดถึงการค้างชำระเงินเลย มีแต่ราคายางที่รอการอนุมัติ"
+            },
+            "point": "คำว่า can't , unable to , not in a position to ตามด้วยเหตุผล ให้ฟังคำที่อยู่ประโยคเดียวกันหรือประโยคก่อนหน้าทันที",
+            "trick": "ในข้อความเสียงของช่าง มักมีทั้ง งานที่เสร็จแล้ว และ ปัญหาที่เพิ่งเจอ ให้แยกสองอย่างนี้ให้ออก เพราะตัวลวงมักสลับสถานะกัน"
+          }
+        },
+        {
+          "q": "What will happen if the listener calls back at three o'clock?",
+          "choices": [
+            "The van will not be ready until next week",
+            "The price of the tires will go up",
+            "The work will still be finished at five",
+            "The speaker will have left for the day"
+          ],
+          "answer": 0,
+          "th": {
+            "q": "จะเกิดอะไรขึ้นถ้าผู้ฟังโทรกลับตอนบ่ายสาม",
+            "choices": [
+              "รถตู้จะยังไม่เสร็จจนถึงสัปดาห์หน้า",
+              "ราคายางจะสูงขึ้น",
+              "งานจะยังเสร็จตอนห้าโมงเย็นเหมือนเดิม",
+              "ผู้พูดจะกลับบ้านไปแล้ว"
+            ]
+          },
+          "explain": {
+            "why": "ผู้พูดวางเงื่อนไขไว้สองแบบ ถ้าอนุมัติภายในบ่ายสอง รถเสร็จห้าโมงเย็น แต่ If you call after two, it sits until Monday แปลว่า ถ้าโทรมาหลังบ่ายสอง รถจะค้างไว้จนถึงวันจันทร์ บ่ายสามคือหลังบ่ายสอง จึงเข้าเงื่อนไขที่สอง คือรถไม่เสร็จจนกว่าจะถึงสัปดาห์หน้า",
+            "wrong": {
+              "1": "ราคาสามร้อยยี่สิบดอลลาร์เป็นราคาเดียวตลอด ไม่มีการบอกว่าจะขึ้นราคาถ้าตอบช้า",
+              "2": "ห้าโมงเย็นเป็นผลของเงื่อนไขแรกคือต้องอนุมัติ ก่อน บ่ายสอง ตัวลวงนี้หยิบผลของเงื่อนไขผิดข้อมาตอบ",
+              "3": "ผู้พูดบอกท้ายข้อความว่า I'm here until six คืออยู่ถึงหกโมงเย็น บ่ายสามเขายังอยู่แน่นอน"
+            },
+            "point": "ประโยคเงื่อนไขแบบ If … , … เป็นจุดที่ Part 4 ชอบออกข้อสอบ ให้จับคู่ เงื่อนไข กับ ผล ทีละคู่",
+            "trick": "เมื่อโจทย์ให้เวลามาใหม่ เช่น บ่ายสาม ให้เทียบกับเส้นแบ่งในเสียงก่อนว่าอยู่ฝั่งไหนของคำว่า by two หรือ after two แล้วค่อยเลือกผล"
+          }
+        }
+      ],
+      "vocab": [
+        {
+          "w": "inspection",
+          "ipa": "/ɪnˈspekʃən/",
+          "th": "อิน-**สเปค**-ชัน",
+          "mean": "การตรวจสภาพหรือตรวจสอบ",
+          "pos": "n."
+        },
+        {
+          "w": "in stock",
+          "ipa": "/ɪn ˈstɑːk/",
+          "th": "อิน **สต็อก**",
+          "mean": "มีของพร้อมขายอยู่ในคลัง",
+          "pos": "adj."
+        },
+        {
+          "w": "worn",
+          "ipa": "/wɔːrn/",
+          "th": "**วอร์น**",
+          "mean": "สึกหรอจากการใช้งาน",
+          "pos": "adj."
+        }
+      ]
+    },
+    {
+      "id": "p4r-01-010",
+      "part": 4,
+      "tier": "real",
+      "topic": "transit-announcement",
+      "setting": "ประกาศบนรถไฟโดยสาร — พนักงานตรวจตั๋วแจ้งเหตุล่าช้าและการต่อขบวน",
+      "audio": {
+        "lines": [
+          {
+            "sp": "W",
+            "accent": "UK",
+            "text": "Ladies and gentlemen, this is your conductor speaking. We're being held just outside Ashford station because of a signalling fault on the line ahead. Control estimates we'll be moving again in about twelve minutes, which puts us into London Bridge at eight fifty rather than eight thirty-two as scheduled. If you're connecting to the Gatwick service, that train has been asked to hold for us, so you will still make it. For everyone else, delay repay forms are in the rack by each set of doors, and any delay over fifteen minutes qualifies. The buffet car in coach D is open, and we've been authorised to serve hot drinks free of charge for the rest of this journey. I'll update you the moment I hear from control. Thank you for your patience."
+          }
+        ]
+      },
+      "th": {
+        "lines": [
+          "เรียนท่านผู้โดยสารทุกท่าน ดิฉันเป็นพนักงานประจำขบวนนะคะ ขณะนี้ขบวนของเราถูกให้หยุดรออยู่นอกสถานีแอชฟอร์ด เนื่องจากระบบสัญญาณบนรางข้างหน้าขัดข้อง ศูนย์ควบคุมประเมินว่าเราจะเคลื่อนขบวนได้อีกครั้งในราวสิบสองนาที ซึ่งจะทำให้เราถึงลอนดอนบริดจ์เวลาแปดนาฬิกาห้าสิบนาที แทนที่จะเป็นแปดนาฬิกาสามสิบสองนาทีตามกำหนดเดิม ท่านที่ต้องต่อขบวนไปแกตวิก ทางเราได้ขอให้ขบวนนั้นรอเราแล้ว ท่านจึงยังต่อรถทันแน่นอนค่ะ ส่วนท่านอื่น ๆ แบบฟอร์มขอเงินชดเชยความล่าช้าอยู่ในชั้นวางข้างประตูทุกบาน ความล่าช้าเกินสิบห้านาทีขึ้นไปมีสิทธิ์ขอได้ ตู้เสบียงที่ตู้ดีเปิดให้บริการ และเราได้รับอนุญาตให้บริการเครื่องดื่มร้อนฟรีตลอดการเดินทางที่เหลือ ดิฉันจะแจ้งให้ทราบทันทีที่ได้รับข่าวจากศูนย์ควบคุม ขอบคุณที่กรุณารอคอยค่ะ"
+        ]
+      },
+      "questions": [
+        {
+          "q": "What has caused the delay?",
+          "choices": [
+            "A problem with the signals ahead",
+            "A mechanical fault on this train",
+            "Bad weather near the station",
+            "A crowded platform at London Bridge"
+          ],
+          "answer": 0,
+          "th": {
+            "q": "อะไรเป็นสาเหตุของความล่าช้า",
+            "choices": [
+              "ปัญหาของระบบสัญญาณข้างหน้า",
+              "เครื่องยนต์ของขบวนนี้ขัดข้อง",
+              "สภาพอากาศเลวร้ายใกล้สถานี",
+              "ชานชาลาที่ลอนดอนบริดจ์แออัด"
+            ]
+          },
+          "explain": {
+            "why": "ประโยคที่สองบอกสาเหตุตรง ๆ ว่า We're being held just outside Ashford station because of a signalling fault on the line ahead แปลว่า ขบวนถูกให้หยุดรอนอกสถานีแอชฟอร์ดเพราะระบบสัญญาณบนรางข้างหน้าขัดข้อง คำว่า because of คือคำบอกสาเหตุ ส่วน signalling fault คือระบบสัญญาณเสีย",
+            "wrong": {
+              "1": "คำว่า fault (ขัดข้อง) มีจริง แต่ผู้พูดระบุชัดว่าเป็นของระบบสัญญาณ on the line ahead คือบนรางข้างหน้า ไม่ใช่ที่ตัวรถ ตัวลวงนี้ย้ายที่เกิดเหตุ",
+              "2": "ไม่มีการพูดถึงสภาพอากาศเลยตลอดประกาศ",
+              "3": "ลอนดอนบริดจ์ถูกพูดถึงในฐานะปลายทางและเวลาที่จะไปถึง ไม่ได้บอกว่าที่นั่นแออัด"
+            },
+            "point": "คำบอกสาเหตุที่ต้องจับให้ได้คือ because of , due to , owing to , as a result of แล้วฟังคำนามที่ตามมาทันที",
+            "trick": "ประกาศบนรถไฟหรือสนามบินจะบอกสาเหตุภายในสองประโยคแรกเสมอ ถ้าพลาดช่วงต้นแล้วมักไม่มีพูดซ้ำอีก"
+          }
+        },
+        {
+          "q": "Look at the times. Scheduled arrival at London Bridge – 8:32 / New estimated arrival – ? / Gatwick connection departs – 9:15. When does the speaker expect the train to arrive?",
+          "choices": [
+            "At 8:32",
+            "At 8:44",
+            "At 8:50",
+            "At 9:15"
+          ],
+          "answer": 2,
+          "th": {
+            "q": "ดูตารางเวลาต่อไปนี้: เวลาถึงลอนดอนบริดจ์ตามกำหนด – 8:32 / เวลาถึงที่ประเมินใหม่ – ? / ขบวนต่อไปแกตวิกออก – 9:15 ผู้พูดคาดว่ารถไฟจะถึงเวลาใด",
+            "choices": [
+              "8:32 น.",
+              "8:44 น.",
+              "8:50 น.",
+              "9:15 น."
+            ]
+          },
+          "explain": {
+            "why": "เสียงบอกว่า which puts us into London Bridge at eight fifty rather than eight thirty-two as scheduled แปลว่า จะทำให้เราถึงลอนดอนบริดจ์เวลาแปดนาฬิกาห้าสิบนาที แทนที่จะเป็นแปดนาฬิกาสามสิบสองนาทีตามกำหนด ตารางเว้นช่องเวลาที่ประเมินใหม่ไว้ ซึ่งก็คือ 8:50 น.",
+            "wrong": {
+              "0": "8:32 น. คือเวลาตามกำหนดเดิมที่ตารางแสดงไว้แล้ว ผู้พูดใช้คำว่า rather than (แทนที่จะเป็น) เพื่อบอกว่าเวลานี้ใช้ไม่ได้แล้ว",
+              "1": "8:44 น. เกิดจากการเอา 8:32 บวกสิบสองนาทีที่ได้ยิน แต่สิบสองนาทีคือเวลาที่รถจะ เริ่มเคลื่อนอีกครั้ง ไม่ใช่เวลาที่ล่าช้าทั้งหมด เป็นกับดักคำนวณที่ข้อสอบจริงชอบใช้",
+              "3": "9:15 น. คือเวลาที่ขบวนต่อไปแกตวิกออกตามตาราง เป็นข้อมูลจริงแต่ตอบคนละคำถาม"
+            },
+            "point": "เวลาที่ได้ยินในประกาศมักมีหลายตัว ให้แยกให้ออกว่าตัวไหนคือ เวลาเดิม เวลาใหม่ และ ระยะเวลาที่ต้องรอ",
+            "trick": "อย่าเพิ่งบวกเลขในหัวทันทีที่ได้ยินตัวเลข ให้ฟังจนจบประโยค เพราะผู้พูดมักบอกเวลาใหม่ให้ตรง ๆ อยู่แล้ว"
+          }
+        },
+        {
+          "q": "What is being offered to passengers during the rest of the trip?",
+          "choices": [
+            "A free ticket for the Gatwick service",
+            "A refund at the ticket office",
+            "A seat upgrade in coach D",
+            "Hot drinks at no cost"
+          ],
+          "answer": 3,
+          "th": {
+            "q": "มีการเสนออะไรให้ผู้โดยสารตลอดการเดินทางที่เหลือ",
+            "choices": [
+              "ตั๋วฟรีสำหรับขบวนไปแกตวิก",
+              "การคืนเงินที่ห้องจำหน่ายตั๋ว",
+              "การอัปเกรดที่นั่งในตู้ดี",
+              "เครื่องดื่มร้อนโดยไม่คิดเงิน"
+            ]
+          },
+          "explain": {
+            "why": "ประโยคสำคัญคือ we've been authorised to serve hot drinks free of charge for the rest of this journey แปลว่า เราได้รับอนุญาตให้บริการเครื่องดื่มร้อนฟรีตลอดการเดินทางที่เหลือ สำนวน free of charge แปลว่าไม่คิดเงิน ตรงกับตัวเลือกที่บอกว่าเครื่องดื่มร้อนโดยไม่คิดเงิน",
+            "wrong": {
+              "0": "ขบวนไปแกตวิกถูกพูดถึงในแง่ว่าจะรอผู้โดยสารให้ ไม่มีเรื่องตั๋วฟรี เป็นการเอาชื่อที่ได้ยินมาผูกกับของแถมที่ไม่มีจริง",
+              "1": "มีแบบฟอร์มขอเงินชดเชยความล่าช้าจริง แต่ต้องกรอกแบบฟอร์มที่หยิบจากชั้นวางข้างประตู ไม่ใช่รับเงินคืนที่ห้องขายตั๋ว รายละเอียดเพี้ยนไปคนละขั้นตอน",
+              "2": "ตู้ดีถูกพูดถึงเพราะเป็นที่ตั้งของตู้เสบียง ไม่ใช่การอัปเกรดที่นั่ง"
+            },
+            "point": "สำนวนที่แปลว่าฟรีในข้อสอบมีหลายแบบ เช่น free of charge , at no cost , complimentary , on the house ให้จำไว้ทั้งชุด",
+            "trick": "ตัวลวงมักหยิบชื่อเฉพาะที่ได้ยิน เช่น Gatwick หรือ coach D มาแปะกับสิทธิประโยชน์ที่ไม่มีจริง ให้ตรวจว่าคำนั้นถูกพูดถึงในเรื่องอะไร"
+          }
+        }
+      ],
+      "vocab": [
+        {
+          "w": "conductor",
+          "ipa": "/kənˈdʌktər/",
+          "th": "เคิน-**ดัค**-เทอร์",
+          "mean": "พนักงานประจำขบวนรถไฟ (ตรวจตั๋วและประกาศ)",
+          "pos": "n."
+        },
+        {
+          "w": "fault",
+          "ipa": "/fɔːlt/",
+          "th": "**ฟอลท์**",
+          "mean": "ความขัดข้องของระบบหรืออุปกรณ์",
+          "pos": "n."
+        },
+        {
+          "w": "free of charge",
+          "ipa": "/ˌfriː əv ˈtʃɑːrdʒ/",
+          "th": "ฟรี เอิฟ **ชาร์จ**",
+          "mean": "โดยไม่คิดค่าใช้จ่าย",
+          "pos": "adv."
+        }
+      ]
+    },
+    {
+      "id": "p4r-01-011",
+      "part": 4,
+      "tier": "real",
+      "topic": "podcast-introduction",
+      "setting": "รายการพอดแคสต์ธุรกิจ — พิธีกรเปิดรายการและแนะนำแขกรับเชิญ",
+      "audio": {
+        "lines": [
+          {
+            "sp": "W",
+            "accent": "CA",
+            "text": "You're listening to Ground Floor, the show about small businesses that grew up fast. I'm your host, Amara Bell. Today's guest opened one bicycle repair shop in a garage in 2014, and this spring she opened her eleventh — across three provinces. Her name is Ingrid Sato, and what interests me isn't the growth. Plenty of companies grow. It's that she has never taken outside investment, not one dollar. Every shop was paid for by the one before it. We'll talk about what that costs you in speed and what it buys you in control. One correction first: last week's episode on warehouse leases gave the wrong figure for average rent in Halifax. The right number is in the show notes. All right, Ingrid, welcome to the program."
+          }
+        ]
+      },
+      "th": {
+        "lines": [
+          "คุณกำลังฟังรายการกราวด์ฟลอร์ รายการที่พูดถึงธุรกิจเล็ก ๆ ที่โตเร็ว ดิฉันอมารา เบลล์ ผู้ดำเนินรายการค่ะ แขกรับเชิญวันนี้เปิดร้านซ่อมจักรยานร้านแรกในโรงรถเมื่อปี 2014 และฤดูใบไม้ผลิที่ผ่านมาเธอเพิ่งเปิดสาขาที่สิบเอ็ด กระจายอยู่ในสามจังหวัด เธอชื่ออิงกริด ซาโต้ค่ะ สิ่งที่ดิฉันสนใจไม่ใช่การเติบโตนะคะ เพราะบริษัทที่โตได้ก็มีเยอะแยะ แต่เป็นเรื่องที่เธอไม่เคยรับเงินลงทุนจากภายนอกเลยแม้แต่ดอลลาร์เดียว ทุกสาขาถูกเปิดด้วยเงินที่ได้จากสาขาก่อนหน้า เราจะคุยกันว่าการทำแบบนี้ทำให้เสียอะไรไปในแง่ความเร็ว และได้อะไรกลับมาในแง่การควบคุมกิจการ ขอแก้ข้อมูลก่อนหนึ่งเรื่องค่ะ ตอนของสัปดาห์ที่แล้วเรื่องสัญญาเช่าคลังสินค้า เราให้ตัวเลขค่าเช่าเฉลี่ยในเมืองแฮลิแฟกซ์ผิด ตัวเลขที่ถูกต้องอยู่ในหมายเหตุใต้รายการแล้วนะคะ เอาละค่ะ คุณอิงกริด ยินดีต้อนรับสู่รายการค่ะ"
+        ]
+      },
+      "questions": [
+        {
+          "q": "What kind of business does the guest run?",
+          "choices": [
+            "A podcast production studio",
+            "Bicycle repair shops",
+            "A warehouse leasing company",
+            "A garage construction firm"
+          ],
+          "answer": 1,
+          "th": {
+            "q": "แขกรับเชิญทำธุรกิจประเภทใด",
+            "choices": [
+              "สตูดิโอผลิตรายการพอดแคสต์",
+              "ร้านซ่อมจักรยาน",
+              "บริษัทให้เช่าคลังสินค้า",
+              "บริษัทรับสร้างโรงรถ"
+            ]
+          },
+          "explain": {
+            "why": "พิธีกรเล่าว่า Today's guest opened one bicycle repair shop in a garage in 2014, and this spring she opened her eleventh แปลว่า แขกรับเชิญวันนี้เปิดร้านซ่อมจักรยานร้านแรกในโรงรถเมื่อปี 2014 และฤดูใบไม้ผลินี้เพิ่งเปิดสาขาที่สิบเอ็ด ธุรกิจของเธอจึงคือร้านซ่อมจักรยานหลายสาขา",
+            "wrong": {
+              "0": "พอดแคสต์คือรายการของ พิธีกร ไม่ใช่ธุรกิจของแขกรับเชิญ ตัวลวงนี้สลับตัวคนสองคนในบทพูด",
+              "2": "คลังสินค้าถูกพูดถึงเพราะเป็นหัวข้อของรายการตอนที่แล้วที่ให้ตัวเลขผิด ไม่เกี่ยวกับแขกวันนี้เลย",
+              "3": "คำว่า garage (โรงรถ) มีจริง แต่เป็น สถานที่ ที่เธอเริ่มเปิดร้าน ไม่ใช่สิ่งที่เธอรับสร้าง เป็นการเอาคำที่ได้ยินมาเปลี่ยนหน้าที่"
+            },
+            "point": "ในบทพอดแคสต์จะมีคนสองคนคือพิธีกรกับแขก ให้แยกให้ออกว่าข้อมูลไหนเป็นของใคร เพราะตัวลวงชอบสลับเจ้าของ",
+            "trick": "ประโยคที่ขึ้นต้นว่า Today's guest … คือประโยคแนะนำแขก ฟังให้ครบประโยคนี้แล้วจะได้คำตอบข้อแรกเกือบทุกครั้ง"
+          }
+        },
+        {
+          "q": "What does the speaker find most interesting about the guest?",
+          "choices": [
+            "She opened eleven shops in a single year",
+            "She began her career in Halifax",
+            "She works in three different provinces",
+            "She has expanded without outside money"
+          ],
+          "answer": 3,
+          "th": {
+            "q": "ผู้พูดสนใจเรื่องใดของแขกรับเชิญมากที่สุด",
+            "choices": [
+              "เธอเปิดร้านสิบเอ็ดสาขาภายในปีเดียว",
+              "เธอเริ่มต้นอาชีพที่เมืองแฮลิแฟกซ์",
+              "เธอทำธุรกิจอยู่ในสามจังหวัด",
+              "เธอขยายกิจการโดยไม่ใช้เงินทุนจากภายนอก"
+            ]
+          },
+          "explain": {
+            "why": "พิธีกรพูดเองว่า what interests me isn't the growth. Plenty of companies grow. It's that she has never taken outside investment, not one dollar แปลว่า สิ่งที่ดิฉันสนใจไม่ใช่การเติบโต เพราะบริษัทที่โตก็มีเยอะ แต่เป็นเรื่องที่เธอไม่เคยรับเงินลงทุนจากภายนอกเลยสักดอลลาร์ โครงสร้าง isn't A. It's B. คือการปฏิเสธ A แล้วชี้ไปที่ B ซึ่ง B ตรงกับตัวเลือกนี้",
+            "wrong": {
+              "0": "สิบเอ็ดสาขามีจริง แต่ใช้เวลาตั้งแต่ปี 2014 จนถึงฤดูใบไม้ผลิปีนี้ ไม่ใช่ปีเดียว และพิธีกรบอกชัดว่าการเติบโตไม่ใช่สิ่งที่เธอสนใจที่สุด",
+              "1": "แฮลิแฟกซ์ถูกพูดถึงในเรื่องตัวเลขค่าเช่าที่ผิดของรายการตอนที่แล้ว ไม่เกี่ยวกับจุดเริ่มต้นของแขกรับเชิญ",
+              "2": "สามจังหวัดเป็นข้อมูลจริง แต่ก็ยังอยู่ในหมวด การเติบโต ซึ่งพิธีกรเพิ่งบอกว่าไม่ใช่ประเด็นที่เธอสนใจ ตัวลวงแบบถูกครึ่งเดียว"
+            },
+            "point": "โครงสร้าง It isn't A , it's B เป็นวิธีเน้นความสำคัญที่ข้อสอบชอบใช้ คำตอบอยู่ที่ B เสมอ ไม่ใช่ A",
+            "trick": "เมื่อได้ยินคำว่า what interests me , the remarkable thing is , what stands out ให้เตรียมจดสิ่งที่ตามมา เพราะนั่นคือคำตอบของคำถามอนุมาน"
+          }
+        },
+        {
+          "q": "What does the speaker say about an earlier episode?",
+          "choices": [
+            "It contained a figure that was incorrect",
+            "It will be broadcast again next week",
+            "It featured the same guest",
+            "It is available only to members"
+          ],
+          "answer": 0,
+          "th": {
+            "q": "ผู้พูดบอกอะไรเกี่ยวกับรายการตอนก่อนหน้า",
+            "choices": [
+              "มีตัวเลขที่ผิดอยู่",
+              "จะออกอากาศซ้ำสัปดาห์หน้า",
+              "มีแขกรับเชิญคนเดียวกัน",
+              "รับฟังได้เฉพาะสมาชิกเท่านั้น"
+            ]
+          },
+          "explain": {
+            "why": "พิธีกรบอกว่า One correction first: last week's episode on warehouse leases gave the wrong figure for average rent in Halifax แปลว่า ขอแก้ข้อมูลก่อนหนึ่งเรื่อง ตอนสัปดาห์ที่แล้วเรื่องสัญญาเช่าคลังสินค้าให้ตัวเลขค่าเช่าเฉลี่ยในแฮลิแฟกซ์ผิด คำว่า correction (การแก้ไข) และ wrong figure (ตัวเลขผิด) ตรงกับตัวเลือกนี้",
+            "wrong": {
+              "1": "ไม่มีการพูดถึงการออกอากาศซ้ำเลย คำว่า last week กับ next week ต่างกันคนละทิศ ตัวลวงนี้เล่นกับคำบอกเวลา",
+              "2": "ตอนที่แล้วพูดเรื่องสัญญาเช่าคลังสินค้า ส่วนแขกวันนี้ทำธุรกิจร้านซ่อมจักรยาน คนละเรื่องกันชัดเจน",
+              "3": "หมายเหตุใต้รายการเปิดให้ทุกคนดูได้ ไม่มีการพูดถึงระบบสมาชิกเลย"
+            },
+            "point": "ในรายการวิทยุหรือพอดแคสต์ มักมีช่วง แก้ข่าวเก่า แทรกกลางรายการ ให้ฟังคำว่า correction , clarification , we misstated",
+            "trick": "คำบอกเวลาอย่าง last week's episode ช่วยตัดตัวเลือกได้ทันที เพราะตัวลวงมักเปลี่ยนเป็นเรื่องอนาคตแทน"
+          }
+        }
+      ],
+      "vocab": [
+        {
+          "w": "investment",
+          "ipa": "/ɪnˈvestmənt/",
+          "th": "อิน-**เวสท์**-เมินท์",
+          "mean": "เงินลงทุนที่ใส่เข้าไปในกิจการเพื่อหวังผลตอบแทน",
+          "pos": "n."
+        },
+        {
+          "w": "figure",
+          "ipa": "/ˈfɪɡjər/",
+          "th": "**ฟิก**-เยอร์",
+          "mean": "ตัวเลขที่ใช้อ้างอิงในรายงานหรือข่าว",
+          "pos": "n."
+        },
+        {
+          "w": "lease",
+          "ipa": "/liːs/",
+          "th": "**ลีส**",
+          "mean": "สัญญาเช่าระยะยาว",
+          "pos": "n."
+        }
+      ]
+    },
+    {
+      "id": "p4r-01-012",
+      "part": 4,
+      "tier": "real",
+      "topic": "automated-message",
+      "setting": "ข้อความอัตโนมัติทางโทรศัพท์ — บริษัทสื่อสารแจ้งเมนูบริการและประกาศสำคัญ",
+      "audio": {
+        "lines": [
+          {
+            "sp": "W",
+            "accent": "AU",
+            "text": "Thank you for calling Brightwire Communications. Please listen carefully, as our menu has changed. For billing questions, press one. To report an outage or slow speeds, press two. To change your plan or add a service, press three. To reach the business accounts team, press four; please note that this team is available on weekdays only, eight to six. Before you hold, two announcements. Scheduled maintenance will interrupt service in the Riverton and Eastvale areas this Thursday between one and four in the morning — there is no need to call about that. And customers who pay by post should note that our mailing centre has moved: payments now go to the Box 400 address, not Box 220. Please stay on the line. The current wait is about nine minutes."
+          }
+        ]
+      },
+      "th": {
+        "lines": [
+          "ขอบคุณที่ติดต่อไบรท์ไวร์คอมมิวนิเคชันส์ กรุณาฟังให้ดี เนื่องจากเมนูของเรามีการเปลี่ยนแปลง หากต้องการสอบถามเรื่องใบแจ้งหนี้ กด 1 หากต้องการแจ้งสัญญาณขัดข้องหรืออินเทอร์เน็ตช้า กด 2 หากต้องการเปลี่ยนแพ็กเกจหรือเพิ่มบริการ กด 3 หากต้องการติดต่อทีมดูแลลูกค้าองค์กร กด 4 โปรดทราบว่าทีมนี้ให้บริการเฉพาะวันทำการ ตั้งแต่แปดโมงเช้าถึงหกโมงเย็น ก่อนที่ท่านจะถือสายรอ มีประกาศสองเรื่อง เรื่องแรก จะมีการบำรุงรักษาตามแผนซึ่งทำให้สัญญาณในพื้นที่ริเวอร์ตันและอีสต์เวลขาดหายในคืนวันพฤหัสบดีนี้ ระหว่างตีหนึ่งถึงตีสี่ ท่านไม่จำเป็นต้องโทรแจ้งเรื่องนี้ อีกเรื่องหนึ่ง ลูกค้าที่ชำระเงินทางไปรษณีย์โปรดทราบว่าศูนย์รับจดหมายของเราย้ายที่แล้ว การชำระเงินให้ส่งไปที่ตู้ ปณ. 400 ไม่ใช่ตู้ ปณ. 220 กรุณาถือสายรอสักครู่ ขณะนี้เวลารอโดยประมาณคือเก้านาที"
+        ]
+      },
+      "questions": [
+        {
+          "q": "Look at the menu. Press 1 – Billing / Press 2 – Service problems / Press 3 – Plan changes / Press 4 – Business accounts. Which number should a customer with a slow connection press?",
+          "choices": [
+            "Press 1",
+            "Press 2",
+            "Press 3",
+            "Press 4"
+          ],
+          "answer": 1,
+          "th": {
+            "q": "ดูเมนูโทรศัพท์ต่อไปนี้: กด 1 – ใบแจ้งหนี้ / กด 2 – ปัญหาสัญญาณ / กด 3 – เปลี่ยนแพ็กเกจ / กด 4 – ลูกค้าองค์กร ลูกค้าที่อินเทอร์เน็ตช้าควรกดหมายเลขใด",
+            "choices": [
+              "Press 1",
+              "Press 2",
+              "Press 3",
+              "Press 4"
+            ]
+          },
+          "explain": {
+            "why": "เสียงบอกว่า To report an outage or slow speeds, press two แปลว่า หากต้องการแจ้งสัญญาณขัดข้องหรือความเร็วต่ำ ให้กดสอง คำว่า slow speeds ตรงกับสถานการณ์ในคำถามคืออินเทอร์เน็ตช้า และในตารางหมายเลขสองคือปัญหาสัญญาณ คำตอบจึงเป็น Press 2",
+            "wrong": {
+              "0": "หมายเลขหนึ่งใช้สำหรับเรื่องใบแจ้งหนี้ ซึ่งเป็นเรื่องเงิน ไม่ใช่ปัญหาการใช้งาน",
+              "2": "หมายเลขสามใช้เปลี่ยนแพ็กเกจหรือเพิ่มบริการ ลูกค้าที่เน็ตช้าอาจถูกหลอกให้คิดว่าต้องอัปเกรดแพ็กเกจ แต่ในเสียงไม่ได้บอกแบบนั้น",
+              "3": "หมายเลขสี่ใช้ติดต่อทีมลูกค้าองค์กร ซึ่งจำกัดเฉพาะวันทำการ และคำถามไม่ได้ระบุว่าเป็นลูกค้าองค์กร"
+            },
+            "point": "ข้อที่มีเมนูโทรศัพท์ ให้ฟังคู่ของ เหตุผล กับ ตัวเลข ทีละคู่ แล้วจับคู่กับสถานการณ์ในคำถาม",
+            "trick": "เมนูแบบนี้พูดเร็วมากและไม่ย้อนซ้ำ ให้เขียนเลข 1 2 3 4 ไว้ก่อน แล้วเติมคำสำคัญข้างเลขทันทีที่ได้ยิน"
+          }
+        },
+        {
+          "q": "What does the speaker say about Thursday?",
+          "choices": [
+            "The business accounts team will be closed",
+            "Payments will be due",
+            "Service will stop in some areas overnight",
+            "The mailing centre will move"
+          ],
+          "answer": 2,
+          "th": {
+            "q": "ผู้พูดบอกอะไรเกี่ยวกับวันพฤหัสบดี",
+            "choices": [
+              "ทีมลูกค้าองค์กรจะปิดทำการ",
+              "จะถึงกำหนดชำระเงิน",
+              "สัญญาณจะขาดหายในบางพื้นที่ช่วงกลางคืน",
+              "ศูนย์รับจดหมายจะย้ายที่"
+            ]
+          },
+          "explain": {
+            "why": "ประกาศบอกว่า Scheduled maintenance will interrupt service in the Riverton and Eastvale areas this Thursday between one and four in the morning แปลว่า การบำรุงรักษาตามแผนจะทำให้สัญญาณในพื้นที่ริเวอร์ตันและอีสต์เวลขาดหายในคืนวันพฤหัสบดีนี้ ระหว่างตีหนึ่งถึงตีสี่ คำว่า interrupt service คือทำให้บริการหยุดชะงัก จึงตรงกับตัวเลือกนี้",
+            "wrong": {
+              "0": "ทีมลูกค้าองค์กรทำงานวันจันทร์ถึงศุกร์ และวันพฤหัสบดีก็เป็นวันทำการ จึงไม่ได้ปิด ตัวลวงนี้เอาข้อจำกัดเรื่องวันทำการมาผูกกับวันผิด",
+              "1": "ไม่มีการพูดถึงวันครบกำหนดชำระเงินเลย มีแต่เรื่องที่อยู่ที่ใช้ส่งเงิน",
+              "3": "ศูนย์รับจดหมายย้ายไปแล้ว ผู้พูดใช้คำว่า has moved ซึ่งเป็นเหตุการณ์ที่เกิดขึ้นแล้ว ไม่ใช่จะเกิดวันพฤหัสบดี"
+            },
+            "point": "ประกาศอัตโนมัติมักมีหลายเรื่องต่อกันรวดเดียว ให้ผูกแต่ละเรื่องกับ คำบอกเวลา ของมัน แล้วจะไม่สับสน",
+            "trick": "สังเกตรูปกริยาเป็นเบาะแส will interrupt คืออนาคต ส่วน has moved คืออดีตที่จบไปแล้ว ต่างกันคนละช่วงเวลา"
+          }
+        },
+        {
+          "q": "What has changed for customers who pay by mail?",
+          "choices": [
+            "The amount of a monthly fee",
+            "The date payments are due",
+            "The telephone menu options",
+            "The address payments are sent to"
+          ],
+          "answer": 3,
+          "th": {
+            "q": "อะไรเปลี่ยนไปสำหรับลูกค้าที่ชำระเงินทางไปรษณีย์",
+            "choices": [
+              "จำนวนค่าบริการรายเดือน",
+              "วันครบกำหนดชำระ",
+              "ตัวเลือกในเมนูโทรศัพท์",
+              "ที่อยู่ที่ใช้ส่งเงิน"
+            ]
+          },
+          "explain": {
+            "why": "ประโยคสุดท้ายของประกาศบอกว่า our mailing centre has moved: payments now go to the Box 400 address, not Box 220 แปลว่า ศูนย์รับจดหมายย้ายแล้ว การชำระเงินให้ส่งไปที่ตู้ ปณ. 400 ไม่ใช่ตู้ ปณ. 220 สิ่งที่เปลี่ยนจึงคือที่อยู่ที่ใช้ส่งเงิน",
+            "wrong": {
+              "0": "ไม่มีการพูดถึงจำนวนเงินหรือการขึ้นราคาค่าบริการเลยในประกาศนี้",
+              "1": "วันครบกำหนดชำระไม่ได้ถูกเอ่ยถึง ตัวลวงนี้อาศัยว่าเราได้ยินคำว่า payments แล้วเดาต่อเอง",
+              "2": "เมนูโทรศัพท์เปลี่ยนจริงตามที่บอกไว้ตอนต้น แต่นั่นเป็นเรื่องของลูกค้าทุกคน ไม่ใช่เรื่องเฉพาะของคนที่จ่ายทางไปรษณีย์ ตัวลวงนี้เอาข้อมูลจริงมาตอบผิดคำถาม"
+            },
+            "point": "คำถามที่ระบุกลุ่มคนเฉพาะ เช่น customers who pay by mail ให้หาช่วงที่ผู้พูดเอ่ยถึงกลุ่มนั้นโดยตรง แล้วอ่านเฉพาะช่วงนั้น",
+            "trick": "ในบทพูดที่มีการเปลี่ยนแปลงหลายเรื่อง ให้จดสั้น ๆ ว่า ใครเปลี่ยนอะไร มิฉะนั้นจะจับคู่ผิดแน่นอน"
+          }
+        }
+      ],
+      "vocab": [
+        {
+          "w": "outage",
+          "ipa": "/ˈaʊtɪdʒ/",
+          "th": "**เอา**-ทิจ",
+          "mean": "ไฟดับหรือสัญญาณขาดหายเป็นช่วงเวลาหนึ่ง",
+          "pos": "n."
+        },
+        {
+          "w": "maintenance",
+          "ipa": "/ˈmeɪntənəns/",
+          "th": "**เมน**-เทิน-เนินซ์",
+          "mean": "การบำรุงรักษาอุปกรณ์หรือระบบ",
+          "pos": "n."
+        },
+        {
+          "w": "weekday",
+          "ipa": "/ˈwiːkdeɪ/",
+          "th": "**วีค**-เดย์",
+          "mean": "วันธรรมดา คือวันจันทร์ถึงวันศุกร์",
+          "pos": "n."
+        }
+      ]
+    },
+    {
+      "id": "p4r-01-013",
+      "part": 4,
+      "tier": "real",
+      "topic": "farewell-speech",
+      "setting": "งานเลี้ยงอำลา — ผู้บริหารกล่าวขอบคุณพนักงานที่กำลังจะเกษียณ",
+      "audio": {
+        "lines": [
+          {
+            "sp": "M",
+            "accent": "US",
+            "text": "If I could have your attention for a moment. Twenty-six years ago, Harold Nkemdirim joined a company with forty employees and one product line. Tonight he leaves a company with six hundred employees and a catalog I could not fit on a slide. Harold ran the parts department for nineteen of those years, and here is what that meant in practice. During the port strike in 2019, when our shipments were stuck, Harold drove eleven hours overnight and collected two boxes himself, so the Fairview hospital order went out on time. Nobody asked him to, and he never mentioned it in a meeting — I heard about it from the customer. The plaque we're giving him tonight has his title, his department and two dates on it. There's no room on it for that drive, so I'm telling you instead."
+          }
+        ]
+      },
+      "th": {
+        "lines": [
+          "ขอเวลาทุกท่านสักครู่นะครับ เมื่อยี่สิบหกปีก่อน คุณแฮโรลด์ เอ็นเค็มดิริม เข้ามาร่วมงานกับบริษัทที่มีพนักงานสี่สิบคนและสินค้าเพียงสายเดียว คืนนี้เขากำลังจะจากบริษัทที่มีพนักงานหกร้อยคนและมีแคตตาล็อกยาวจนผมใส่ลงในสไลด์แผ่นเดียวไม่ได้ คุณแฮโรลด์ดูแลแผนกอะไหล่มาสิบเก้าปีจากทั้งหมดนั้น และนี่คือความหมายของมันในทางปฏิบัติครับ ตอนที่ท่าเรือหยุดงานประท้วงเมื่อปี 2019 ซึ่งสินค้าของเราติดค้างอยู่หมด คุณแฮโรลด์ขับรถข้ามคืนสิบเอ็ดชั่วโมงไปรับกล่องสองกล่องด้วยตัวเอง เพื่อให้ออร์เดอร์ของโรงพยาบาลแฟร์วิวส่งได้ตรงเวลา ไม่มีใครสั่งให้เขาทำ และเขาไม่เคยเอ่ยเรื่องนี้ในที่ประชุมเลย ผมได้ยินเรื่องนี้จากปากลูกค้าเอง โล่ที่เราจะมอบให้เขาคืนนี้มีชื่อตำแหน่ง ชื่อแผนก และวันที่สองวันสลักอยู่ ไม่มีที่ว่างพอจะสลักเรื่องการขับรถครั้งนั้น ผมเลยขอเล่าให้ทุกท่านฟังแทนครับ"
+        ]
+      },
+      "questions": [
+        {
+          "q": "What is the main purpose of the talk?",
+          "choices": [
+            "To honor an employee who is leaving",
+            "To introduce a new department head",
+            "To announce a company merger",
+            "To present a new product line"
+          ],
+          "answer": 0,
+          "th": {
+            "q": "บทพูดนี้มีจุดประสงค์หลักอะไร",
+            "choices": [
+              "เพื่อยกย่องพนักงานที่กำลังจะจากไป",
+              "เพื่อแนะนำหัวหน้าแผนกคนใหม่",
+              "เพื่อประกาศการควบรวมบริษัท",
+              "เพื่อเปิดตัวสินค้าสายใหม่"
+            ]
+          },
+          "explain": {
+            "why": "ผู้พูดเล่าประวัติการทำงานยี่สิบหกปีของคุณแฮโรลด์ แล้วบอกว่า Tonight he leaves a company with six hundred employees แปลว่า คืนนี้เขากำลังจะจากบริษัทที่มีพนักงานหกร้อยคน จากนั้นยังพูดถึง The plaque we're giving him tonight คือโล่ที่จะมอบให้คืนนี้ ทั้งสองจุดรวมกันบอกว่านี่คืองานอำลาเพื่อยกย่องพนักงานที่กำลังจะจากไป",
+            "wrong": {
+              "1": "ไม่มีการเอ่ยชื่อคนที่จะมารับตำแหน่งต่อเลย พูดถึงแต่คนที่กำลังจะไป",
+              "2": "ตัวเลขพนักงานสี่สิบคนกับหกร้อยคนคือการเทียบขนาดบริษัทเมื่อก่อนกับตอนนี้ ไม่ใช่การรวมสองบริษัทเข้าด้วยกัน เป็นการตีความตัวเลขผิดเรื่อง",
+              "3": "คำว่า product line (สายผลิตภัณฑ์) และ catalog มีจริง แต่ถูกใช้เล่าว่าบริษัทโตขึ้นแค่ไหน ไม่ใช่การเปิดตัวสินค้าใหม่"
+            },
+            "point": "สุนทรพจน์อำลาจะมีสัญญาณสามอย่างคือ จำนวนปีที่ทำงาน คำว่า leaves หรือ retires และของที่ระลึกอย่างโล่",
+            "trick": "เมื่อผู้พูดเทียบ อดีต กับ ปัจจุบัน ของบริษัทในสองประโยคแรก มักเป็นการปูทางเพื่อยกย่องใครสักคน ไม่ใช่การรายงานผลประกอบการ"
+          }
+        },
+        {
+          "q": "Why does the speaker describe a trip made in 2019?",
+          "choices": [
+            "To explain why an order arrived late",
+            "To criticize a shipping company",
+            "To announce a new delivery policy",
+            "To give an example of the man's commitment"
+          ],
+          "answer": 3,
+          "th": {
+            "q": "ทำไมผู้พูดถึงเล่าเรื่องการเดินทางเมื่อปี 2019",
+            "choices": [
+              "เพื่ออธิบายว่าทำไมออร์เดอร์ถึงส่งช้า",
+              "เพื่อตำหนิบริษัทขนส่ง",
+              "เพื่อประกาศนโยบายการจัดส่งแบบใหม่",
+              "เพื่อยกตัวอย่างความทุ่มเทของเขา"
+            ]
+          },
+          "explain": {
+            "why": "ก่อนเล่าเรื่องนี้ ผู้พูดเกริ่นว่า here is what that meant in practice แปลว่า นี่คือความหมายของมันในทางปฏิบัติ แสดงว่ากำลังจะยกตัวอย่างประกอบ แล้วเรื่องที่เล่าคือเขาขับรถข้ามคืนสิบเอ็ดชั่วโมงไปรับของเอง โดยไม่มีใครสั่งและไม่เคยเอ่ยถึง ทั้งหมดนี้คือการแสดงความทุ่มเทของคนคนหนึ่ง",
+            "wrong": {
+              "0": "ผลของการขับรถครั้งนั้นคือออร์เดอร์ส่งได้ ตรงเวลา ผู้พูดบอกว่า went out on time ตัวลวงนี้กลับผลลัพธ์ให้เป็นตรงกันข้าม",
+              "1": "การหยุดงานที่ท่าเรือเป็นสถานการณ์ภายนอก ผู้พูดไม่ได้ตำหนิใครเลย น้ำเสียงทั้งบทเป็นการชื่นชม",
+              "2": "ไม่มีการประกาศนโยบายหรือกฎใหม่ใด ๆ ในบทพูดนี้ เป็นงานเลี้ยง ไม่ใช่การประชุม"
+            },
+            "point": "ประโยคเกริ่นอย่าง here is what that meant , let me give you an example , to show you what I mean บอกว่าเรื่องที่ตามมาคือ ตัวอย่างประกอบ ไม่ใช่ข่าวใหม่",
+            "trick": "คำถาม Why does the speaker describe …? ให้ถามตัวเองว่าเรื่องเล่านี้ทำให้เรารู้สึกอย่างไรกับตัวละคร คำตอบมักเป็นการชม การเตือน หรือการอธิบายเหตุผล"
+          }
+        },
+        {
+          "q": "Why does the speaker mention the plaque?",
+          "choices": [
+            "To thank the people who ordered it",
+            "To point out that it cannot show everything he did",
+            "To correct a date printed on it",
+            "To explain where it will be displayed"
+          ],
+          "answer": 1,
+          "th": {
+            "q": "ทำไมผู้พูดถึงเอ่ยถึงโล่",
+            "choices": [
+              "เพื่อขอบคุณคนที่สั่งทำโล่",
+              "เพื่อชี้ว่าโล่แสดงทุกอย่างที่เขาทำไม่ได้",
+              "เพื่อแก้วันที่ที่สลักผิดบนโล่",
+              "เพื่ออธิบายว่าจะนำโล่ไปตั้งไว้ที่ไหน"
+            ]
+          },
+          "explain": {
+            "why": "ผู้พูดบอกว่าโล่มีแค่ his title, his department and two dates คือชื่อตำแหน่ง ชื่อแผนก และวันที่สองวัน แล้วตามด้วย There's no room on it for that drive, so I'm telling you instead แปลว่า ไม่มีที่ว่างพอจะสลักเรื่องการขับรถครั้งนั้น ผมเลยเล่าให้ทุกท่านฟังแทน นี่คือการชี้ว่าโล่บันทึกสิ่งที่เขาทำได้ไม่ครบ",
+            "wrong": {
+              "0": "ไม่มีการเอ่ยถึงคนที่สั่งทำโล่หรือขอบคุณใครเรื่องนี้เลย",
+              "2": "โล่มีวันที่สลักอยู่สองวันจริง แต่ผู้พูดไม่ได้บอกว่ามันผิด เขาบอกแค่ว่าโล่ใส่เรื่องราวได้ไม่หมด เป็นการเติมข้อมูลที่ไม่มีในเสียง",
+              "3": "ไม่มีการพูดถึงสถานที่จัดแสดงโล่แม้แต่คำเดียว"
+            },
+            "point": "ประโยคที่มีคำว่า instead (แทนที่จะเป็นอย่างนั้น) มักเป็นประโยคสรุปเจตนาของผู้พูด ให้จับให้ได้",
+            "trick": "ในสุนทรพจน์ ผู้พูดชอบเทียบ ของที่จับต้องได้ กับ สิ่งที่วัดไม่ได้ เช่น โล่หนึ่งแผ่นเทียบกับความทุ่มเททั้งชีวิต เจอโครงสร้างนี้ให้เดาเจตนาไปทางยกย่องได้เลย"
+          }
+        }
+      ],
+      "vocab": [
+        {
+          "w": "plaque",
+          "ipa": "/plæk/",
+          "th": "**แพลค**",
+          "mean": "โล่หรือแผ่นป้ายที่สลักข้อความไว้เพื่อเป็นเกียรติ",
+          "pos": "n."
+        },
+        {
+          "w": "strike",
+          "ipa": "/straɪk/",
+          "th": "**สไตรค์**",
+          "mean": "การหยุดงานประท้วงของคนงาน",
+          "pos": "n."
+        },
+        {
+          "w": "catalog",
+          "ipa": "/ˈkætəlɔːɡ/",
+          "th": "**แค**-เทอ-ล็อก",
+          "mean": "รายการสินค้าทั้งหมดที่บริษัทมีขาย",
+          "pos": "n."
+        }
+      ]
+    },
+    {
+      "id": "p4r-01-014",
+      "part": 4,
+      "tier": "real",
+      "topic": "trade-show-briefing",
+      "setting": "งานแสดงสินค้า — หัวหน้าทีมชี้แจงพนักงานประจำบูธก่อนเปิดงาน",
+      "audio": {
+        "lines": [
+          {
+            "sp": "M",
+            "accent": "UK",
+            "text": "Right, quick briefing before the doors open at ten. We have three stands this year rather than one, so please be clear about which one you're on. Stand 12 is the main display — that's Priya, Owen and me. Stand 27, beside the north café, is the demonstration table; Lucas and Feride are there, and the demo runs on the hour, every hour. Stand 41 is registration for Thursday's workshop, and Georgina is on that alone until two, when Owen swaps over. Badge scanners: scan every visitor before you hand over a brochure, not after. We ran out of brochures by lunchtime last year because we handed them to anyone walking past. Lunch breaks are staggered — the sheet is in the storage crate. And keep the aisle clear; the organisers fined two exhibitors yesterday for leaving boxes out."
+          }
+        ]
+      },
+      "th": {
+        "lines": [
+          "เอาละครับ ขอชี้แจงสั้น ๆ ก่อนเปิดประตูตอนสิบโมง ปีนี้เรามีบูธสามบูธ ไม่ใช่บูธเดียวเหมือนก่อน ฉะนั้นขอให้ทุกคนชัดเจนว่าตัวเองอยู่บูธไหน บูธ 12 คือบูธแสดงสินค้าหลัก มีพรียา โอเวน และผม บูธ 27 อยู่ข้างคาเฟ่ฝั่งทิศเหนือ เป็นโต๊ะสาธิตสินค้า มีลูคัสกับเฟริเดประจำอยู่ และการสาธิตจะเริ่มทุกต้นชั่วโมง บูธ 41 เป็นจุดลงทะเบียนเวิร์กช็อปวันพฤหัสบดี จอร์จินาจะอยู่คนเดียวจนถึงบ่ายสอง แล้วโอเวนจะไปสลับให้ เรื่องเครื่องสแกนบัตร ให้สแกนผู้เข้าชมทุกคน ก่อน ยื่นโบรชัวร์ให้ ไม่ใช่หลังจากยื่น ปีที่แล้วโบรชัวร์เราหมดตั้งแต่ก่อนเที่ยง เพราะเราแจกให้ทุกคนที่เดินผ่าน เวลาพักกลางวันจะสลับกันไป ตารางอยู่ในลังเก็บของ แล้วอย่าวางของกีดขวางทางเดินนะครับ เมื่อวานผู้จัดงานเพิ่งปรับผู้ออกบูธไปสองรายเพราะวางกล่องไว้บนทางเดิน"
+        ]
+      },
+      "questions": [
+        {
+          "q": "Look at the stand list. Stand 12 – Main display / Stand 27 – ? / Stand 41 – Workshop registration / Stand 55 – Organisers' storage. Which stand should a visitor go to in order to see a product demonstration?",
+          "choices": [
+            "Stand 12",
+            "Stand 27",
+            "Stand 41",
+            "Stand 55"
+          ],
+          "answer": 1,
+          "th": {
+            "q": "ดูรายการบูธต่อไปนี้: บูธ 12 – บูธแสดงสินค้าหลัก / บูธ 27 – ? / บูธ 41 – จุดลงทะเบียนเวิร์กช็อป / บูธ 55 – ห้องเก็บของผู้จัดงาน ผู้เข้าชมที่อยากดูการสาธิตสินค้าควรไปบูธใด",
+            "choices": [
+              "บูธ 12",
+              "บูธ 27",
+              "บูธ 41",
+              "บูธ 55"
+            ]
+          },
+          "explain": {
+            "why": "เสียงบอกว่า Stand 27, beside the north café, is the demonstration table แปลว่า บูธ 27 ซึ่งอยู่ข้างคาเฟ่ฝั่งเหนือ เป็นโต๊ะสาธิตสินค้า และยังเสริมว่าการสาธิตจัดทุกต้นชั่วโมง ตารางเว้นช่องของบูธนี้ไว้พอดี คำตอบจึงเป็นบูธหมายเลข 27",
+            "wrong": {
+              "0": "บูธ 12 คือบูธแสดงสินค้าหลัก ซึ่งตารางระบุไว้แล้ว เป็นที่ตั้งโชว์สินค้า ไม่ใช่จุดสาธิตวิธีใช้",
+              "2": "บูธ 41 คือจุดลงทะเบียนเวิร์กช็อปวันพฤหัสบดี เป็นงานเอกสาร ไม่ใช่การสาธิต",
+              "3": "บูธ 55 เป็นห้องเก็บของของผู้จัดงาน ซึ่งมีอยู่ในตารางเท่านั้น ไม่ถูกเอ่ยถึงในเสียงเลย"
+            },
+            "point": "ผังหรือรายการบูธจะมีช่องว่างหนึ่งช่องเสมอ ให้โฟกัสเฉพาะช่องนั้น แล้วรอฟังคำที่ตรงกับหน้าที่ของบูธ",
+            "trick": "ผู้พูดมักบอกจุดสังเกตประกอบ เช่น beside the north café ถ้าคำถามถามตำแหน่ง ให้ใช้จุดสังเกตนี้ยืนยันคำตอบอีกชั้น"
+          }
+        },
+        {
+          "q": "What are the workers told to do before giving out a brochure?",
+          "choices": [
+            "Scan the visitor's badge",
+            "Ask for a business card",
+            "Check the lunch break sheet",
+            "Write down the visitor's name"
+          ],
+          "answer": 0,
+          "th": {
+            "q": "พนักงานถูกสั่งให้ทำอะไรก่อนแจกโบรชัวร์",
+            "choices": [
+              "สแกนบัตรของผู้เข้าชม",
+              "ขอนามบัตร",
+              "ดูตารางเวลาพักกลางวัน",
+              "จดชื่อผู้เข้าชม"
+            ]
+          },
+          "explain": {
+            "why": "ผู้พูดสั่งว่า scan every visitor before you hand over a brochure, not after แปลว่า ให้สแกนผู้เข้าชมทุกคนก่อนยื่นโบรชัวร์ ไม่ใช่หลังจากยื่นแล้ว คำว่า before … not after เน้นลำดับชัดเจนว่าสแกนต้องมาก่อน คำตอบจึงเป็นการสแกนบัตร",
+            "wrong": {
+              "1": "ไม่มีการพูดถึงนามบัตรเลย งานแสดงสินค้าใช้เครื่องสแกนบัตรแทนการเก็บนามบัตร",
+              "2": "ตารางพักกลางวันมีอยู่จริงในลังเก็บของ แต่เป็นเรื่องของพนักงานเอง ไม่เกี่ยวกับขั้นตอนแจกโบรชัวร์",
+              "3": "การจดชื่อด้วยมือไม่ถูกเอ่ยถึง ระบบที่ใช้คือเครื่องสแกนซึ่งบันทึกข้อมูลให้อยู่แล้ว"
+            },
+            "point": "คำบอกลำดับที่ต้องจับให้ได้คือ before , after , first , then และประโยคย้ำแบบ not after ที่บอกว่าห้ามสลับลำดับ",
+            "trick": "ถ้าผู้พูดพูดทั้ง before และ not after ในประโยคเดียว แปลว่าเขารู้ว่าคนชอบทำสลับ ข้อสอบก็จะออกตรงนี้แน่นอน"
+          }
+        },
+        {
+          "q": "Why does the speaker mention last year?",
+          "choices": [
+            "To explain why two exhibitors were fined",
+            "To praise the team's performance",
+            "To give a reason for the rule about brochures",
+            "To report that attendance has increased"
+          ],
+          "answer": 2,
+          "th": {
+            "q": "ทำไมผู้พูดถึงเอ่ยถึงปีที่แล้ว",
+            "choices": [
+              "เพื่ออธิบายว่าทำไมผู้ออกบูธสองรายถึงถูกปรับ",
+              "เพื่อชมผลงานของทีม",
+              "เพื่อบอกเหตุผลของกฎเรื่องโบรชัวร์",
+              "เพื่อรายงานว่ามีผู้เข้าชมเพิ่มขึ้น"
+            ]
+          },
+          "explain": {
+            "why": "ผู้พูดสั่งกฎก่อนว่าให้สแกนบัตรก่อนแจกโบรชัวร์ แล้วต่อด้วยเหตุผลว่า We ran out of brochures by lunchtime last year because we handed them to anyone walking past แปลว่า ปีที่แล้วโบรชัวร์หมดตั้งแต่ก่อนเที่ยง เพราะเราแจกให้ทุกคนที่เดินผ่าน การเล่าเรื่องปีที่แล้วจึงเป็นการอธิบายว่าทำไมปีนี้ต้องมีกฎนี้",
+            "wrong": {
+              "0": "การปรับเงินผู้ออกบูธสองรายเกิดขึ้น เมื่อวานนี้ และเป็นเรื่องวางกล่องกีดขวางทางเดิน คนละเรื่องและคนละเวลากับปีที่แล้ว เป็นตัวลวงที่จับข้อมูลจริงมาผูกผิดคู่",
+              "1": "ผู้พูดกำลังเล่าความผิดพลาดของปีที่แล้ว ไม่ใช่คำชม น้ำเสียงเป็นการเตือนไม่ให้ทำซ้ำ",
+              "3": "ไม่มีตัวเลขผู้เข้าชมหรือการเปรียบเทียบจำนวนคนเลยในบทพูดนี้"
+            },
+            "point": "เมื่อผู้พูดเล่าเหตุการณ์ในอดีตหลังจากเพิ่งสั่งกฎ ให้เดาไว้ก่อนว่าเรื่องนั้นคือ เหตุผลของกฎ",
+            "trick": "ในบทเดียวกันอาจมีเหตุการณ์อดีตหลายอัน เช่น last year กับ yesterday ให้แยกให้ออกว่าเรื่องไหนคู่กับกฎไหน"
+          }
+        }
+      ],
+      "vocab": [
+        {
+          "w": "stand",
+          "ipa": "/stænd/",
+          "th": "**สแตนด์**",
+          "mean": "บูธหรือคูหาแสดงสินค้าในงานแฟร์",
+          "pos": "n."
+        },
+        {
+          "w": "brochure",
+          "ipa": "/broʊˈʃʊr/",
+          "th": "โบร-**ชัวร์**",
+          "mean": "แผ่นพับแนะนำสินค้าหรือบริการ",
+          "pos": "n."
+        },
+        {
+          "w": "exhibitor",
+          "ipa": "/ɪɡˈzɪbɪtər/",
+          "th": "อิก-**ซิ**-บิ-เทอร์",
+          "mean": "ผู้ที่มาออกบูธในงานแสดงสินค้า",
+          "pos": "n."
+        },
+        {
+          "w": "aisle",
+          "ipa": "/aɪl/",
+          "th": "**ไอล์**",
+          "mean": "ทางเดินระหว่างแถวบูธหรือชั้นวางของ",
+          "pos": "n."
+        }
+      ]
+    },
+    {
+      "id": "p4r-01-015",
+      "part": 4,
+      "tier": "real",
+      "topic": "hr-benefits-announcement",
+      "setting": "ประกาศจากฝ่ายบุคคล — แจ้งเตือนกำหนดปิดการเลือกสวัสดิการประจำปี",
+      "audio": {
+        "lines": [
+          {
+            "sp": "W",
+            "accent": "CA",
+            "text": "Good afternoon. This is Renata from Human Resources with a reminder that open enrolment closes on the thirtieth. That's a Friday, and the system locks at five in the afternoon, not at midnight. Three things people keep asking about. First, if you make no changes at all, your current plan carries over, but the fitness credit does not; you have to select that again every year. Second, the dental add-on has gone from eight dollars a pay period to eleven, and that is the only rate that changed this year. Third, a dependant added after the thirtieth requires a qualifying life event — a birth, a marriage, a move — with documents submitted within thirty days. If you're not sure what you currently have, your statement is under Benefits, then History, in the employee portal. My extension is two-nine-one-four."
+          }
+        ]
+      },
+      "th": {
+        "lines": [
+          "สวัสดีตอนบ่ายค่ะ ดิฉันเรนาต้าจากฝ่ายบุคคล ขอแจ้งเตือนว่าช่วงเลือกสวัสดิการประจำปีจะปิดวันที่สามสิบ ซึ่งตรงกับวันศุกร์ และระบบจะล็อกตอนห้าโมงเย็น ไม่ใช่เที่ยงคืนนะคะ มีสามเรื่องที่พนักงานถามเข้ามาบ่อย เรื่องแรก ถ้าท่านไม่เปลี่ยนอะไรเลย แผนเดิมของท่านจะถูกต่อให้อัตโนมัติ แต่เครดิตค่าออกกำลังกายจะไม่ถูกต่อให้ ท่านต้องเลือกสิทธินี้ใหม่ทุกปี เรื่องที่สอง สวัสดิการทันตกรรมเสริมปรับจากแปดดอลลาร์ต่อรอบจ่ายเงินเดือนเป็นสิบเอ็ดดอลลาร์ และนี่เป็นอัตราเดียวที่เปลี่ยนในปีนี้ เรื่องที่สาม การเพิ่มผู้อยู่ในอุปการะหลังวันที่สามสิบ ต้องมีเหตุการณ์สำคัญในชีวิตที่เข้าเกณฑ์ เช่น การคลอดบุตร การสมรส หรือการย้ายที่อยู่ พร้อมยื่นเอกสารภายในสามสิบวัน หากไม่แน่ใจว่าตอนนี้ท่านมีสิทธิอะไรอยู่ ดูใบสรุปได้ที่เมนูสวัสดิการ แล้วเลือกประวัติ ในระบบพอร์ทัลพนักงานค่ะ เบอร์ภายในของดิฉันคือสอง-เก้า-หนึ่ง-สี่"
+        ]
+      },
+      "questions": [
+        {
+          "q": "What does the speaker say about employees who make no changes?",
+          "choices": [
+            "Their plan will be cancelled",
+            "Their rate will increase automatically",
+            "One of their benefits will not continue",
+            "They will be contacted by Human Resources"
+          ],
+          "answer": 2,
+          "th": {
+            "q": "ผู้พูดบอกอะไรเกี่ยวกับพนักงานที่ไม่เปลี่ยนแปลงอะไรเลย",
+            "choices": [
+              "แผนสวัสดิการของพวกเขาจะถูกยกเลิก",
+              "อัตราค่าใช้จ่ายจะขึ้นโดยอัตโนมัติ",
+              "สิทธิอย่างหนึ่งของพวกเขาจะไม่ถูกต่อให้",
+              "ฝ่ายบุคคลจะติดต่อกลับไปหาพวกเขา"
+            ]
+          },
+          "explain": {
+            "why": "ผู้พูดบอกว่า if you make no changes at all, your current plan carries over, but the fitness credit does not; you have to select that again every year แปลว่า ถ้าไม่เปลี่ยนอะไรเลย แผนเดิมจะถูกต่อให้ แต่เครดิตค่าออกกำลังกายจะไม่ถูกต่อ ต้องเลือกใหม่ทุกปี คำว่า but the fitness credit does not คือหัวใจของข้อนี้ แปลว่ามีสิทธิหนึ่งอย่างที่ไม่ต่อให้อัตโนมัติ",
+            "wrong": {
+              "0": "ตรงกันข้ามครับ แผนเดิม carries over คือถูกต่อให้อัตโนมัติ ไม่ได้ถูกยกเลิก ตัวลวงนี้กลับความหมายทั้งประโยค",
+              "1": "อัตราที่ขึ้นคือสวัสดิการทันตกรรมเสริม ซึ่งขึ้นกับทุกคนที่เลือกสิทธินั้น ไม่ได้ขึ้นเพราะไม่เปลี่ยนแปลงอะไร เป็นการเอาข้อมูลจริงมาผูกกับเงื่อนไขผิดข้อ",
+              "3": "ไม่มีตรงไหนบอกว่าฝ่ายบุคคลจะติดต่อกลับ ผู้พูดให้เบอร์ไว้เพื่อให้พนักงานโทรไปหาเองต่างหาก"
+            },
+            "point": "คำว่า carry over แปลว่า ยกยอดต่อไปให้อัตโนมัติ ส่วน but … does not คือข้อยกเว้นที่ข้อสอบชอบถาม",
+            "trick": "ประโยคที่มี but อยู่ตรงกลาง ให้ตั้งใจฟังครึ่งหลังเป็นพิเศษ เพราะคำตอบมักอยู่หลัง but ไม่ใช่หน้า but"
+          }
+        },
+        {
+          "q": "Look at the add-on rates for this year. Vision – 6 dollars a pay period / Dental – ? / Extra life insurance – 9 dollars a pay period. What is the dental rate this year?",
+          "choices": [
+            "6 dollars",
+            "8 dollars",
+            "9 dollars",
+            "11 dollars"
+          ],
+          "answer": 3,
+          "th": {
+            "q": "ดูตารางค่าสวัสดิการเสริมของปีนี้: ประกันสายตา – 6 ดอลลาร์ต่อรอบจ่ายเงินเดือน / ทันตกรรม – ? / ประกันชีวิตเพิ่มเติม – 9 ดอลลาร์ต่อรอบจ่ายเงินเดือน ปีนี้อัตราค่าทันตกรรมคือเท่าไร",
+            "choices": [
+              "6 ดอลลาร์",
+              "8 ดอลลาร์",
+              "9 ดอลลาร์",
+              "11 ดอลลาร์"
+            ]
+          },
+          "explain": {
+            "why": "เสียงบอกว่า the dental add-on has gone from eight dollars a pay period to eleven แปลว่า สวัสดิการทันตกรรมเสริมปรับจากแปดดอลลาร์ต่อรอบจ่ายเงินเดือนเป็นสิบเอ็ดดอลลาร์ โครงสร้าง from A to B แปลว่า A คือของเก่า B คือของใหม่ ตารางถามอัตราของ ปีนี้ จึงต้องตอบตัวเลขหลังคำว่า to นั่นคือสิบเอ็ดดอลลาร์",
+            "wrong": {
+              "0": "หกดอลลาร์เป็นอัตราของประกันสายตาที่ตารางแสดงไว้แล้ว เป็นการหยิบผิดแถว",
+              "1": "แปดดอลลาร์คืออัตราของ ปีที่แล้ว ซึ่งอยู่หน้าคำว่า to นี่คือกับดักหลักของข้อนี้ คนที่จับตัวเลขแรกที่ได้ยินจะตอบผิดทันที",
+              "2": "เก้าดอลลาร์เป็นอัตราของประกันชีวิตเพิ่มเติมตามตาราง ไม่ใช่ของทันตกรรม"
+            },
+            "point": "โครงสร้าง has gone from A to B หรือ increased from A to B ให้จำว่าตัวเลขหลัง to คือค่าปัจจุบันเสมอ",
+            "trick": "เมื่อได้ยินตัวเลขสองตัวติดกันในประโยคเดียว ให้รีบถามตัวเองว่าตัวไหนเก่าตัวไหนใหม่ อย่าเพิ่งวงตัวแรกที่ได้ยิน"
+          }
+        },
+        {
+          "q": "What must an employee provide to add a dependant in December?",
+          "choices": [
+            "Proof of a qualifying life event",
+            "A new fitness credit form",
+            "Approval from a supervisor",
+            "Payment of a higher rate"
+          ],
+          "answer": 0,
+          "th": {
+            "q": "พนักงานต้องยื่นอะไรถ้าจะเพิ่มผู้อยู่ในอุปการะในเดือนธันวาคม",
+            "choices": [
+              "หลักฐานของเหตุการณ์สำคัญในชีวิตที่เข้าเกณฑ์",
+              "แบบฟอร์มขอเครดิตค่าออกกำลังกายใบใหม่",
+              "การอนุมัติจากหัวหน้างาน",
+              "การจ่ายค่าสวัสดิการในอัตราที่สูงขึ้น"
+            ]
+          },
+          "explain": {
+            "why": "เดือนธันวาคมคือหลังวันที่สามสิบซึ่งเป็นวันปิดรับ เสียงบอกว่า a dependant added after the thirtieth requires a qualifying life event — a birth, a marriage, a move — with documents submitted within thirty days แปลว่า การเพิ่มผู้อยู่ในอุปการะหลังวันที่สามสิบต้องมีเหตุการณ์สำคัญในชีวิตที่เข้าเกณฑ์ เช่น การคลอดบุตร การสมรส หรือการย้ายที่อยู่ พร้อมยื่นเอกสาร คำตอบจึงเป็นหลักฐานของเหตุการณ์ที่เข้าเกณฑ์",
+            "wrong": {
+              "1": "เครดิตค่าออกกำลังกายเป็นคนละเรื่องกัน เป็นสิทธิที่ต้องเลือกใหม่ทุกปี ไม่เกี่ยวกับการเพิ่มผู้อยู่ในอุปการะ",
+              "2": "ไม่มีการพูดถึงการขออนุมัติจากหัวหน้างานเลย เรื่องสวัสดิการติดต่อกับฝ่ายบุคคลโดยตรง",
+              "3": "อัตราที่สูงขึ้นคือเรื่องของสวัสดิการทันตกรรมเสริม ไม่ใช่เงื่อนไขในการเพิ่มผู้อยู่ในอุปการะ"
+            },
+            "point": "คำถามที่ให้เดือนหรือวันมาใหม่ ให้เทียบกับเส้นแบ่งในบทพูดก่อนว่าอยู่ ก่อน หรือ หลัง กำหนด แล้วค่อยเลือกเงื่อนไขที่ตรงกัน",
+            "trick": "คำว่า requires , must , need to ตามด้วยสิ่งที่ต้องมี ให้จดสิ่งที่อยู่หลังคำเหล่านี้ทันที เพราะเป็นเฉลยแบบตรงตัว"
+          }
+        }
+      ],
+      "vocab": [
+        {
+          "w": "open enrolment",
+          "ipa": "/ˌoʊpən ɪnˈroʊlmənt/",
+          "th": "**โอ**-เพิน อิน-**โรล**-เมินท์",
+          "mean": "ช่วงเวลาที่พนักงานเลือกหรือเปลี่ยนสวัสดิการประจำปีได้",
+          "pos": "n."
+        },
+        {
+          "w": "dependant",
+          "ipa": "/dɪˈpendənt/",
+          "th": "ดิ-**เพน**-เดินท์",
+          "mean": "ผู้อยู่ในอุปการะ เช่น คู่สมรสหรือบุตรที่ได้สิทธิร่วมด้วย",
+          "pos": "n."
+        },
+        {
+          "w": "pay period",
+          "ipa": "/ˈpeɪ ˌpɪriəd/",
+          "th": "**เพย์** **พี**-เรีย-เดิด",
+          "mean": "รอบการจ่ายเงินเดือน เช่น ทุกสองสัปดาห์",
+          "pos": "n."
+        },
+        {
+          "w": "carry over",
+          "ipa": "/ˈkæri ˈoʊvər/",
+          "th": "**แค**-รี **โอ**-เวอร์",
+          "mean": "ยกยอดหรือต่อสิทธิเดิมไปยังรอบถัดไปโดยอัตโนมัติ",
+          "pos": "v."
+        }
+      ]
+    }
+  ]
+}
