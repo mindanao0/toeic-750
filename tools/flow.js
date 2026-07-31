@@ -474,7 +474,46 @@ async function main() {
   const syncEnv = await evalJS(`JSON.stringify(App.Sync.status())`);
   check('ตรวจได้ว่าหน้านี้ซิงก์ได้หรือไม่', JSON.parse(syncEnv).available === true, syncEnv);
 
-  // 20. ไม่มี error ค้างอยู่
+  // 20. h() ต้องไม่กลืนลูกที่ส่งมาเป็น array (บั๊กเงียบที่ทำให้ปุ่มในกล่องยืนยันหายทั้งแอป)
+  const hTest = await evalJS(`(()=>{
+    const h=App.h;
+    const arr2nd = h('div', [h('span','a'), h('span','b')]);
+    const arr3rd = h('div', {id:'x'}, [h('span','a'), h('span','b')]);
+    const nested = h('div', [[h('span','a')], h('span','b')]);
+    const mixed  = h('div', h('span','a'), [h('span','b'), h('span','c')]);
+    const props  = h('div', {title:'t'}, 'x');
+    return JSON.stringify({
+      arr2nd:arr2nd.children.length, arr3rd:arr3rd.children.length,
+      nested:nested.children.length, mixed:mixed.children.length,
+      propsKept: props.getAttribute('title')==='t' && props.textContent==='x',
+      noJunkAttr: arr2nd.attributes.length===0,
+    });
+  })()`);
+  const ht = JSON.parse(hTest);
+  check('h() รับ array เป็นลูกได้ทั้งตำแหน่งที่ 2 และ 3',
+    ht.arr2nd === 2 && ht.arr3rd === 2, hTest);
+  check('h() รองรับ array ซ้อนและแบบผสม', ht.nested === 2 && ht.mixed === 3, hTest);
+  check('h() ยังแยก props ออกจากลูกได้ถูก', ht.propsKept && ht.noJunkAttr, hTest);
+
+  // 21. กล่องยืนยันต้องมีปุ่มจริง (จุดที่บั๊กข้างบนทำพัง)
+  const cb = await evalJS(`(()=>{
+    App.confirmBox('t','m',()=>{},'เริ่มเลย');
+    const btns=[...document.querySelectorAll('.modal button')].map(x=>x.innerText.trim());
+    const bg=document.querySelector('.modal-bg'); if(bg) bg.remove();
+    return JSON.stringify(btns);
+  })()`);
+  check('กล่องยืนยันมีปุ่มครบ', JSON.parse(cb).length === 2 && JSON.parse(cb).includes('เริ่มเลย'), cb);
+
+  // 22. ปุ่มเลือกหัวข้อในหน้าฝึกทำต้องขึ้นจริง
+  await evalJS(`location.hash='/drill'`);
+  await sleep(1200);
+  const drillUI = await evalJS(`JSON.stringify({
+    topicBtns:[...document.querySelectorAll('.card .btn.sm')].length,
+    partCards:[...document.querySelectorAll('.card')].length,
+  })`);
+  check('หน้าฝึกทำแสดงปุ่มเลือกระดับ/หัวข้อ', JSON.parse(drillUI).topicBtns >= 10, drillUI);
+
+  // 23. ไม่มี error ค้างอยู่
   check('ไม่มี JS error ตลอดการทดสอบ', errors.length === 0, errors.slice(0, 2).join(' | ').slice(0, 200));
 
   ws.close(); proc.kill();

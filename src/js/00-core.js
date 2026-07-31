@@ -20,7 +20,9 @@ function h(tag, props, ...kids) {
   if (m[2]) el.id = m[2].slice(1);
   if (m[3]) el.className = m[3].slice(1).split('.').join(' ');
 
-  if (props && (typeof props !== 'object' || props instanceof Node)) {
+  // อาร์กิวเมนต์ที่สองเป็น props ก็ต่อเมื่อเป็น plain object เท่านั้น
+  // array และ Node ถือเป็นลูก — ถ้าไม่กันตรงนี้ h('div', [el1, el2]) จะกลืนลูกทิ้งเงียบๆ
+  if (props != null && (Array.isArray(props) || typeof props !== 'object' || props instanceof Node)) {
     kids.unshift(props);
     props = null;
   }

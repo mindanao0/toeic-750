@@ -44,6 +44,7 @@ if [ "${SKIP_TESTS:-0}" != "1" ]; then
   node tools/smoke.js "http://localhost:$PORT/"
   node tools/flow.js  "http://localhost:$PORT/"
   node tools/parts.js
+  node tools/exam-run.js "http://localhost:$PORT/"
   cleanup
   SERVE_PID=""
 fi
