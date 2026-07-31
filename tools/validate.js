@@ -16,6 +16,8 @@ const CHOICE_N = { 1: 4, 2: 3, 3: 4, 4: 4, 5: 4, 6: 4, 7: 4 };
 let errors = [];
 let warns = [];
 const seenIds = new Map();
+const seenWords = new Map();   // คำศัพท์ -> ไฟล์:id (ตรวจซ้ำข้ามไฟล์)
+const seenIPA = new Map();
 
 const err = (file, msg) => errors.push(`${file}: ${msg}`);
 const warn = (file, msg) => warns.push(`${file}: ${msg}`);
@@ -131,17 +133,54 @@ function checkVocab(file, obj) {
     }
     if (!w.ipa) warn(file, `${id} (${w.w}) ไม่มี IPA`);
     if (w.w) {
-      const lw = String(w.w).toLowerCase();
+      const lw = String(w.w).toLowerCase().trim();
       if (words.has(lw)) err(file, `คำซ้ำในไฟล์: ${w.w}`);
       words.add(lw);
+      // ซ้ำข้ามไฟล์ — ผู้เรียนจะได้คำใหม่น้อยกว่าที่คลังอ้าง
+      if (seenWords.has(lw)) err(file, `${id} คำ "${w.w}" ซ้ำกับ ${seenWords.get(lw)}`);
+      else seenWords.set(lw, `${file}:${id}`);
     }
-    if (w.ex && w.w && !String(w.ex).toLowerCase().includes(String(w.w).toLowerCase().slice(0, Math.max(4, w.w.length - 3)))) {
-      warn(file, `${id} (${w.w}) ประโยคตัวอย่างอาจไม่มีคำนี้อยู่`);
+    // คำอ่านไทยต้องมีจำนวนพยางค์เท่า IPA (ไม่งั้นผู้เรียนจำการออกเสียงผิด)
+    if (w.ipa && w.th) {
+      const thSyl = String(w.th).replace(/\*\*/g, '').split('-').filter(Boolean).length;
+      const ipaSyl = countIPASyllables(w.ipa);
+      // เตือนเฉพาะที่ต่างกันชัดเจน — การถอดเสียงไทยยุบพยางค์ได้บ้างตามธรรมชาติ
+      if (ipaSyl && Math.abs(thSyl - ipaSyl) >= 2) {
+        warn(file, `${id} (${w.w}) คำอ่านไทย ${thSyl} พยางค์ แต่ IPA ${w.ipa} มี ${ipaSyl} พยางค์`);
+      }
+    }
+    if (w.ipa && !/^\/.*\/$/.test(String(w.ipa).trim())) {
+      warn(file, `${id} (${w.w}) IPA ควรอยู่ในเครื่องหมาย / / — ได้ "${w.ipa}"`);
+    }
+    // ตัวอย่างต้องมีคำนั้นอยู่ — เทียบด้วยรากคำเพื่อรองรับการผัน (copy -> copies, arrive -> arrived)
+    if (w.ex && w.w) {
+      // กริยาวลี (sign up) เทียบเฉพาะคำแรก เพราะประโยคจริงมักผัน (signed up)
+      const head = String(w.w).toLowerCase().split(/\s+/)[0];
+      const stem = head.replace(/(y|e)$/, '');
+      const need = stem.length >= 3 ? stem : String(w.w).toLowerCase();
+      if (!String(w.ex).toLowerCase().includes(need)) {
+        warn(file, `${id} (${w.w}) ประโยคตัวอย่างอาจไม่มีคำนี้อยู่`);
+      }
     }
     if (w.th && !/[฀-๿]/.test(w.th)) err(file, `${id} คำอ่านไทยไม่ใช่ภาษาไทย: ${w.th}`);
     if (w.mean && !/[฀-๿]/.test(w.mean)) err(file, `${id} ความหมายไม่ใช่ภาษาไทย`);
   }
   return { n: items.length, q: 0, label: 'คำศัพท์' };
+}
+
+/**
+ * นับพยางค์จาก IPA: นับกลุ่มสระ แล้วบวกพยัญชนะที่ทำหน้าที่เป็นพยางค์
+ * (syllabic consonant เช่น /ˈɔːfn/ often = ออฟ-เฟิ่น 2 พยางค์ ไม่ใช่ 1)
+ */
+function countIPASyllables(ipa) {
+  const s = String(ipa).replace(/[\/\[\]ˈˌ.]/g, '');
+  const VOWEL = 'ɪɛæʌʊəɒaeiouɜɑɔ';
+  const m = s.match(/(?:eɪ|aɪ|ɔɪ|aʊ|oʊ|ɪə|eə|ʊə|iː|uː|ɑː|ɔː|ɜː|[ɪɛæʌʊəɒaeiouɜɑɔ])/g);
+  let n = m ? m.length : 0;
+  // พยัญชนะ + n/l/m ที่ไม่มีสระคั่น = อีกหนึ่งพยางค์
+  const syllabic = s.match(new RegExp('[^' + VOWEL + 'ː]([nlm])(?![' + VOWEL + '])', 'g'));
+  if (syllabic) n += syllabic.length;
+  return n;
 }
 
 function dupCheck(file, id) {

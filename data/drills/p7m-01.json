@@ -1,0 +1,2109 @@
+{
+ "meta": {
+  "batch": "p7m-01",
+  "part": 7,
+  "tier": "medium",
+  "count": 45
+ },
+ "items": [
+  {
+   "id": "p7m-01-001",
+   "part": 7,
+   "tier": "medium",
+   "setType": "single",
+   "passages": [
+    {
+     "kind": "advertisement",
+     "header": {
+      "Subject": "Riverbend Works — Flexible Offices on the North Quay"
+     },
+     "body": "RIVERBEND WORKS — FLEXIBLE OFFICES ON THE NORTH QUAY\n\nLooking for a place to grow your business without signing a five-year lease? Riverbend Works opens its third location at 88 North Quay Road on 1 March.\n\nMembers choose from three plans. The Desk plan gives you a shared workspace and eight hours of meeting-room time each month for 190 dollars. The Studio plan adds a locked private office for two people at 480 dollars. The Floor plan, for teams of six or more, includes a dedicated suite, printing, and unlimited meeting rooms; prices are quoted after a site visit.\n\nAll plans include high-speed internet, mail handling, and access to our other locations in Calder Street and Weybridge Park. The building is a four-minute walk from the North Quay train station, and covered bicycle parking is free for members.\n\nTour the space during our open week, 17-21 February. Anyone who signs an agreement during that week will receive the first month at half price. Tours run at 10:00 A.M. and 4:00 P.M.; no appointment is needed for the morning tour.\n\nWrite to hello@riverbendworks.com or call 555-0142."
+    }
+   ],
+   "th": {
+    "passages": [
+     {
+      "body": "ริเวอร์เบนด์ เวิร์กส์ — ออฟฟิศแบบยืดหยุ่น บนถนนนอร์ทคีย์\n\nกำลังมองหาที่ทางให้ธุรกิจของคุณเติบโต โดยไม่ต้องเซ็นสัญญาเช่ายาวถึง 5 ปีอยู่ใช่ไหม ริเวอร์เบนด์ เวิร์กส์ เปิดสาขาที่สามที่เลขที่ 88 ถนนนอร์ทคีย์ ในวันที่ 1 มีนาคม\n\nสมาชิกเลือกได้ 3 แผน แผน Desk ให้พื้นที่ทำงานแบบใช้ร่วมกัน พร้อมเวลาใช้ห้องประชุมเดือนละ 8 ชั่วโมง ราคา 190 ดอลลาร์ แผน Studio เพิ่มห้องทำงานส่วนตัวแบบล็อกได้สำหรับ 2 คน ราคา 480 ดอลลาร์ ส่วนแผน Floor สำหรับทีมตั้งแต่ 6 คนขึ้นไป รวมห้องชุดเฉพาะของทีม งานพิมพ์ และห้องประชุมแบบไม่จำกัดจำนวนครั้ง ราคาจะเสนอให้หลังจากเข้ามาดูสถานที่จริง\n\nทุกแผนรวมอินเทอร์เน็ตความเร็วสูง บริการรับส่งจดหมาย และสิทธิ์เข้าใช้สาขาอื่นของเราที่ถนนคาลเดอร์และเวย์บริดจ์พาร์ค ตัวอาคารอยู่ห่างจากสถานีรถไฟนอร์ทคีย์แค่เดิน 4 นาที และที่จอดจักรยานแบบมีหลังคาก็ฟรีสำหรับสมาชิก\n\nมาเดินชมสถานที่ได้ในสัปดาห์เปิดบ้านของเรา วันที่ 17-21 กุมภาพันธ์ ใครที่เซ็นสัญญาภายในสัปดาห์นั้นจะได้ค่าบริการเดือนแรกครึ่งราคา รอบเดินชมมีเวลา 10:00 น. และ 16:00 น. โดยรอบเช้าไม่ต้องนัดล่วงหน้า\n\nติดต่อ hello@riverbendworks.com หรือโทร 555-0142"
+     }
+    ]
+   },
+   "questions": [
+    {
+     "q": "For whom is the advertisement most likely intended?",
+     "kind": "gist",
+     "choices": [
+      "Travelers looking for short-term housing",
+      "Business owners who need workspace",
+      "Students applying to a university",
+      "Builders bidding on a construction project"
+     ],
+     "answer": 1,
+     "th": {
+      "q": "โฆษณาชิ้นนี้น่าจะเขียนถึงใครมากที่สุด",
+      "choices": [
+       "นักเดินทางที่มองหาที่พักระยะสั้น",
+       "เจ้าของธุรกิจที่ต้องการพื้นที่ทำงาน",
+       "นักเรียนที่กำลังสมัครเข้ามหาวิทยาลัย",
+       "ผู้รับเหมาที่กำลังเสนอราคางานก่อสร้าง"
+      ]
+     },
+     "explain": {
+      "why": "บรรทัดแรกถามตรงๆ เลยครับว่า Looking for a place to grow your business without signing a five-year lease? แปลว่า กำลังหาที่ให้ธุรกิจโตโดยไม่ต้องเซ็นสัญญาเช่ายาว 5 ปีอยู่ไหม แล้วทั้งโฆษณาก็เล่าแต่เรื่องแผนเช่าโต๊ะ ห้องประชุม ห้องทำงานส่วนตัว ซึ่งเป็นของที่คนทำธุรกิจต้องใช้ทั้งนั้น คำตอบจึงเป็น \"Business owners who need workspace\"",
+      "wrong": {
+       "0": "ในโฆษณาไม่มีคำว่าห้องพัก ที่นอน หรือการค้างคืนเลย มีแต่โต๊ะทำงานกับห้องประชุม จึงไม่ใช่ที่พักสำหรับนักเดินทาง",
+       "2": "ไม่มีการพูดถึงหลักสูตร ชั้นเรียน หรือการรับสมัครนักเรียนเลยแม้แต่คำเดียว",
+       "3": "คำว่า construction (การก่อสร้าง) ไม่ปรากฏในโฆษณา ที่พูดถึงอาคารก็พูดในฐานะสถานที่ที่พร้อมใช้แล้ว ไม่ใช่งานที่กำลังจะสร้าง"
+      },
+      "point": "คำถามว่า for whom is this intended (เขียนถึงใคร) ให้ดูว่าโฆษณาขายอะไร แล้วถามตัวเองว่า ใครคือคนที่ต้องซื้อของชิ้นนั้น",
+      "trick": "ประโยคแรกของโฆษณามักเป็นคำถามที่ยิงตรงไปหากลุ่มลูกค้า อ่านแค่บรรทัดนั้นก็เดากลุ่มเป้าหมายได้แล้ว",
+      "evidence": "Looking for a place to grow your business without signing a five-year lease?"
+     }
+    },
+    {
+     "q": "What is included in every plan?",
+     "kind": "detail",
+     "choices": [
+      "A private office",
+      "Unlimited meeting rooms",
+      "Access to other locations",
+      "Free printing"
+     ],
+     "answer": 2,
+     "th": {
+      "q": "อะไรที่รวมอยู่ในทุกแผน",
+      "choices": [
+       "ห้องทำงานส่วนตัว",
+       "ห้องประชุมแบบไม่จำกัด",
+       "สิทธิ์เข้าใช้สาขาอื่น",
+       "งานพิมพ์ฟรี"
+      ]
+     },
+     "explain": {
+      "why": "ย่อหน้าที่สามขึ้นต้นว่า All plans include high-speed internet, mail handling, and access to our other locations คำว่า All plans แปลว่า ทุกแผน ดังนั้นสิ่งที่ตามมาคือของที่ได้เหมือนกันหมด ตัวเลือกที่ตรงคือ \"Access to other locations\" ครับ",
+      "wrong": {
+       "0": "ห้องทำงานส่วนตัวเป็นของเฉพาะแผน Studio เท่านั้น (The Studio plan adds a locked private office) ไม่ได้ให้ทุกแผน",
+       "1": "ห้องประชุมแบบไม่จำกัดมีเฉพาะแผน Floor ส่วนแผน Desk ได้แค่เดือนละ 8 ชั่วโมง",
+       "3": "งานพิมพ์ถูกระบุไว้ในรายการของแผน Floor เท่านั้น ไม่ได้อยู่ในรายการที่ทุกแผนได้"
+      },
+      "point": "เจอคำว่า all / every / each ในบทความ ให้ขีดเส้นใต้ไว้เลย เพราะข้อสอบชอบถามว่า อะไรที่ได้เหมือนกันทุกคน",
+      "trick": "โฆษณาที่มีหลายแผนราคา ให้แยกในหัวว่าอะไรคือของกลาง (ทุกแผนได้) และอะไรคือของเฉพาะแผน ตัวลวงมักหยิบของเฉพาะแผนมาบอกว่าเป็นของกลาง",
+      "evidence": "All plans include high-speed internet, mail handling, and access to our other locations in Calder Street and Weybridge Park."
+     }
+    },
+    {
+     "q": "What is suggested about the 4:00 P.M. tour?",
+     "kind": "inference",
+     "choices": [
+      "It is only for Floor plan members.",
+      "It lasts longer than the morning tour.",
+      "It is held at the Calder Street location.",
+      "It requires an appointment."
+     ],
+     "answer": 3,
+     "th": {
+      "q": "ข้อความบอกเป็นนัยว่าอย่างไรเกี่ยวกับรอบเดินชม 16:00 น.",
+      "choices": [
+       "จัดให้เฉพาะสมาชิกแผน Floor เท่านั้น",
+       "ใช้เวลานานกว่ารอบเช้า",
+       "จัดที่สาขาถนนคาลเดอร์",
+       "ต้องนัดหมายล่วงหน้า"
+      ]
+     },
+     "explain": {
+      "why": "ประโยคสุดท้ายของย่อหน้านั้นเขียนว่า no appointment is needed for the morning tour แปลว่า รอบเช้าไม่ต้องนัดล่วงหน้า การที่เขาเจาะจงพูดถึง เฉพาะรอบเช้า แปลว่ารอบอีกรอบหนึ่ง (16:00 น. ซึ่งเป็นรอบบ่าย) ไม่ได้รับสิทธิ์นั้น จึงอนุมานได้ว่า \"It requires an appointment.\" ครับ",
+      "wrong": {
+       "0": "แผน Floor ถูกพูดถึงในเรื่องราคาและสิ่งที่ได้รับ ไม่มีตรงไหนบอกว่ารอบเดินชมจำกัดเฉพาะสมาชิกแผนใดแผนหนึ่ง",
+       "1": "โฆษณาไม่ได้บอกความยาวของรอบเดินชมเลยสักรอบ จึงเทียบไม่ได้ว่ารอบไหนนานกว่ากัน",
+       "2": "ถนนคาลเดอร์เป็นชื่อสาขาเดิมที่สมาชิกเข้าใช้ได้ แต่รอบเดินชมสัปดาห์เปิดบ้านพูดถึงสาขาใหม่ที่ 88 ถนนนอร์ทคีย์"
+      },
+      "point": "เวลาบทความพูดว่า สิ่งนี้ไม่ต้องทำ เฉพาะกรณี A ให้แปลกลับทันทีว่า กรณี B ที่เหลือ ต้องทำ นี่คือการอนุมาน (inference) ที่ข้อสอบชอบถาม",
+      "trick": "จับคำจำกัดขอบเขต เช่น only, just, for the morning tour, on weekdays คำพวกนี้คือประตูสู่ข้อ inference เสมอ",
+      "evidence": "Tours run at 10:00 A.M. and 4:00 P.M.; no appointment is needed for the morning tour."
+     }
+    }
+   ],
+   "vocab": [
+    {
+     "w": "lease",
+     "ipa": "/liːs/",
+     "th": "**ลีส**",
+     "mean": "สัญญาเช่า (โดยเฉพาะเช่าอาคารหรือที่ดินระยะยาว)",
+     "pos": "n."
+    },
+    {
+     "w": "dedicated",
+     "ipa": "/ˈdedɪkeɪtɪd/",
+     "th": "**เดด**-ดิ-เค-ทิด",
+     "mean": "ที่จัดไว้ให้เฉพาะ ใช้ร่วมกับคนอื่นไม่ได้",
+     "pos": "adj."
+    },
+    {
+     "w": "quote",
+     "ipa": "/kwoʊt/",
+     "th": "**โคว้ท**",
+     "mean": "เสนอราคา, แจ้งราคา",
+     "pos": "v."
+    },
+    {
+     "w": "appointment",
+     "ipa": "/əˈpɔɪntmənt/",
+     "th": "อะ-**พอยนท์**-เมินท์",
+     "mean": "การนัดหมายล่วงหน้า",
+     "pos": "n."
+    }
+   ]
+  },
+  {
+   "id": "p7m-01-002",
+   "part": 7,
+   "tier": "medium",
+   "setType": "single",
+   "passages": [
+    {
+     "kind": "article",
+     "header": {
+      "Subject": "Tilbrook Foods to Open Second Plant"
+     },
+     "body": "TILBROOK FOODS TO OPEN SECOND PLANT\n\nRANDALL — Tilbrook Foods, which has produced frozen soups and sauces in Randall since 1998, announced on Monday that it will open a second production plant in the town of Hessle next spring.\n\nThe company said the new plant will employ about 120 people, most of them hired locally. \"Our Randall lines have been running at full capacity for two years,\" said chief operating officer Nadia Prewitt. \"We were turning away orders, which is not a comfortable position for any manufacturer.\"\n\nThe Hessle site was formerly a paper warehouse and has stood empty since 2019. Tilbrook has agreed to pay for repairs to the road leading to the property, a condition set by the Hessle council when it approved the plan in October.\n\nMs. Prewitt said the Randall plant will not close and that no jobs will move. Production in Hessle will focus on a new line of chilled ready meals aimed at supermarkets, a market Tilbrook has not entered before.\n\nHiring will begin in January. Applications will be accepted through the company website, and a job fair is planned at the Hessle community centre in February."
+    }
+   ],
+   "th": {
+    "passages": [
+     {
+      "body": "ทิลบรุ๊ก ฟู้ดส์ เตรียมเปิดโรงงานแห่งที่สอง\n\nแรนดัลล์ — บริษัททิลบรุ๊ก ฟู้ดส์ ซึ่งผลิตซุปและซอสแช่แข็งอยู่ที่เมืองแรนดัลล์มาตั้งแต่ปี 1998 ประกาศเมื่อวันจันทร์ว่าจะเปิดโรงงานผลิตแห่งที่สองที่เมืองเฮสเซิลในฤดูใบไม้ผลิปีหน้า\n\nบริษัทระบุว่าโรงงานใหม่จะจ้างพนักงานราว 120 คน โดยส่วนใหญ่จะรับจากคนในพื้นที่ \"สายการผลิตที่แรนดัลล์เดินเต็มกำลังมาสองปีแล้ว\" นางนาเดีย พรีวิตต์ ประธานเจ้าหน้าที่ฝ่ายปฏิบัติการกล่าว \"เราต้องปฏิเสธคำสั่งซื้อ ซึ่งไม่ใช่สถานการณ์ที่ผู้ผลิตรายไหนอยากเจอ\"\n\nพื้นที่ที่เฮสเซิลเดิมเป็นคลังเก็บกระดาษและถูกทิ้งร้างมาตั้งแต่ปี 2019 ทิลบรุ๊กตกลงจะออกค่าซ่อมถนนที่นำเข้าสู่ที่ดินผืนนี้ ซึ่งเป็นเงื่อนไขที่สภาเมืองเฮสเซิลกำหนดไว้ตอนอนุมัติโครงการเมื่อเดือนตุลาคม\n\nนางพรีวิตต์กล่าวว่าโรงงานที่แรนดัลล์จะไม่ปิด และจะไม่มีการย้ายตำแหน่งงานใดๆ การผลิตที่เฮสเซิลจะเน้นสินค้าไลน์ใหม่คืออาหารพร้อมรับประทานแบบแช่เย็นที่ขายให้ซูเปอร์มาร์เก็ต ซึ่งเป็นตลาดที่ทิลบรุ๊กยังไม่เคยเข้ามาก่อน\n\nการรับสมัครงานจะเริ่มในเดือนมกราคม โดยรับใบสมัครผ่านเว็บไซต์ของบริษัท และมีแผนจัดงานนัดพบแรงงานที่ศูนย์ชุมชนเฮสเซิลในเดือนกุมภาพันธ์"
+     }
+    ]
+   },
+   "questions": [
+    {
+     "q": "What is the purpose of the article?",
+     "kind": "gist",
+     "choices": [
+      "To report on a company's expansion",
+      "To announce the closing of a factory",
+      "To review a new frozen food product",
+      "To describe a change in local road rules"
+     ],
+     "answer": 0,
+     "th": {
+      "q": "บทความนี้มีจุดประสงค์อะไร",
+      "choices": [
+       "เพื่อรายงานการขยายกิจการของบริษัท",
+       "เพื่อประกาศการปิดโรงงาน",
+       "เพื่อรีวิวสินค้าอาหารแช่แข็งตัวใหม่",
+       "เพื่ออธิบายการเปลี่ยนกฎจราจรในท้องถิ่น"
+      ]
+     },
+     "explain": {
+      "why": "ย่อหน้าแรกบอกข่าวหลักไว้ครบแล้วว่า it will open a second production plant in the town of Hessle next spring แปลว่า บริษัทจะเปิดโรงงานผลิตแห่งที่สองที่เมืองเฮสเซิลฤดูใบไม้ผลิหน้า ย่อหน้าที่เหลือก็ขยายเรื่องเดียวกัน คือจ้างคนเพิ่ม 120 คน ใช้ที่ดินไหน ผลิตอะไร รับสมัครเมื่อไร ทั้งหมดคือการโตขึ้นของบริษัท คำตอบจึงเป็น \"To report on a company's expansion\"",
+      "wrong": {
+       "1": "บทความเขียนตรงข้ามเลยครับ คือ the Randall plant will not close แปลว่า โรงงานที่แรนดัลล์จะไม่ปิด",
+       "2": "ไม่มีการชิม ให้คะแนน หรือบรรยายรสชาติสินค้าใดๆ ในบทความ มีแค่บอกว่าจะผลิตสินค้าประเภทใหม่",
+       "3": "ถนนถูกพูดถึงในฐานะเงื่อนไขที่บริษัทต้องออกค่าซ่อม ไม่ใช่การเปลี่ยนกฎจราจรของท้องถิ่น"
+      },
+      "point": "ข่าวธุรกิจจะวางใจความหลักไว้ในย่อหน้าแรกเสมอ อ่านย่อหน้าแรกให้จบก่อนแล้วค่อยเดาคำตอบข้อ gist (ถามใจความรวม)",
+      "trick": "ตัวลวงข้อ gist มักเป็นเรื่องที่ปรากฏจริงในบทความแต่เป็นแค่รายละเอียดเล็กๆ เช่น ถนน หรือเป็นเรื่องที่บทความปฏิเสธไปแล้ว เช่น การปิดโรงงาน",
+      "evidence": "it will open a second production plant in the town of Hessle next spring"
+     }
+    },
+    {
+     "q": "What did the Hessle council require of Tilbrook Foods?",
+     "kind": "detail",
+     "choices": [
+      "That it hire only local residents",
+      "That it repair a road",
+      "That it keep the Randall plant open",
+      "That it hold a job fair"
+     ],
+     "answer": 1,
+     "th": {
+      "q": "สภาเมืองเฮสเซิลกำหนดให้ทิลบรุ๊ก ฟู้ดส์ ทำอะไร",
+      "choices": [
+       "ให้จ้างเฉพาะคนในพื้นที่",
+       "ให้ซ่อมถนน",
+       "ให้เปิดโรงงานแรนดัลล์ต่อไป",
+       "ให้จัดงานนัดพบแรงงาน"
+      ]
+     },
+     "explain": {
+      "why": "ย่อหน้าที่สามเขียนว่า Tilbrook has agreed to pay for repairs to the road leading to the property, a condition set by the Hessle council แปลว่า ทิลบรุ๊กตกลงออกค่าซ่อมถนนที่เข้าสู่ที่ดิน ซึ่งเป็นเงื่อนไขที่สภาเมืองกำหนด คำว่า condition แปลว่า เงื่อนไข ตรงกับคำถามพอดี คำตอบคือ \"That it repair a road\" ครับ",
+      "wrong": {
+       "0": "บทความบอกว่า most of them hired locally คือส่วนใหญ่จะรับคนในพื้นที่ ซึ่งเป็นสิ่งที่บริษัทพูดเอง ไม่ใช่ข้อบังคับของสภาเมือง และคำว่า only (เฉพาะ) ก็แรงเกินกว่าคำว่า most (ส่วนใหญ่)",
+       "2": "การไม่ปิดโรงงานแรนดัลล์เป็นคำยืนยันของนางพรีวิตต์ ไม่ใช่เงื่อนไขจากสภาเมืองเฮสเซิล",
+       "3": "งานนัดพบแรงงานเป็นแผนของบริษัทเองในเดือนกุมภาพันธ์ บทความไม่ได้บอกว่าเป็นข้อกำหนด"
+      },
+      "point": "คำว่า condition, requirement, provided that, on the condition that ล้วนแปลว่า เงื่อนไข ให้กวาดตาหาคำพวกนี้เมื่อโจทย์ถามว่าใครบังคับให้ทำอะไร",
+      "trick": "ระวังตัวลวงที่หยิบข้อเท็จจริงจริงในบทความมาสลับ ว่าใครเป็นคนพูด ในที่นี้เรื่องจ้างคนท้องถิ่นเป็นคำพูดของบริษัท ไม่ใช่ของสภาเมือง",
+      "evidence": "Tilbrook has agreed to pay for repairs to the road leading to the property, a condition set by the Hessle council when it approved the plan in October."
+     }
+    },
+    {
+     "q": "What is indicated about chilled ready meals?",
+     "kind": "inference",
+     "choices": [
+      "They will be produced in Randall.",
+      "They cost less than frozen soups.",
+      "They will be sold only at the job fair.",
+      "They are a new product type for the company."
+     ],
+     "answer": 3,
+     "th": {
+      "q": "บทความบอกอะไรเกี่ยวกับอาหารพร้อมรับประทานแบบแช่เย็น",
+      "choices": [
+       "จะผลิตที่โรงงานแรนดัลล์",
+       "ราคาถูกกว่าซุปแช่แข็ง",
+       "จะขายเฉพาะที่งานนัดพบแรงงาน",
+       "เป็นสินค้าประเภทใหม่สำหรับบริษัท"
+      ]
+     },
+     "explain": {
+      "why": "ย่อหน้าที่สี่เขียนว่า a new line of chilled ready meals aimed at supermarkets, a market Tilbrook has not entered before วลี has not entered before แปลว่า ยังไม่เคยเข้าไปมาก่อน บวกกับคำว่า new line (ไลน์สินค้าใหม่) จึงสรุปได้ว่า \"They are a new product type for the company.\" ครับ",
+      "wrong": {
+       "0": "บทความระบุชัดว่า Production in Hessle will focus on... คือผลิตที่เฮสเซิล ไม่ใช่แรนดัลล์",
+       "1": "ไม่มีตัวเลขราคาของสินค้าทั้งสองชนิดในบทความเลย จึงเทียบราคาไม่ได้",
+       "2": "งานนัดพบแรงงานคืองานหาคนมาทำงาน ไม่ใช่ช่องทางขายสินค้า บทความบอกว่าขายให้ซูเปอร์มาร์เก็ต"
+      },
+      "point": "วลีปฏิเสธในรูป present perfect เช่น has not entered before, has never sold แปลว่า ไม่เคยทำมาก่อนจนถึงตอนนี้ เป็นสัญญาณว่าสิ่งนั้น ใหม่",
+      "trick": "คำถาม What is indicated / suggested about ... ให้หาประโยคที่มีคำหลักในคำถาม (ที่นี่คือ chilled ready meals) แล้วอ่านคำขยายที่ตามหลังคอมมา เพราะข้อมูลที่ใช้ตอบมักซ่อนอยู่ตรงนั้น",
+      "evidence": "Production in Hessle will focus on a new line of chilled ready meals aimed at supermarkets, a market Tilbrook has not entered before."
+     }
+    }
+   ],
+   "vocab": [
+    {
+     "w": "capacity",
+     "ipa": "/kəˈpæsəti/",
+     "th": "เคอะ-**แพส**-ซิ-ที",
+     "mean": "กำลังการผลิตสูงสุด, ความจุ",
+     "pos": "n."
+    },
+    {
+     "w": "manufacturer",
+     "ipa": "/ˌmænjuˈfæktʃərər/",
+     "th": "แมน-ยุ-**แฟค**-เชอ-เรอร์",
+     "mean": "ผู้ผลิต, บริษัทที่ผลิตสินค้า",
+     "pos": "n."
+    },
+    {
+     "w": "approve",
+     "ipa": "/əˈpruːv/",
+     "th": "อะ-**พรูฟ**",
+     "mean": "อนุมัติ, เห็นชอบให้ทำได้",
+     "pos": "v."
+    },
+    {
+     "w": "formerly",
+     "ipa": "/ˈfɔːrmərli/",
+     "th": "**ฟอร์**-เมอร์-ลี",
+     "mean": "แต่ก่อน, เดิมที",
+     "pos": "adv."
+    }
+   ]
+  },
+  {
+   "id": "p7m-01-003",
+   "part": 7,
+   "tier": "medium",
+   "setType": "single",
+   "passages": [
+    {
+     "kind": "email",
+     "header": {
+      "From": "Owen Marsh, Customer Service, Halvern Office Supply",
+      "To": "Priya Raman",
+      "Date": "9 June",
+      "Subject": "Order 55-2287"
+     },
+     "body": "Dear Ms. Raman,\n\nThank you for your message about order 55-2287, placed on 2 June. [1] I am sorry that the delivery has not arrived as scheduled.\n\nI have checked the record with our warehouse in Denton. Twelve of the fourteen items you ordered were packed and left the warehouse on 5 June. [2] The two remaining items, the adjustable monitor stands, were held because our supplier changed the packaging and the new cartons did not fit our standard shelving.\n\nThe stands are now expected in Denton on 13 June and will be sent to you the same day. [3] Because the delay was ours, I have removed the shipping charge from your invoice and applied a credit of 25 dollars to your account.\n\nYou should have received a tracking number for the first parcel by text message. [4] If it has not reached you by Thursday, please reply to this message and I will send the details again.\n\nThank you for your patience.\n\nOwen Marsh\nCustomer Service Team"
+    }
+   ],
+   "th": {
+    "passages": [
+     {
+      "body": "เรียน คุณรามาน\n\nขอบคุณสำหรับข้อความเรื่องคำสั่งซื้อเลขที่ 55-2287 ที่สั่งไว้เมื่อวันที่ 2 มิถุนายน [1] ผมขออภัยที่สินค้ายังไม่ถึงมือคุณตามกำหนด\n\nผมได้ตรวจสอบบันทึกกับคลังสินค้าของเราที่เดนตันแล้ว สินค้า 12 ชิ้นจาก 14 ชิ้นที่คุณสั่งถูกแพ็กและออกจากคลังไปตั้งแต่วันที่ 5 มิถุนายน [2] ส่วนอีก 2 ชิ้นที่เหลือ คือขาตั้งจอปรับระดับได้ ถูกกักไว้เพราะซัพพลายเออร์ของเราเปลี่ยนแพ็กเกจใหม่ แล้วกล่องแบบใหม่ใส่ชั้นวางมาตรฐานของเราไม่ได้\n\nขาตั้งจอชุดนี้คาดว่าจะถึงเดนตันในวันที่ 13 มิถุนายน และจะส่งต่อไปหาคุณในวันเดียวกัน [3] เนื่องจากความล่าช้าเกิดจากฝั่งเรา ผมจึงตัดค่าจัดส่งออกจากใบแจ้งหนี้ของคุณ และใส่เครดิตคืน 25 ดอลลาร์เข้าบัญชีของคุณแล้ว\n\nคุณน่าจะได้รับหมายเลขติดตามพัสดุของกล่องแรกทางข้อความไปแล้ว [4] ถ้ายังไม่ได้รับภายในวันพฤหัสบดี รบกวนตอบกลับอีเมลฉบับนี้ แล้วผมจะส่งรายละเอียดให้อีกครั้ง\n\nขอบคุณที่ใจเย็นรอครับ\n\nโอเวน มาร์ช\nทีมบริการลูกค้า"
+     }
+    ]
+   },
+   "questions": [
+    {
+     "q": "Why were two items not shipped?",
+     "kind": "detail",
+     "choices": [
+      "They were out of stock at the supplier.",
+      "They were damaged during packing.",
+      "Their new cartons did not fit the shelving.",
+      "The customer changed the order."
+     ],
+     "answer": 2,
+     "th": {
+      "q": "ทำไมสินค้า 2 ชิ้นถึงยังไม่ถูกจัดส่ง",
+      "choices": [
+       "ของหมดสต๊อกที่ซัพพลายเออร์",
+       "เสียหายระหว่างแพ็ก",
+       "กล่องแบบใหม่ใส่ชั้นวางไม่ได้",
+       "ลูกค้าเปลี่ยนคำสั่งซื้อ"
+      ]
+     },
+     "explain": {
+      "why": "ย่อหน้าที่สองบอกเหตุผลตรงๆ ว่า our supplier changed the packaging and the new cartons did not fit our standard shelving แปลว่า ซัพพลายเออร์เปลี่ยนแพ็กเกจ แล้วกล่องแบบใหม่ใส่ชั้นวางมาตรฐานไม่ได้ ตัวเลือกที่ตรงคือ \"Their new cartons did not fit the shelving.\" ครับ",
+      "wrong": {
+       "0": "อีเมลไม่ได้บอกว่าของหมด แต่บอกว่าของถูกกักไว้ (were held) เพราะปัญหาเรื่องกล่อง และยังระบุวันที่ของจะมาถึงด้วย",
+       "1": "ไม่มีคำว่าเสียหายหรือชำรุดในอีเมลเลย ปัญหาคือขนาดกล่องไม่พอดีกับชั้นวาง ไม่ใช่ของพัง",
+       "3": "ลูกค้าเป็นฝ่ายทักท้วงเรื่องของไม่มาส่ง ไม่ได้แก้ไขคำสั่งซื้อแต่อย่างใด"
+      },
+      "point": "คำว่า because แปลว่า เพราะ เป็นคำที่ชี้เหตุผลชัดที่สุด เจอคำถามขึ้นต้นด้วย Why ให้กวาดหา because, since, due to, as ก่อนเลย",
+      "trick": "อ่านเฉพาะประโยคที่มีคำหลักในคำถาม (ที่นี่คือ two items / remaining items) พอ ไม่ต้องอ่านทั้งอีเมล จะประหยัดเวลาได้มาก",
+      "evidence": "The two remaining items, the adjustable monitor stands, were held because our supplier changed the packaging and the new cartons did not fit our standard shelving."
+     }
+    },
+    {
+     "q": "What has Mr. Marsh done for Ms. Raman?",
+     "kind": "detail",
+     "choices": [
+      "Removed a delivery fee",
+      "Cancelled part of her order",
+      "Sent a replacement monitor",
+      "Arranged a visit from a technician"
+     ],
+     "answer": 0,
+     "th": {
+      "q": "คุณมาร์ชได้ทำอะไรให้คุณรามานไปแล้วบ้าง",
+      "choices": [
+       "ตัดค่าจัดส่งออกให้",
+       "ยกเลิกคำสั่งซื้อบางส่วน",
+       "ส่งจอคอมพิวเตอร์ตัวใหม่ไปแทน",
+       "จัดให้ช่างเข้าไปดูหน้างาน"
+      ]
+     },
+     "explain": {
+      "why": "ย่อหน้าที่สามเขียนว่า I have removed the shipping charge from your invoice แปลว่า ผมได้ตัดค่าจัดส่งออกจากใบแจ้งหนี้แล้ว คำว่า shipping charge ก็คือค่าส่งของ ตรงกับตัวเลือก \"Removed a delivery fee\" พอดีครับ",
+      "wrong": {
+       "1": "เขาไม่ได้ยกเลิกอะไรเลย ตรงกันข้าม เขายืนยันว่าของอีก 2 ชิ้นจะส่งวันที่ 13 มิถุนายน",
+       "2": "สินค้าที่ค้างคือ monitor stands (ขาตั้งจอ) ไม่ใช่ตัวจอ และไม่มีการส่งของทดแทนใดๆ",
+       "3": "ในอีเมลไม่มีการพูดถึงช่างหรือการเข้าหน้างานเลยแม้แต่คำเดียว"
+      },
+      "point": "รูป have/has + กริยาช่อง 3 (present perfect แปลว่า ทำไปแล้วและมีผลถึงตอนนี้) เป็นสัญญาณว่าสิ่งนั้น ทำเสร็จแล้ว ตรงกับคำถามที่ถามว่า done (ทำอะไรไปแล้ว)",
+      "trick": "คำเดียวกันในข้อสอบมักถูกเปลี่ยนคำ เช่น shipping charge ในบทความ กลายเป็น delivery fee ในตัวเลือก ให้ฝึกจับคู่คำที่ความหมายเดียวกัน",
+      "evidence": "Because the delay was ours, I have removed the shipping charge from your invoice and applied a credit of 25 dollars to your account."
+     }
+    },
+    {
+     "q": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong? \"Those twelve items should reach your office by the end of this week.\"",
+     "kind": "insertSentence",
+     "choices": [
+      "[1]",
+      "[2]",
+      "[3]",
+      "[4]"
+     ],
+     "answer": 1,
+     "th": {
+      "q": "ประโยคต่อไปนี้ควรอยู่ที่ตำแหน่งใดในบรรดา [1] [2] [3] และ [4] : สินค้า 12 ชิ้นดังกล่าวน่าจะถึงสำนักงานของคุณภายในสิ้นสัปดาห์นี้",
+      "choices": [
+       "ตำแหน่ง [1]",
+       "ตำแหน่ง [2]",
+       "ตำแหน่ง [3]",
+       "ตำแหน่ง [4]"
+      ]
+     },
+     "explain": {
+      "why": "ประโยคที่ให้มาขึ้นต้นด้วย Those twelve items แปลว่า สินค้า 12 ชิ้นดังกล่าว คำว่า Those (เหล่านั้น) ต้องชี้กลับไปหาของที่เพิ่งพูดถึง ซึ่งก็คือประโยค Twelve of the fourteen items... left the warehouse on 5 June ที่อยู่ตรงหน้าตำแหน่ง [2] พอดี วางแล้วเนื้อความไหลต่อสนิท คือ 12 ชิ้นออกไปแล้วจะถึงสิ้นสัปดาห์ ส่วนอีก 2 ชิ้นที่เหลือติดปัญหา คำตอบจึงเป็น [2] ครับ",
+      "wrong": {
+       "0": "ตรงตำแหน่ง [1] ยังไม่มีการพูดถึงจำนวนสินค้าเลย มีแค่เลขที่คำสั่งซื้อกับวันที่สั่ง คำว่า Those twelve items จึงไม่มีของให้ชี้กลับไป",
+       "2": "ตรงตำแหน่ง [3] กำลังพูดถึงขาตั้งจอ 2 ชิ้นที่จะมาถึงวันที่ 13 มิถุนายน ไม่ใช่ของ 12 ชิ้น แถมวันที่ก็ขัดกับคำว่าสิ้นสัปดาห์นี้",
+       "3": "ตรงตำแหน่ง [4] เนื้อหาเปลี่ยนไปเรื่องหมายเลขติดตามพัสดุแล้ว การย้อนกลับมาพูดเรื่องกำหนดส่งของ 12 ชิ้นทำให้เนื้อความสะดุด"
+      },
+      "point": "ข้อเติมประโยคให้จับคำชี้ย้อนหลังก่อนเสมอ เช่น Those, These, That, This, It, Such คำพวกนี้ต้องมีของจริงอยู่ในประโยคก่อนหน้าที่ติดกัน",
+      "trick": "อ่านประโยคที่ให้มาก่อนบทความ ถามตัวเองว่า คำว่า Those twelve items หมายถึงอะไร แล้วไปหาว่า 12 ชิ้น โผล่ครั้งแรกที่ไหน คำตอบมักอยู่ถัดจากจุดนั้นทันที",
+      "evidence": "Twelve of the fourteen items you ordered were packed and left the warehouse on 5 June."
+     }
+    }
+   ],
+   "vocab": [
+    {
+     "w": "warehouse",
+     "ipa": "/ˈwerhaʊs/",
+     "th": "**แวร์**-เฮาส์",
+     "mean": "คลังสินค้า",
+     "pos": "n."
+    },
+    {
+     "w": "carton",
+     "ipa": "/ˈkɑːrtn/",
+     "th": "**คาร์**-เทิน",
+     "mean": "กล่องกระดาษสำหรับบรรจุสินค้า",
+     "pos": "n."
+    },
+    {
+     "w": "credit",
+     "ipa": "/ˈkredɪt/",
+     "th": "**เคร**-ดิท",
+     "mean": "เงินคืนที่บันทึกไว้ในบัญชีลูกค้า",
+     "pos": "n."
+    },
+    {
+     "w": "adjustable",
+     "ipa": "/əˈdʒʌstəbl/",
+     "th": "อะ-**จัส**-เทอะ-เบิล",
+     "mean": "ปรับระดับได้, ปรับแต่งได้",
+     "pos": "adj."
+    }
+   ]
+  },
+  {
+   "id": "p7m-01-004",
+   "part": 7,
+   "tier": "medium",
+   "setType": "single",
+   "passages": [
+    {
+     "kind": "memo",
+     "header": {
+      "To": "All staff, Weybridge Park campus",
+      "From": "Facilities Office",
+      "Date": "14 August",
+      "Subject": "Garage repairs, 2-27 September"
+     },
+     "body": "The concrete deck of the staff garage will be resurfaced from Monday, 2 September through Friday, 27 September. During those four weeks, levels 2 and 3 will be closed. Level 1 will stay open for visitors and for staff who hold accessible-parking permits.\n\nTo replace the lost spaces, the company has rented the lot behind the Rosewick shopping centre on Fenn Street. A shuttle bus will run between that lot and the main entrance every ten minutes from 7:00 A.M. to 9:30 A.M. and from 4:30 P.M. to 7:00 P.M. Outside those hours, please call the front desk and a driver will collect you.\n\nStaff who normally park on levels 2 and 3 must collect a temporary Fenn Street pass from the security office before 30 August. Passes will not be issued after that date, and cars without a pass may be towed at the owner's expense.\n\nAnyone who prefers to travel by train during the works may request a monthly rail card at half cost through the staff portal. Please direct any further questions to the Facilities Office at extension 2255."
+    }
+   ],
+   "th": {
+    "passages": [
+     {
+      "body": "พื้นคอนกรีตของอาคารจอดรถพนักงานจะถูกปูผิวใหม่ตั้งแต่วันจันทร์ที่ 2 กันยายน ถึงวันศุกร์ที่ 27 กันยายน ในช่วงสี่สัปดาห์นั้น ชั้น 2 และชั้น 3 จะปิดใช้งาน ส่วนชั้น 1 ยังเปิดสำหรับผู้มาติดต่อและสำหรับพนักงานที่มีบัตรจอดรถสำหรับผู้พิการ\n\nเพื่อทดแทนที่จอดที่หายไป บริษัทได้เช่าลานจอดรถด้านหลังศูนย์การค้าโรสวิกบนถนนเฟนน์ไว้แล้ว จะมีรถรับส่งวิ่งระหว่างลานจอดนั้นกับประตูหลักทุก 10 นาที ในช่วง 7:00-9:30 น. และ 16:30-19:00 น. นอกเวลาดังกล่าว กรุณาโทรแจ้งเคาน์เตอร์ต้อนรับ แล้วจะมีคนขับไปรับท่าน\n\nพนักงานที่ปกติจอดรถชั้น 2 และชั้น 3 ต้องไปรับบัตรผ่านชั่วคราวสำหรับลานถนนเฟนน์ที่ห้องรักษาความปลอดภัยก่อนวันที่ 30 สิงหาคม จะไม่มีการออกบัตรให้หลังจากวันนั้น และรถที่ไม่มีบัตรอาจถูกลากออกโดยเจ้าของรถต้องรับผิดชอบค่าใช้จ่ายเอง\n\nท่านใดที่อยากเดินทางด้วยรถไฟในช่วงงานซ่อม สามารถขอบัตรรถไฟรายเดือนในราคาครึ่งหนึ่งได้ผ่านระบบพนักงาน หากมีคำถามเพิ่มเติม กรุณาติดต่อฝ่ายอาคารสถานที่ที่เบอร์ต่อ 2255"
+     }
+    ]
+   },
+   "questions": [
+    {
+     "q": "What will happen in September?",
+     "kind": "detail",
+     "choices": [
+      "Part of a garage will be closed.",
+      "A new office building will be finished.",
+      "A shopping centre will open.",
+      "The front desk will move."
+     ],
+     "answer": 0,
+     "th": {
+      "q": "จะเกิดอะไรขึ้นในเดือนกันยายน",
+      "choices": [
+       "อาคารจอดรถบางส่วนจะถูกปิด",
+       "อาคารสำนักงานใหม่จะสร้างเสร็จ",
+       "ศูนย์การค้าจะเปิดให้บริการ",
+       "เคาน์เตอร์ต้อนรับจะย้ายที่"
+      ]
+     },
+     "explain": {
+      "why": "ประโยคแรกกับประโยคที่สองต่อกันเลยครับว่า จะปูผิวพื้นใหม่ตั้งแต่ 2 ถึง 27 กันยายน และ During those four weeks, levels 2 and 3 will be closed แปลว่า ช่วงสี่สัปดาห์นั้นชั้น 2 กับชั้น 3 จะปิด ชั้น 2 กับ 3 คือ ส่วนหนึ่ง ของอาคารจอดรถ คำตอบจึงเป็น \"Part of a garage will be closed.\"",
+      "wrong": {
+       "1": "บันทึกนี้พูดถึงการซ่อมพื้นอาคารจอดรถเดิม ไม่มีการก่อสร้างอาคารสำนักงานใหม่ใดๆ",
+       "2": "ศูนย์การค้าโรสวิกถูกพูดถึงเพราะบริษัทไปเช่าลานจอดด้านหลัง แสดงว่าศูนย์การค้ามีอยู่แล้ว ไม่ใช่กำลังจะเปิด",
+       "3": "เคาน์เตอร์ต้อนรับถูกพูดถึงในฐานะเบอร์ที่ให้โทรขอรถรับส่งนอกเวลา ไม่มีเรื่องการย้ายที่ตั้ง"
+      },
+      "point": "เจอคำถามที่มีเดือนหรือวันที่ ให้กวาดตาหาเดือนหรือวันที่นั้นในบทความก่อน แล้วอ่านเฉพาะประโยครอบๆ",
+      "trick": "ตัวลวงชอบหยิบชื่อสถานที่จริงในบทความ (ศูนย์การค้า เคาน์เตอร์ต้อนรับ) มาใส่เหตุการณ์ปลอม ต้องเช็กว่าชื่อนั้นทำหน้าที่อะไรจริงๆ",
+      "evidence": "During those four weeks, levels 2 and 3 will be closed."
+     }
+    },
+    {
+     "q": "What must some staff do before 30 August?",
+     "kind": "detail",
+     "choices": [
+      "Buy a rail card",
+      "Move their cars to level 1",
+      "Register for a shuttle seat",
+      "Get a temporary parking pass"
+     ],
+     "answer": 3,
+     "th": {
+      "q": "พนักงานบางส่วนต้องทำอะไรก่อนวันที่ 30 สิงหาคม",
+      "choices": [
+       "ซื้อบัตรรถไฟ",
+       "ย้ายรถไปจอดชั้น 1",
+       "ลงทะเบียนจองที่นั่งรถรับส่ง",
+       "ไปรับบัตรจอดรถชั่วคราว"
+      ]
+     },
+     "explain": {
+      "why": "ย่อหน้าที่สามเขียนว่า Staff who normally park on levels 2 and 3 must collect a temporary Fenn Street pass from the security office before 30 August คำว่า must แปลว่า ต้อง และ before 30 August ก็คือก่อนวันที่ 30 สิงหาคม ตรงกับคำถามพอดี คำตอบคือ \"Get a temporary parking pass\" ครับ",
+      "wrong": {
+       "0": "บัตรรถไฟเป็นทางเลือกสำหรับคนที่อยากนั่งรถไฟ ใช้คำว่า may request (ขอได้ถ้าต้องการ) ไม่ใช่ข้อบังคับ และไม่มีกำหนดวันที่ 30 สิงหาคม",
+       "1": "ชั้น 1 สงวนไว้ให้ผู้มาติดต่อและพนักงานที่มีบัตรจอดสำหรับผู้พิการ ไม่ใช่ที่ให้พนักงานทั่วไปย้ายไปจอด",
+       "2": "รถรับส่งวิ่งทุก 10 นาทีแบบขึ้นได้เลย บันทึกไม่ได้บอกให้จองที่นั่งล่วงหน้า"
+      },
+      "point": "คำสั่งบังคับในเอกสารธุรกิจใช้ must / are required to / are asked to ส่วนทางเลือกใช้ may / can / are welcome to ต้องแยกสองกลุ่มนี้ให้ออก",
+      "trick": "โจทย์ที่ถามว่า ต้องทำอะไรก่อนวันไหน ให้ค้นวันที่ในบทความ แล้วอ่านย้อนไปข้างหน้าประโยคเดียว มักเจอคำตอบทันที",
+      "evidence": "Staff who normally park on levels 2 and 3 must collect a temporary Fenn Street pass from the security office before 30 August."
+     }
+    },
+    {
+     "q": "What is NOT mentioned as an option for staff during the repairs?",
+     "kind": "notMentioned",
+     "choices": [
+      "Riding a shuttle bus",
+      "Using a discounted rail card",
+      "Calling the front desk for a ride",
+      "Working from home"
+     ],
+     "answer": 3,
+     "th": {
+      "q": "อะไรที่ไม่ได้ถูกกล่าวถึงว่าเป็นทางเลือกของพนักงานในช่วงซ่อมแซม",
+      "choices": [
+       "นั่งรถรับส่ง",
+       "ใช้บัตรรถไฟราคาลด",
+       "โทรเรียกรถจากเคาน์เตอร์ต้อนรับ",
+       "ทำงานจากที่บ้าน"
+      ]
+     },
+     "explain": {
+      "why": "บันทึกลิสต์ทางเลือกไว้ 3 อย่าง คือรถรับส่งทุก 10 นาที การโทรเรียกคนขับนอกเวลา และบัตรรถไฟรายเดือนครึ่งราคา แต่ไม่มีตรงไหนพูดถึง \"Working from home\" หรือการทำงานจากบ้านเลยแม้แต่คำเดียว จึงเป็นคำตอบของข้อ NOT ครับ",
+      "wrong": {
+       "0": "มีอยู่จริง บันทึกเขียนว่า A shuttle bus will run between that lot and the main entrance every ten minutes",
+       "1": "มีอยู่จริง บันทึกเขียนว่าขอบัตรรถไฟรายเดือน at half cost คือครึ่งราคาได้ผ่านระบบพนักงาน",
+       "2": "มีอยู่จริง บันทึกเขียนว่า Outside those hours, please call the front desk and a driver will collect you"
+      },
+      "point": "ข้อ NOT / EXCEPT ให้ทำแบบตัดออกทีละตัว ไล่หาตัวเลือกที่เจอในบทความแล้วขีดทิ้ง ตัวที่หาไม่เจอคือคำตอบ",
+      "trick": "อย่าเผลออ่านข้ามคำว่า NOT ในโจทย์ ให้วงคำนี้ไว้ก่อนเริ่มอ่านตัวเลือก เพราะข้อสอบจะพิมพ์ตัวใหญ่ไว้ให้อยู่แล้ว",
+      "evidence": "Anyone who prefers to travel by train during the works may request a monthly rail card at half cost through the staff portal."
+     }
+    }
+   ],
+   "vocab": [
+    {
+     "w": "resurface",
+     "ipa": "/ˌriːˈsɜːrfɪs/",
+     "th": "รี-**เซอร์**-ฟิส",
+     "mean": "ปูผิวใหม่ (ถนนหรือพื้น)",
+     "pos": "v."
+    },
+    {
+     "w": "temporary",
+     "ipa": "/ˈtempəreri/",
+     "th": "**เทม**-เพอ-เร-รี",
+     "mean": "ชั่วคราว, ใช้ได้ช่วงหนึ่ง",
+     "pos": "adj."
+    },
+    {
+     "w": "tow",
+     "ipa": "/toʊ/",
+     "th": "**โท**",
+     "mean": "ลากรถออกไป (โดยรถลาก)",
+     "pos": "v."
+    },
+    {
+     "w": "expense",
+     "ipa": "/ɪkˈspens/",
+     "th": "อิค-**สเปนส์**",
+     "mean": "ค่าใช้จ่าย",
+     "pos": "n."
+    }
+   ]
+  },
+  {
+   "id": "p7m-01-005",
+   "part": 7,
+   "tier": "medium",
+   "setType": "single",
+   "passages": [
+    {
+     "kind": "chat",
+     "header": {
+      "Subject": "Group message — Client visit, Bramley Instruments"
+     },
+     "body": "Dana Okoye (9:12 A.M.): The client from Bramley Instruments lands at 11:40. Who is picking her up?\n\nVictor Salas (9:14 A.M.): I put my name down last week, but my car is in the shop until Thursday.\n\nDana Okoye (9:15 A.M.): That's cutting it fine. Can anyone else drive?\n\nIngrid Holt (9:18 A.M.): I can go. I have the demo room booked at 1:00 P.M. anyway, so I would be back in time.\n\nVictor Salas (9:19 A.M.): Thanks, Ingrid. She will have two large sample cases with her.\n\nIngrid Holt (9:21 A.M.): Then I will take the van from the loading bay instead of my own car.\n\nDana Okoye (9:23 A.M.): Good. Ingrid, please stop at reception first and pick up her visitor badge. Security will not print one after 11:00.\n\nIngrid Holt (9:24 A.M.): Already on my list.\n\nVictor Salas (9:26 A.M.): One more thing — she asked whether we could move the factory tour to the morning of the second day.\n\nDana Okoye (9:28 A.M.): Let us keep it where it is. The line is being cleaned that morning."
+    }
+   ],
+   "th": {
+    "passages": [
+     {
+      "body": "ดานา โอโคเย (9:12 น.): ลูกค้าจากบรัมลีย์ อินสตรูเมนต์ส เครื่องลงเวลา 11:40 น. ใครจะไปรับ\n\nวิกเตอร์ ซาลาส (9:14 น.): ผมลงชื่อไว้ตั้งแต่สัปดาห์ที่แล้ว แต่รถผมอยู่ที่อู่จนถึงวันพฤหัสบดี\n\nดานา โอโคเย (9:15 น.): นี่ก็เฉียดฉิวแล้วนะ มีใครขับรถไปได้อีกไหม\n\nอิงกริด โฮลต์ (9:18 น.): ฉันไปได้ ยังไงฉันก็จองห้องเดโมไว้ตอนบ่ายโมงอยู่แล้ว กลับมาทันแน่นอน\n\nวิกเตอร์ ซาลาส (9:19 น.): ขอบคุณครับอิงกริด เธอจะมีกล่องตัวอย่างสินค้าใบใหญ่มาด้วย 2 ใบ\n\nอิงกริด โฮลต์ (9:21 น.): งั้นฉันจะเอารถตู้จากท่าขนของไปแทนรถตัวเอง\n\nดานา โอโคเย (9:23 น.): ดีเลย อิงกริด แวะที่แผนกต้อนรับก่อนนะ ไปรับบัตรผู้มาเยือนของเธอด้วย ฝ่ายรักษาความปลอดภัยจะไม่พิมพ์บัตรให้หลัง 11:00 น.\n\nอิงกริด โฮลต์ (9:24 น.): จดไว้ในลิสต์แล้วค่ะ\n\nวิกเตอร์ ซาลาส (9:26 น.): อีกเรื่องหนึ่ง เธอถามมาว่าเราเลื่อนทัวร์โรงงานไปเป็นเช้าวันที่สองได้ไหม\n\nดานา โอโคเย (9:28 น.): เก็บไว้ที่เดิมเถอะ เช้าวันนั้นสายการผลิตมีคิวล้างทำความสะอาด"
+     }
+    ]
+   },
+   "questions": [
+    {
+     "q": "What are the writers mainly discussing?",
+     "kind": "gist",
+     "choices": [
+      "Plans for a visitor's arrival",
+      "A problem with a delivery van",
+      "The results of a factory inspection",
+      "A change to the office badge system"
+     ],
+     "answer": 0,
+     "th": {
+      "q": "คนในแชตกำลังคุยเรื่องอะไรเป็นหลัก",
+      "choices": [
+       "การเตรียมรับลูกค้าที่จะมาถึง",
+       "ปัญหาของรถตู้ส่งของ",
+       "ผลการตรวจสอบโรงงาน",
+       "การเปลี่ยนระบบบัตรพนักงาน"
+      ]
+     },
+     "explain": {
+      "why": "ข้อความแรกตั้งหัวข้อไว้เลยว่า The client from Bramley Instruments lands at 11:40. Who is picking her up? แปลว่า ลูกค้าเครื่องลง 11:40 น. ใครจะไปรับ แล้วทั้งแชตก็คุยแต่เรื่องนี้ คือใครขับ ใช้รถอะไร รับบัตรผู้มาเยือนตอนไหน ทัวร์โรงงานวันไหน คำตอบจึงเป็น \"Plans for a visitor's arrival\" ครับ",
+      "wrong": {
+       "1": "รถตู้ถูกพูดถึงในฐานะ ทางแก้ ที่อิงกริดเลือกใช้เพราะของลูกค้าเยอะ ไม่ใช่ตัวปัญหา รถที่มีปัญหาคือรถส่วนตัวของวิกเตอร์",
+       "2": "โรงงานถูกพูดถึงในเรื่องทัวร์พาลูกค้าชม ไม่ใช่การตรวจสอบและไม่มีการรายงานผลใดๆ",
+       "3": "บัตรผู้มาเยือนถูกพูดถึงแค่ว่าให้ไปรับก่อน 11:00 น. ไม่มีการเปลี่ยนแปลงระบบบัตรแต่อย่างใด"
+      },
+      "point": "แชตหลายคนให้อ่านข้อความแรกกับข้อความสุดท้ายก่อน ข้อความแรกมักตั้งหัวข้อ ส่วนข้อความท้ายมักเป็นข้อสรุป",
+      "trick": "อย่าเลือกตัวเลือกเพราะมีคำที่โผล่ในแชต (van, factory, badge) ทั้งสามคำนั้นมีจริง แต่เป็นแค่รายละเอียดย่อย ไม่ใช่หัวข้อหลัก",
+      "evidence": "The client from Bramley Instruments lands at 11:40. Who is picking her up?"
+     }
+    },
+    {
+     "q": "Why will Ms. Holt use the van?",
+     "kind": "detail",
+     "choices": [
+      "Her own car is being repaired.",
+      "The visitor is bringing large cases.",
+      "The van has a parking permit.",
+      "She must collect several passengers."
+     ],
+     "answer": 1,
+     "th": {
+      "q": "ทำไมคุณโฮลต์ถึงจะใช้รถตู้",
+      "choices": [
+       "รถของเธอเองกำลังซ่อมอยู่",
+       "ลูกค้าจะเอากล่องใบใหญ่มาด้วย",
+       "รถตู้มีบัตรจอดรถ",
+       "เธอต้องไปรับผู้โดยสารหลายคน"
+      ]
+     },
+     "explain": {
+      "why": "ลำดับข้อความชัดมากครับ วิกเตอร์พิมพ์ว่า She will have two large sample cases with her (เธอจะมีกล่องตัวอย่างใบใหญ่มา 2 ใบ) แล้วอิงกริดตอบทันทีว่า Then I will take the van (งั้นฉันจะเอารถตู้ไป) คำว่า Then แปลว่า ถ้างั้น เป็นตัวเชื่อมเหตุกับผล คำตอบจึงเป็น \"The visitor is bringing large cases.\"",
+      "wrong": {
+       "0": "รถที่เข้าอู่เป็นรถของวิกเตอร์ ไม่ใช่ของอิงกริด อิงกริดพูดถึงรถตัวเองว่าใช้ได้แต่เลือกรถตู้แทน",
+       "2": "ในแชตไม่มีการพูดถึงบัตรจอดรถเลย บัตรที่พูดถึงคือบัตรผู้มาเยือนของลูกค้า",
+       "3": "มีผู้โดยสารคนเดียวคือลูกค้าจากบรัมลีย์ อินสตรูเมนต์ส ไม่ได้ไปรับหลายคน"
+      },
+      "point": "ในแชต เหตุผลมักอยู่ใน ข้อความก่อนหน้า ของอีกคน ไม่ใช่ในประโยคเดียวกัน ให้ไล่อ่านย้อนขึ้นไปหนึ่งบรรทัดเสมอ",
+      "trick": "ระวังตัวลวงที่สลับตัวคน ในแชตหลายคน ข้อสอบชอบเอาข้อมูลของคนหนึ่งไปยัดให้อีกคน ต้องดูชื่อผู้พิมพ์ทุกครั้ง",
+      "evidence": "Victor Salas (9:19 A.M.): Thanks, Ingrid. She will have two large sample cases with her."
+     }
+    },
+    {
+     "q": "At 9:24 A.M., what does Ms. Holt most likely mean when she writes, \"Already on my list\"?",
+     "kind": "inference",
+     "choices": [
+      "She has already picked up the badge.",
+      "She plans to print the badge herself.",
+      "She had already planned to get the badge.",
+      "She wants Mr. Salas to handle the badge."
+     ],
+     "answer": 2,
+     "th": {
+      "q": "เวลา 9:24 น. คุณโฮลต์น่าจะหมายความว่าอย่างไรเมื่อพิมพ์ว่า \"Already on my list\"",
+      "choices": [
+       "เธอไปรับบัตรมาแล้ว",
+       "เธอวางแผนจะพิมพ์บัตรเอง",
+       "เธอวางแผนจะไปรับบัตรอยู่แล้ว",
+       "เธออยากให้คุณซาลาสจัดการเรื่องบัตร"
+      ]
+     },
+     "explain": {
+      "why": "ดานาเพิ่งสั่งว่า please stop at reception first and pick up her visitor badge แล้วอิงกริดตอบว่า Already on my list ซึ่งแปลตรงตัวว่า อยู่ในลิสต์ของฉันอยู่แล้ว หมายความว่าเธอคิดจะทำเรื่องนี้ไว้ก่อนจะถูกสั่งเสียอีก คำตอบจึงเป็น \"She had already planned to get the badge.\" ครับ",
+      "wrong": {
+       "0": "ยังไม่ได้ไปรับครับ เพราะตอนนั้นเพิ่ง 9:24 น. และเธอยังไม่ได้ออกจากออฟฟิศ คำว่า list หมายถึงรายการสิ่งที่ ยังต้องทำ",
+       "1": "ดานาบอกว่าฝ่ายรักษาความปลอดภัยเป็นคนพิมพ์บัตร อิงกริดแค่ไปรับ ไม่ได้พิมพ์เอง",
+       "3": "อิงกริดตอบรับงานนี้ด้วยตัวเอง ไม่ได้โยนให้วิกเตอร์ และวิกเตอร์ก็ไปไม่ได้อยู่แล้วเพราะไม่มีรถ"
+      },
+      "point": "คำถามแบบ what does the writer mean ให้ย้อนอ่านข้อความ ก่อนหน้า หนึ่งบรรทัดเสมอ เพราะประโยคสั้นๆ ในแชตจะมีความหมายก็ต่อเมื่อมีบริบท",
+      "trick": "วลี Already on my list / I am on it / Way ahead of you ล้วนแปลว่า ฉันคิดไว้แล้ว หรือ กำลังทำอยู่ ไม่ได้แปลว่าทำเสร็จแล้ว",
+      "evidence": "Dana Okoye (9:23 A.M.): Good. Ingrid, please stop at reception first and pick up her visitor badge."
+     }
+    }
+   ],
+   "vocab": [
+    {
+     "w": "loading bay",
+     "ipa": "/ˈloʊdɪŋ beɪ/",
+     "th": "**โหลด**-ดิง **เบย์**",
+     "mean": "ท่าขนถ่ายสินค้าของอาคาร",
+     "pos": "n."
+    },
+    {
+     "w": "reception",
+     "ipa": "/rɪˈsepʃn/",
+     "th": "ริ-**เซพ**-เชิน",
+     "mean": "แผนกต้อนรับ, เคาน์เตอร์หน้าอาคาร",
+     "pos": "n."
+    },
+    {
+     "w": "sample",
+     "ipa": "/ˈsæmpl/",
+     "th": "**แซม**-เพิล",
+     "mean": "ตัวอย่างสินค้า",
+     "pos": "n."
+    },
+    {
+     "w": "in the shop",
+     "ipa": "/ɪn ðə ʃɑːp/",
+     "th": "อิน เดอะ **ชอพ**",
+     "mean": "อยู่ที่อู่ซ่อม (สำนวนใช้กับรถ)",
+     "pos": "phr."
+    }
+   ]
+  },
+  {
+   "id": "p7m-01-006",
+   "part": 7,
+   "tier": "medium",
+   "setType": "double",
+   "passages": [
+    {
+     "kind": "advertisement",
+     "header": {
+      "Subject": "Ambleside Regional Library — Community Programmes Coordinator"
+     },
+     "body": "AMBLESIDE REGIONAL LIBRARY\nCommunity Programmes Coordinator\n\nAmbleside Regional Library seeks a Community Programmes Coordinator for its Fenn Street branch. The coordinator plans reading groups, computer classes for adults, and school holiday activities, and works with local employers to run monthly career evenings.\n\nRequirements:\n- At least three years of experience planning public events or classes\n- A degree in education, library studies, communications, or a related field\n- Willingness to work two evenings each week and one Saturday each month\n- A valid driver's licence, as the post covers three branches\n\nSalary: 46,000 to 52,000 dollars, depending on experience. The library also pays for job-related training courses.\n\nTo apply, send a resume and a one-page letter describing a programme you have organised to careers@amblesidelibrary.org by 30 April. Interviews will be held during the week of 12 May. Candidates who cannot attend in person may ask for a video interview.\n\nPlease note that the position begins on 1 July and that the successful candidate must complete a background check before starting."
+    },
+    {
+     "kind": "email",
+     "header": {
+      "From": "Marcus Lindqvist",
+      "To": "careers@amblesidelibrary.org",
+      "Date": "21 April",
+      "Subject": "Community Programmes Coordinator"
+     },
+     "body": "Dear Hiring Committee,\n\nI am writing about the Community Programmes Coordinator post advertised on your website. My resume and letter are attached.\n\nFor the past five years I have managed adult education courses at the Rosewick Community Centre, where I built a computer skills programme that now serves about 300 people a year. Before that I taught secondary school English for two years. My degree is in communications.\n\nI have two questions. First, I will be away at a conference in Dublin during the week you have set aside for interviews. Would it be possible to speak with me by video link on 9 May instead, before I travel? Second, I hold a driver's licence issued in another country. Could you tell me whether that is acceptable, or whether I would need to exchange it before 1 July?\n\nI would be glad to visit the Fenn Street branch at any time before then.\n\nKind regards,\n\nMarcus Lindqvist"
+    }
+   ],
+   "th": {
+    "passages": [
+     {
+      "body": "ห้องสมุดประจำภูมิภาคแอมเบิลไซด์\nตำแหน่งผู้ประสานงานโครงการชุมชน\n\nห้องสมุดประจำภูมิภาคแอมเบิลไซด์ต้องการรับผู้ประสานงานโครงการชุมชนประจำสาขาถนนเฟนน์ ผู้ประสานงานจะวางแผนกลุ่มอ่านหนังสือ ชั้นเรียนคอมพิวเตอร์สำหรับผู้ใหญ่ และกิจกรรมช่วงปิดเทอมของนักเรียน รวมทั้งทำงานร่วมกับนายจ้างในท้องถิ่นเพื่อจัดงานแนะแนวอาชีพช่วงเย็นเดือนละครั้ง\n\nคุณสมบัติที่ต้องมี\n- มีประสบการณ์วางแผนกิจกรรมสาธารณะหรือชั้นเรียนอย่างน้อย 3 ปี\n- จบปริญญาด้านการศึกษา บรรณารักษศาสตร์ นิเทศศาสตร์ หรือสาขาที่เกี่ยวข้อง\n- ยินดีทำงานช่วงเย็นสัปดาห์ละ 2 วัน และวันเสาร์เดือนละ 1 วัน\n- มีใบขับขี่ที่ใช้ได้ เพราะตำแหน่งนี้ต้องดูแล 3 สาขา\n\nเงินเดือน 46,000 ถึง 52,000 ดอลลาร์ ขึ้นกับประสบการณ์ ห้องสมุดยังออกค่าอบรมหลักสูตรที่เกี่ยวกับงานให้ด้วย\n\nหากสนใจ ส่งประวัติย่อและจดหมายความยาว 1 หน้าที่เล่าถึงโครงการที่คุณเคยจัด มาที่ careers@amblesidelibrary.org ภายในวันที่ 30 เมษายน การสัมภาษณ์จะจัดในสัปดาห์ของวันที่ 12 พฤษภาคม ผู้สมัครที่ไม่สะดวกมาด้วยตัวเองสามารถขอสัมภาษณ์ผ่านวิดีโอได้\n\nโปรดทราบว่าตำแหน่งนี้เริ่มงานวันที่ 1 กรกฎาคม และผู้ที่ได้รับคัดเลือกต้องผ่านการตรวจสอบประวัติก่อนเริ่มงาน"
+     },
+     {
+      "body": "เรียน คณะกรรมการคัดเลือก\n\nผมเขียนมาเกี่ยวกับตำแหน่งผู้ประสานงานโครงการชุมชนที่ประกาศไว้บนเว็บไซต์ของท่าน ผมแนบประวัติย่อและจดหมายมาด้วยแล้ว\n\nตลอด 5 ปีที่ผ่านมา ผมดูแลหลักสูตรการศึกษาสำหรับผู้ใหญ่ที่ศูนย์ชุมชนโรสวิก ซึ่งผมได้สร้างโครงการสอนทักษะคอมพิวเตอร์ที่ตอนนี้มีผู้เรียนราว 300 คนต่อปี ก่อนหน้านั้นผมสอนวิชาภาษาอังกฤษระดับมัธยมอยู่ 2 ปี ปริญญาของผมอยู่ในสาขานิเทศศาสตร์\n\nผมมีคำถาม 2 ข้อครับ ข้อแรก ผมจะไปร่วมงานประชุมที่เมืองดับลินในสัปดาห์ที่ท่านกันไว้สำหรับการสัมภาษณ์ จะเป็นไปได้ไหมที่จะคุยกับผมผ่านวิดีโอในวันที่ 9 พฤษภาคมแทน ซึ่งเป็นช่วงก่อนผมเดินทาง ข้อสอง ใบขับขี่ของผมออกให้จากอีกประเทศหนึ่ง รบกวนแจ้งด้วยว่าใช้ได้เลยหรือไม่ หรือผมต้องไปเปลี่ยนเป็นใบขับขี่ในประเทศก่อนวันที่ 1 กรกฎาคม\n\nผมยินดีเดินทางไปที่สาขาถนนเฟนน์ได้ทุกเวลาก่อนถึงวันนั้นครับ\n\nด้วยความนับถือ\n\nมาร์คัส ลินด์ควิสต์"
+     }
+    ]
+   },
+   "questions": [
+    {
+     "q": "According to the advertisement, what will the coordinator do?",
+     "kind": "detail",
+     "choices": [
+      "Repair library computers",
+      "Organise career events with employers",
+      "Manage the library's budget",
+      "Train new librarians"
+     ],
+     "answer": 1,
+     "th": {
+      "q": "ตามประกาศ ผู้ประสานงานจะต้องทำอะไร",
+      "choices": [
+       "ซ่อมคอมพิวเตอร์ของห้องสมุด",
+       "จัดงานแนะแนวอาชีพร่วมกับนายจ้าง",
+       "บริหารงบประมาณของห้องสมุด",
+       "อบรมบรรณารักษ์ใหม่"
+      ]
+     },
+     "explain": {
+      "why": "ย่อหน้าแรกของประกาศบอกหน้าที่ไว้ว่า works with local employers to run monthly career evenings แปลว่า ทำงานร่วมกับนายจ้างในท้องถิ่นเพื่อจัดงานแนะแนวอาชีพช่วงเย็นเดือนละครั้ง ตัวเลือกที่ตรงคือ \"Organise career events with employers\" ครับ",
+      "wrong": {
+       "0": "คอมพิวเตอร์ถูกพูดถึงในบริบทของ computer classes for adults คือการเปิดสอน ไม่ใช่การซ่อมเครื่อง",
+       "2": "ในประกาศมีตัวเลขเงินเดือนของตำแหน่งนี้ แต่ไม่มีหน้าที่ดูแลงบประมาณของห้องสมุดเลย",
+       "3": "ประกาศไม่ได้บอกว่าผู้ประสานงานต้องอบรมพนักงานคนอื่น มีแต่บอกว่าห้องสมุดจะออกค่าอบรมให้ตัวผู้ประสานงานเอง"
+      },
+      "point": "ประกาศรับสมัครงานจะมีย่อหน้า หน้าที่ กับหัวข้อ คุณสมบัติ แยกกัน คำถามที่ถามว่า จะต้องทำอะไร ให้ดูย่อหน้าหน้าที่ ไม่ใช่ลิสต์คุณสมบัติ",
+      "trick": "ตัวลวงชอบเอาคำจากบทความ (computers, budget, training) มาสลับหน้าที่ ต้องอ่านว่าใครทำอะไรให้ใคร",
+      "evidence": "The coordinator plans reading groups, computer classes for adults, and school holiday activities, and works with local employers to run monthly career evenings."
+     }
+    },
+    {
+     "q": "What does the library offer employees?",
+     "kind": "detail",
+     "choices": [
+      "Free parking",
+      "A company car",
+      "Payment for training courses",
+      "Extra pay for Saturday work"
+     ],
+     "answer": 2,
+     "th": {
+      "q": "ห้องสมุดให้สวัสดิการอะไรแก่พนักงาน",
+      "choices": [
+       "ที่จอดรถฟรี",
+       "รถประจำตำแหน่ง",
+       "ออกค่าอบรมหลักสูตรให้",
+       "ค่าตอบแทนพิเศษสำหรับการทำงานวันเสาร์"
+      ]
+     },
+     "explain": {
+      "why": "ท้ายย่อหน้าเรื่องเงินเดือนเขียนว่า The library also pays for job-related training courses แปลว่า ห้องสมุดยังออกค่าหลักสูตรอบรมที่เกี่ยวกับงานให้ด้วย ตรงกับตัวเลือก \"Payment for training courses\" ครับ",
+      "wrong": {
+       "0": "ไม่มีคำว่าที่จอดรถในประกาศเลย มีแต่ข้อกำหนดว่าต้องมีใบขับขี่",
+       "1": "ประกาศบอกให้ผู้สมัคร มี ใบขับขี่ของตัวเอง ไม่ได้บอกว่าห้องสมุดจะจัดรถให้",
+       "3": "การทำงานวันเสาร์เดือนละครั้งเป็นเงื่อนไขของงาน ไม่ได้ระบุว่าจะได้เงินเพิ่ม"
+      },
+      "point": "คำว่า also (นอกจากนี้ยัง) มักนำหน้าสวัสดิการเพิ่มเติมในประกาศงาน เจอคำนี้ให้อ่านให้จบประโยค",
+      "trick": "ในประกาศงาน ให้แยกให้ออกระหว่าง สิ่งที่บริษัทให้ กับ สิ่งที่ผู้สมัครต้องมี ตัวลวงมักหยิบข้อกำหนดของผู้สมัครมาแปลงเป็นสวัสดิการ",
+      "evidence": "The library also pays for job-related training courses."
+     }
+    },
+    {
+     "q": "What did Mr. Lindqvist do at the Rosewick Community Centre?",
+     "kind": "detail",
+     "choices": [
+      "He taught secondary school English.",
+      "He worked as a branch manager.",
+      "He organised school holiday activities.",
+      "He started a computer skills programme."
+     ],
+     "answer": 3,
+     "th": {
+      "q": "คุณลินด์ควิสต์ทำอะไรที่ศูนย์ชุมชนโรสวิก",
+      "choices": [
+       "สอนภาษาอังกฤษระดับมัธยม",
+       "ทำงานเป็นผู้จัดการสาขา",
+       "จัดกิจกรรมช่วงปิดเทอมของนักเรียน",
+       "สร้างโครงการสอนทักษะคอมพิวเตอร์"
+      ]
+     },
+     "explain": {
+      "why": "อีเมลย่อหน้าที่สองเขียนว่า I have managed adult education courses at the Rosewick Community Centre, where I built a computer skills programme คำว่า built ในที่นี้แปลว่า สร้างขึ้นมา ตรงกับตัวเลือก \"He started a computer skills programme.\" ครับ",
+      "wrong": {
+       "0": "การสอนภาษาอังกฤษมัธยมเป็นงาน ก่อนหน้า ที่โรสวิก อีเมลใช้คำว่า Before that (ก่อนหน้านั้น) บอกไว้ชัด",
+       "1": "อีเมลใช้คำว่า managed courses คือดูแลหลักสูตร ไม่ได้บอกว่าเป็นผู้จัดการสาขาของศูนย์",
+       "2": "กิจกรรมช่วงปิดเทอมเป็นหน้าที่ที่ระบุใน ประกาศรับสมัครงาน ไม่ใช่สิ่งที่เขาทำมาแล้วที่โรสวิก"
+      },
+      "point": "คำบอกลำดับเวลาอย่าง For the past five years (ตลอด 5 ปีที่ผ่านมา) กับ Before that (ก่อนหน้านั้น) ใช้แยกว่างานไหนอยู่ที่ไหน",
+      "trick": "เมื่อโจทย์ระบุสถานที่ (at the Rosewick Community Centre) ให้หาชื่อสถานที่นั้นในบทความก่อน แล้วอ่านเฉพาะประโยคที่มีชื่อนั้น",
+      "evidence": "For the past five years I have managed adult education courses at the Rosewick Community Centre, where I built a computer skills programme that now serves about 300 people a year."
+     }
+    },
+    {
+     "q": "What is suggested about the interview date that Mr. Lindqvist proposes?",
+     "kind": "crossRef",
+     "choices": [
+      "It falls before the week set aside for interviews.",
+      "It matches the library's preferred date.",
+      "It will require him to travel to Fenn Street.",
+      "It has already been approved by the committee."
+     ],
+     "answer": 0,
+     "th": {
+      "q": "ข้อความบอกเป็นนัยอย่างไรเกี่ยวกับวันสัมภาษณ์ที่คุณลินด์ควิสต์เสนอ",
+      "choices": [
+       "ตกก่อนสัปดาห์ที่กำหนดไว้สำหรับการสัมภาษณ์",
+       "ตรงกับวันที่ห้องสมุดต้องการพอดี",
+       "เขาจะต้องเดินทางไปที่สาขาถนนเฟนน์",
+       "คณะกรรมการอนุมัติไปแล้ว"
+      ]
+     },
+     "explain": {
+      "why": "ต้องอ่านสองเอกสารประกอบกันครับ ประกาศบอกว่า Interviews will be held during the week of 12 May คือสัมภาษณ์ในสัปดาห์ของวันที่ 12 พฤษภาคม ส่วนอีเมลเขาขอคุยวันที่ 9 พฤษภาคม แถมยังเขียนว่า instead, before I travel วันที่ 9 มาก่อนวันที่ 12 ดังนั้น \"It falls before the week set aside for interviews.\"",
+      "wrong": {
+       "1": "วันที่ห้องสมุดตั้งใจไว้คือสัปดาห์ของวันที่ 12 พฤษภาคม ซึ่งคนละช่วงกับวันที่ 9 พฤษภาคมที่เขาเสนอ",
+       "2": "เขาขอสัมภาษณ์ผ่าน video link คือทางวิดีโอ ไม่ต้องเดินทางไปที่สาขา ส่วนการไปเยี่ยมสาขาเป็นข้อเสนออีกเรื่องหนึ่ง",
+       "3": "อีเมลนี้เป็นการ ขอ ยังไม่มีคำตอบจากคณะกรรมการเลย เขาใช้คำว่า Would it be possible ซึ่งเป็นการถาม"
+      },
+      "point": "ข้อ crossRef (ต้องอ่านสองเอกสารถึงจะตอบได้) มักผูกกับวันที่หรือตัวเลข ให้จดวันที่จากเอกสารแรกไว้ในหัวก่อนอ่านเอกสารที่สอง",
+      "trick": "เมื่อเห็นวันที่ในเอกสารที่สอง ให้รีบเทียบกับวันที่ในเอกสารแรกทันทีว่า ก่อน หรือ หลัง นี่คือรูปแบบคำถามที่เจอบ่อยที่สุดในชุดสองเอกสาร",
+      "evidence": "Interviews will be held during the week of 12 May."
+     }
+    },
+    {
+     "q": "What do Mr. Lindqvist's qualifications suggest about his application?",
+     "kind": "crossRef",
+     "choices": [
+      "He does not meet the experience requirement.",
+      "He exceeds the minimum years of experience.",
+      "He lacks a degree in a relevant field.",
+      "He has never worked with adults."
+     ],
+     "answer": 1,
+     "th": {
+      "q": "คุณสมบัติของคุณลินด์ควิสต์บอกอะไรเกี่ยวกับใบสมัครของเขา",
+      "choices": [
+       "เขาไม่ผ่านเกณฑ์ด้านประสบการณ์",
+       "เขามีประสบการณ์เกินขั้นต่ำที่กำหนด",
+       "เขาไม่มีปริญญาในสาขาที่เกี่ยวข้อง",
+       "เขาไม่เคยทำงานกับผู้ใหญ่มาก่อน"
+      ]
+     },
+     "explain": {
+      "why": "ประกาศกำหนดว่า At least three years of experience planning public events or classes คือต้องมีประสบการณ์อย่างน้อย 3 ปี ส่วนอีเมลบอกว่า For the past five years I have managed adult education courses คือทำมา 5 ปี 5 มากกว่า 3 คำตอบจึงเป็น \"He exceeds the minimum years of experience.\" ครับ",
+      "wrong": {
+       "0": "ตรงข้ามเลยครับ เขามี 5 ปี ซึ่งมากกว่าเกณฑ์ขั้นต่ำ 3 ปี ยังไม่นับอีก 2 ปีที่เป็นครู",
+       "2": "ประกาศระบุสาขาที่รับไว้ว่ามี communications ด้วย และเขาเขียนว่า My degree is in communications จึงตรงเกณฑ์",
+       "3": "งานหลักของเขาคือ adult education courses คือหลักสูตรสำหรับผู้ใหญ่ ซึ่งเป็นการทำงานกับผู้ใหญ่โดยตรง"
+      },
+      "point": "วลี at least (อย่างน้อย) ตามด้วยตัวเลข คือเกณฑ์ขั้นต่ำ ให้เอาตัวเลขของผู้สมัครมาเทียบว่ามากกว่าหรือน้อยกว่า",
+      "trick": "ในชุดประกาศงานคู่กับใบสมัคร ให้ทำเช็กลิสต์สั้นๆ ในใจ คือไล่คุณสมบัติทีละข้อว่าผู้สมัครมีครบไหม แล้วคำถามจะตอบได้เร็วมาก",
+      "evidence": "At least three years of experience planning public events or classes"
+     }
+    }
+   ],
+   "vocab": [
+    {
+     "w": "coordinator",
+     "ipa": "/koʊˈɔːrdɪneɪtər/",
+     "th": "โค-**ออร์**-ดิ-เน-เทอร์",
+     "mean": "ผู้ประสานงาน",
+     "pos": "n."
+    },
+    {
+     "w": "requirement",
+     "ipa": "/rɪˈkwaɪərmənt/",
+     "th": "ริ-**ไคว**-เออร์-เมินท์",
+     "mean": "ข้อกำหนด, คุณสมบัติที่ต้องมี",
+     "pos": "n."
+    },
+    {
+     "w": "candidate",
+     "ipa": "/ˈkændɪdət/",
+     "th": "**แคน**-ดิ-เดิท",
+     "mean": "ผู้สมัคร, ผู้เข้าชิงตำแหน่ง",
+     "pos": "n."
+    },
+    {
+     "w": "set aside",
+     "ipa": "/set əˈsaɪd/",
+     "th": "เซท อะ-**ไซด์**",
+     "mean": "กันไว้, สงวนไว้ใช้เฉพาะเรื่องหนึ่ง",
+     "pos": "phr.v."
+    }
+   ]
+  },
+  {
+   "id": "p7m-01-007",
+   "part": 7,
+   "tier": "medium",
+   "setType": "double",
+   "passages": [
+    {
+     "kind": "schedule",
+     "header": {
+      "Subject": "Autumn Training Series — Weybridge Park Campus"
+     },
+     "body": "AUTUMN TRAINING SERIES — Room B4, Weybridge Park Campus\nAll sessions run from 9:00 A.M. to 12:30 P.M.\n\nTuesday 4 November — Spreadsheet Reporting (Level 2)\nTrainer: Hana Oyelaran. For staff who already build basic tables and want to use pivot reports. Limit 18.\n\nThursday 6 November — Presenting to Clients\nTrainer: Dean Ashworth. Practice sessions are recorded so that participants can review them. Limit 12.\n\nTuesday 11 November — Contract Basics for Non-Lawyers\nTrainer: Suki Varma. Covers common clauses in supplier agreements. Limit 25.\n\nThursday 13 November — Spreadsheet Reporting (Level 2), repeat session\nTrainer: Hana Oyelaran. Limit 18.\n\nRegister through the staff portal by 28 October. Departments are asked to send no more than four people to any one session. Materials are e-mailed the day before; please bring a laptop. Any session with fewer than six registered participants may be cancelled, and those affected will be told by e-mail at least three days in advance."
+    },
+    {
+     "kind": "email",
+     "header": {
+      "From": "Rafael Ibarra, Purchasing",
+      "To": "Lena Croft, Learning and Development",
+      "Date": "27 October",
+      "Subject": "Registration change"
+     },
+     "body": "Dear Lena,\n\nI registered five people from Purchasing for the Contract Basics session, and the portal accepted all five. [1] I have since read the note at the bottom of the schedule and realise that this is one more than departments are allowed to send.\n\nRather than drop anyone, I would like to move Yuki Tanabe to a later date. [2] Could she be added to a repeat session instead, if one is planned for December?\n\nThere is a second, smaller problem. [3] Two of my staff, Omar Delaney and Beth Nakamura, signed up for the spreadsheet course on 4 November, but our quarterly supplier review has now been fixed for that morning. Please move both of them to the repeat session of the same course.\n\nFinally, could you confirm that materials will reach us the day before each session? [4] Our laptops are being replaced next week and I want to be sure nothing is lost.\n\nThanks very much,\n\nRafael"
+    }
+   ],
+   "th": {
+    "passages": [
+     {
+      "body": "ชุดอบรมฤดูใบไม้ร่วง — ห้อง B4 วิทยาเขตเวย์บริดจ์พาร์ค\nทุกรอบอบรมเวลา 9:00 น. ถึง 12:30 น.\n\nวันอังคารที่ 4 พฤศจิกายน — การทำรายงานด้วยสเปรดชีต (ระดับ 2)\nวิทยากร ฮานะ โอเยลารัน สำหรับพนักงานที่ทำตารางพื้นฐานเป็นแล้วและอยากใช้รายงานแบบพิวอต จำกัด 18 คน\n\nวันพฤหัสบดีที่ 6 พฤศจิกายน — การนำเสนอต่อลูกค้า\nวิทยากร ดีน แอชเวิร์ธ ช่วงฝึกซ้อมจะถูกบันทึกวิดีโอไว้ให้ผู้เข้าอบรมกลับไปทบทวน จำกัด 12 คน\n\nวันอังคารที่ 11 พฤศจิกายน — พื้นฐานสัญญาสำหรับคนที่ไม่ใช่นักกฎหมาย\nวิทยากร ซูกิ วาร์มา ครอบคลุมข้อสัญญาที่พบบ่อยในสัญญากับผู้จัดหาสินค้า จำกัด 25 คน\n\nวันพฤหัสบดีที่ 13 พฤศจิกายน — การทำรายงานด้วยสเปรดชีต (ระดับ 2) รอบซ้ำ\nวิทยากร ฮานะ โอเยลารัน จำกัด 18 คน\n\nลงทะเบียนผ่านระบบพนักงานภายในวันที่ 28 ตุลาคม ขอความร่วมมือให้แต่ละแผนกส่งคนเข้าอบรมรอบใดรอบหนึ่งไม่เกิน 4 คน เอกสารประกอบจะส่งทางอีเมลก่อนวันอบรม 1 วัน กรุณานำโน้ตบุ๊กมาด้วย รอบใดที่มีผู้ลงทะเบียนน้อยกว่า 6 คนอาจถูกยกเลิก และผู้ที่ได้รับผลกระทบจะได้รับแจ้งทางอีเมลล่วงหน้าอย่างน้อย 3 วัน"
+     },
+     {
+      "body": "เรียน คุณลีนา\n\nผมลงทะเบียนคนจากแผนกจัดซื้อไว้ 5 คนสำหรับรอบพื้นฐานสัญญา และระบบก็รับครบทั้ง 5 คน [1] หลังจากนั้นผมเพิ่งได้อ่านหมายเหตุท้ายตารางและเพิ่งรู้ว่าจำนวนนี้เกินโควตาที่แต่ละแผนกส่งได้อยู่ 1 คน\n\nแทนที่จะตัดใครออก ผมอยากเลื่อนคุณยูกิ ทานาเบะไปวันหลังมากกว่า [2] เป็นไปได้ไหมที่จะเพิ่มชื่อเธอเข้ารอบซ้ำแทน ถ้ามีการจัดรอบซ้ำในเดือนธันวาคม\n\nมีปัญหาข้อที่สองซึ่งเล็กกว่าครับ [3] พนักงานของผม 2 คน คือโอมาร์ ดีเลนีย์ และเบธ นากามูระ ลงชื่อเรียนคอร์สสเปรดชีตวันที่ 4 พฤศจิกายนไว้ แต่การประชุมทบทวนผู้จัดหาสินค้าประจำไตรมาสของเราถูกกำหนดเป็นเช้าวันนั้นพอดี รบกวนย้ายทั้งสองคนไปรอบซ้ำของคอร์สเดียวกันด้วยครับ\n\nสุดท้ายนี้ รบกวนยืนยันด้วยว่าเอกสารประกอบจะถึงมือเราก่อนวันอบรม 1 วันจริงไหม [4] โน้ตบุ๊กของเรากำลังจะถูกเปลี่ยนใหม่ในสัปดาห์หน้า ผมเลยอยากมั่นใจว่าจะไม่มีอะไรตกหล่น\n\nขอบคุณมากครับ\n\nราฟาเอล"
+     }
+    ]
+   },
+   "questions": [
+    {
+     "q": "What is true about the Presenting to Clients session?",
+     "kind": "detail",
+     "choices": [
+      "It has the smallest limit of the four sessions.",
+      "It is offered twice.",
+      "It lasts a full day.",
+      "It is taught by Ms. Oyelaran."
+     ],
+     "answer": 0,
+     "th": {
+      "q": "ข้อใดถูกต้องเกี่ยวกับรอบอบรมการนำเสนอต่อลูกค้า",
+      "choices": [
+       "รับคนน้อยที่สุดในบรรดา 4 รอบ",
+       "จัดสองรอบ",
+       "ใช้เวลาเต็มวัน",
+       "สอนโดยคุณโอเยลารัน"
+      ]
+     },
+     "explain": {
+      "why": "ตารางบอกจำนวนที่รับไว้ทุกรอบครับ คือ 18, 12, 25 และ 18 คน รอบการนำเสนอต่อลูกค้าเขียนว่า Limit 12 ซึ่งเป็นตัวเลขน้อยที่สุดในสี่รอบ คำตอบจึงเป็น \"It has the smallest limit of the four sessions.\"",
+      "wrong": {
+       "1": "รอบที่จัดสองครั้งคือคอร์สสเปรดชีต ซึ่งมีวันที่ 4 และ 13 พฤศจิกายน ส่วนรอบนำเสนอต่อลูกค้ามีวันเดียวคือ 6 พฤศจิกายน",
+       "2": "บรรทัดบนสุดของตารางระบุว่า All sessions run from 9:00 A.M. to 12:30 P.M. คือทุกรอบเป็นครึ่งวันเช้าเท่านั้น",
+       "3": "วิทยากรของรอบนี้คือ Dean Ashworth ส่วนคุณโอเยลารันสอนคอร์สสเปรดชีต"
+      },
+      "point": "ตารางที่มีตัวเลขซ้ำๆ กันหลายบรรทัด ข้อสอบชอบถามว่า มากที่สุด หรือ น้อยที่สุด ให้กวาดตาอ่านเฉพาะคอลัมน์ตัวเลขก่อน",
+      "trick": "อย่าอ่านตารางทั้งหมด ให้ดูหัวข้อในคำถามก่อน แล้วหาบรรทัดที่มีชื่อนั้น จากนั้นค่อยเทียบกับบรรทัดอื่นเฉพาะข้อมูลที่ต้องใช้",
+      "evidence": "Trainer: Dean Ashworth. Practice sessions are recorded so that participants can review them. Limit 12."
+     }
+    },
+    {
+     "q": "Why does Mr. Ibarra want to move Ms. Tanabe?",
+     "kind": "detail",
+     "choices": [
+      "She will be away on 11 November.",
+      "His department registered too many people.",
+      "She has already taken the course.",
+      "The session limit was reduced."
+     ],
+     "answer": 1,
+     "th": {
+      "q": "ทำไมคุณอิบาร์ราถึงอยากเลื่อนคุณทานาเบะ",
+      "choices": [
+       "เธอจะไม่อยู่ในวันที่ 11 พฤศจิกายน",
+       "แผนกของเขาลงทะเบียนคนไว้เกินจำนวน",
+       "เธอเคยเรียนคอร์สนี้ไปแล้ว",
+       "จำนวนที่รับต่อรอบถูกลดลง"
+      ]
+     },
+     "explain": {
+      "why": "อีเมลย่อหน้าแรกเขียนว่าเขาลงทะเบียนไว้ 5 คน แล้วมาอ่านหมายเหตุทีหลังจึงพบว่า this is one more than departments are allowed to send แปลว่า เกินจำนวนที่แผนกส่งได้อยู่ 1 คน เขาจึงเลือกเลื่อนคุณทานาเบะแทนการตัดชื่อใครทิ้ง คำตอบคือ \"His department registered too many people.\" ครับ",
+      "wrong": {
+       "0": "คนที่ติดภารกิจวันอื่นคือโอมาร์กับเบธ ซึ่งติดประชุมเช้าวันที่ 4 พฤศจิกายน ไม่ใช่คุณทานาเบะ",
+       "2": "อีเมลไม่ได้บอกว่าคุณทานาเบะเคยเรียนคอร์สนี้แล้ว มีแต่บอกว่าเขาอยากเลื่อนเธอไปรอบหลัง",
+       "3": "ตัวเลข Limit 25 ของรอบนี้ไม่ได้ถูกลด ปัญหาอยู่ที่โควตาของ แผนก ซึ่งกำหนดไว้ไม่เกิน 4 คนตั้งแต่แรก"
+      },
+      "point": "วลี one more than ... allowed แปลว่า เกินกว่าที่อนุญาตอยู่ 1 เป็นสำนวนเปรียบเทียบที่ต้องอ่านให้ขาด",
+      "trick": "อีเมลขอเปลี่ยนแปลงมักบอกเหตุผลไว้ในประโยคถัดจากคำว่า realise, notice, find out หรือ it turns out ให้ล่าคำเหล่านี้",
+      "evidence": "I have since read the note at the bottom of the schedule and realise that this is one more than departments are allowed to send."
+     }
+    },
+    {
+     "q": "To which session does Mr. Ibarra want Mr. Delaney and Ms. Nakamura moved?",
+     "kind": "crossRef",
+     "choices": [
+      "The 4 November session",
+      "The 6 November session",
+      "The 11 November session",
+      "The 13 November session"
+     ],
+     "answer": 3,
+     "th": {
+      "q": "คุณอิบาร์ราต้องการย้ายคุณดีเลนีย์กับคุณนากามูระไปรอบไหน",
+      "choices": [
+       "รอบวันที่ 4 พฤศจิกายน",
+       "รอบวันที่ 6 พฤศจิกายน",
+       "รอบวันที่ 11 พฤศจิกายน",
+       "รอบวันที่ 13 พฤศจิกายน"
+      ]
+     },
+     "explain": {
+      "why": "ต้องใช้สองเอกสารประกอบกันครับ อีเมลบอกว่าทั้งสองคนลงคอร์สสเปรดชีตวันที่ 4 พฤศจิกายนไว้ แล้วขอให้ย้ายไป the repeat session of the same course คือรอบซ้ำของคอร์สเดิม พอไปดูตารางจะเห็นว่ารอบซ้ำของคอร์สสเปรดชีตคือวันพฤหัสบดีที่ 13 พฤศจิกายน คำตอบจึงเป็น \"The 13 November session\"",
+      "wrong": {
+       "0": "วันที่ 4 พฤศจิกายนคือรอบเดิมที่ทั้งสองคนไปไม่ได้ เพราะติดประชุมทบทวนผู้จัดหาสินค้าเช้าวันนั้น",
+       "1": "วันที่ 6 พฤศจิกายนเป็นคอร์สการนำเสนอต่อลูกค้า คนละวิชากับที่ทั้งสองคนลงไว้",
+       "2": "วันที่ 11 พฤศจิกายนเป็นคอร์สพื้นฐานสัญญา ซึ่งเป็นเรื่องของคุณทานาเบะ ไม่ใช่ของสองคนนี้"
+      },
+      "point": "คำว่า the same course (คอร์สเดิม) หรือ the repeat session (รอบซ้ำ) เป็นคำที่ไม่บอกวันที่ตรงๆ ต้องกลับไปเปิดตารางเพื่อหาว่าคือวันไหน",
+      "trick": "ในชุดสองเอกสาร ถ้าอีเมลพูดถึงสิ่งของหรือรอบเวลาโดยไม่ระบุตัวเลข ให้เดาไว้เลยว่านั่นคือข้อ crossRef ที่ต้องย้อนกลับไปดูเอกสารแรก",
+      "evidence": "Thursday 13 November — Spreadsheet Reporting (Level 2), repeat session"
+     }
+    },
+    {
+     "q": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong? \"No one warned me at the time, and the confirmation e-mails all went out.\"",
+     "kind": "insertSentence",
+     "choices": [
+      "[1]",
+      "[2]",
+      "[3]",
+      "[4]"
+     ],
+     "answer": 0,
+     "th": {
+      "q": "ประโยคต่อไปนี้ควรอยู่ที่ตำแหน่งใดในบรรดา [1] [2] [3] และ [4] : ตอนนั้นไม่มีใครเตือนผมเลย และอีเมลยืนยันก็ถูกส่งออกไปหมดแล้ว",
+      "choices": [
+       "ตำแหน่ง [1]",
+       "ตำแหน่ง [2]",
+       "ตำแหน่ง [3]",
+       "ตำแหน่ง [4]"
+      ]
+     },
+     "explain": {
+      "why": "ประโยคที่ให้มามีคำว่า at the time แปลว่า ตอนนั้น ซึ่งต้องชี้กลับไปหาเหตุการณ์ที่เพิ่งเล่า นั่นคือตอนที่ระบบรับลงทะเบียนครบทั้ง 5 คน ซึ่งอยู่ตรงหน้าตำแหน่ง [1] พอดี วางแล้วเนื้อความไหลสนิทว่า ระบบรับหมด ไม่มีใครเตือน อีเมลยืนยันออกไปแล้ว แล้วผมเพิ่งมาอ่านหมายเหตุทีหลัง คำตอบจึงเป็น [1] ครับ",
+      "wrong": {
+       "1": "ตำแหน่ง [2] อยู่หลังประโยคที่เขาเสนอทางแก้ว่าจะเลื่อนคุณทานาเบะ การพูดว่าไม่มีใครเตือนตอนนั้นจะย้อนเรื่องกลับไปโดยไม่จำเป็น",
+       "2": "ตำแหน่ง [3] อยู่หลังประโยค There is a second, smaller problem ซึ่งกำลังจะเปิดเรื่องใหม่ ประโยคที่ให้มายังพูดถึงปัญหาแรกอยู่",
+       "3": "ตำแหน่ง [4] อยู่ในย่อหน้าเรื่องเอกสารประกอบและโน้ตบุ๊ก คนละเรื่องกับการลงทะเบียนเกินจำนวน"
+      },
+      "point": "คำบอกเวลาแบบชี้ย้อนหลัง เช่น at the time, by then, at that point ต้องมีเหตุการณ์อ้างอิงอยู่ในประโยคก่อนหน้าที่ติดกัน",
+      "trick": "ลองอ่านออกเสียงในใจว่า ประโยคก่อนหน้า + ประโยคที่ให้มา + ประโยคถัดไป ต่อกันแล้วลื่นไหมในแต่ละตำแหน่ง ตำแหน่งที่ฟังแล้วไม่สะดุดคือคำตอบ",
+      "evidence": "I registered five people from Purchasing for the Contract Basics session, and the portal accepted all five."
+     }
+    },
+    {
+     "q": "What is suggested about the quarterly supplier review?",
+     "kind": "crossRef",
+     "choices": [
+      "It will be led by Ms. Varma.",
+      "It has been moved to December.",
+      "It will take place while a training session is running.",
+      "It will be held in Room B4."
+     ],
+     "answer": 2,
+     "th": {
+      "q": "ข้อความบอกเป็นนัยอย่างไรเกี่ยวกับการประชุมทบทวนผู้จัดหาสินค้าประจำไตรมาส",
+      "choices": [
+       "จะนำการประชุมโดยคุณวาร์มา",
+       "ถูกเลื่อนไปเดือนธันวาคม",
+       "จะจัดขึ้นในช่วงเวลาที่มีการอบรมอยู่พอดี",
+       "จะจัดที่ห้อง B4"
+      ]
+     },
+     "explain": {
+      "why": "ต้องประกอบสองเอกสารครับ อีเมลบอกว่าการประชุมถูกกำหนดเป็น that morning คือเช้าวันที่ 4 พฤศจิกายน ส่วนตารางบอกว่า All sessions run from 9:00 A.M. to 12:30 P.M. คืออบรมทุกรอบอยู่ในช่วงเช้าเช่นกัน สองอย่างนี้จึงชนกันในเวลาเดียวกัน คำตอบคือ \"It will take place while a training session is running.\"",
+      "wrong": {
+       "0": "คุณวาร์มาเป็นวิทยากรของคอร์สพื้นฐานสัญญาในตาราง ไม่ได้เกี่ยวข้องกับการประชุมภายในของแผนกจัดซื้อ",
+       "1": "เดือนธันวาคมถูกพูดถึงในบริบทว่าอาจมีรอบอบรมซ้ำของคอร์สสัญญา ไม่ใช่การเลื่อนประชุม",
+       "3": "ห้อง B4 เป็นห้องอบรมตามตาราง อีเมลไม่ได้ระบุสถานที่ประชุมของแผนกจัดซื้อเลย"
+      },
+      "point": "เมื่อโจทย์ให้ ตาราง คู่กับ อีเมล ให้จำเวลาในตารางไว้ แล้วเทียบกับเวลาที่อีเมลพูดถึง จะเห็นการชนกันของตารางงานทันที",
+      "trick": "คำว่า that morning ในอีเมลไม่ได้บอกวันที่ ต้องย้อนอ่านประโยคก่อนหน้าเพื่อดูว่า that หมายถึงวันไหน แล้วค่อยไปเทียบกับตาราง",
+      "evidence": "All sessions run from 9:00 A.M. to 12:30 P.M."
+     }
+    }
+   ],
+   "vocab": [
+    {
+     "w": "session",
+     "ipa": "/ˈseʃn/",
+     "th": "**เซช**-เชิน",
+     "mean": "รอบการอบรมหรือช่วงกิจกรรมหนึ่งครั้ง",
+     "pos": "n."
+    },
+    {
+     "w": "participant",
+     "ipa": "/pɑːrˈtɪsɪpənt/",
+     "th": "พาร์-**ทิส**-ซิ-เพินท์",
+     "mean": "ผู้เข้าร่วม",
+     "pos": "n."
+    },
+    {
+     "w": "clause",
+     "ipa": "/klɔːz/",
+     "th": "**คลอส**",
+     "mean": "ข้อสัญญา, ข้อความหนึ่งข้อในสัญญา",
+     "pos": "n."
+    },
+    {
+     "w": "quarterly",
+     "ipa": "/ˈkwɔːrtərli/",
+     "th": "**ควอร์**-เทอร์-ลี",
+     "mean": "รายไตรมาส (ทุก 3 เดือน)",
+     "pos": "adj."
+    }
+   ]
+  },
+  {
+   "id": "p7m-01-008",
+   "part": 7,
+   "tier": "medium",
+   "setType": "double",
+   "passages": [
+    {
+     "kind": "invoice",
+     "header": {
+      "From": "Verdant Grounds Care, 14 Mill Lane",
+      "To": "Cortina Hotel, 9 Harbour Road",
+      "Invoice": "VG-4102",
+      "Date": "3 October"
+     },
+     "body": "Services for September\n\n1. Weekly lawn and hedge maintenance, four visits ......... 640.00\n2. Autumn planting, front entrance beds ................... 380.00\n3. Removal of a fallen tree, west car park (5 September) ... 450.00\n4. Delivery of 20 bags of bark mulch ...................... 160.00\n5. Emergency call-out fee (5 September) ................... 120.00\n\nSubtotal ............................................... 1,750.00\nService tax (6 percent) ................................... 105.00\nTotal due .............................................. 1,855.00\n\nPayment is due within 21 days of the invoice date. Accounts settled within 10 days receive a 2 percent discount. Please quote the invoice number with any payment.\n\nQuestions about charges should be sent in writing to billing@verdantgrounds.com within 14 days of the invoice date. Verdant Grounds Care is not responsible for weather damage to plants supplied under this invoice, and all materials remain our property until the invoice is paid in full."
+    },
+    {
+     "kind": "email",
+     "header": {
+      "From": "Aisling Byrne, Cortina Hotel",
+      "To": "billing@verdantgrounds.com",
+      "Date": "9 October",
+      "Subject": "Invoice VG-4102"
+     },
+     "body": "Dear Sir or Madam,\n\nI am writing about invoice VG-4102, which I received last week.\n\nMost of the invoice is correct, but I must question two lines. Our agreement of 2 March states that tree removal following a storm is covered by the annual contract and is not billed separately. Line 3 should therefore be removed. I have attached a copy of the relevant page.\n\nI also note that we were charged an emergency call-out fee for the same date. Your team arrived at 8:15 A.M. on 5 September during a scheduled visit, so no emergency journey was made. Line 5 should be removed as well.\n\nThe remaining lines are accurate, and I am happy to pay them at once. If a corrected invoice reaches me by 13 October, we will still be able to pay within the ten-day period and take the early-payment discount.\n\nPlease confirm in writing once the invoice has been amended.\n\nYours faithfully,\n\nAisling Byrne\nOperations Manager, Cortina Hotel"
+    }
+   ],
+   "th": {
+    "passages": [
+     {
+      "body": "ค่าบริการประจำเดือนกันยายน\n\n1. ดูแลสนามหญ้าและตัดแต่งพุ่มไม้รายสัปดาห์ 4 ครั้ง ......... 640.00\n2. ปลูกไม้ประดับฤดูใบไม้ร่วง แปลงหน้าทางเข้า ................ 380.00\n3. เคลื่อนย้ายต้นไม้ล้ม ลานจอดรถฝั่งตะวันตก (5 กันยายน) ..... 450.00\n4. ส่งเปลือกไม้คลุมดิน 20 ถุง ............................... 160.00\n5. ค่าเรียกทีมงานฉุกเฉิน (5 กันยายน) ....................... 120.00\n\nยอดรวมก่อนภาษี ......................................... 1,750.00\nภาษีค่าบริการ (6 เปอร์เซ็นต์) ............................. 105.00\nยอดที่ต้องชำระ ......................................... 1,855.00\n\nกำหนดชำระภายใน 21 วันนับจากวันที่ในใบแจ้งหนี้ บัญชีที่ชำระภายใน 10 วันจะได้ส่วนลด 2 เปอร์เซ็นต์ กรุณาระบุเลขที่ใบแจ้งหนี้ทุกครั้งที่ชำระเงิน\n\nหากมีข้อสงสัยเรื่องรายการเรียกเก็บ กรุณาส่งเป็นลายลักษณ์อักษรมาที่ billing@verdantgrounds.com ภายใน 14 วันนับจากวันที่ในใบแจ้งหนี้ บริษัทเวอร์แดนต์ กราวนด์ส แคร์ ไม่รับผิดชอบความเสียหายจากสภาพอากาศที่เกิดกับต้นไม้ตามใบแจ้งหนี้นี้ และวัสดุทั้งหมดยังถือเป็นทรัพย์สินของบริษัทจนกว่าจะชำระเงินครบถ้วน"
+     },
+     {
+      "body": "เรียน ท่านผู้เกี่ยวข้อง\n\nดิฉันเขียนมาเกี่ยวกับใบแจ้งหนี้เลขที่ VG-4102 ที่ได้รับเมื่อสัปดาห์ที่แล้ว\n\nรายการส่วนใหญ่ในใบแจ้งหนี้ถูกต้อง แต่ดิฉันต้องขอทักท้วง 2 รายการ สัญญาของเราลงวันที่ 2 มีนาคมระบุว่า การเคลื่อนย้ายต้นไม้ที่ล้มหลังพายุอยู่ในความคุ้มครองของสัญญารายปีอยู่แล้ว และจะไม่เรียกเก็บแยกต่างหาก ดังนั้นรายการที่ 3 ควรถูกตัดออก ดิฉันแนบสำเนาหน้าที่เกี่ยวข้องมาด้วยแล้ว\n\nดิฉันยังสังเกตว่าเราถูกเรียกเก็บค่าเรียกทีมงานฉุกเฉินในวันเดียวกันนั้นด้วย ทีมงานของท่านมาถึงเวลา 8:15 น. ของวันที่ 5 กันยายน ซึ่งเป็นรอบเข้าบริการตามตารางปกติอยู่แล้ว จึงไม่มีการเดินทางมาแบบฉุกเฉินเกิดขึ้น รายการที่ 5 จึงควรถูกตัดออกเช่นกัน\n\nรายการที่เหลือถูกต้องทั้งหมด และดิฉันยินดีชำระทันที หากใบแจ้งหนี้ฉบับแก้ไขมาถึงดิฉันภายในวันที่ 13 ตุลาคม เราจะยังชำระได้ภายในกรอบ 10 วันและได้รับส่วนลดสำหรับการชำระเร็ว\n\nรบกวนยืนยันเป็นลายลักษณ์อักษรเมื่อแก้ไขใบแจ้งหนี้เรียบร้อยแล้ว\n\nด้วยความนับถือ\n\nไอสลิง เบิร์น\nผู้จัดการฝ่ายปฏิบัติการ โรงแรมคอร์ตินา"
+     }
+    ]
+   },
+   "questions": [
+    {
+     "q": "What is offered to customers who pay quickly?",
+     "kind": "detail",
+     "choices": [
+      "Free delivery of mulch",
+      "An extra maintenance visit",
+      "A reduction of 2 percent",
+      "A longer payment period"
+     ],
+     "answer": 2,
+     "th": {
+      "q": "ลูกค้าที่ชำระเงินเร็วจะได้อะไร",
+      "choices": [
+       "ส่งเปลือกไม้คลุมดินฟรี",
+       "บริการดูแลสวนเพิ่มอีก 1 ครั้ง",
+       "ส่วนลด 2 เปอร์เซ็นต์",
+       "ระยะเวลาชำระเงินที่นานขึ้น"
+      ]
+     },
+     "explain": {
+      "why": "เงื่อนไขท้ายใบแจ้งหนี้เขียนว่า Accounts settled within 10 days receive a 2 percent discount แปลว่า บัญชีที่ชำระภายใน 10 วันจะได้ส่วนลด 2 เปอร์เซ็นต์ ตัวเลือกที่ตรงคือ \"A reduction of 2 percent\" เพราะคำว่า reduction ก็แปลว่า การลดราคา เหมือน discount ครับ",
+      "wrong": {
+       "0": "การส่งเปลือกไม้คลุมดิน 20 ถุงเป็นรายการที่ 4 ในบิลซึ่งคิดเงิน 160 ดอลลาร์ ไม่ใช่ของแถม",
+       "1": "บริการดูแลสวน 4 ครั้งเป็นรายการที่คิดเงินตามปกติ ไม่มีการเพิ่มรอบให้ฟรีสำหรับการชำระเร็ว",
+       "3": "ระยะเวลาชำระคือ 21 วัน ซึ่งเป็นค่ามาตรฐานของทุกบิล ไม่ได้ยืดออกไปเพราะจ่ายเร็ว ตรงกันข้าม การได้ส่วนลดต้องจ่าย เร็วขึ้น เป็น 10 วัน"
+      },
+      "point": "ท้ายใบแจ้งหนี้มักมีเงื่อนไขการชำระเงิน 3 อย่างคือ กำหนดจ่าย ส่วนลดจ่ายเร็ว และวิธีทักท้วง ให้อ่านย่อหน้านี้ทุกครั้งเพราะออกข้อสอบบ่อยมาก",
+      "trick": "คำที่แปลว่าส่วนลดมีหลายคำ เช่น discount, reduction, off, rebate ต้องจำให้ครบเพราะตัวเลือกจะไม่ใช้คำเดียวกับบทความ",
+      "evidence": "Accounts settled within 10 days receive a 2 percent discount."
+     }
+    },
+    {
+     "q": "Why does Ms. Byrne say line 3 should be removed?",
+     "kind": "detail",
+     "choices": [
+      "The work was never carried out.",
+      "The price is higher than agreed.",
+      "Another company did the work.",
+      "The contract already covers that work."
+     ],
+     "answer": 3,
+     "th": {
+      "q": "ทำไมคุณเบิร์นถึงบอกว่ารายการที่ 3 ควรถูกตัดออก",
+      "choices": [
+       "งานนั้นไม่เคยถูกทำจริง",
+       "ราคาสูงกว่าที่ตกลงกันไว้",
+       "บริษัทอื่นเป็นคนทำงานนั้น",
+       "สัญญาครอบคลุมงานนั้นอยู่แล้ว"
+      ]
+     },
+     "explain": {
+      "why": "อีเมลเขียนว่า Our agreement of 2 March states that tree removal following a storm is covered by the annual contract and is not billed separately แปลว่า สัญญาระบุว่างานย้ายต้นไม้ล้มหลังพายุอยู่ในสัญญารายปีแล้ว และไม่คิดเงินแยก คำตอบจึงเป็น \"The contract already covers that work.\" ครับ",
+      "wrong": {
+       "0": "เธอไม่ได้เถียงว่าไม่มีการทำงาน เธอยอมรับว่ามีการย้ายต้นไม้จริง แต่เถียงว่าไม่ควรเรียกเก็บเงินแยก",
+       "1": "อีเมลไม่ได้พูดถึงราคาที่ตกลงกันไว้ล่วงหน้าเลย ประเด็นคือ ควรคิดเงินหรือไม่ ไม่ใช่ คิดเท่าไร",
+       "2": "เธอเขียนว่า Your team arrived คือทีมของบริษัทนี้เองเป็นคนมา ไม่มีบริษัทอื่นเข้ามาเกี่ยวข้อง"
+      },
+      "point": "คำว่า covered by แปลว่า อยู่ในความคุ้มครองของ ส่วน billed separately แปลว่า เรียกเก็บแยกต่างหาก สองวลีนี้เจอบ่อยมากในอีเมลทักท้วงบิล",
+      "trick": "อีเมลทักท้วงบิลจะจับคู่ รายการที่กี่ กับ เหตุผล เสมอ ให้ไล่ทีละย่อหน้าแล้วจดว่าย่อหน้าไหนพูดถึงรายการไหน",
+      "evidence": "Our agreement of 2 March states that tree removal following a storm is covered by the annual contract and is not billed separately."
+     }
+    },
+    {
+     "q": "Before tax, how much does Ms. Byrne believe the hotel should not have to pay?",
+     "kind": "crossRef",
+     "choices": [
+      "160.00 dollars",
+      "450.00 dollars",
+      "570.00 dollars",
+      "1,750.00 dollars"
+     ],
+     "answer": 2,
+     "th": {
+      "q": "ก่อนคิดภาษี คุณเบิร์นเชื่อว่าโรงแรมไม่ควรต้องจ่ายเป็นเงินเท่าไร",
+      "choices": [
+       "160.00 ดอลลาร์",
+       "450.00 ดอลลาร์",
+       "570.00 ดอลลาร์",
+       "1,750.00 ดอลลาร์"
+      ]
+     },
+     "explain": {
+      "why": "ต้องอ่านสองเอกสารประกอบกันครับ อีเมลบอกว่ารายการที่ 3 และรายการที่ 5 ควรถูกตัดออก แล้วกลับไปดูใบแจ้งหนี้ รายการที่ 3 คือ 450.00 และรายการที่ 5 คือ 120.00 บวกกันได้ 570.00 คำตอบจึงเป็น \"570.00 dollars\"",
+      "wrong": {
+       "0": "160.00 คือรายการที่ 4 ค่าส่งเปลือกไม้คลุมดิน ซึ่งคุณเบิร์นไม่ได้ทักท้วง",
+       "1": "450.00 เป็นแค่รายการที่ 3 รายการเดียว ยังขาดค่าเรียกทีมงานฉุกเฉิน 120.00 ที่เธอทักท้วงด้วย",
+       "3": "1,750.00 คือยอดรวมก่อนภาษีของทั้งบิล ไม่ใช่เฉพาะส่วนที่โต้แย้ง เธอเขียนชัดว่ารายการที่เหลือถูกต้องและยินดีจ่าย"
+      },
+      "point": "ข้อ crossRef ที่เป็นการคำนวณ ให้เอาหมายเลขรายการจากอีเมลไปจับคู่กับตัวเลขในใบแจ้งหนี้ แล้วบวกทีละขั้น อย่าคิดในหัวรวดเดียว",
+      "trick": "โจทย์ที่มีคำว่า before tax หรือ excluding tax แปลว่าห้ามใช้ยอดที่บวกภาษีแล้ว ให้ใช้ตัวเลขก่อนบรรทัดภาษีเท่านั้น",
+      "evidence": "3. Removal of a fallen tree, west car park (5 September) ... 450.00"
+     }
+    },
+    {
+     "q": "What must Verdant Grounds Care do for the hotel to receive the discount?",
+     "kind": "crossRef",
+     "choices": [
+      "Send a corrected invoice by 13 October",
+      "Waive the service tax",
+      "Extend the payment period to 21 days",
+      "Deliver more bark mulch"
+     ],
+     "answer": 0,
+     "th": {
+      "q": "บริษัทเวอร์แดนต์ กราวนด์ส แคร์ ต้องทำอะไรเพื่อให้โรงแรมได้ส่วนลด",
+      "choices": [
+       "ส่งใบแจ้งหนี้ฉบับแก้ไขภายในวันที่ 13 ตุลาคม",
+       "ยกเว้นภาษีค่าบริการ",
+       "ขยายกำหนดชำระเป็น 21 วัน",
+       "ส่งเปลือกไม้คลุมดินเพิ่ม"
+      ]
+     },
+     "explain": {
+      "why": "ใบแจ้งหนี้ลงวันที่ 3 ตุลาคม และให้ส่วนลดถ้าชำระภายใน 10 วัน คือภายในวันที่ 13 ตุลาคม พอดี ซึ่งตรงกับที่อีเมลเขียนว่า If a corrected invoice reaches me by 13 October, we will still be able to pay within the ten-day period and take the early-payment discount คำตอบจึงเป็น \"Send a corrected invoice by 13 October\" ครับ",
+      "wrong": {
+       "1": "ภาษี 6 เปอร์เซ็นต์เป็นภาษีที่ต้องเก็บตามปกติ คุณเบิร์นไม่ได้ขอให้ยกเว้น เธอทักท้วงเฉพาะรายการที่ 3 กับรายการที่ 5",
+       "2": "กำหนด 21 วันมีอยู่แล้วในเงื่อนไขและไม่เกี่ยวกับส่วนลด ส่วนลดผูกกับกรอบ 10 วันต่างหาก",
+       "3": "เปลือกไม้คลุมดินเป็นรายการที่เธอยอมรับว่าถูกต้อง ไม่มีการขอเพิ่มแต่อย่างใด"
+      },
+      "point": "เมื่อโจทย์ถามว่าต้องทำอะไรเพื่อให้ได้ผลลัพธ์อะไร ให้หาประโยคเงื่อนไขที่ขึ้นต้นด้วย If แล้วอ่านทั้งประโยคให้จบ",
+      "trick": "ลองบวกวันเองในกระดาษทด 3 ตุลาคม บวก 10 วัน ได้ 13 ตุลาคม เมื่อตัวเลขสองเอกสารตรงกันเป๊ะแบบนี้ แสดงว่าคุณจับจุดที่ข้อสอบต้องการได้แล้ว",
+      "evidence": "If a corrected invoice reaches me by 13 October, we will still be able to pay within the ten-day period and take the early-payment discount."
+     }
+    },
+    {
+     "q": "In the invoice, the word \"settled\" is closest in meaning to",
+     "kind": "vocab",
+     "choices": [
+      "decided",
+      "paid",
+      "arranged",
+      "calmed"
+     ],
+     "answer": 1,
+     "th": {
+      "q": "ในใบแจ้งหนี้ คำว่า \"settled\" มีความหมายใกล้เคียงกับคำใดมากที่สุด",
+      "choices": [
+       "ตัดสินใจแล้ว",
+       "ชำระเงินแล้ว",
+       "จัดการเรียบร้อยแล้ว",
+       "สงบลงแล้ว"
+      ]
+     },
+     "explain": {
+      "why": "ประโยคเต็มคือ Accounts settled within 10 days receive a 2 percent discount คำว่า Accounts ตรงนี้แปลว่า บัญชีหนี้ที่ต้องจ่าย พอเจอคู่กับ within 10 days และ discount ก็เดาได้ว่ากำลังพูดถึงการจ่ายเงิน คำที่แทนกันได้จึงเป็น \"paid\" ครับ",
+      "wrong": {
+       "0": "คำว่า decided แปลว่า ตัดสินใจ ใช้กับเรื่องหรือข้อโต้แย้ง เช่น the matter was settled แต่ในบริบทของบัญชีและส่วนลด ความหมายที่ใช้คือการจ่ายเงิน",
+       "2": "คำว่า arranged แปลว่า จัดเตรียม หรือ นัดหมายไว้ ซึ่งไม่ได้แปลว่าเงินออกจากมือไปแล้ว จึงไม่เข้ากับเงื่อนไขส่วนลด",
+       "3": "คำว่า calmed แปลว่า ทำให้สงบ ใช้กับอารมณ์คนหรือสถานการณ์วุ่นวาย ไม่ใช้กับบัญชีเงิน"
+      },
+      "point": "คำว่า settle มีหลายความหมาย เมื่ออยู่กับคำว่า account, bill, invoice จะแปลว่า ชำระเงิน เสมอ",
+      "trick": "ข้อคำศัพท์ให้อ่านทั้งประโยคก่อน แล้วลองเอาตัวเลือกไปแทนที่คำเดิมทีละตัว ตัวไหนใส่แล้วประโยคยังสมเหตุสมผลคือคำตอบ",
+      "evidence": "Accounts settled within 10 days receive a 2 percent discount."
+     }
+    }
+   ],
+   "vocab": [
+    {
+     "w": "invoice",
+     "ipa": "/ˈɪnvɔɪs/",
+     "th": "**อิน**-วอยซ์",
+     "mean": "ใบแจ้งหนี้ (เอกสารเรียกเก็บเงิน)",
+     "pos": "n."
+    },
+    {
+     "w": "settle",
+     "ipa": "/ˈsetl/",
+     "th": "**เซท**-เทิล",
+     "mean": "ชำระเงินให้เรียบร้อย (เมื่อใช้กับบัญชีหรือบิล)",
+     "pos": "v."
+    },
+    {
+     "w": "amend",
+     "ipa": "/əˈmend/",
+     "th": "อะ-**เมนด์**",
+     "mean": "แก้ไข (เอกสารหรือข้อตกลง)",
+     "pos": "v."
+    },
+    {
+     "w": "call-out fee",
+     "ipa": "/ˈkɔːl aʊt fiː/",
+     "th": "**คอล**-เอาท์ **ฟี**",
+     "mean": "ค่าเรียกช่างหรือทีมงานให้เดินทางมาหน้างาน",
+     "pos": "n."
+    }
+   ]
+  },
+  {
+   "id": "p7m-01-009",
+   "part": 7,
+   "tier": "medium",
+   "setType": "double",
+   "passages": [
+    {
+     "kind": "webpage",
+     "header": {
+      "Subject": "Stanmore Seating — Ordering and Returns"
+     },
+     "body": "STANMORE SEATING — ORDERING AND RETURNS\n\nChairs are made to order at our workshop in Denton. Please allow the following times from the date payment is received:\n\nAurora task chair — 10 working days\nMarlowe conference chair — 15 working days\nCustom fabric or a headrest adds 5 working days to any model.\n\nDelivery within the Denton region is free for orders over 900 dollars. Elsewhere, delivery is charged at 65 dollars per order, regardless of the number of chairs.\n\nReturns: an unused chair in its original carton may be returned within 30 days of delivery for a full refund. Chairs ordered with custom fabric cannot be returned unless they arrive damaged. To start a return, complete the form on this page; our team will send a collection label within two working days. Please do not send chairs back by ordinary post, as the cartons are too large for most carriers.\n\nAssembly is not required. Each chair is shipped fully built and wrapped."
+    },
+    {
+     "kind": "email",
+     "header": {
+      "From": "Theo Ramanathan, Ridgeway Accountancy",
+      "To": "service@stanmoreseating.com",
+      "Date": "18 May",
+      "Subject": "Order SM-7734"
+     },
+     "body": "Hello,\n\nOrder SM-7734 was delivered to our Denton office on 14 May. It contained six Aurora task chairs and two Marlowe conference chairs.\n\nFive of the Aurora chairs are exactly what we expected. The sixth has a mark across the seat that looks like it happened before wrapping, since the carton itself is undamaged. I have taken photographs and can send them today.\n\nWe ordered the Marlowe chairs in the dark green fabric from your sample card rather than a standard colour. Both are perfect, so there is nothing to do there.\n\nI would like to exchange the marked chair rather than take a refund. Could you tell me whether that is possible, and whether I should use the form on your website or simply reply here? We have kept the carton, so nothing has been thrown away.\n\nThank you,\n\nTheo Ramanathan"
+    }
+   ],
+   "th": {
+    "passages": [
+     {
+      "body": "สแตนมอร์ ซีทติ้ง — การสั่งซื้อและการคืนสินค้า\n\nเก้าอี้ทุกตัวผลิตตามคำสั่งซื้อที่โรงงานของเราในเมืองเดนตัน กรุณาเผื่อเวลาตามนี้ นับจากวันที่เราได้รับชำระเงิน\n\nเก้าอี้ทำงานรุ่นออโรรา — 10 วันทำการ\nเก้าอี้ประชุมรุ่นมาร์โลว์ — 15 วันทำการ\nหากสั่งผ้าหุ้มแบบพิเศษหรือเพิ่มที่พิงศีรษะ จะบวกเวลาอีก 5 วันทำการทุกรุ่น\n\nการจัดส่งภายในเขตเดนตันฟรีสำหรับคำสั่งซื้อที่เกิน 900 ดอลลาร์ นอกเขตดังกล่าวคิดค่าจัดส่ง 65 ดอลลาร์ต่อคำสั่งซื้อ ไม่ว่าจะสั่งกี่ตัวก็ตาม\n\nการคืนสินค้า เก้าอี้ที่ยังไม่ได้ใช้และอยู่ในกล่องเดิมสามารถคืนได้ภายใน 30 วันนับจากวันที่ได้รับของ โดยได้เงินคืนเต็มจำนวน เก้าอี้ที่สั่งด้วยผ้าหุ้มแบบพิเศษคืนไม่ได้ ยกเว้นกรณีที่ของมาถึงในสภาพเสียหาย หากต้องการเริ่มขั้นตอนคืนสินค้า ให้กรอกแบบฟอร์มบนหน้านี้ แล้วทีมงานของเราจะส่งใบปะหน้าสำหรับให้ขนส่งเข้ารับของภายใน 2 วันทำการ กรุณาอย่าส่งเก้าอี้คืนทางไปรษณีย์ธรรมดา เพราะกล่องใหญ่เกินกว่าที่ผู้ให้บริการขนส่งส่วนใหญ่จะรับ\n\nไม่ต้องประกอบเอง เก้าอี้ทุกตัวส่งถึงมือในสภาพประกอบเสร็จและห่อเรียบร้อยแล้ว"
+     },
+     {
+      "body": "สวัสดีครับ\n\nคำสั่งซื้อเลขที่ SM-7734 ส่งถึงสำนักงานของเราที่เดนตันเมื่อวันที่ 14 พฤษภาคม ในคำสั่งซื้อมีเก้าอี้ทำงานรุ่นออโรรา 6 ตัว และเก้าอี้ประชุมรุ่นมาร์โลว์ 2 ตัว\n\nเก้าอี้ออโรรา 5 ตัวตรงตามที่เราคาดไว้ทุกประการ ส่วนตัวที่ 6 มีรอยพาดอยู่บนเบาะนั่ง ซึ่งดูเหมือนจะเกิดขึ้นก่อนการห่อ เพราะตัวกล่องเองไม่มีร่องรอยเสียหายเลย ผมถ่ายรูปไว้แล้วและส่งให้ได้ในวันนี้\n\nเก้าอี้มาร์โลว์นั้นเราสั่งเป็นผ้าสีเขียวเข้มจากการ์ดตัวอย่างของท่าน ไม่ใช่สีมาตรฐาน ทั้งสองตัวสมบูรณ์ดี จึงไม่มีอะไรต้องดำเนินการ\n\nผมอยากเปลี่ยนเก้าอี้ตัวที่มีรอยเป็นตัวใหม่ มากกว่าจะขอเงินคืน รบกวนแจ้งด้วยว่าทำได้ไหม และผมควรใช้แบบฟอร์มบนเว็บไซต์ หรือแค่ตอบกลับอีเมลฉบับนี้ก็พอ เรายังเก็บกล่องไว้ครบ ไม่ได้ทิ้งอะไรไปเลยครับ\n\nขอบคุณครับ\n\nธีโอ รามานาธาน"
+     }
+    ]
+   },
+   "questions": [
+    {
+     "q": "What is stated about delivery charges?",
+     "kind": "detail",
+     "choices": [
+      "They are the same for every order outside the region.",
+      "They depend on how many chairs are ordered.",
+      "They are added to all orders.",
+      "They are refunded when a chair is returned."
+     ],
+     "answer": 0,
+     "th": {
+      "q": "เว็บเพจระบุอะไรเกี่ยวกับค่าจัดส่ง",
+      "choices": [
+       "คิดเท่ากันทุกคำสั่งซื้อที่อยู่นอกเขต",
+       "ขึ้นอยู่กับจำนวนเก้าอี้ที่สั่ง",
+       "บวกเพิ่มในทุกคำสั่งซื้อ",
+       "คืนเงินให้เมื่อมีการคืนเก้าอี้"
+      ]
+     },
+     "explain": {
+      "why": "เว็บเพจเขียนว่า Elsewhere, delivery is charged at 65 dollars per order, regardless of the number of chairs คำว่า regardless of แปลว่า โดยไม่คำนึงถึง คือสั่งกี่ตัวก็จ่าย 65 ดอลลาร์เท่ากัน คำตอบจึงเป็น \"They are the same for every order outside the region.\" ครับ",
+      "wrong": {
+       "1": "ตรงข้ามกับที่เขียนไว้ครับ วลี regardless of the number of chairs บอกชัดว่าจำนวนเก้าอี้ไม่มีผลต่อค่าส่ง",
+       "2": "การจัดส่งในเขตเดนตันฟรีถ้าคำสั่งซื้อเกิน 900 ดอลลาร์ จึงไม่ใช่ทุกคำสั่งซื้อที่ต้องเสียค่าส่ง",
+       "3": "เว็บเพจพูดถึงการคืนเงินค่าสินค้าแบบเต็มจำนวน แต่ไม่มีตรงไหนบอกว่าจะคืนค่าจัดส่งให้ด้วย"
+      },
+      "point": "วลี regardless of (ไม่ว่าจะ...ก็ตาม) และ per order (ต่อหนึ่งคำสั่งซื้อ) เป็นคำที่บอกว่าราคาเป็นอัตราคงที่ ไม่แปรตามจำนวน",
+      "trick": "ค่าจัดส่งเป็นหัวข้อที่ออกข้อสอบบ่อยมาก ให้จดไว้ 2 อย่างคือ เมื่อไรฟรี และ คิดยังไงเมื่อไม่ฟรี",
+      "evidence": "Elsewhere, delivery is charged at 65 dollars per order, regardless of the number of chairs."
+     }
+    },
+    {
+     "q": "How long does a Marlowe chair with a headrest take to make?",
+     "kind": "detail",
+     "choices": [
+      "10 working days",
+      "15 working days",
+      "20 working days",
+      "30 working days"
+     ],
+     "answer": 2,
+     "th": {
+      "q": "เก้าอี้รุ่นมาร์โลว์ที่มีที่พิงศีรษะใช้เวลาผลิตนานเท่าไร",
+      "choices": [
+       "10 วันทำการ",
+       "15 วันทำการ",
+       "20 วันทำการ",
+       "30 วันทำการ"
+      ]
+     },
+     "explain": {
+      "why": "เอาสองบรรทัดมาบวกกันครับ บรรทัดแรกบอกว่ารุ่นมาร์โลว์ใช้ 15 วันทำการ อีกบรรทัดบอกว่า Custom fabric or a headrest adds 5 working days to any model แปลว่า ที่พิงศีรษะบวกเวลาอีก 5 วันทำการ 15 บวก 5 เท่ากับ 20 คำตอบคือ \"20 working days\"",
+      "wrong": {
+       "0": "10 วันทำการเป็นเวลาของรุ่นออโรราแบบมาตรฐาน ไม่ใช่รุ่นมาร์โลว์ และยังไม่ได้บวกที่พิงศีรษะ",
+       "1": "15 วันทำการคือเวลาของรุ่นมาร์โลว์แบบไม่มีอุปกรณ์เสริม ยังขาดอีก 5 วันที่ต้องบวกเพิ่ม",
+       "3": "30 วันคือกรอบเวลาสำหรับการคืนสินค้า ไม่ใช่ระยะเวลาผลิต เป็นตัวเลขที่อยู่คนละหัวข้อ"
+      },
+      "point": "คำว่า adds ... to any model แปลว่า บวกเพิ่มให้กับทุกรุ่น เจอคำว่า add, plus, extra ให้เตรียมบวกเลขทันที",
+      "trick": "ตัวเลขทุกตัวในบทความมักถูกยกมาเป็นตัวเลือกทั้งหมด เพื่อดักคนที่หยิบตัวเลขแรกที่เจอ ต้องอ่านให้ครบว่าโจทย์ถามเงื่อนไขอะไรบ้าง",
+      "evidence": "Custom fabric or a headrest adds 5 working days to any model."
+     }
+    },
+    {
+     "q": "What problem does Mr. Ramanathan describe?",
+     "kind": "detail",
+     "choices": [
+      "A chair arrived in the wrong colour.",
+      "A carton was crushed in transit.",
+      "Some chairs were not delivered.",
+      "One chair has a mark on the seat."
+     ],
+     "answer": 3,
+     "th": {
+      "q": "คุณรามานาธานเล่าถึงปัญหาอะไร",
+      "choices": [
+       "เก้าอี้มาผิดสี",
+       "กล่องถูกกดยับระหว่างขนส่ง",
+       "เก้าอี้บางตัวไม่ได้ถูกส่งมา",
+       "เก้าอี้ตัวหนึ่งมีรอยบนเบาะนั่ง"
+      ]
+     },
+     "explain": {
+      "why": "อีเมลย่อหน้าที่สองเขียนว่า The sixth has a mark across the seat แปลว่า ตัวที่ 6 มีรอยพาดอยู่บนเบาะนั่ง ตรงกับตัวเลือก \"One chair has a mark on the seat.\" พอดีครับ",
+      "wrong": {
+       "0": "เรื่องสีมีเฉพาะกับเก้าอี้มาร์โลว์ซึ่งเขาเขียนว่า Both are perfect คือทั้งสองตัวสมบูรณ์ดี ไม่มีปัญหาเรื่องสี",
+       "1": "เขาเขียนตรงข้ามครับว่า the carton itself is undamaged คือตัวกล่องไม่เสียหาย ซึ่งเป็นเหตุผลที่เขาเชื่อว่ารอยเกิดก่อนห่อ",
+       "2": "ของมาครบตามที่สั่ง คือออโรรา 6 ตัวและมาร์โลว์ 2 ตัว ไม่มีของขาดส่ง"
+      },
+      "point": "อีเมลร้องเรียนมักเริ่มด้วยการบอกว่า อะไรถูกต้อง ก่อน แล้วค่อยชี้ว่า อะไรผิด ให้ระวังอย่าจับส่วนที่ถูกต้องมาตอบ",
+      "trick": "คำบอกลำดับอย่าง Five of the ... , The sixth ... เป็นสัญญาณว่ากำลังจะแยกของดีออกจากของมีปัญหา ให้อ่านประโยคที่ขึ้นต้นด้วยลำดับที่แปลกออกไป",
+      "evidence": "The sixth has a mark across the seat that looks like it happened before wrapping, since the carton itself is undamaged."
+     }
+    },
+    {
+     "q": "Why would the Marlowe chairs be difficult to return?",
+     "kind": "crossRef",
+     "choices": [
+      "They were delivered outside the 30-day period.",
+      "They were made with custom fabric.",
+      "Their cartons were thrown away.",
+      "They were bought at a discount."
+     ],
+     "answer": 1,
+     "th": {
+      "q": "ทำไมเก้าอี้รุ่นมาร์โลว์จึงคืนได้ยาก",
+      "choices": [
+       "ส่งถึงเกินกรอบ 30 วันไปแล้ว",
+       "ผลิตด้วยผ้าหุ้มแบบพิเศษ",
+       "กล่องของเก้าอี้ถูกทิ้งไปแล้ว",
+       "ซื้อมาในราคาลด"
+      ]
+     },
+     "explain": {
+      "why": "ต้องอ่านสองเอกสารประกอบกันครับ เว็บเพจเขียนว่า Chairs ordered with custom fabric cannot be returned unless they arrive damaged ส่วนอีเมลบอกว่าเขาสั่งมาร์โลว์เป็นผ้าสีเขียวเข้มจากการ์ดตัวอย่าง rather than a standard colour คือไม่ใช่สีมาตรฐาน นั่นแหละคือผ้าแบบพิเศษ คำตอบจึงเป็น \"They were made with custom fabric.\"",
+      "wrong": {
+       "0": "ของส่งถึงวันที่ 14 พฤษภาคม และเขาเขียนอีเมลวันที่ 18 พฤษภาคม ห่างกันแค่ 4 วัน ยังอยู่ในกรอบ 30 วันสบายๆ",
+       "2": "เขาเขียนว่า We have kept the carton, so nothing has been thrown away คือเก็บกล่องไว้ครบ ไม่ได้ทิ้ง",
+       "3": "ไม่มีการพูดถึงส่วนลดหรือราคาพิเศษในเอกสารทั้งสองฉบับเลย"
+      },
+      "point": "ข้อ crossRef แบบนี้คือการเอา กฎ จากเอกสารหนึ่ง มาจับกับ ข้อเท็จจริง ในอีกเอกสารหนึ่ง ให้ฝึกถามตัวเองว่า ลูกค้าคนนี้เข้าข่ายกฎข้อไหน",
+      "trick": "คำว่า custom (สั่งทำพิเศษ) มักไม่ปรากฏตรงๆ ในอีเมลลูกค้า แต่จะเลี่ยงไปพูดว่า rather than a standard colour หรือ from your sample card ต้องแปลงเป็นคำว่า custom ให้ได้",
+      "evidence": "Chairs ordered with custom fabric cannot be returned unless they arrive damaged."
+     }
+    },
+    {
+     "q": "According to the webpage, what will happen after a customer completes the online form?",
+     "kind": "detail",
+     "choices": [
+      "A technician will visit the office.",
+      "The payment will be refunded immediately.",
+      "A new chair will be built at once.",
+      "A collection label will be sent."
+     ],
+     "answer": 3,
+     "th": {
+      "q": "ตามเว็บเพจ จะเกิดอะไรขึ้นหลังลูกค้ากรอกแบบฟอร์มออนไลน์เสร็จ",
+      "choices": [
+       "ช่างจะเข้าไปที่สำนักงาน",
+       "จะได้รับเงินคืนทันที",
+       "จะเริ่มผลิตเก้าอี้ตัวใหม่ทันที",
+       "จะมีการส่งใบปะหน้าสำหรับให้ขนส่งเข้ารับของ"
+      ]
+     },
+     "explain": {
+      "why": "เว็บเพจเขียนว่า To start a return, complete the form on this page; our team will send a collection label within two working days แปลว่า กรอกฟอร์มแล้วทีมงานจะส่งใบปะหน้าสำหรับให้ขนส่งเข้ารับของภายใน 2 วันทำการ คำตอบจึงเป็น \"A collection label will be sent.\" ครับ",
+      "wrong": {
+       "0": "ไม่มีการพูดถึงช่างหรือการเข้าหน้างานในเว็บเพจเลย ขั้นตอนคือให้ขนส่งมารับกล่องกลับไป",
+       "1": "เว็บเพจบอกว่าจะได้เงินคืนเต็มจำนวนเมื่อคืนของสำเร็จ แต่ไม่มีคำว่าทันทีหลังกรอกฟอร์ม",
+       "2": "การผลิตเก้าอี้ใหม่มีตารางเวลาของตัวเองคือ 10 หรือ 15 วันทำการ และไม่ได้ผูกกับการกรอกฟอร์มคืนสินค้า"
+      },
+      "point": "ประโยคที่ขึ้นต้นด้วย To + กริยา (เพื่อจะ...) มักตามด้วยขั้นตอนที่ต้องทำ และผลที่จะตามมา ให้อ่านให้จบทั้งประโยค",
+      "trick": "คำถามที่ถามว่า จะเกิดอะไรขึ้นหลังจาก ให้หาคำเชื่อมลำดับ เช่น then, after that, within two working days แล้วอ่านข้อความหลังคำนั้น",
+      "evidence": "To start a return, complete the form on this page; our team will send a collection label within two working days."
+     }
+    }
+   ],
+   "vocab": [
+    {
+     "w": "custom",
+     "ipa": "/ˈkʌstəm/",
+     "th": "**คัส**-เทิม",
+     "mean": "สั่งทำพิเศษเฉพาะราย ไม่ใช่แบบมาตรฐาน",
+     "pos": "adj."
+    },
+    {
+     "w": "regardless of",
+     "ipa": "/rɪˈɡɑːrdləs əv/",
+     "th": "ริ-**การ์ด**-เลิส เอิฟ",
+     "mean": "โดยไม่คำนึงถึง, ไม่ว่าจะ...ก็ตาม",
+     "pos": "prep."
+    },
+    {
+     "w": "refund",
+     "ipa": "/ˈriːfʌnd/",
+     "th": "**รี**-ฟันด์",
+     "mean": "เงินที่คืนให้ลูกค้า",
+     "pos": "n."
+    },
+    {
+     "w": "assembly",
+     "ipa": "/əˈsembli/",
+     "th": "อะ-**เซม**-บลี",
+     "mean": "การประกอบชิ้นส่วนเข้าด้วยกัน",
+     "pos": "n."
+    }
+   ]
+  },
+  {
+   "id": "p7m-01-010",
+   "part": 7,
+   "tier": "medium",
+   "setType": "triple",
+   "passages": [
+    {
+     "kind": "schedule",
+     "header": {
+      "Subject": "Northern Logistics Forum — Day 1 Programme"
+     },
+     "body": "NORTHERN LOGISTICS FORUM\nSaturday 8 March — Halvern Conference Centre, Hall C\n\n08:30 Registration desk opens (Level 1 foyer)\n09:15 Opening remarks — Priya Sandhu, Forum Chair\n09:30 Keynote: \"Warehouses After Automation\" — Dr. Emeka Bassey\n10:45 Break\n11:00 Panel A: Cold-chain shipping in small ports\n11:00 Panel B: Hiring and keeping drivers\n12:30 Lunch (Hall D)\n13:45 Workshop: Reading a freight contract — Suki Varma (limit 40, sign-up at the desk)\n15:30 Closing discussion\n16:00 Ends\n\nDelegates who booked the full package may attend the evening dinner at the Cortina Hotel from 19:00. Dinner tickets cannot be bought on the day.\n\nA quiet room for telephone calls is available on Level 1 throughout the day. Wi-Fi details are printed on the back of every badge. Slides from the keynote and both panels will be posted on the forum website within one week of the event."
+    },
+    {
+     "kind": "email",
+     "header": {
+      "From": "registrations@northernlogisticsforum.org",
+      "To": "Bianca Ferro",
+      "Date": "26 February",
+      "Subject": "Booking NLF-2288 confirmed"
+     },
+     "body": "Dear Ms. Ferro,\n\nThank you for registering for the Northern Logistics Forum. Your booking number is NLF-2288.\n\nYou have booked the standard day package at 145 dollars. This includes entry to all sessions, lunch, and the printed programme. It does not include the evening dinner; the full package, which does include dinner, is 210 dollars.\n\nPlease bring this e-mail, printed or on your telephone, to the registration desk. Badges will not be issued without a booking number.\n\nPlaces in the afternoon workshop are limited and are given out at the desk on the morning of the event. We suggest arriving early if you wish to take part.\n\nIf you need to upgrade your package or change any details, write to us before 4 March. After that date, changes can only be made at the desk and an administration fee of 20 dollars applies.\n\nKind regards,\n\nRegistrations Team"
+    },
+    {
+     "kind": "email",
+     "header": {
+      "From": "Bianca Ferro",
+      "To": "registrations@northernlogisticsforum.org",
+      "Date": "2 March",
+      "Subject": "RE: Booking NLF-2288 confirmed"
+     },
+     "body": "Dear Registrations Team,\n\nThank you for the confirmation. I would like to make two changes to booking NLF-2288.\n\nFirst, please upgrade me to the full package. Two colleagues from my company will be at the dinner and I would rather join them. I understand the difference is 65 dollars, and I have authorised that payment through our finance office today.\n\nSecond, my employer's name is printed incorrectly on the booking. It should read Penhurst Freight Services, not Penhurst Freight Solutions. I would be grateful if the badge could be corrected before printing.\n\nOne question as well: my train is not due to arrive until 09:40. Will I be able to collect a badge after the opening remarks have begun, and is there a second chance to sign up for Ms. Varma's workshop later in the morning?\n\nMany thanks,\n\nBianca Ferro\nPenhurst Freight Services"
+    }
+   ],
+   "th": {
+    "passages": [
+     {
+      "body": "การประชุมโลจิสติกส์ภาคเหนือ\nวันเสาร์ที่ 8 มีนาคม — ศูนย์ประชุมฮาลเวิร์น ฮอลล์ ซี\n\n08:30 เปิดโต๊ะลงทะเบียน (โถงชั้น 1)\n09:15 กล่าวเปิดงาน — ปรียา สันธุ ประธานการประชุม\n09:30 ปาฐกถาหลัก \"คลังสินค้าหลังยุคระบบอัตโนมัติ\" — ดร. เอเมกา บาสซีย์\n10:45 พักเบรก\n11:00 เวทีเสวนา A การขนส่งแบบควบคุมอุณหภูมิในท่าเรือขนาดเล็ก\n11:00 เวทีเสวนา B การรับและรักษาพนักงานขับรถ\n12:30 อาหารกลางวัน (ฮอลล์ ดี)\n13:45 เวิร์กช็อป อ่านสัญญาขนส่งสินค้าให้เป็น — ซูกิ วาร์มา (จำกัด 40 คน ลงชื่อที่โต๊ะลงทะเบียน)\n15:30 วงสนทนาปิดท้าย\n16:00 จบงาน\n\nผู้เข้าร่วมที่จองแพ็กเกจเต็มรูปแบบสามารถเข้าร่วมงานเลี้ยงมื้อค่ำที่โรงแรมคอร์ตินาตั้งแต่เวลา 19:00 น. บัตรงานเลี้ยงไม่สามารถซื้อหน้างานในวันจัดงานได้\n\nมีห้องเงียบสำหรับใช้โทรศัพท์ให้บริการที่ชั้น 1 ตลอดทั้งวัน รายละเอียดการเชื่อมต่อ Wi-Fi พิมพ์ไว้ด้านหลังบัตรประจำตัวทุกใบ สไลด์ของปาฐกถาหลักและเวทีเสวนาทั้งสองเวทีจะถูกนำขึ้นเว็บไซต์ของงานภายใน 1 สัปดาห์หลังจบงาน"
+     },
+     {
+      "body": "เรียน คุณเฟร์โร\n\nขอบคุณที่ลงทะเบียนเข้าร่วมการประชุมโลจิสติกส์ภาคเหนือ หมายเลขการจองของท่านคือ NLF-2288\n\nท่านได้จองแพ็กเกจรายวันแบบมาตรฐานราคา 145 ดอลลาร์ ซึ่งรวมสิทธิ์เข้าฟังทุกช่วง อาหารกลางวัน และเอกสารกำหนดการฉบับพิมพ์ แต่ไม่รวมงานเลี้ยงมื้อค่ำ ส่วนแพ็กเกจเต็มรูปแบบซึ่งรวมงานเลี้ยงมื้อค่ำด้วยนั้นราคา 210 ดอลลาร์\n\nกรุณานำอีเมลฉบับนี้มาแสดงที่โต๊ะลงทะเบียน จะพิมพ์ออกมาหรือเปิดจากโทรศัพท์ก็ได้ ทางงานจะไม่ออกบัตรประจำตัวให้หากไม่มีหมายเลขการจอง\n\nที่นั่งในเวิร์กช็อปช่วงบ่ายมีจำนวนจำกัดและแจกที่โต๊ะลงทะเบียนในเช้าวันงาน เราแนะนำให้มาถึงแต่เช้าหากท่านต้องการเข้าร่วม\n\nหากท่านต้องการอัปเกรดแพ็กเกจหรือแก้ไขรายละเอียดใดๆ กรุณาเขียนมาก่อนวันที่ 4 มีนาคม หลังจากวันดังกล่าว การแก้ไขจะทำได้ที่โต๊ะลงทะเบียนเท่านั้น และมีค่าธรรมเนียมดำเนินการ 20 ดอลลาร์\n\nด้วยความนับถือ\n\nทีมรับลงทะเบียน"
+     },
+     {
+      "body": "เรียน ทีมรับลงทะเบียน\n\nขอบคุณสำหรับอีเมลยืนยันค่ะ ดิฉันขอแก้ไขการจองเลขที่ NLF-2288 สองเรื่อง\n\nเรื่องแรก รบกวนอัปเกรดดิฉันเป็นแพ็กเกจเต็มรูปแบบด้วยค่ะ เพื่อนร่วมงานของดิฉัน 2 คนจะไปร่วมงานเลี้ยงมื้อค่ำ ดิฉันจึงอยากไปด้วย ดิฉันเข้าใจว่าส่วนต่างคือ 65 ดอลลาร์ และได้อนุมัติการชำระเงินผ่านฝ่ายการเงินของบริษัทไปแล้ววันนี้\n\nเรื่องที่สอง ชื่อบริษัทที่ดิฉันสังกัดพิมพ์ผิดในการจอง ที่ถูกต้องคือ Penhurst Freight Services ไม่ใช่ Penhurst Freight Solutions รบกวนแก้ไขบนบัตรประจำตัวก่อนสั่งพิมพ์ด้วยค่ะ\n\nมีคำถามอีกข้อหนึ่งค่ะ รถไฟของดิฉันจะถึงราวเวลา 09:40 น. ดิฉันจะยังรับบัตรประจำตัวได้ไหมหลังจากพิธีเปิดเริ่มไปแล้ว และมีโอกาสลงชื่อเข้าเวิร์กช็อปของคุณวาร์มาอีกรอบในช่วงสายไหมคะ\n\nขอบคุณมากค่ะ\n\nบิอังกา เฟร์โร\nPenhurst Freight Services"
+     }
+    ]
+   },
+   "questions": [
+    {
+     "q": "What is scheduled to happen at 13:45?",
+     "kind": "detail",
+     "choices": [
+      "A keynote speech",
+      "A workshop with limited places",
+      "Lunch in Hall D",
+      "The closing discussion"
+     ],
+     "answer": 1,
+     "th": {
+      "q": "เวลา 13:45 น. มีกำหนดการอะไร",
+      "choices": [
+       "ปาฐกถาหลัก",
+       "เวิร์กช็อปที่รับจำนวนจำกัด",
+       "อาหารกลางวันที่ฮอลล์ ดี",
+       "วงสนทนาปิดท้าย"
+      ]
+     },
+     "explain": {
+      "why": "ในตารางบรรทัด 13:45 เขียนว่า Workshop: Reading a freight contract — Suki Varma (limit 40, sign-up at the desk) คำว่า limit 40 แปลว่ารับได้ 40 คน ซึ่งก็คือจำนวนจำกัด คำตอบจึงเป็น \"A workshop with limited places\" ครับ",
+      "wrong": {
+       "0": "ปาฐกถาหลักอยู่เวลา 09:30 น. โดย ดร. เอเมกา บาสซีย์ ซึ่งเป็นช่วงเช้า",
+       "2": "อาหารกลางวันที่ฮอลล์ ดี อยู่เวลา 12:30 น. ก่อนเวิร์กช็อปหนึ่งช่วง",
+       "3": "วงสนทนาปิดท้ายอยู่เวลา 15:30 น. ซึ่งเป็นช่วงเกือบจบงาน"
+      },
+      "point": "ตารางเวลาให้อ่านแบบสแกนคอลัมน์ซ้ายก่อน หาเวลาที่ตรงกับโจทย์ แล้วค่อยอ่านข้อความบรรทัดนั้นบรรทัดเดียว",
+      "trick": "ตัวลวงของข้อตารางมักเป็นรายการจริงในตารางแต่คนละเวลา จึงต้องเทียบเวลาให้ตรงเป๊ะก่อนตัดสินใจ",
+      "evidence": "13:45 Workshop: Reading a freight contract — Suki Varma (limit 40, sign-up at the desk)"
+     }
+    },
+    {
+     "q": "What must delegates bring to the registration desk?",
+     "kind": "detail",
+     "choices": [
+      "A printed programme",
+      "Payment for lunch",
+      "Their confirmation e-mail",
+      "A photograph"
+     ],
+     "answer": 2,
+     "th": {
+      "q": "ผู้เข้าร่วมงานต้องนำอะไรมาที่โต๊ะลงทะเบียน",
+      "choices": [
+       "เอกสารกำหนดการฉบับพิมพ์",
+       "เงินค่าอาหารกลางวัน",
+       "อีเมลยืนยันการจอง",
+       "รูปถ่าย"
+      ]
+     },
+     "explain": {
+      "why": "อีเมลยืนยันเขียนว่า Please bring this e-mail, printed or on your telephone, to the registration desk แปลว่า กรุณานำอีเมลฉบับนี้มาที่โต๊ะลงทะเบียน จะพิมพ์มาหรือเปิดจากโทรศัพท์ก็ได้ คำตอบจึงเป็น \"Their confirmation e-mail\" ครับ",
+      "wrong": {
+       "0": "เอกสารกำหนดการฉบับพิมพ์เป็นสิ่งที่ผู้จัดงาน แจกให้ ตามแพ็กเกจ ไม่ใช่สิ่งที่ผู้เข้าร่วมต้องเตรียมมา",
+       "1": "อาหารกลางวันรวมอยู่ในแพ็กเกจ 145 ดอลลาร์อยู่แล้ว จึงไม่ต้องเตรียมเงินมาจ่ายหน้างาน",
+       "3": "ไม่มีข้อความใดในเอกสารทั้งสามฉบับที่พูดถึงการเตรียมรูปถ่ายมาด้วย"
+      },
+      "point": "คำว่า Please bring ... เป็นคำสั่งที่ตรงตัวที่สุดสำหรับคำถามว่า ต้องเอาอะไรมา ให้กวาดหาคำว่า bring",
+      "trick": "อย่าสับสนระหว่างของที่ผู้จัดงานให้ กับของที่ผู้เข้าร่วมต้องเตรียม ในเอกสารเดียวกันมักมีทั้งสองอย่างปนกัน",
+      "evidence": "Please bring this e-mail, printed or on your telephone, to the registration desk."
+     }
+    },
+    {
+     "q": "What is suggested about the total amount Ms. Ferro will pay?",
+     "kind": "crossRef",
+     "choices": [
+      "It will be 145 dollars.",
+      "It will be 165 dollars.",
+      "It will be 210 dollars.",
+      "It will be 230 dollars."
+     ],
+     "answer": 2,
+     "th": {
+      "q": "ข้อความบอกเป็นนัยว่าคุณเฟร์โรจะจ่ายเงินรวมทั้งสิ้นเท่าไร",
+      "choices": [
+       "145 ดอลลาร์",
+       "165 ดอลลาร์",
+       "210 ดอลลาร์",
+       "230 ดอลลาร์"
+      ]
+     },
+     "explain": {
+      "why": "ต้องใช้อีเมลสองฉบับประกอบกันครับ อีเมลยืนยันบอกว่าเธอจองแบบมาตรฐาน 145 ดอลลาร์ และแพ็กเกจเต็มรูปแบบราคา 210 ดอลลาร์ ส่วนอีเมลของเธอขออัปเกรดโดยจ่ายส่วนต่าง 65 ดอลลาร์ 145 บวก 65 เท่ากับ 210 พอดี คำตอบจึงเป็น \"It will be 210 dollars.\"",
+      "wrong": {
+       "0": "145 ดอลลาร์คือราคาเดิมก่อนอัปเกรด แต่เธอขอเปลี่ยนเป็นแพ็กเกจเต็มรูปแบบแล้ว",
+       "1": "165 ดอลลาร์คือ 145 บวกค่าธรรมเนียมดำเนินการ 20 ดอลลาร์ ซึ่งไม่ถูก เพราะเธอเขียนมาวันที่ 2 มีนาคม ก่อนกำหนด 4 มีนาคม จึงไม่ต้องเสียค่าธรรมเนียม",
+       "3": "230 ดอลลาร์คือ 210 บวกค่าธรรมเนียม 20 ดอลลาร์ ซึ่งก็ไม่ถูกด้วยเหตุผลเดียวกัน คือเธอแจ้งมาทันกำหนด"
+      },
+      "point": "ข้อคำนวณในชุดสามเอกสาร ให้ไล่ทีละขั้นคือ ราคาเดิม บวกส่วนต่าง แล้วเช็กว่ามีค่าธรรมเนียมเพิ่มไหม โดยดูจากวันที่",
+      "trick": "เมื่อเอกสารมีทั้งเส้นตายและค่าปรับ ให้เทียบวันที่ในอีเมลกับเส้นตายก่อนเสมอ ตัวเลือกที่บวกค่าปรับไว้คือกับดักคลาสสิก",
+      "evidence": "It does not include the evening dinner; the full package, which does include dinner, is 210 dollars."
+     }
+    },
+    {
+     "q": "What is Ms. Ferro likely to miss on the day of the forum?",
+     "kind": "crossRef",
+     "choices": [
+      "Part of the morning keynote",
+      "The lunch break in Hall D",
+      "The evening dinner at the hotel",
+      "The panel on hiring drivers"
+     ],
+     "answer": 0,
+     "th": {
+      "q": "คุณเฟร์โรน่าจะพลาดอะไรในวันประชุม",
+      "choices": [
+       "ปาฐกถาหลักช่วงเช้าบางส่วน",
+       "ช่วงพักอาหารกลางวันที่ฮอลล์ ดี",
+       "งานเลี้ยงมื้อค่ำที่โรงแรม",
+       "เวทีเสวนาเรื่องการรับพนักงานขับรถ"
+      ]
+     },
+     "explain": {
+      "why": "ต้องประกอบตารางกับอีเมลของเธอครับ ตารางบอกว่าพิธีเปิดเริ่ม 09:15 น. และปาฐกถาหลักเริ่ม 09:30 น. ส่วนอีเมลของเธอเขียนว่า my train is not due to arrive until 09:40 คือรถไฟถึงราว 09:40 น. ซึ่งเลยเวลาที่ปาฐกถาเริ่มไปแล้ว เธอจึงพลาด \"Part of the morning keynote\"",
+      "wrong": {
+       "1": "อาหารกลางวันอยู่เวลา 12:30 น. ซึ่งเธอมาถึงก่อนหน้านั้นหลายชั่วโมงแล้ว",
+       "2": "เธอเพิ่งขออัปเกรดเป็นแพ็กเกจเต็มรูปแบบเพื่อไปงานเลี้ยงโดยเฉพาะ และแจ้งทันกำหนด จึงไม่พลาด",
+       "3": "เวทีเสวนาเริ่มเวลา 11:00 น. ซึ่งอยู่หลังเวลาที่เธอมาถึงตั้งกว่าชั่วโมง"
+      },
+      "point": "ข้อ crossRef ที่ผูกกับเวลา ให้จดเวลาสำคัญจากตารางไว้ก่อน แล้วเอาเวลาที่บุคคลระบุในอีเมลมาวางเทียบบนเส้นเวลาเดียวกัน",
+      "trick": "วลี not due to arrive until 09:40 แปลว่า จะยังไม่ถึงจนกว่าจะ 09:40 น. เป็นสำนวนปฏิเสธซ้อนที่ต้องอ่านให้ขาด ไม่ใช่แปลว่ามาถึงก่อน 09:40 น.",
+      "evidence": "09:30 Keynote: \"Warehouses After Automation\" — Dr. Emeka Bassey"
+     }
+    },
+    {
+     "q": "What does the confirmation e-mail suggest Ms. Ferro do about the workshop?",
+     "kind": "inference",
+     "choices": [
+      "Sign up online before 4 March",
+      "Ask Ms. Varma directly at lunch",
+      "Reserve a seat by telephone",
+      "Arrive at the desk as early as she can"
+     ],
+     "answer": 3,
+     "th": {
+      "q": "อีเมลยืนยันแนะนำให้คุณเฟร์โรทำอย่างไรเรื่องเวิร์กช็อป",
+      "choices": [
+       "ลงชื่อออนไลน์ก่อนวันที่ 4 มีนาคม",
+       "ไปถามคุณวาร์มาโดยตรงตอนพักกลางวัน",
+       "จองที่นั่งทางโทรศัพท์",
+       "ไปที่โต๊ะลงทะเบียนให้เช้าที่สุดเท่าที่ทำได้"
+      ]
+     },
+     "explain": {
+      "why": "อีเมลยืนยันเขียนว่าที่นั่งเวิร์กช็อปมีจำกัดและแจกที่โต๊ะในเช้าวันงาน แล้วปิดท้ายว่า We suggest arriving early if you wish to take part แปลว่า เราแนะนำให้มาถึงแต่เช้าหากอยากเข้าร่วม คำตอบจึงเป็น \"Arrive at the desk as early as she can\" ครับ",
+      "wrong": {
+       "0": "วันที่ 4 มีนาคมเป็นเส้นตายสำหรับการแก้ไขการจองหรืออัปเกรดแพ็กเกจ ไม่ใช่สำหรับการลงชื่อเวิร์กช็อป ซึ่งทำได้เฉพาะหน้างาน",
+       "1": "ไม่มีเอกสารฉบับใดบอกให้ติดต่อวิทยากรโดยตรง คุณวาร์มาเป็นผู้สอน ไม่ใช่ผู้ดูแลรายชื่อ",
+       "2": "ไม่มีการพูดถึงการจองทางโทรศัพท์เลยในทั้งสามเอกสาร ช่องทางที่ระบุคืออีเมลกับโต๊ะลงทะเบียน"
+      },
+      "point": "คำว่า We suggest / We recommend ตามด้วยกริยาเติม -ing คือคำแนะนำโดยตรง เจอแล้วให้จับไว้เพราะมักเป็นคำตอบของข้อที่ถามว่าควรทำอะไร",
+      "trick": "เอกสารหลายฉบับมักมีหลายเส้นตาย ต้องแยกให้ออกว่าเส้นตายไหนใช้กับเรื่องอะไร ตัวลวงชอบเอาเส้นตายของเรื่องหนึ่งมาสวมให้อีกเรื่อง",
+      "evidence": "We suggest arriving early if you wish to take part."
+     }
+    }
+   ],
+   "vocab": [
+    {
+     "w": "delegate",
+     "ipa": "/ˈdelɪɡət/",
+     "th": "**เดล**-ลิ-เกิท",
+     "mean": "ผู้แทนที่มาร่วมประชุมสัมมนา",
+     "pos": "n."
+    },
+    {
+     "w": "keynote",
+     "ipa": "/ˈkiːnoʊt/",
+     "th": "**คีย์**-โน้ท",
+     "mean": "ปาฐกถาหลักของงาน",
+     "pos": "n."
+    },
+    {
+     "w": "upgrade",
+     "ipa": "/ˈʌpɡreɪd/",
+     "th": "**อัพ**-เกรด",
+     "mean": "เปลี่ยนไปใช้ระดับที่สูงขึ้น",
+     "pos": "v."
+    },
+    {
+     "w": "administration fee",
+     "ipa": "/ədˌmɪnɪˈstreɪʃn fiː/",
+     "th": "เอิด-มิน-นิ-**สเตร**-เชิน **ฟี**",
+     "mean": "ค่าธรรมเนียมดำเนินการเอกสาร",
+     "pos": "n."
+    }
+   ]
+  },
+  {
+   "id": "p7m-01-011",
+   "part": 7,
+   "tier": "medium",
+   "setType": "triple",
+   "passages": [
+    {
+     "kind": "advertisement",
+     "header": {
+      "Subject": "Marbury Kitchen — Corporate Catering"
+     },
+     "body": "MARBURY KITCHEN — CORPORATE CATERING\n\nWe deliver to offices across the Denton region. All prices are per person and include serving staff for groups of 40 or more.\n\nMenu 1 — Working Lunch: sandwiches, two salads, fruit. 14 dollars.\nMenu 2 — Hot Buffet: three main dishes, rice, two salads, dessert. 22 dollars.\nMenu 3 — Reception: eight hot and cold items served on trays. 26 dollars.\n\nVegetarian and gluten-free versions of every menu are available at no extra cost. Please tell us the number of each when you book.\n\nBookings must be confirmed at least five working days before the event. Numbers may be increased up to two working days before, but reductions after that point will still be charged.\n\nA delivery fee of 40 dollars applies to addresses outside the Denton region. Equipment is collected the following working day unless another time is agreed.\n\nAn invoice is issued after the event and is payable within 14 days. Tastings for new clients can be arranged at our Denton kitchen on request."
+    },
+    {
+     "kind": "form",
+     "header": {
+      "Subject": "Marbury Kitchen — Booking Request"
+     },
+     "body": "MARBURY KITCHEN — BOOKING REQUEST\n\nCompany: Ashgrove Analytics\nContact: Devon Iyer, Office Manager\nTelephone: 555-0198\nDelivery address: Unit 4, Fenn Street Business Park, Weybridge\nEvent date: Thursday 16 October\nServing time: 12:15 P.M.\nMenu requested: Menu 2\nTotal guests: 46 (including 6 vegetarian and 2 gluten-free)\nRoom: Large meeting room, second floor. There is a service lift at the rear of the building.\nNotes: This is a half-day client briefing. We would like tables laid out along one wall rather than in the centre. Please arrive by 11:30 A.M. so that the room is clear before guests return from the morning session.\nSubmitted: 6 October"
+    },
+    {
+     "kind": "email",
+     "header": {
+      "From": "Nell Draycott, Marbury Kitchen",
+      "To": "Devon Iyer, Ashgrove Analytics",
+      "Date": "7 October",
+      "Subject": "Booking for 16 October"
+     },
+     "body": "Dear Mr. Iyer,\n\nThank you for your booking request, which we have accepted. Your event is confirmed for Thursday 16 October.\n\nTwo points to note. First, your address is outside the area we deliver to without charge, so the fee shown on our menu page will be added to your final bill. Second, at the number of guests you have given, serving staff are included, so there is nothing further to pay for that.\n\nPlease also note the deadline for changing numbers. Any reduction after Tuesday 14 October will be charged at the full rate, although we can still add guests until that date.\n\nOur van will reach Fenn Street at 11:15 A.M. and we will use the rear lift as you suggested. Equipment will be collected on Friday morning.\n\nKind regards,\n\nNell Draycott"
+    }
+   ],
+   "th": {
+    "passages": [
+     {
+      "body": "มาร์เบอรี คิทเช่น — บริการจัดเลี้ยงสำหรับองค์กร\n\nเราจัดส่งถึงสำนักงานทั่วเขตเดนตัน ราคาทั้งหมดคิดต่อคนและรวมพนักงานเสิร์ฟให้แล้วสำหรับงานที่มีแขกตั้งแต่ 40 คนขึ้นไป\n\nเมนู 1 — มื้อกลางวันสำหรับประชุม แซนด์วิช สลัด 2 อย่าง ผลไม้ ราคา 14 ดอลลาร์\nเมนู 2 — บุฟเฟ่ต์อาหารร้อน อาหารจานหลัก 3 อย่าง ข้าว สลัด 2 อย่าง ของหวาน ราคา 22 ดอลลาร์\nเมนู 3 — งานเลี้ยงรับรอง อาหารร้อนและเย็นรวม 8 รายการ เสิร์ฟบนถาด ราคา 26 ดอลลาร์\n\nทุกเมนูมีเวอร์ชันมังสวิรัติและปลอดกลูเตนให้เลือกโดยไม่คิดเงินเพิ่ม กรุณาแจ้งจำนวนของแต่ละแบบตอนจอง\n\nการจองต้องยืนยันล่วงหน้าอย่างน้อย 5 วันทำการก่อนวันงาน สามารถเพิ่มจำนวนคนได้จนถึง 2 วันทำการก่อนงาน แต่หากลดจำนวนหลังจากจุดนั้นแล้ว จะยังถูกเรียกเก็บตามจำนวนเดิม\n\nที่อยู่นอกเขตเดนตันมีค่าจัดส่ง 40 ดอลลาร์ อุปกรณ์จะถูกเก็บกลับในวันทำการถัดไป เว้นแต่จะตกลงเวลาอื่นกันไว้\n\nใบแจ้งหนี้จะออกให้หลังจบงานและต้องชำระภายใน 14 วัน ลูกค้าใหม่สามารถขอนัดชิมอาหารตัวอย่างที่ครัวของเราในเดนตันได้ตามคำขอ"
+     },
+     {
+      "body": "มาร์เบอรี คิทเช่น — แบบฟอร์มขอจองบริการ\n\nบริษัท แอชโกรฟ อนาลิติกส์\nผู้ติดต่อ เดวอน ไอเยอร์ ผู้จัดการสำนักงาน\nโทรศัพท์ 555-0198\nที่อยู่จัดส่ง ยูนิต 4 เฟนน์ สตรีท บิสซิเนส พาร์ค เวย์บริดจ์\nวันจัดงาน วันพฤหัสบดีที่ 16 ตุลาคม\nเวลาเสิร์ฟ 12:15 น.\nเมนูที่ขอ เมนู 2\nจำนวนแขกทั้งหมด 46 คน (ในจำนวนนี้เป็นมังสวิรัติ 6 คน และปลอดกลูเตน 2 คน)\nห้อง ห้องประชุมใหญ่ ชั้น 2 มีลิฟต์ขนของอยู่ด้านหลังอาคาร\nหมายเหตุ งานนี้เป็นการบรรยายสรุปให้ลูกค้าแบบครึ่งวัน เราอยากให้จัดโต๊ะเรียงชิดผนังด้านหนึ่ง ไม่ใช่วางกลางห้อง กรุณามาถึงภายใน 11:30 น. เพื่อให้ห้องเรียบร้อยก่อนแขกกลับเข้ามาจากช่วงเช้า\nวันที่ยื่นแบบฟอร์ม 6 ตุลาคม"
+     },
+     {
+      "body": "เรียน คุณไอเยอร์\n\nขอบคุณสำหรับแบบฟอร์มขอจองบริการ ซึ่งเราได้ตอบรับเรียบร้อยแล้ว งานของท่านได้รับการยืนยันสำหรับวันพฤหัสบดีที่ 16 ตุลาคม\n\nมีสองเรื่องที่ต้องแจ้งค่ะ เรื่องแรก ที่อยู่ของท่านอยู่นอกพื้นที่ที่เราจัดส่งให้โดยไม่คิดเงิน ดังนั้นค่าธรรมเนียมตามที่ระบุไว้ในหน้าเมนูของเราจะถูกบวกเข้าไปในบิลสุดท้าย เรื่องที่สอง ด้วยจำนวนแขกที่ท่านแจ้งมา ค่าพนักงานเสิร์ฟรวมอยู่ในราคาแล้ว จึงไม่มีค่าใช้จ่ายเพิ่มในส่วนนี้\n\nรบกวนสังเกตเส้นตายของการเปลี่ยนจำนวนคนด้วยค่ะ หากลดจำนวนหลังวันอังคารที่ 14 ตุลาคม จะถูกเรียกเก็บตามจำนวนเต็ม แม้ว่าท่านจะยังเพิ่มจำนวนแขกได้จนถึงวันนั้นก็ตาม\n\nรถตู้ของเราจะไปถึงถนนเฟนน์เวลา 11:15 น. และเราจะใช้ลิฟต์ด้านหลังตามที่ท่านแนะนำ ส่วนอุปกรณ์จะเก็บกลับในเช้าวันศุกร์\n\nด้วยความนับถือ\n\nเนลล์ เดรย์คอตต์"
+     }
+    ]
+   },
+   "questions": [
+    {
+     "q": "What is included at no extra charge?",
+     "kind": "detail",
+     "choices": [
+      "Delivery outside the region",
+      "Vegetarian and gluten-free dishes",
+      "Collection of equipment on the same day",
+      "An extra main dish on Menu 1"
+     ],
+     "answer": 1,
+     "th": {
+      "q": "อะไรที่รวมให้โดยไม่คิดเงินเพิ่ม",
+      "choices": [
+       "การจัดส่งนอกเขต",
+       "อาหารมังสวิรัติและปลอดกลูเตน",
+       "การเก็บอุปกรณ์กลับในวันเดียวกัน",
+       "อาหารจานหลักเพิ่มอีก 1 อย่างในเมนู 1"
+      ]
+     },
+     "explain": {
+      "why": "โฆษณาเขียนว่า Vegetarian and gluten-free versions of every menu are available at no extra cost วลี at no extra cost แปลว่า ไม่คิดเงินเพิ่ม ตรงกับตัวเลือก \"Vegetarian and gluten-free dishes\" พอดีครับ",
+      "wrong": {
+       "0": "การจัดส่งนอกเขตเดนตันคิดเงิน 40 ดอลลาร์ ซึ่งเป็นค่าใช้จ่ายเพิ่ม ไม่ใช่ของฟรี",
+       "2": "โฆษณาบอกว่าเก็บอุปกรณ์กลับใน วันทำการถัดไป ไม่ใช่วันเดียวกัน และไม่ได้พูดถึงราคาของบริการนี้",
+       "3": "เมนู 1 คือแซนด์วิช สลัด และผลไม้ ไม่มีอาหารจานหลักอยู่แล้ว และไม่มีการเสนอเพิ่มจานใดๆ ฟรี"
+      },
+      "point": "วลีที่แปลว่าฟรีมีหลายแบบ เช่น at no extra cost, free of charge, included, complimentary ให้จำไว้เป็นชุดเพราะข้อสอบสลับใช้ตลอด",
+      "trick": "โฆษณาที่มีทั้งของฟรีและของคิดเงินอยู่ในหน้าเดียวกัน ให้ทำเครื่องหมายแยกสองกลุ่มขณะอ่าน จะตอบข้อแบบนี้ได้ใน 5 วินาที",
+      "evidence": "Vegetarian and gluten-free versions of every menu are available at no extra cost."
+     }
+    },
+    {
+     "q": "How much will Ashgrove Analytics be charged per guest?",
+     "kind": "crossRef",
+     "choices": [
+      "14 dollars",
+      "22 dollars",
+      "26 dollars",
+      "40 dollars"
+     ],
+     "answer": 1,
+     "th": {
+      "q": "แอชโกรฟ อนาลิติกส์ จะถูกคิดเงินต่อแขกหนึ่งคนเท่าไร",
+      "choices": [
+       "14 ดอลลาร์",
+       "22 ดอลลาร์",
+       "26 ดอลลาร์",
+       "40 ดอลลาร์"
+      ]
+     },
+     "explain": {
+      "why": "ต้องอ่านสองเอกสารประกอบกันครับ แบบฟอร์มระบุว่า Menu requested: Menu 2 คือขอเมนู 2 แล้วกลับไปดูโฆษณาจะเห็นว่า Menu 2 — Hot Buffet ราคา 22 ดอลลาร์ต่อคน คำตอบจึงเป็น \"22 dollars\"",
+      "wrong": {
+       "0": "14 ดอลลาร์เป็นราคาของเมนู 1 ซึ่งเป็นมื้อกลางวันแบบแซนด์วิช ไม่ใช่เมนูที่บริษัทนี้เลือก",
+       "2": "26 ดอลลาร์เป็นราคาของเมนู 3 สำหรับงานเลี้ยงรับรอง ซึ่งก็ไม่ใช่เมนูที่เลือกเช่นกัน",
+       "3": "40 ดอลลาร์คือค่าจัดส่งนอกเขต ซึ่งคิดต่อคำสั่งซื้อ ไม่ใช่ต่อคน จึงตอบคำถามนี้ไม่ได้"
+      },
+      "point": "ข้อ crossRef แบบพื้นฐานที่สุดคือ เอกสารหนึ่งบอกว่าเลือกอะไร อีกเอกสารบอกว่าราคาเท่าไร ให้จับคู่กันสองจุดเท่านั้น",
+      "trick": "ระวังหน่วยของราคา คำว่า per person (ต่อคน) กับ per order (ต่อคำสั่งซื้อ) ต่างกันคนละเรื่อง โจทย์ถามต่อคนก็ต้องเลือกราคาต่อคน",
+      "evidence": "Menu 2 — Hot Buffet: three main dishes, rice, two salads, dessert. 22 dollars."
+     }
+    },
+    {
+     "q": "Why are serving staff included in this booking?",
+     "kind": "crossRef",
+     "choices": [
+      "The event lasts a full day.",
+      "The company chose Menu 3.",
+      "More than 40 guests will attend.",
+      "The booking was made early."
+     ],
+     "answer": 2,
+     "th": {
+      "q": "ทำไมการจองครั้งนี้ถึงรวมพนักงานเสิร์ฟให้ด้วย",
+      "choices": [
+       "งานนี้จัดเต็มวัน",
+       "บริษัทเลือกเมนู 3",
+       "มีแขกมากกว่า 40 คน",
+       "จองไว้ล่วงหน้านานแล้ว"
+      ]
+     },
+     "explain": {
+      "why": "โฆษณาเขียนเงื่อนไขไว้ว่า All prices are per person and include serving staff for groups of 40 or more คือรวมพนักงานเสิร์ฟให้เมื่อมีแขกตั้งแต่ 40 คนขึ้นไป ส่วนแบบฟอร์มระบุ Total guests: 46 ซึ่งเกิน 40 คำตอบจึงเป็น \"More than 40 guests will attend.\" ครับ",
+      "wrong": {
+       "0": "แบบฟอร์มเขียนว่างานนี้เป็น half-day client briefing คือครึ่งวัน ไม่ใช่เต็มวัน และความยาวของงานก็ไม่ใช่เงื่อนไขเรื่องพนักงานเสิร์ฟ",
+       "1": "บริษัทเลือกเมนู 2 ไม่ใช่เมนู 3 และเงื่อนไขพนักงานเสิร์ฟไม่ได้ผูกกับเมนูใดเมนูหนึ่ง",
+       "3": "การจองล่วงหน้าเกี่ยวกับเส้นตายยืนยัน 5 วันทำการ ไม่มีข้อความใดบอกว่าจองเร็วแล้วจะได้พนักงานเสิร์ฟฟรี"
+      },
+      "point": "วลี for groups of 40 or more แปลว่า สำหรับกลุ่มตั้งแต่ 40 คนขึ้นไป ให้เอาจำนวนจริงจากอีกเอกสารมาเทียบว่าถึงเกณฑ์ไหม",
+      "trick": "เมื่อโจทย์ถามว่า ทำไมถึงได้สิทธิ์นี้ ให้หาเงื่อนไขในเอกสารที่เป็นกฎก่อน แล้วค่อยหาตัวเลขจริงในเอกสารที่เป็นข้อมูลลูกค้า",
+      "evidence": "All prices are per person and include serving staff for groups of 40 or more."
+     }
+    },
+    {
+     "q": "What is indicated about the arrival of the van?",
+     "kind": "crossRef",
+     "choices": [
+      "It will be later than requested.",
+      "It will match the requested time exactly.",
+      "It will be earlier than requested.",
+      "The time has not yet been decided."
+     ],
+     "answer": 2,
+     "th": {
+      "q": "ข้อความระบุอะไรเกี่ยวกับเวลาที่รถตู้จะมาถึง",
+      "choices": [
+       "จะมาช้ากว่าที่ขอไว้",
+       "จะตรงกับเวลาที่ขอไว้พอดี",
+       "จะมาเร็วกว่าเวลาที่ขอไว้",
+       "ยังไม่ได้กำหนดเวลา"
+      ]
+     },
+     "explain": {
+      "why": "ต้องเทียบสองเอกสารครับ แบบฟอร์มเขียนว่า Please arrive by 11:30 A.M. คือขอให้มาถึงไม่เกิน 11:30 น. ส่วนอีเมลตอบกลับบอกว่า Our van will reach Fenn Street at 11:15 A.M. คือรถจะถึง 11:15 น. ซึ่งเร็วกว่าเวลาที่ขอไว้ 15 นาที คำตอบจึงเป็น \"It will be earlier than requested.\"",
+      "wrong": {
+       "0": "11:15 น. มาก่อน 11:30 น. จึงเป็นการมาเร็วกว่า ไม่ใช่ช้ากว่า",
+       "1": "เวลาสองอันไม่เท่ากันครับ ต่างกัน 15 นาที จึงไม่ใช่การตรงกันพอดี",
+       "3": "อีเมลระบุเวลาไว้ชัดเจนแล้วว่า 11:15 น. จึงไม่ใช่กรณีที่ยังไม่กำหนด"
+      },
+      "point": "คำว่า by + เวลา แปลว่า ภายในเวลานั้น หรือไม่เกินเวลานั้น การมาถึงก่อนจึงถือว่าทำตามคำขอและเร็วกว่าที่ระบุ",
+      "trick": "ข้อเทียบเวลาในชุดหลายเอกสาร ให้เขียนเวลาสองอันลงกระดาษทดแล้วลบกัน จะไม่สับสนว่าอันไหนก่อนอันไหนหลัง",
+      "evidence": "Our van will reach Fenn Street at 11:15 A.M. and we will use the rear lift as you suggested."
+     }
+    },
+    {
+     "q": "What will happen if the number of guests is reduced on 15 October?",
+     "kind": "detail",
+     "choices": [
+      "A new booking form will be needed.",
+      "The menu will have to change.",
+      "The event will be cancelled.",
+      "The original number will still be charged."
+     ],
+     "answer": 3,
+     "th": {
+      "q": "จะเกิดอะไรขึ้นถ้ามีการลดจำนวนแขกในวันที่ 15 ตุลาคม",
+      "choices": [
+       "ต้องกรอกแบบฟอร์มจองใหม่",
+       "ต้องเปลี่ยนเมนู",
+       "งานจะถูกยกเลิก",
+       "จะยังถูกเรียกเก็บตามจำนวนเดิม"
+      ]
+     },
+     "explain": {
+      "why": "อีเมลของคุณเดรย์คอตต์เขียนว่า Any reduction after Tuesday 14 October will be charged at the full rate แปลว่า การลดจำนวนหลังวันอังคารที่ 14 ตุลาคม จะยังถูกคิดเงินเต็ม วันที่ 15 ตุลาคมคือหลังวันที่ 14 คำตอบจึงเป็น \"The original number will still be charged.\" ครับ",
+      "wrong": {
+       "0": "ไม่มีเอกสารฉบับใดบอกว่าการเปลี่ยนจำนวนต้องกรอกแบบฟอร์มใหม่ อีเมลพูดเรื่องค่าใช้จ่ายอย่างเดียว",
+       "1": "เมนูกับจำนวนคนเป็นคนละเรื่องกัน การลดจำนวนแขกไม่ได้บังคับให้เปลี่ยนเมนู",
+       "2": "ไม่มีการพูดถึงการยกเลิกงานเลย ตรงกันข้าม อีเมลยืนยันว่างานจัดแน่นอนในวันที่ 16 ตุลาคม"
+      },
+      "point": "คำว่า at the full rate แปลว่า คิดราคาเต็ม ไม่ลดตามจำนวนที่หายไป เป็นเงื่อนไขที่พบบ่อยในสัญญาจัดเลี้ยงและโรงแรม",
+      "trick": "เจอโจทย์ที่ให้วันที่มาแล้วถามผลลัพธ์ ให้เทียบกับเส้นตายในเอกสารก่อนว่าอยู่ ก่อน หรือ หลัง แล้วจึงเลือกผลลัพธ์ที่ตรงกับฝั่งนั้น",
+      "evidence": "Any reduction after Tuesday 14 October will be charged at the full rate, although we can still add guests until that date."
+     }
+    }
+   ],
+   "vocab": [
+    {
+     "w": "catering",
+     "ipa": "/ˈkeɪtərɪŋ/",
+     "th": "**เค**-เทอ-ริง",
+     "mean": "บริการจัดอาหารนอกสถานที่",
+     "pos": "n."
+    },
+    {
+     "w": "confirm",
+     "ipa": "/kənˈfɜːrm/",
+     "th": "เคิน-**เฟิร์ม**",
+     "mean": "ยืนยัน",
+     "pos": "v."
+    },
+    {
+     "w": "reduction",
+     "ipa": "/rɪˈdʌkʃn/",
+     "th": "ริ-**ดัค**-เชิน",
+     "mean": "การลดลง (จำนวนหรือราคา)",
+     "pos": "n."
+    },
+    {
+     "w": "brief",
+     "ipa": "/briːf/",
+     "th": "**บรีฟ**",
+     "mean": "บรรยายสรุปให้ฟัง",
+     "pos": "v."
+    }
+   ]
+  }
+ ]
+}

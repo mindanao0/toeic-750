@@ -254,7 +254,7 @@
               "2": "ไม่มีการพูดถึงการคืนเงินเลย สิ่งที่เขาเสนอคือส่งเก้าอี้แปดตัวมาก่อนโดยไม่คิดค่าใช้จ่ายเพิ่ม ซึ่งคนละเรื่องกับการคืนเงิน"
             },
             "point": "คำถาม What will the speaker do next ให้ดักฟังสองประโยคสุดท้าย และหาคำว่า I'll, Let me, I can, I'm going to",
-            "trick": "อ่านคำถามข้อสามไว้ล่วงหน้า แล้วพอได้ยินว่าบทสนทนาใกล้จบ ให้เพิ่มสมาธิเป็นพิเศษ เพราะคำเฉลยจะโผล่ในสิบวินาทีสุดท้ายเสมอ"
+            "trick": "อ่านคำถามข้อสามไว้ล่วงหน้า แล้วพอได้ยินว่าบทสนทนาใกล้จบ ให้เพิ่มสมาธิเป็นพิเศษ เพราะคำเฉลยมักโผล่ในสิบวินาทีสุดท้าย"
           }
         }
       ],
@@ -276,9 +276,9 @@
           { "sp": "W", "accent": "AU", "text": "That's excellent news. Last year we were stuck in the back corner and hardly anyone walked past." },
           { "sp": "M", "accent": "CA", "text": "The only issue is the size. It's about a third smaller than the space we had before." },
           { "sp": "W", "accent": "AU", "text": "Then we can't bring the full product display. Daniel, you built the shelving last year. What do you think?" },
-          { "sp": "M", "accent": "US", "text": "We could use the tall vertical racks instead. They hold the same number of items but take up much less floor space." },
+          { "sp": "M2", "accent": "US", "text": "We could use the tall vertical racks instead. They hold the same number of items but take up much less floor space." },
           { "sp": "W", "accent": "AU", "text": "Let's do that. Daniel, could you send me the measurements this week so I can order the printed backdrop?" },
-          { "sp": "M", "accent": "US", "text": "Sure. I'll take care of it before Friday." }
+          { "sp": "M2", "accent": "US", "text": "Sure. I'll take care of it before Friday." }
         ]
       },
       "th": {
