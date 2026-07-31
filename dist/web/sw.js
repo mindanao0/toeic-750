@@ -1,5 +1,5 @@
 /* service worker — ใช้ออฟไลน์ได้ แต่ต้องได้ของใหม่ทันทีเมื่อ deploy */
-const CACHE = 'toeic750-v20260731.2028';
+const CACHE = 'toeic750-v20260731.2032';
 const ASSETS = ["./","./index.html","./manifest.webmanifest","./icon-192.png","./icon-512.png","./data/drills/p1e-01.json","./data/drills/p2e-01.json","./data/drills/p2m-01.json","./data/drills/p3e-01.json","./data/drills/p3m-01.json","./data/drills/p3m-02.json","./data/drills/p5e-01.json","./data/drills/p5e-02.json","./data/drills/p5e-03.json","./data/drills/p5m-01.json","./data/drills/p5m-02.json","./data/drills/p6m-01.json","./data/drills/p6m-02.json","./data/drills/p7e-01.json","./data/drills/p7m-01.json","./data/tests/placement.json","./data/tests/test1.json","./data/lessons/L01.json","./data/lessons/L02.json","./data/lessons/L03.json","./data/lessons/L04.json","./data/lessons/L05.json","./data/lessons/L06.json","./data/lessons/L07.json","./data/lessons/L08.json","./data/lessons/L09.json","./data/lessons/L10.json","./data/lessons/L11.json","./data/lessons/L12.json","./data/lessons/L13.json","./data/vocab/vocab-01.json","./data/vocab/vocab-02.json","./data/vocab/vocab-03.json","./data/vocab/vocab-04.json","./data/static/cheatsheet.json","./data/static/examinfo.json","./data/static/plan30.json"];
 
 /* แคชแบบทีละไฟล์ ถ้าไฟล์ใดพลาดก็ไม่ล้มทั้งการติดตั้ง */

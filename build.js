@@ -304,6 +304,18 @@ self.addEventListener('notificationclick', (e) => {
 function main() {
   console.log('▶ กำลังสร้างไฟล์…\n');
 
+  // ถ้าชิ้นส่วนชุดสอบใน .work/ ถูกแก้หลังจากประกอบครั้งล่าสุด ให้ประกอบใหม่ก่อน
+  // (เคยเกือบ deploy ชุดสอบเวอร์ชันก่อนแก้เฉลยมาแล้ว)
+  try {
+    const { mergeStale } = require('./tools/merge-test.js');
+    const merged = mergeStale({ quiet: true });
+    if (merged.length) {
+      console.log(`  ประกอบชุดสอบใหม่: ${merged.map((m) => `${m.testId} (${m.total} ข้อ)`).join(', ')}\n`);
+    }
+  } catch (e) {
+    console.error('  ⚠️ ประกอบชุดสอบไม่สำเร็จ:', e.message);
+  }
+
   const css = collectCSS();
   const js = collectJS();
   const { manifest, blobs, stats } = collectData();
