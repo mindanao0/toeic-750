@@ -18,6 +18,7 @@ const TOTAL = 200;
 
 function mergeTest(TEST_ID, opts) {
 const quiet = opts && opts.quiet;
+const allowIncomplete = opts && opts.allowIncomplete;
 const say = (...a) => { if (!quiet) console.log(...a); };
 const SRC = path.join(ROOT, '.work', TEST_ID);
 const OUT = path.join(ROOT, 'data', 'tests', TEST_ID + '.json');
@@ -98,13 +99,24 @@ const out = {
   items,
 };
 
+const okAll = !mismatch && total === TOTAL && !dup.length;
+
+// ชุดที่ยังเขียนไม่ครบห้ามหลุดออกไปให้ผู้ใช้เห็น
+// ไม่งั้นผู้เรียนจะกดเริ่มสอบเสมือนจริงแล้วเจอข้อสอบครึ่งเดียว
+if (!okAll && !allowIncomplete) {
+  console.log(`⏳ ${TEST_ID}: ยังไม่ครบ (${total}/${TOTAL} ข้อ) — ยังไม่เผยแพร่`);
+  if (fs.existsSync(OUT)) {
+    fs.unlinkSync(OUT);
+    console.log(`   ลบ ${path.relative(ROOT, OUT)} ที่ยังไม่ครบออกแล้ว`);
+  }
+  return { testId: TEST_ID, total, ok: false, published: false, units: items.length };
+}
+
 fs.writeFileSync(OUT, JSON.stringify(out, null, 1) + '\n');
 say(`\n✓ เขียน ${path.relative(ROOT, OUT)} · ${items.length} หน่วย · ${total} ข้อ`);
-
-const okAll = !mismatch && total === TOTAL && !dup.length;
-if (!okAll) console.log(`⚠️ ${TEST_ID}: สัดส่วนยังไม่ตรงข้อสอบจริง (${total}/${TOTAL}) — ต้องเติม/ตัดก่อนใช้`);
+if (!okAll) console.log(`⚠️ ${TEST_ID}: สัดส่วนยังไม่ตรงข้อสอบจริง (${total}/${TOTAL})`);
 else say('✅ สัดส่วนตรงข้อสอบจริงทุกพาร์ต');
-return { testId: TEST_ID, total, ok: okAll, units: items.length };
+return { testId: TEST_ID, total, ok: okAll, published: true, units: items.length };
 }
 
 /** ประกอบชุดสอบใหม่ทุกชุดที่ชิ้นส่วนใหม่กว่าไฟล์ผลลัพธ์ (กันการ deploy ของเก่าโดยไม่รู้ตัว) */
@@ -119,9 +131,22 @@ function mergeStale(opts) {
     if (!parts.length) continue;
     const newest = Math.max(...parts.map((f) => fs.statSync(path.join(src, f)).mtimeMs));
     const cur = fs.existsSync(out) ? fs.statSync(out).mtimeMs : 0;
-    if (newest > cur) {
+
+    // ต้องประกอบใหม่เมื่อ: ชิ้นส่วนใหม่กว่า / ยังไม่เคยประกอบ / ไฟล์ที่เผยแพร่อยู่ยังไม่ครบ 200 ข้อ
+    let publishedIncomplete = false;
+    if (fs.existsSync(out)) {
+      try {
+        const cnt = (JSON.parse(fs.readFileSync(out, 'utf8')).items || []).reduce(
+          (a, it) => a + (Array.isArray(it.questions) ? it.questions.length : 1), 0);
+        publishedIncomplete = cnt !== TOTAL;
+      } catch (e) {
+        publishedIncomplete = true;
+      }
+    }
+
+    if (newest > cur || !fs.existsSync(out) || publishedIncomplete) {
       const r = mergeTest(d, opts);
-      if (r) done.push(r);
+      if (r && r.published) done.push(r);
     }
   }
   return done;
