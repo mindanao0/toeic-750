@@ -43,6 +43,11 @@ for (const f of files) {
     return null;
   }
   const got = obj.items || [];
+  // ไฟล์ว่างคือเศษจาก agent ที่ถูกตัดกลางคัน — ข้ามไป ไม่ให้ปนเข้าชุดสอบ
+  if (!got.length) {
+    console.log(`  ⚠️ ${TEST_ID}/${f} ว่างเปล่า — ข้าม (เศษจากงานที่ไม่จบ)`);
+    continue;
+  }
   say(`  ${f.padEnd(12)} ${String(got.length).padStart(3)} รายการ`);
   items.push(...got);
 }
